@@ -1,0 +1,52 @@
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', sans-serif;
+	color: #555;
+}
+
+.bg-teal-gradient {
+	background-color: #43b7bf;
+	color: white;
+}
+
+.btn-orange {
+	color: white;
+	background-color: #f88900;
+}
+.btn-orange:hover {
+	background-color: #ffa12c;
+}
+
+.btn-teal-outline {
+	color: #3fb5bf;
+	background-color: white;
+	border-color: #6dc7cf;
+}
+
+.border-grey {
+	border: 1px solid #dbdbdb;
+}
+
+#lang .nav-link {
+	background-color: #ccc;
+	color: #666;
+}
+
+#lang .nav-link.active {
+	background-color: #f2f2f2;
+	color: #bca580;
+}
+
+#lang .tab-pane {
+	height: 400px;
+	overflow: auto;
+	background-color: #363636;
+	width: 100%;
+}
+
+pre.sublemon {
+	overflow: visible;
+}
+
+.text-faded-grey {
+	color: #ccc;
+}
