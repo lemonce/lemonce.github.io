@@ -2,7 +2,7 @@
 <html lang="en">
 <head prefix="og: http://ogp.me/ns#">
 	<meta charset="utf-8">
-	<title>Documentation - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
+	<title>Getting Started Guide - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="web ui testing tool, web application testing tool, automated web ui testing tool, automated web application testing tool, automated testing tools for web applications, gui testing tool, web ui testing, free web ui testing tools, free automation testing tools, web automation testing tools, regression testing tools, selenium, free, open source">
@@ -16,37 +16,42 @@
 </head>
 <body>
 	<nav class="navbar navbar-light navbar-toggleable-md">
-	<div class="container">
+	<div class="container mx-md-auto mx-0">
+		<button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#nav-content">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 		<div class="navbar-header">
 			<a href="/" class="navbar-brand">Lemonce</a>
 		</div>
-		<ul class="navbar-nav">
-			<li class="nav-item">
-				<a href="/" class="nav-link">
-					home
-				</a>
-			</li>
-			<li class="nav-item">
-				<a href="/feature.html" class="nav-link">
-					feature
-				</a>
-			</li>
-			<li class="nav-item">
-				<a href="/compare.html" class="nav-link">
-					compare
-				</a>
-			</li>
-			<li class="nav-item">
-				<a href="/news" class="nav-link">
-					news
-				</a>
-			</li>
-			<li class="nav-item">
-				<a href="/docs" class="nav-link">
-					docs
-				</a>
-			</li>
-		</ul>
+		<div id="nav-content" class="collapse navbar-collapse">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="/" class="nav-link">
+						home
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/feature.html" class="nav-link">
+						feature
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/compare.html" class="nav-link">
+						compare
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/news" class="nav-link">
+						news
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/docs" class="nav-link">
+						docs
+					</a>
+				</li>
+			</ul>
+		</div>
 	</div>
 </nav>
 
@@ -54,10 +59,10 @@
 	<article class="page">
 		<div class="page-header bg-teal-gradient py-5">
 			<div class="container">
-				<h1>Documentation</h1>
+				<h1>Getting Started Guide</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-01-14
+					2017-01-22
 				</time>
 			</div>
 		</div>
@@ -72,10 +77,34 @@
 </aside>
 
 			<div class="page-inner">
-				<p>Welcome to Lemonce Editor documentation. </p>
-<h2 id="What-is-Lemonce-Editor"><a href="#What-is-Lemonce-Editor" class="headerlink" title="What is Lemonce Editor ?"></a>What is Lemonce Editor ?</h2><p>It is a test automation tool for web application. It features a test recorder<br>and a build in scripting language.</p>
-<h3 id="Test-recorder"><a href="#Test-recorder" class="headerlink" title="Test recorder"></a>Test recorder</h3><p>Lemonce Editor comes with a test recorder that minimizes your learning curve.<br>It is intuitive and easy to work with. It help you create tests quickly and easily.<br>And you do not need to write a single line of code.</p>
-<p><img src="/images/recorder1.jpg" alt="recorder-image"></p>
+				<p>This guide helps you with step-by-step instructions on how to create a web test project with Lemonce editor. You will learn how to record a test scripts, create an assertion, run the test and view test reports.</p>
+<h2 id="Set-up-a-single-test-case"><a href="#Set-up-a-single-test-case" class="headerlink" title="Set up a single test case"></a>Set up a single test case</h2><hr>
+<h3 id="create-a-test-case"><a href="#create-a-test-case" class="headerlink" title="create a test case"></a>create a test case</h3><p>There are two ways to create a test case.</p>
+<ul>
+<li><p><strong>create test case in tool bar</strong><br>You can create new test cases from the toolbar or use the shortcut key CTRL+N, in which case you need to create a path to save.</p>
+</li>
+<li><p><strong>create test case in work space</strong><br>the work space is associated with local file system,in which any changes about the cases such as create,rename or remove will be synchronized to the local folder.</p>
+</li>
+</ul>
+<h2 id="Use-of-recorder"><a href="#Use-of-recorder" class="headerlink" title="Use of recorder"></a>Use of recorder</h2><hr>
+<h3 id="record-scripts"><a href="#record-scripts" class="headerlink" title="record scripts"></a>record scripts</h3><p>Before recording begins, you need to click on the middle of the bracket of Process main to ensure that the code is generated in the correct position. With the recording, the editor will generate code and comments automatically.</p>
+<h3 id="create-an-assertion-while-recording"><a href="#create-an-assertion-while-recording" class="headerlink" title="create an assertion while recording"></a>create an assertion while recording</h3><p>In recording, press the CTRL and select the very page elements with the mouse, you can automatically add assertion statement.</p>
+<h3 id="play-back-the-recorded-steps"><a href="#play-back-the-recorded-steps" class="headerlink" title="play back the recorded steps"></a>play back the recorded steps</h3><p>Click the record button again to end the recording. Click the play button to begin playback of the recording process.</p>
+<h2 id="Complete-a-test-suite"><a href="#Complete-a-test-suite" class="headerlink" title="Complete a test suite"></a>Complete a test suite</h2><hr>
+<h3 id="create-a-test-suite"><a href="#create-a-test-suite" class="headerlink" title="create a test suite"></a>create a test suite</h3><ul>
+<li><p><strong>create test suite in work space</strong><br>Same as creating a test case, test suite can be create in the work space, in order to facilitate the management of the cases.</p>
+</li>
+<li><p><strong>one key to output test suite</strong><br>You can export the test case in the editing area as a whole test suite according to the current order of the cases.</p>
+</li>
+</ul>
+<h3 id="suite-editor"><a href="#suite-editor" class="headerlink" title="suite editor"></a>suite editor</h3><ul>
+<li><p><strong>activate test suite</strong><br>In the Suite section, double click the selected test suite, you can activate it to the Opening section for editing.</p>
+</li>
+<li><p><strong>edit test suite</strong><br>Double click the test suite in Opening section, then you can choose from the Case Lib to add test cases to the current suite which shows in left of the Display Colum.<br>You can sort,delete and empty the test cases in Display Colum.<br>After the completion of editing,then you can click the Save or Close Button on the right side.</p>
+</li>
+</ul>
+<h2 id="View-test-reports"><a href="#View-test-reports" class="headerlink" title="View test reports"></a>View test reports</h2><hr>
+<p>The test report is divided into three areas. The case-area lists all of the test cases for the entire test task, the contents of the log-area and the code-area correspond to each other as a sub area of each test case.</p>
 
 			</div>
 		</div>
@@ -85,7 +114,7 @@
 	<footer>
 	<div class="container pt-3">
 		<div class="row">
-			<div class="col-md-4 col-xs-12">
+			<div class="col-md-4 col">
 				<a href="/docs">
 					help
 				</a>
@@ -101,7 +130,7 @@
 					</a></li>
 				</ul>
 			</div>
-			<div class="col-md-4 col-xs-12">
+			<div class="col-md-4 col">
 				<a href="/">
 					about
 				</a>
@@ -114,7 +143,7 @@
 					</a></li>
 				</ul>
 			</div>
-			<div class="col-md-4 col-xs-12">
+			<div class="col-md-4 col">
 				<a href="/contact.html" class="d-block">contact us</a>
 				<a href="/site-map.html" class="d-block">site map</a>
 			</div>

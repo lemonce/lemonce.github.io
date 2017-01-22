@@ -2,7 +2,7 @@
 <html lang="en">
 <head prefix="og: http://ogp.me/ns#">
 	<meta charset="utf-8">
-	<title>文档 - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
+	<title>开始使用 - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="web ui testing tool, web application testing tool, automated web ui testing tool, automated web application testing tool, automated testing tools for web applications, gui testing tool, web ui testing, free web ui testing tools, free automation testing tools, web automation testing tools, regression testing tools, selenium, free, open source">
@@ -16,37 +16,42 @@
 </head>
 <body>
 	<nav class="navbar navbar-light navbar-toggleable-md">
-	<div class="container">
+	<div class="container mx-md-auto mx-0">
+		<button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#nav-content">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 		<div class="navbar-header">
 			<a href="/zh-cn/" class="navbar-brand">Lemonce</a>
 		</div>
-		<ul class="navbar-nav">
-			<li class="nav-item">
-				<a href="/zh-cn/" class="nav-link">
-					首页
-				</a>
-			</li>
-			<li class="nav-item">
-				<a href="/zh-cn/feature.html" class="nav-link">
-					特性
-				</a>
-			</li>
-			<li class="nav-item">
-				<a href="/zh-cn/compare.html" class="nav-link">
-					对比
-				</a>
-			</li>
-			<li class="nav-item">
-				<a href="/news" class="nav-link">
-					新闻
-				</a>
-			</li>
-			<li class="nav-item">
-				<a href="/zh-cn/docs" class="nav-link">
-					文档
-				</a>
-			</li>
-		</ul>
+		<div id="nav-content" class="collapse navbar-collapse">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="/zh-cn/" class="nav-link">
+						首页
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/feature.html" class="nav-link">
+						特性
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/compare.html" class="nav-link">
+						对比
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/news" class="nav-link">
+						新闻
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/docs" class="nav-link">
+						文档
+					</a>
+				</li>
+			</ul>
+		</div>
 	</div>
 </nav>
 
@@ -54,10 +59,10 @@
 	<article class="page">
 		<div class="page-header bg-teal-gradient py-5">
 			<div class="container">
-				<h1>文档</h1>
+				<h1>开始使用</h1>
 				<time class="text-white">
 					最后更新：
-					2017-01-14
+					2017-01-22
 				</time>
 			</div>
 		</div>
@@ -72,8 +77,30 @@
 </aside>
 
 			<div class="page-inner">
-				<p>欢迎来到灵萌测官方文档</p>
-<h2 id="灵萌测是什么？"><a href="#灵萌测是什么？" class="headerlink" title="灵萌测是什么？"></a>灵萌测是什么？</h2>
+				<p>本文档将帮助您如何采用Lemonce客户端一步步创建一个网页测试项目。您将学习如何记录测试脚本、创建断言、运行测试和查看测试报告。</p>
+<h2 id="创建单独的测试用例"><a href="#创建单独的测试用例" class="headerlink" title="创建单独的测试用例"></a>创建单独的测试用例</h2><hr>
+<h4 id="从工具栏中建立新测试用例"><a href="#从工具栏中建立新测试用例" class="headerlink" title="从工具栏中建立新测试用例"></a>从工具栏中建立新测试用例</h4><p>您可以从工具栏中或者采用快捷键Ctrl+N新建测试用例，以这种方式建立的测试用例需要您寻找路径保存。</p>
+<h4 id="从工作空间中建立新测试用例"><a href="#从工作空间中建立新测试用例" class="headerlink" title="从工作空间中建立新测试用例"></a>从工作空间中建立新测试用例</h4><p>工作空间关联本地文件系统，在这里新建、改动或删除文件，会同步到本地相关的文件夹中去。</p>
+<h2 id="录制器的使用"><a href="#录制器的使用" class="headerlink" title="录制器的使用"></a>录制器的使用</h2><hr>
+<h4 id="录制脚本"><a href="#录制脚本" class="headerlink" title="录制脚本"></a>录制脚本</h4><p>在录制开始之前，需要点击Process main的大括号中部，以保证代码生成在正确的位置。随着录制的进行，编辑区中会自动生成代码和注释。</p>
+<h4 id="在录制过程中添加断言"><a href="#在录制过程中添加断言" class="headerlink" title="在录制过程中添加断言"></a>在录制过程中添加断言</h4><p>在录制过程中，按住ctrl并用鼠标选择相应的界面元素，即可自动添加断言语句。</p>
+<h4 id="回放已录制的步骤"><a href="#回放已录制的步骤" class="headerlink" title="回放已录制的步骤"></a>回放已录制的步骤</h4><p>再次点击录制按钮可结束录制。点击播放按钮，可开始回放刚才录制的过程。</p>
+<h2 id="完善测试套件"><a href="#完善测试套件" class="headerlink" title="完善测试套件"></a>完善测试套件</h2><hr>
+<h4 id="创建测试套件"><a href="#创建测试套件" class="headerlink" title="创建测试套件"></a>创建测试套件</h4><ul>
+<li><p><strong>从测试空间中建立新测试套件</strong><br>与建立测试用例相同，也可以在测试空间中建立测试套件，以此来对用例进行方便的管理。</p>
+</li>
+<li><p><strong>在编辑区中一键导出测试套件</strong><br>可将当下正在编辑区中的测试用例按照当前的顺序，一键导出为一整个的测试套件。</p>
+</li>
+</ul>
+<h4 id="套件编辑器"><a href="#套件编辑器" class="headerlink" title="套件编辑器"></a>套件编辑器</h4><ul>
+<li><p><strong>激活测试套件</strong><br>在Suite版块中选中要进行编辑的套件双击，可将套件激活至上方编辑区进行编辑。</p>
+</li>
+<li><p><strong>编辑测试套件</strong><br>在Opening版块中双击要进行编辑的套件，此时可从Case Lib中选择要添加到当前套件中的测试用例到左侧的展示栏。展示栏中支持用例的随机排序、删除、清空等。编辑完成之后，可在Opening版块右上侧点击保存或者关闭按钮。</p>
+</li>
+</ul>
+<h2 id="查看测试报告"><a href="#查看测试报告" class="headerlink" title="查看测试报告"></a>查看测试报告</h2><hr>
+<p>测试报告一共分为三个区域。测试用例区域，列出了整个测试任务所有的测试用例，日志区域和代码区域中的内容一一对应，作为每条测试用例的子区域而存在。</p>
+
 			</div>
 		</div>
 	</article>
@@ -82,7 +109,7 @@
 	<footer>
 	<div class="container pt-3">
 		<div class="row">
-			<div class="col-md-4 col-xs-12">
+			<div class="col-md-4 col">
 				<a href="/docs">
 					帮助
 				</a>
@@ -98,7 +125,7 @@
 					</a></li>
 				</ul>
 			</div>
-			<div class="col-md-4 col-xs-12">
+			<div class="col-md-4 col">
 				<a href="/">
 					关于
 				</a>
@@ -111,7 +138,7 @@
 					</a></li>
 				</ul>
 			</div>
-			<div class="col-md-4 col-xs-12">
+			<div class="col-md-4 col">
 				<a href="/contact.html" class="d-block">contact us</a>
 				<a href="/site-map.html" class="d-block">site map</a>
 			</div>
