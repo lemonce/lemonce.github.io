@@ -62,14 +62,14 @@
 				<h1>Compare</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-02-04
+					2017-02-10
 				</time>
 			</div>
 		</div>
 		<div class="page-content container py-5">
 			<aside id="doc-sidebar" class="float-lg-left">
 	<div class="lead"><a href="/docs">
-		Getting Started
+		Getting Started Guide
 	</a></div>
 	<div><a href="/docs/syntax.html">
 		Syntax
@@ -77,7 +77,7 @@
 </aside>
 
 			<div class="page-inner">
-				<table>
+				<h2 id="Product-Positioning"><a href="#Product-Positioning" class="headerlink" title="Product Positioning"></a>Product Positioning</h2><table>
 <thead>
 <tr>
 <th></th>
@@ -88,13 +88,13 @@
 </thead>
 <tbody>
 <tr>
-<td>Works on Browsers Only</td>
-<td style="text-align:center">Yes</td>
+<td>Works on all browsers</td>
+<td style="text-align:center">Yes (v2.1)</td>
 <td style="text-align:center">Yes</td>
 <td style="text-align:center">No</td>
 </tr>
 <tr>
-<td>Works on Mac OS / Linux</td>
+<td>Works on Mac OS / Windows / Linux</td>
 <td style="text-align:center">Yes</td>
 <td style="text-align:center">Yes</td>
 <td style="text-align:center">No</td>
@@ -109,37 +109,97 @@
 <td>Tool integration</td>
 <td style="text-align:center">High</td>
 <td style="text-align:center">Low</td>
-<td style="text-align:center">Low</td>
+<td style="text-align:center">High</td>
 </tr>
 <tr>
-<td>Chromium as the browser core and execution environment</td>
+<td>Works on Chromium browser core &amp; execution environment</td>
 <td style="text-align:center">Yes</td>
 <td style="text-align:center">No</td>
 <td style="text-align:center">No</td>
 </tr>
 <tr>
-<td>Ways to select element</td>
-<td style="text-align:center">CSS/sizzle/Xpath</td>
+<td>Webdriver required as executive agent</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
+</tr>
+<tr>
+<td>Needs updates when  browsers’ versions update</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Programming-Language"><a href="#Programming-Language" class="headerlink" title="Programming Language"></a>Programming Language</h2><table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">Lemonce</th>
+<th style="text-align:center">Selenium</th>
+<th style="text-align:center">QTP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Proprietary language for web UI testing</td>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center">No</td>
+</tr>
+<tr>
+<td>Ease of programming language learning</td>
+<td style="text-align:center">Easy</td>
+<td style="text-align:center">Average</td>
+<td style="text-align:center">Average</td>
+</tr>
+<tr>
+<td>Branches and cycle statements</td>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Record-Test-Case"><a href="#Record-Test-Case" class="headerlink" title="Record Test Case"></a>Record Test Case</h2><table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">Lemonce</th>
+<th style="text-align:center">Selenium</th>
+<th style="text-align:center">QTP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select element by content</td>
+<td style="text-align:center">Sizzle</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center">No</td>
+</tr>
+<tr>
+<td>Multiple ways to select elements</td>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
+</tr>
+<tr>
+<td>Element selection methods</td>
+<td style="text-align:center">CSS/Sizzle/Xpath</td>
 <td style="text-align:center">CSS/Xpath</td>
 <td style="text-align:center">Xpath</td>
 </tr>
 <tr>
-<td>Select element based on element contents</td>
-<td style="text-align:center">sizzle</td>
-<td style="text-align:center">No</td>
-<td style="text-align:center">No</td>
-</tr>
-<tr>
-<td>Selector support to select element in Iframe</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">No</td>
-<td style="text-align:center">No</td>
-</tr>
-<tr>
-<td>The default element selector</td>
+<td>Default element selector</td>
 <td style="text-align:center">CssPath</td>
 <td style="text-align:center">Xpath</td>
 <td style="text-align:center">Xpath</td>
+</tr>
+<tr>
+<td>Select element in Iframe</td>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center">No</td>
 </tr>
 <tr>
 <td>Auto-generate comments when recording</td>
@@ -148,88 +208,88 @@
 <td style="text-align:center">No</td>
 </tr>
 <tr>
-<td>Auto-generate codes readable</td>
+<td>Web action recording accuracy</td>
+<td style="text-align:center">High</td>
+<td style="text-align:center">Medium</td>
+<td style="text-align:center">High</td>
+</tr>
+<tr>
+<td>Intelligent waiting for web actions &amp; page loading</td>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center">No</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Edit-Test-Case"><a href="#Edit-Test-Case" class="headerlink" title="Edit Test Case"></a>Edit Test Case</h2><table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">Lemonce</th>
+<th style="text-align:center">Selenium</th>
+<th style="text-align:center">QTP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Readability of codes generated by recorder</td>
 <td style="text-align:center">High</td>
 <td style="text-align:center">Low</td>
 <td style="text-align:center">Low</td>
 </tr>
 <tr>
-<td>Web UI Functional Recorder accuracy</td>
+<td>Easy to modify auto-generated codes</td>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center">No</td>
+</tr>
+<tr>
+<td>Reusable element bank</td>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center">Yes</td>
+</tr>
+<tr>
+<td>Reusable sub-process library</td>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center">Yes</td>
+</tr>
+<tr>
+<td>Import existing test cases to create new tests</td>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center">Yes</td>
+</tr>
+<tr>
+<td>Reusability of code modules</td>
 <td style="text-align:center">High</td>
-<td style="text-align:center">So-so</td>
-<td style="text-align:center">High</td>
-</tr>
-<tr>
-<td>Web UI Functional Playback accuracy</td>
-<td style="text-align:center">High</td>
-<td style="text-align:center">So-so</td>
-<td style="text-align:center">High</td>
-</tr>
-<tr>
-<td>Easily modify auto-generate code</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">No</td>
-<td style="text-align:center">No</td>
-</tr>
-<tr>
-<td>Element Bank</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">No</td>
-<td style="text-align:center">Yes</td>
-</tr>
-<tr>
-<td>Reusable sub process library</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">No</td>
-<td style="text-align:center">Yes</td>
-</tr>
-<tr>
-<td>Unique Language For Web UI Testing</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">No</td>
-<td style="text-align:center">No</td>
-</tr>
-<tr>
-<td>Ease of programming language learning</td>
-<td style="text-align:center">Easy</td>
-<td style="text-align:center">Normal</td>
-<td style="text-align:center">Normal</td>
-</tr>
-<tr>
-<td>Branches and cycle statements</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
-</tr>
-<tr>
-<td>Automatically add test cases import statements</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">No</td>
-<td style="text-align:center">Yes</td>
-</tr>
-<tr>
-<td>the resuing property of the software codes</td>
-<td style="text-align:center">High</td>
-<td style="text-align:center">So-so</td>
+<td style="text-align:center">Medium</td>
 <td style="text-align:center">High</td>
 </tr>
+</tbody>
+</table>
+<h2 id="Run-Test-Case"><a href="#Run-Test-Case" class="headerlink" title="Run Test Case"></a>Run Test Case</h2><table>
+<thead>
 <tr>
-<td>Webdriver as executive agent</td>
-<td style="text-align:center">No</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">No</td>
+<th></th>
+<th style="text-align:center">Lemonce</th>
+<th style="text-align:center">Selenium</th>
+<th style="text-align:center">QTP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Playback accuracy</td>
+<td style="text-align:center">High</td>
+<td style="text-align:center">Medium</td>
+<td style="text-align:center">High</td>
 </tr>
 <tr>
 <td>Complete event dispatch</td>
 <td style="text-align:center">Yes</td>
 <td style="text-align:center">No</td>
-<td style="text-align:center">unknown</td>
-</tr>
-<tr>
-<td>Automatic waiting for Pageloads and executing steps</td>
 <td style="text-align:center">Yes</td>
-<td style="text-align:center">No</td>
-<td style="text-align:center">No</td>
 </tr>
 <tr>
 <td>Playback speed</td>
@@ -238,25 +298,13 @@
 <td style="text-align:center">Slow</td>
 </tr>
 <tr>
-<td>Support parallel playback</td>
-<td style="text-align:center">Cloud</td>
+<td>Inbuilt detailed logs and reports</td>
 <td style="text-align:center">Yes</td>
-<td style="text-align:center">No</td>
-</tr>
-<tr>
-<td>Support for multiple ways to select element</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">No</td>
-</tr>
-<tr>
-<td>Inbuilt detailed logging and reporting</td>
-<td style="text-align:center">Yes</td>
-<td style="text-align:center">No</td>
+<td style="text-align:center">Need Plug-in</td>
 <td style="text-align:center">Yes</td>
 </tr>
 <tr>
-<td>Report readable</td>
+<td>Report readability</td>
 <td style="text-align:center">Easy</td>
 <td style="text-align:center">Hard</td>
 <td style="text-align:center">Easy</td>
@@ -264,9 +312,21 @@
 <tr>
 <td>Error screenshot</td>
 <td style="text-align:center">Yes</td>
-<td style="text-align:center">No</td>
-<td style="text-align:center">unknown</td>
+<td style="text-align:center">Need Plug-in</td>
+<td style="text-align:center">Yes</td>
 </tr>
+</tbody>
+</table>
+<h2 id="Others"><a href="#Others" class="headerlink" title="Others"></a>Others</h2><table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">Lemonce</th>
+<th style="text-align:center">Selenium</th>
+<th style="text-align:center">QTP</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td>Cost of building a test team</td>
 <td style="text-align:center">Low</td>
@@ -274,15 +334,9 @@
 <td style="text-align:center">Low</td>
 </tr>
 <tr>
-<td>Operational assistance available</td>
-<td style="text-align:center">Soon</td>
-<td style="text-align:center">No</td>
+<td>Technical support</td>
 <td style="text-align:center">Yes</td>
-</tr>
-<tr>
-<td>Needs updates when  browsers version update</td>
 <td style="text-align:center">No</td>
-<td style="text-align:center">Yes</td>
 <td style="text-align:center">Yes</td>
 </tr>
 </tbody>
@@ -351,16 +405,7 @@
 		</div>
 	</div>
 </footer>
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-91537224-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+	
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/tether.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
