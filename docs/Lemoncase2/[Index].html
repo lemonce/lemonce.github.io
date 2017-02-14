@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="utf-8">
+	<title>Lemoncase2 Guide - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="web ui testing tool, web application testing tool, automated web ui testing tool, automated web application testing tool, automated testing tools for web applications, gui testing tool, web ui testing, free web ui testing tools, free automation testing tools, web automation testing tools, regression testing tools, selenium, free, open source">
+	<meta name="description" content="UI Testing Tool For Web Applications: Lemonce Editor is a professional automation testing tool for web applications. Open Source and Free versions are available.">
+	<!-- Canonical links -->
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/theme.css">
+	<link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+	<nav class="navbar navbar-light navbar-toggleable-md">
+	<div class="container mx-md-auto mx-0">
+		<button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#nav-content">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-header">
+			<a href="/" class="navbar-brand">Lemonce</a>
+		</div>
+		<div id="nav-content" class="collapse navbar-collapse">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="/" class="nav-link">
+						Home
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/feature.html" class="nav-link">
+						Features
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/compare.html" class="nav-link">
+						Compare
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/news" class="nav-link">
+						News
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/docs/Getting Started/[Index].html" class="nav-link">
+						Docs
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+	<div id="wrap-page">
+	<article class="page">
+		<div class="page-header bg-teal-gradient py-5">
+			<div class="container">
+				<h1>Lemoncase2 Guide</h1>
+				<time class="text-white">
+					Last Updated:
+					2017-02-14
+				</time>
+			</div>
+		</div>
+		<div class="page-content container py-5">
+			<aside id="doc-sidebar" class="float-lg-left">
+	<div><a href="/docs/Installation/[Index].html">Installation</a>
+ 		<ul>
+    		<li><a href="/docs/Installation/Distribution Files.html">distribution files</a></li>
+    		<li><a href="/docs/Installation/First Run.html">first run</a></li>
+    		<li><a href="/docs/Installation/Upgrade.html">upgrade</a></li>
+ 		</ul>
+	</div>
+	<div><a href="/docs/Getting Started/[Index].html">
+		Getting Started</a>
+		<ul>
+    		<li><a href="/docs/Getting Started/Create a test case.html">create a test case</a></li>
+    		<li><a href="/docs/Getting Started/Use of recorder.html">use of recorder</a></li>
+    		<li><a href="/docs/Getting Started/Complete a test suite.html">complete a test suite</a></li>
+			<li><a href="/docs/Getting Started/View test reports.html">view test reports</a></li>
+ 		</ul>
+	</div>
+	<div><a href="/docs/Case Editor/[Index].html">Case Editor</a>
+		<ul>
+    		<li><a href="/docs/Case Editor/Case Debugger.html">case debugger</a></li>
+    		<li><a href="/docs/Case Editor/Case Editor text area.html">case editor text area</a></li>
+			<li><a href="/docs/Case Editor/Case Editor tool bar.html">case editor tool bar</a></li>
+ 		</ul>
+	</div>
+	<div><a href="/docs/Suite Editor/[Index].html">
+		Suite Editor</a>
+		<ul>
+    		<li><a href="/docs/Suite Editor/Suite Editor tool bar.html">suite editor tool bar</a></li>
+ 		</ul>
+	</div>
+	<div><a href="/docs/syntax.html">WebView</a>
+		<ul>
+    		<li><a href="">tool</a></li>
+ 		</ul>
+	</div>
+	<div><a href="/docs/syntax.html">
+		Report
+	</a></div>
+	<div><a href="/docs/Lemoncase2/[Index].html">Lemoncase2</a>
+		<ul>
+    		<li><a href="/docs/Lemoncase2/Grammar_Instruction keyword.html">instruction keyword</a></li>
+    		<li><a href="/docs/Lemoncase2/Grammar_Action keyword.html">action keyword</a></li>
+    		<li><a href="/docs/Lemoncase2/Grammar_Expression.html">expression</a></li>
+			<li><a href="/docs/Lemoncase2/Grammar_Inbuilt sub-process.html">inbuilt sub-process</a></li>
+    		<li><a href="/docs/Lemoncase2/Grammar_Marco.html">marco</a></li>
+    		<li><a href="/docs/Lemoncase2/Scope.html">scope</a></li>
+    		<li><a href="/docs/Lemoncase2/Example.html">example</a></li>
+ 		</ul>
+	</div>
+</aside>
+
+
+
+			<div class="page-inner">
+				<p>This guide will teach you how to use the programming language of Lemoncase2.</p>
+<p>browser automation library: <a href="http://lemonce.github.io/lemoncase2" target="_blank" rel="external">http://lemonce.github.io/lemoncase2</a><br><br></p>
+<h2 id="Grammar"><a href="#Grammar" class="headerlink" title="Grammar"></a><a href="">Grammar</a></h2><hr>
+<p><strong>Zoom Table</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><a href="/docs/Lemoncase2/Grammar_Instruction keyword.html">Instruction keyword</a></th>
+<th style="text-align:center"><a href="/docs/Lemoncase2/Grammar_Action keyword.html">Action keyword</a></th>
+<th style="text-align:center"><a href="/docs/Lemoncase2/Grammar_Expression.html">Expression</a></th>
+<th style="text-align:center"><a href="/docs/Lemoncase2/Grammar_Marco.html">Macro</a></th>
+<th style="text-align:center"><a href="/docs/Lemoncase2/Grammar_Magic keyword.html">Magic keyword</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">process</td>
+<td style="text-align:center">click</td>
+<td style="text-align:center">&lt;@”cssPath”&gt;</td>
+<td style="text-align:center">#TIMES</td>
+</tr>
+<tr>
+<td style="text-align:center">in</td>
+<td style="text-align:center">input</td>
+<td style="text-align:center">&lt;#”cssPath”&gt;</td>
+<td style="text-align:center">#AUTOWAIT</td>
+</tr>
+<tr>
+<td style="text-align:center">by</td>
+<td style="text-align:center">rclick</td>
+<td style="text-align:center">&lt;!”cssPath”&gt;</td>
+<td style="text-align:center">#LIMIT</td>
+</tr>
+<tr>
+<td style="text-align:center">assert</td>
+<td style="text-align:center">dbclick</td>
+<td style="text-align:center">A~~B</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">log</td>
+<td style="text-align:center">move</td>
+<td style="text-align:center">A==B</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">return</td>
+<td style="text-align:center">hold</td>
+<td style="text-align:center">A!=B</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">wait</td>
+<td style="text-align:center">drop</td>
+<td style="text-align:center">RegExp</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">scroll</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">jumpto</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">refresh</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">back</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">forward</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">upload</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Idntifier</strong> </p>
+<p>Lemoncase2 is similar to JS.<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Var a = <span class="number">1</span>;</div></pre></td></tr></table></figure></p>
+<p>But you do not have to use <code>var</code> keyword (there’s no type check currently, haha)<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">a = <span class="number">1</span>;</div><div class="line">a = <span class="literal">true</span>;</div></pre></td></tr></table></figure></p>
+<p><strong>Datatype</strong></p>
+<p>Below is a list of data type you can use</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">number (e.g., 0.12, 1e-3)</div><div class="line">string (e.g., 'you', "me")</div><div class="line">Boolean (true/false)</div><div class="line">RegExp</div></pre></td></tr></table></figure>
+<p>RegExp will be used as it is, to match against a string, if it is used with ~~ operator.</p>
+<p>Otherwise it will generate a random string based on the regexp pattern (use randexp underneath).</p>
+<p>Use it if you want to do some fuzzy testing.</p>
+<p><strong>Marco</strong> </p>
+<p>Macro is the global setting for your case during runtime. <a href="/docs/Lemoncase2/Grammar_Marco.html"><code>more details</code></a></p>
+<ul>
+<li>#TIMES</li>
+<li>#AUTOWAIT</li>
+<li>#LIMIT</li>
+</ul>
+<p><strong>Instruction keyword</strong> </p>
+<p>Simulate an action.<a href="/docs/Lemoncase2/Grammar_Instruction keyword.html"><code>read more</code></a></p>
+<ul>
+<li>process (main/sub)</li>
+<li>assertion (in)</li>
+<li>return/wait</li>
+<li>log</li>
+</ul>
+<p><strong>Action keyword</strong> </p>
+<p><a href="/docs/Lemoncase2/Grammar_Action keyword.html"><code>read more</code></a></p>
+<ul>
+<li>input</li>
+<li>click/dbclick/rclick</li>
+<li>move/hold/drop</li>
+<li>scroll</li>
+<li>jumpto</li>
+<li>forward/back</li>
+<li>upload</li>
+</ul>
+<p><strong>Expression</strong> </p>
+<p><a href="/docs/Lemoncase2/Grammar_Expression.html"><code>read more</code></a></p>
+<ul>
+<li>&lt;@ [selector:string] /&gt;/&lt;# [selector:string] /&gt;/&lt;! [selector:string] /&gt;</li>
+<li>[exp_A:string] ~~ [exp_B:string|RegExp]</li>
+<li>[exp_A:string] !~ [exp_B:string|RegExp]</li>
+</ul>
+<p><strong>Inbuilt sub-process</strong> </p>
+<p>Below is the list of type of Inbuilt sub-process.<a href="/docs/Lemoncase2/Grammar_Inbuilt sub-process.html"><code>read more</code></a></p>
+<ul>
+<li>format/now</li>
+<li>bool/number</li>
+<li>ceil/floor/max/min/random</li>
+<li>length/charAt/indexOf/substr/trim<br><br><br></li>
+</ul>
+<h2 id="Scope"><a href="#Scope" class="headerlink" title="Scope"></a><a href="/docs/Lemoncase2/Scope.html">Scope</a></h2><hr>
+<p>Global scope.<br>So there is no return keyword in LC2. A process has no parameter.<br>Process main is the program’s entry.<br><br><br></p>
+<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a><a href="/docs/Lemoncase2/Example.html">Example</a></h2><hr>
+<p>Here are some examples for you to get started with the language.</p>
+<p><strong>Hello World</strong> </p>
+<p><strong>A Typical test case</strong> </p>
+<p><strong>Typical examples</strong> </p>
+
+			</div>
+		</div>
+	</article>
+</div>
+
+	<footer>
+	<div class="container pt-3" style="width:700px">
+		<div class="row">
+			<div class="col-md-4 col">
+				<a href="/docs">
+					help
+				</a>
+				<ul class="list-unstyled">
+					<li><a class="text-muted" href="/docs">
+						support
+					</a></li>
+					<li><a class="text-muted" href="/docs">
+						api doc
+					</a></li>
+					<li><a class="text-muted" href="/news">
+						blog
+					</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col">
+				<a href="/">
+					about
+				</a>
+				<ul class="list-unstyled">
+					<li><a class="text-muted" href="/eula.html">
+						agreement
+					</a></li>
+					<li><a class="text-muted" href="/eula.html">
+						security
+					</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col">
+				<a href="/contact.html" class="d-block">contact us</a>
+				<a href="/site-map.html" class="d-block">site map</a>
+			</div>
+		</div>
+
+		<div class="d-flex align-items-center justify-content-between py-4">
+			<span>
+				&copy;2014-2017
+					or-change, Co., Ltd. All rights reserved.
+				
+					<a class="text-faded-grey small" href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action"> JIN-ICP14003159-2</a>
+				
+			</span>
+			<div class="btn-group dropup">
+				<button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+					Language
+				</button>
+				<div class="dropdown-menu">
+					<a href="/" class="dropdown-item">English</a>
+					<a href="/zh-cn" class="dropdown-item">Chinese</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+	
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/tether.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/smooth-scroll.min.js"></script>
+	<script src="/js/sublemon.min.js"></script>
+	<script src="/js/common.js"></script>
+</body>
+</html>
