@@ -2,9 +2,198 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lemonce.net/site-map.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.676Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Suite%20Editor/%5BIndex%5D.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.672Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Suite%20Editor/Suite%20Editor%20tool%20bar.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.668Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Lemoncase2/%5BIndex%5D.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.664Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Lemoncase2/Grammar_Marco.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.660Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Lemoncase2/Grammar_Instruction%20keyword.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.654Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Lemoncase2/Grammar_Inbuilt%20sub-process.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.648Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Lemoncase2/Grammar_Expression.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.641Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Lemoncase2/Grammar_Action%20keyword.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.635Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Lemoncase2/Gramma_Magic%20keyword.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.629Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Lemoncase2/Example.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.625Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Installation/%5BIndex%5D.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.619Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Installation/Upgrade.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.615Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Installation/First%20Run.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.611Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Installation/Distribution%20Files.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.606Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Getting%20Started/use%20of%20recorder.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.601Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Getting%20Started/create%20a%20test%20case.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.597Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Getting%20Started/complete%20a%20test%20suite.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.593Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Getting%20Started/%5BIndex%5D.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.587Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Case%20Editor/%5BIndex%5D.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.582Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Case%20Editor/Case%20Editor%20tool%20bar.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.579Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Case%20Editor/Case%20Editor%20text%20area.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.575Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Case%20Editor/Case%20Debugger.html</loc>
+    
+    <lastmod>2017-02-14T11:05:26.572Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/feature.html</loc>
+    
+    <lastmod>2017-02-14T11:02:48.836Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lemonce.net/compare.html</loc>
     
-    <lastmod>2017-02-10T09:53:56.726Z</lastmod>
+    <lastmod>2017-02-14T02:47:45.937Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Lemoncase2/Scope.html</loc>
+    
+    <lastmod>2017-02-11T06:30:38.191Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Lemoncase2/LemoncasePath.html</loc>
+    
+    <lastmod>2017-02-11T05:35:48.406Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Getting%20Started/View%20test%20reports.html</loc>
+    
+    <lastmod>2017-02-11T03:56:23.000Z</lastmod>
     
   </url>
   
@@ -19,13 +208,6 @@
     <loc>http://lemonce.net/docs/index.html</loc>
     
     <lastmod>2017-01-22T04:26:24.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/feature.html</loc>
-    
-    <lastmod>2017-01-22T04:24:30.712Z</lastmod>
     
   </url>
   
@@ -47,13 +229,6 @@
     <loc>http://lemonce.net/zh-cn/index.html</loc>
     
     <lastmod>2017-01-14T07:52:34.032Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/site-map.html</loc>
-    
-    <lastmod>2017-01-14T07:52:34.017Z</lastmod>
     
   </url>
   
