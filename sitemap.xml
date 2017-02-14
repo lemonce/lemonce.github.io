@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lemonce.net/docs/Installation/Index.html</loc>
+    
+    <lastmod>2017-02-14T11:38:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Suite%20Editor/Index.html</loc>
+    
+    <lastmod>2017-02-14T11:37:29.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Getting%20Started/Use%20of%20recorder.html</loc>
+    
+    <lastmod>2017-02-14T11:35:18.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Getting%20Started/Create%20a%20test%20case.html</loc>
+    
+    <lastmod>2017-02-14T11:35:06.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/Getting%20Started/Complete%20a%20test%20suite.html</loc>
+    
+    <lastmod>2017-02-14T11:34:44.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lemonce.net/feature.html</loc>
     
     <lastmod>2017-02-14T11:18:26.000Z</lastmod>
@@ -23,7 +58,7 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/docs/GettingStarted/Index.html</loc>
+    <loc>http://lemonce.net/docs/Getting%20Started/Index.html</loc>
     
     <lastmod>2017-02-14T11:13:17.000Z</lastmod>
     
@@ -33,13 +68,6 @@
     <loc>http://lemonce.net/site-map.html</loc>
     
     <lastmod>2017-02-14T11:05:26.676Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/Suite%20Editor/%5BIndex%5D.html</loc>
-    
-    <lastmod>2017-02-14T11:05:26.672Z</lastmod>
     
   </url>
   
@@ -100,13 +128,6 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/docs/Installation/%5BIndex%5D.html</loc>
-    
-    <lastmod>2017-02-14T11:05:26.619Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lemonce.net/docs/Installation/Upgrade.html</loc>
     
     <lastmod>2017-02-14T11:05:26.615Z</lastmod>
@@ -124,27 +145,6 @@
     <loc>http://lemonce.net/docs/Installation/Distribution%20Files.html</loc>
     
     <lastmod>2017-02-14T11:05:26.606Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/GettingStarted/use%20of%20recorder.html</loc>
-    
-    <lastmod>2017-02-14T11:05:26.601Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/GettingStarted/create%20a%20test%20case.html</loc>
-    
-    <lastmod>2017-02-14T11:05:26.597Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/GettingStarted/complete%20a%20test%20suite.html</loc>
-    
-    <lastmod>2017-02-14T11:05:26.593Z</lastmod>
     
   </url>
   
@@ -191,7 +191,7 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/docs/GettingStarted/View%20test%20reports.html</loc>
+    <loc>http://lemonce.net/docs/Getting%20Started/View%20test%20reports.html</loc>
     
     <lastmod>2017-02-11T03:56:23.000Z</lastmod>
     
@@ -254,14 +254,14 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/contact.html</loc>
+    <loc>http://lemonce.net/docs/syntax.html</loc>
     
     <lastmod>2017-01-14T07:52:33.985Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://lemonce.net/docs/syntax.html</loc>
+    <loc>http://lemonce.net/contact.html</loc>
     
     <lastmod>2017-01-14T07:52:33.985Z</lastmod>
     
