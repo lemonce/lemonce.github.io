@@ -57,11 +57,19 @@ body {
 }
 
 .button {
-    background-color: #48ade4 !important;
-    font-size: 18px !important;
+    background-color: #6199bb !important;
+    font-size: 14px !important;
     color: #fff !important;
-    font-weight: 700;
-    padding: 2px;
+    font-weight: 400;
+    padding: 4px;
+}
+/* gutter */
+figure.highlight .gutter {
+	padding-right: 0.5rem;
+	border-right: 1px solid #909fa8;
+}
+figure.highlight .code {
+	padding-left: 0.5rem;
 }
 /* tab code */
 #lang .nav {
@@ -197,4 +205,8 @@ figure.highlight pre {
 #wrap-page .page-inner2>table tbody td:first-child {
 	font-weight: bold;
 	color: #333;
+}
+.big-images{
+	width:720px;
+    height:456px;
 }
