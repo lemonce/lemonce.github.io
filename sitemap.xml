@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lemonce.net/docs/setup/download-install.html</loc>
+    
+    <lastmod>2017-02-18T06:14:19.077Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/setup/firstrun.html</loc>
+    
+    <lastmod>2017-02-18T06:14:19.077Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/setup/index.html</loc>
+    
+    <lastmod>2017-02-18T06:14:19.077Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/guide/case.html</loc>
+    
+    <lastmod>2017-02-18T06:14:19.077Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/setup/upgrade.html</loc>
+    
+    <lastmod>2017-02-18T06:14:19.077Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/case/toolbar.html</loc>
+    
+    <lastmod>2017-02-18T06:14:19.062Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lemonce.net/site-map.html</loc>
     
     <lastmod>2017-02-17T11:33:44.110Z</lastmod>
@@ -121,34 +163,6 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/docs/installation/upgrade.html</loc>
-    
-    <lastmod>2017-02-17T11:33:44.049Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/installation/index.html</loc>
-    
-    <lastmod>2017-02-17T11:33:44.047Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/installation/firstrun.html</loc>
-    
-    <lastmod>2017-02-17T11:33:44.044Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/installation/distribution.html</loc>
-    
-    <lastmod>2017-02-17T11:33:44.041Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lemonce.net/docs/guide/suite.html</loc>
     
     <lastmod>2017-02-17T11:33:44.038Z</lastmod>
@@ -173,20 +187,6 @@
     <loc>http://lemonce.net/docs/guide/index.html</loc>
     
     <lastmod>2017-02-17T11:33:44.031Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/guide/case.html</loc>
-    
-    <lastmod>2017-02-17T11:33:44.026Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/case/toolbar.html</loc>
-    
-    <lastmod>2017-02-17T11:33:44.022Z</lastmod>
     
   </url>
   
