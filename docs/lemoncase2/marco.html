@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="/css/theme.css">
 	<link rel="stylesheet" href="/css/index.css">
+	<script src="https://use.fontawesome.com/201a2b367b.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
@@ -62,7 +63,7 @@
 				<h1>Marco</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-02-17
+					2017-02-24
 				</time>
 			</div>
 		</div>
@@ -72,7 +73,7 @@
  		<ul>
     		<li><a href="/docs/setup/download-install.html">download and install</a></li>
     		<li><a href="/docs/setup/firstrun.html">first run</a></li>
-    		<li><a href="/docs/setup/upgrade.html">upgrade</a></li>
+    		<li><a href="/docs/setup/interface.html">Lemonce interface</a></li>
  		</ul>
 	</div>
 	<div><a href="/docs/guide/index.html">Getting Started</a>
@@ -104,7 +105,7 @@
 	<div><a href="/docs/syntax.html">
 		Report
 	</a></div>
-	<div><a href="/docs/lemoncase2/index.html">lemoncase2</a>
+	<div><a href="/docs/lemoncase2/index.html">Lemoncase2</a>
 		<ul>
     		<li><a href="/docs/lemoncase2/instructionkeyword.html">instruction keyword</a></li>
     		<li><a href="/docs/lemoncase2/actionkeyword.html">action keyword</a></li>
@@ -122,14 +123,23 @@
 			<div class="page-inner">
 				<h2 id="TIMES"><a href="#TIMES" class="headerlink" title="#TIMES"></a>#TIMES</h2><hr>
 <p>The times of running the same test case.The defaut value is 1.</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// The case will run 10 times.</span></div><div class="line">#TIMES <span class="number">10</span></div></pre></td></tr></table></figure>
-<p><br></p>
+<pre class="sublemon">
+// The case will run 10 times.
+#TIMES 10
+</pre>
+
 <h2 id="AUTOWAIT"><a href="#AUTOWAIT" class="headerlink" title="#AUTOWAIT"></a>#AUTOWAIT</h2><hr>
 <p>The defaut value is 500.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">//</div></pre></td></tr></table></figure>
-<p><br></p>
+<pre class="sublemon">
+
+// 
+</pre>
+
 <h2 id="LIMIT"><a href="#LIMIT" class="headerlink" title="#LIMIT"></a>#LIMIT</h2><hr>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Auto scroll the window when trigger an instruction.</span></div><div class="line">#AUTOSCROLL</div></pre></td></tr></table></figure>
+<pre class="sublemon">
+// Auto scroll the window when trigger an instruction.
+#AUTOSCROLL
+</pre>
 			</div>
 		</div>
 	</article>

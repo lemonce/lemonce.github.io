@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="/css/theme.css">
 	<link rel="stylesheet" href="/css/index.css">
+	<script src="https://use.fontawesome.com/201a2b367b.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
@@ -62,7 +63,7 @@
 				<h1>Expression</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-02-17
+					2017-02-23
 				</time>
 			</div>
 		</div>
@@ -72,7 +73,7 @@
  		<ul>
     		<li><a href="/docs/setup/download-install.html">download and install</a></li>
     		<li><a href="/docs/setup/firstrun.html">first run</a></li>
-    		<li><a href="/docs/setup/upgrade.html">upgrade</a></li>
+    		<li><a href="/docs/setup/interface.html">Lemonce interface</a></li>
  		</ul>
 	</div>
 	<div><a href="/docs/guide/index.html">Getting Started</a>
@@ -104,7 +105,7 @@
 	<div><a href="/docs/syntax.html">
 		Report
 	</a></div>
-	<div><a href="/docs/lemoncase2/index.html">lemoncase2</a>
+	<div><a href="/docs/lemoncase2/index.html">Lemoncase2</a>
 		<ul>
     		<li><a href="/docs/lemoncase2/instructionkeyword.html">instruction keyword</a></li>
     		<li><a href="/docs/lemoncase2/actionkeyword.html">action keyword</a></li>
@@ -123,14 +124,28 @@
 				<h2 id="Selector-operator"><a href="#Selector-operator" class="headerlink" title="Selector operator"></a>Selector operator</h2><hr>
 <p><strong>&lt;# [selector:string] /&gt;</strong> </p>
 <p>Get the number of elements that matches the selector.</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">// &lt;div id="link" class="case"&gt;Text&lt;/div&gt;</div><div class="line">log &lt;# 'div'/&gt;; // Output 1</div><div class="line">log &lt;# '#link'/&gt;; // Output 1</div><div class="line">log &lt;# '#no'/&gt;; // Output 0</div></pre></td></tr></table></figure>
+<p><code>&lt;div id=&quot;link&quot; class=&quot;case&quot;&gt;Text&lt;/div&gt;</code></p>
+<pre class="sublemon">
+log <# 'div'="">; // Output 1
+log <# '#link'="">; // Output 1
+log <# '#no'="">; // Output 0</#></#></#></pre>
+
 <p><strong>&lt;@ [selector:string] /&gt;</strong> </p>
 <p>Get the innerHTML of the 1st element that matches the selector.The result is a string or <code>false</code> if there’s no match.</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">// &lt;div id="link" class="case"&gt;Text&lt;/div&gt;</div><div class="line">log &lt;@ 'div'/&gt;; // Output Text</div><div class="line">log &lt;@ '#link'/&gt;; // Output Text</div><div class="line">log &lt;@ '#no'/&gt;; // Output false</div></pre></td></tr></table></figure>
+<p><code>&lt;div id=&quot;link&quot; class=&quot;case&quot;&gt;Text&lt;/div&gt;</code></p>
+<pre class="sublemon">
+log <@ 'div'="">; // Output Text
+log <@ '#link'="">; // Output Text
+log <@ '#no'="">; // Output false</@></@></@></pre>
+
 <p><strong>&lt;! [selector:string] /&gt;</strong> </p>
 <p>Check for element visibility.The result is <code>true</code> if such element exist &amp;&amp; width &gt; 0 &amp;&amp; height &gt; 0.Otherwise it is <code>false</code>.</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">// &lt;div id="link" class="case"&gt;Text&lt;/div&gt;</div><div class="line">// &lt;div id="link2" style="display:none"&gt;Text&lt;/div&gt;</div><div class="line">log &lt;@ 'a'/&gt;; // Output false</div><div class="line">log &lt;@ 'div'/&gt;; // Output true</div><div class="line">log &lt;@ '#link2'/&gt;; // Output false</div></pre></td></tr></table></figure>
-<p><br></p>
+<p><code>&lt;div id=&quot;link&quot; class=&quot;case&quot;&gt;Text&lt;/div&gt;</code><br><code>&lt;div id=&quot;link2&quot; style=&quot;display:none&quot;&gt;Text&lt;/div&gt;</code></p>
+<pre class="sublemon">
+log <@ 'a'="">; // Output false
+log <@ 'div'="">; // Output true
+log <@ '#link2'="">; // Output false</@></@></@></pre>
+
 <h2 id="Compare-operator"><a href="#Compare-operator" class="headerlink" title="Compare operator"></a>Compare operator</h2><hr>
 <p><strong>[exp_A:string] ~~ [exp_B:string|RegExp]</strong></p>
 <ul>

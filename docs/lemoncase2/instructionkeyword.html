@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="/css/theme.css">
 	<link rel="stylesheet" href="/css/index.css">
+	<script src="https://use.fontawesome.com/201a2b367b.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
@@ -62,7 +63,7 @@
 				<h1>Instruction keyword</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-02-17
+					2017-02-23
 				</time>
 			</div>
 		</div>
@@ -72,7 +73,7 @@
  		<ul>
     		<li><a href="/docs/setup/download-install.html">download and install</a></li>
     		<li><a href="/docs/setup/firstrun.html">first run</a></li>
-    		<li><a href="/docs/setup/upgrade.html">upgrade</a></li>
+    		<li><a href="/docs/setup/interface.html">Lemonce interface</a></li>
  		</ul>
 	</div>
 	<div><a href="/docs/guide/index.html">Getting Started</a>
@@ -104,7 +105,7 @@
 	<div><a href="/docs/syntax.html">
 		Report
 	</a></div>
-	<div><a href="/docs/lemoncase2/index.html">lemoncase2</a>
+	<div><a href="/docs/lemoncase2/index.html">Lemoncase2</a>
 		<ul>
     		<li><a href="/docs/lemoncase2/instructionkeyword.html">instruction keyword</a></li>
     		<li><a href="/docs/lemoncase2/actionkeyword.html">action keyword</a></li>
@@ -121,25 +122,58 @@
 
 			<div class="page-inner">
 				<h2 id="process"><a href="#process" class="headerlink" title="process"></a>process</h2><hr>
-<p>Define a process,including the main process and sub process.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//This is a main process.</div><div class="line">process main()&#123;&#125;</div></pre></td></tr></table></figure>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//This is a sub process which can be named with different keywords(except 'main').</span></div><div class="line"><span class="function">process <span class="title">sub1</span><span class="params">()</span></span>&#123; &#125;</div></pre></td></tr></table></figure>
-<p><br></p>
+<p>Define a process,including <code>process main</code> and <code>process sub</code>.</p>
+<pre class="sublemon">//This is a main process.
+process main(){
+
+}
+
+//This is a sub process which can be named with different keywords(except 'main').
+process sub-1(){ 
+
+}
+</pre>  
+
 <h2 id="assert"><a href="#assert" class="headerlink" title="assert"></a>assert</h2><hr>
 <p>Assert that the expression is true[ within overtime].</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//Asserts the existence of a input box with the id of "test".</span></div><div class="line">assert &lt;#<span class="string">"textarea#test"</span>/&gt;;</div></pre></td></tr></table></figure>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//Asserts that a input box with the id of "test" will appear in 2 seconds.</span></div><div class="line">assert &lt;#<span class="string">"textarea#test"</span>/&gt; in <span class="number">2000</span>;</div></pre></td></tr></table></figure>
-<p><br></p>
+<pre class="sublemon">//Asserts the existence of a input box with the id of "test".
+assert <#"textarea#test">;
+
+//Asserts that a input box with the id of "test" will appear in 2 seconds.
+assert <#"textarea#test"> in 2000;
+</#"textarea#test"></#"textarea#test"></pre>
+
 <h2 id="return"><a href="#return" class="headerlink" title="return"></a>return</h2><hr>
-<p>The <code>return</code> statement ends sub-process execution and specifies a value to be returned to the sub-process caller.A sub-process immediately stops at the point where return is called.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">process main () &#123; </div><div class="line">	counter(); </div><div class="line">&#125;</div><div class="line">process counter() &#123;</div><div class="line">	count = 1;</div><div class="line">	while(count &lt; 5)&#123;	    // until 4</div><div class="line">		log count + &apos;A&apos;;</div><div class="line">		count +=1;</div><div class="line">		log count + &apos;B&apos;;    // until 5</div><div class="line">      &#125;</div><div class="line">	return;</div><div class="line">    log count + &apos;C&apos;;        // never appears      </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p><br></p>
+<p>The <code>return</code> statement ends sub-process execution and specifies a value to be returned to the sub-process caller.A sub-process immediately stops at the point where return is called.</p>
+<pre class="sublemon">
+process main () {
+    counter();   
+    }  
+process counter() {
+    count = 1;
+    while(count < 5){        // until 4
+        log count + 'A';
+        count +=1;
+        log count + 'B';    // until 5
+      }
+    return;
+    log count + 'C';        // never appears      
+}
+</pre>
+
 <h2 id="wait"><a href="#wait" class="headerlink" title="wait"></a>wait</h2><hr>
 <p>Wait a few time like a person.</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//Editor will wait 3000ms to start the next action.</span></div><div class="line">wait <span class="number">3000</span>;</div></pre></td></tr></table></figure>
-<p><br></p>
+<pre class="sublemon">
+//Editor will wait 3000ms to start the next action.
+wait 3000;
+</pre>
+
 <h2 id="log"><a href="#log" class="headerlink" title="log"></a>log</h2><hr>
 <p>Record the value of an expression.</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">log</span> <span class="string">'2'</span>+<span class="number">3</span>	<span class="comment">//Output  23</span></div><div class="line"><span class="built_in">log</span> <span class="literal">true</span>	<span class="comment">//Output  true</span></div></pre></td></tr></table></figure>
+<pre class="sublemon">
+log '2'+3    //Output  23
+log true    //Output  true
+</pre>
 
 			</div>
 		</div>

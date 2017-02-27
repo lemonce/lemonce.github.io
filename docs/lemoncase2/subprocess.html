@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="/css/theme.css">
 	<link rel="stylesheet" href="/css/index.css">
+	<script src="https://use.fontawesome.com/201a2b367b.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
@@ -62,7 +63,7 @@
 				<h1>Inbuilt sub-process</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-02-17
+					2017-02-23
 				</time>
 			</div>
 		</div>
@@ -72,7 +73,7 @@
  		<ul>
     		<li><a href="/docs/setup/download-install.html">download and install</a></li>
     		<li><a href="/docs/setup/firstrun.html">first run</a></li>
-    		<li><a href="/docs/setup/upgrade.html">upgrade</a></li>
+    		<li><a href="/docs/setup/interface.html">Lemonce interface</a></li>
  		</ul>
 	</div>
 	<div><a href="/docs/guide/index.html">Getting Started</a>
@@ -104,7 +105,7 @@
 	<div><a href="/docs/syntax.html">
 		Report
 	</a></div>
-	<div><a href="/docs/lemoncase2/index.html">lemoncase2</a>
+	<div><a href="/docs/lemoncase2/index.html">Lemoncase2</a>
 		<ul>
     		<li><a href="/docs/lemoncase2/instructionkeyword.html">instruction keyword</a></li>
     		<li><a href="/docs/lemoncase2/actionkeyword.html">action keyword</a></li>
@@ -127,36 +128,79 @@
 <p>Time stamp.Output current Greenwich time(in ms),<br><br></p>
 <h2 id="Type"><a href="#Type" class="headerlink" title="Type"></a>Type</h2><hr>
 <p><strong>bool( )</strong></p>
-<p>Convert a variable/number/RegExp to a Boolean format.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">bool(3.14) // Output true</div><div class="line">bool(3&gt;4) // Output false</div></pre></td></tr></table></figure></p>
+<p>Convert a variable/number/RegExp to a Boolean format.  </p>
+<pre class="sublemon">
+bool(3.14) // Output true
+bool(3>4) // Output false</pre>
+
 <p><strong>number( )</strong></p>
-<p>The <code>number()</code> is a wrapper object allowing you to work with numerical values. A Number object is created using the <code>number()</code> constructor.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">number(&apos;3.14&apos;) // Output  3.14</div><div class="line">number(&apos;3&apos;+&apos;2&apos;) // Output  32</div></pre></td></tr></table></figure></p>
-<p><br></p>
+<p>The <code>number()</code> is a wrapper object allowing you to work with numerical values. A Number object is created using the <code>number()</code> constructor.</p>
+<pre class="sublemon">
+number('3.14') // Output  3.14
+number('3'+'2') // Output  32</pre>
+
 <h2 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h2><hr>
 <p><strong>abs( )</strong></p>
-<p>The <code>abs()</code> returns the absolute value of a number, that is abs(x)=|x|.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">abs(-3.14) // Output  3.14</div><div class="line">abs(&apos;&apos;) // Output  0</div><div class="line">abs() // Output  NaN</div><div class="line">abs(&apos;string&apos;) // Output  NaN</div></pre></td></tr></table></figure></p>
+<p>The <code>abs()</code> returns the absolute value of a number, that is abs(x)=|x|.</p>
+<pre class="sublemon">
+abs(-3.14) // Output  3.14
+abs('') // Output  0
+abs() // Output  NaN
+abs('string') // Output  NaN</pre>
+
 <p><strong>ceil( )</strong></p>
-<p>The <code>ceil(number)</code> returns the smallest integer greater than or equal to a given number.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ceil(3.14) // Output  4</div><div class="line">ceil(-3.14) // Output  -3</div></pre></td></tr></table></figure></p>
+<p>The <code>ceil(number)</code> returns the smallest integer greater than or equal to a given number.</p>
+<pre class="sublemon">
+ceil(3.14) // Output  4
+ceil(-3.14) // Output  -3</pre>
+
 <p><strong>floor( )</strong></p>
-<p>The <code>floor(number)</code> returns the largest integer less than or equal to a given number.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">floor(3.14) // Output  3</div><div class="line">floor(-3.14) // Output  -4</div></pre></td></tr></table></figure></p>
+<p>The <code>floor(number)</code> returns the largest integer less than or equal to a given number.</p>
+<pre class="sublemon">
+floor(3.14) // Output  3
+floor(-3.14) // Output  -4</pre>
+
 <p><strong>max( )</strong></p>
-<p>The <code>max(number1,number2,...)</code> returns the largest of zero or more numbers.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">max(3+2,number(&apos;3&apos;+&apos;2&apos;))  // Output  32</div></pre></td></tr></table></figure></p>
+<p>The <code>max(number1,number2,...)</code> returns the largest of zero or more numbers.</p>
+<pre class="sublemon">
+max(3+2,number('3'+'2'))  // Output  32</pre>
+
 <p><strong>min( )</strong></p>
 <p>The <code>min(number1,number2,...)</code> returns the smallest of zero or more numbers.</p>
 <p><strong>random( )</strong></p>
-<p>The <code>random()</code> function returns a floating-point, pseudo-random number in the range [0, 1) that is, from 0 (inclusive) up to but not including 1 (exclusive), which you can then scale to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//Output a random number between the specified values</div><div class="line">random() * (max - min) + min</div></pre></td></tr></table></figure></p>
-<p><br></p>
+<p>The <code>random()</code> function returns a floating-point, pseudo-random number in the range [0, 1) that is, from 0 (inclusive) up to but not including 1 (exclusive), which you can then scale to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user.</p>
+<pre class="sublemon">
+//Output a random number between the specified values
+random() * (max - min) + min </pre>
+
 <h2 id="String"><a href="#String" class="headerlink" title="String"></a>String</h2><hr>
 <p><strong>length( )</strong> </p>
-<p>The <code>length(string)</code> property represents the length of a string.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">length(&quot;Lemonce&quot;) //Output  7</div></pre></td></tr></table></figure></p>
-<p><strong>charAt( )</strong></p>
-<p>The <code>charAt(string,pos)</code> method returns the specified character from a string.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">charAt(&apos;Lemonce&apos;,5)  //Output &apos;c&apos;</div></pre></td></tr></table></figure></p>
-<p><strong>indexOf( )</strong></p>
-<p>The <code>indexOf(dstSting,testString)</code> method returns the index within the calling String object of the first occurrence of the specified value, starting the search at fromIndex. Returns -1 if the value is not found.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">indexOf(&apos;Lemonce&apos;,&apos;L&apos;)  //Output  0</div><div class="line">indexOf(&apos;Lemonce&apos;,&apos;e&apos;)  //Output  1</div><div class="line">indexOf(&apos;Lemonce&apos;,&apos;l&apos;)  //Output  -1</div></pre></td></tr></table></figure></p>
-<p><strong>substr( )</strong></p>
-<p>The <code>substr(string,from,[length])</code> method returns the characters in a string beginning at the specified location through the specified number of characters.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">substr(&apos;Lemoncase&apos;,2,3)  //Output &apos;mon&apos;</div><div class="line">substr(&apos;Lemoncase&apos;,2)  //Output &apos;moncase&apos;</div></pre></td></tr></table></figure></p>
-<p><strong>trim( )</strong></p>
-<p>The <code>trim(string)</code> method removes whitespace from both ends of a string. Whitespace in this context is all the whitespace characters (space, tab, no-break space, etc.) and all the line terminator characters (LF, CR, etc.).<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">trim(&apos;  Lemon case  &apos;)  //Output &apos;Lemon case&apos;</div></pre></td></tr></table></figure></p>
+<p>The <code>length(string)</code> property represents the length of a string.</p>
+<pre class="sublemon">
+length("Lemonce") //Output  7</pre>
 
+<p><strong>charAt( )</strong></p>
+<p>The <code>charAt(string,pos)</code> method returns the specified character from a string.</p>
+<pre class="sublemon">
+charAt('Lemonce',5)  //Output 'c'</pre>
+
+<p><strong>indexOf( )</strong></p>
+<p>The <code>indexOf(dstSting,testString)</code> method returns the index within the calling String object of the first occurrence of the specified value, starting the search at fromIndex. Returns -1 if the value is not found.</p>
+<pre class="sublemon">
+indexOf('Lemonce','L')  //Output  0
+indexOf('Lemonce','e')  //Output  1
+indexOf('Lemonce','l')  //Output  -1</pre>
+
+<p><strong>substr( )</strong></p>
+<p>The <code>substr(string,from,[length])</code> method returns the characters in a string beginning at the specified location through the specified number of characters. </p>
+<pre class="sublemon">
+substr('Lemoncase',2,3)  //Output 'mon'
+substr('Lemoncase',2)  //Output 'moncase'</pre>
+
+<p><strong>trim( )</strong></p>
+<p>The <code>trim(string)</code> method removes whitespace from both ends of a string. Whitespace in this context is all the whitespace characters (space, tab, no-break space, etc.) and all the line terminator characters (LF, CR, etc.).</p>
+<pre class="sublemon">
+trim('  Lemon case  ')  //Output 'Lemon case'</pre>
 			</div>
 		</div>
 	</article>

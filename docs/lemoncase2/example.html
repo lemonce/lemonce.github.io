@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="/css/theme.css">
 	<link rel="stylesheet" href="/css/index.css">
+	<script src="https://use.fontawesome.com/201a2b367b.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
@@ -62,7 +63,7 @@
 				<h1>Example</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-02-17
+					2017-02-24
 				</time>
 			</div>
 		</div>
@@ -72,7 +73,7 @@
  		<ul>
     		<li><a href="/docs/setup/download-install.html">download and install</a></li>
     		<li><a href="/docs/setup/firstrun.html">first run</a></li>
-    		<li><a href="/docs/setup/upgrade.html">upgrade</a></li>
+    		<li><a href="/docs/setup/interface.html">Lemonce interface</a></li>
  		</ul>
 	</div>
 	<div><a href="/docs/guide/index.html">Getting Started</a>
@@ -104,7 +105,7 @@
 	<div><a href="/docs/syntax.html">
 		Report
 	</a></div>
-	<div><a href="/docs/lemoncase2/index.html">lemoncase2</a>
+	<div><a href="/docs/lemoncase2/index.html">Lemoncase2</a>
 		<ul>
     		<li><a href="/docs/lemoncase2/instructionkeyword.html">instruction keyword</a></li>
     		<li><a href="/docs/lemoncase2/actionkeyword.html">action keyword</a></li>
@@ -121,15 +122,88 @@
 
 			<div class="page-inner">
 				<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><hr>
-<p>How to output the most classic phrase.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">process main &#123;</div><div class="line">    log &apos;hello world&apos;;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p><br></p>
+<p>How to output the most classic phrase.</p>
+<pre class="sublemon">
+process main {
+    log 'hello world';
+}
+</pre>
+
+
 <h2 id="A-Typical-test-case"><a href="#A-Typical-test-case" class="headerlink" title="A Typical test case"></a>A Typical test case</h2><hr>
 <p>A test case that runs only once.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">#TIMES 1</div><div class="line"></div><div class="line">process main &#123;</div><div class="line">    jumpto &apos;[URL]&apos;;</div><div class="line">    wait 2000;</div><div class="line">    ...</div><div class="line">    [statement]</div><div class="line">    ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p><br></p>
+<pre class="sublemon">
+#TIMES 1
+
+process main {
+    jumpto '[URL]';
+    wait 2000;
+    ...
+    [statement]
+    ...
+}
+</pre>
+
+
 <h2 id="Typical-examples"><a href="#Typical-examples" class="headerlink" title="Typical examples"></a>Typical examples</h2><hr>
 <p>Test a user registration page.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div></pre></td><td class="code"><pre><div class="line">#AUTOWAIT 500</div><div class="line">#TIMES 1</div><div class="line"></div><div class="line">process main () &#123;</div><div class="line"></div><div class="line">	// npm</div><div class="line">	jumpto &quot;https://www.npmjs.com/&quot;;</div><div class="line">	wait 3000;</div><div class="line">	// click log in</div><div class="line">	click &quot;ul.user-info-salutation &gt; li:nth-child(1) &gt; a:nth-child(2)&quot;;</div><div class="line">	// Navigate to new page</div><div class="line">	wait 1398;</div><div class="line">	// click Username</div><div class="line">	click &quot;#name&quot;;</div><div class="line">	// input brandroytnm</div><div class="line">	input &quot;#name&quot; by &quot;brandroytnm&quot;;</div><div class="line">	// input 123456</div><div class="line">	input &quot;#password&quot; by &quot;123456&quot;;</div><div class="line">	// click Login</div><div class="line">	click &quot;button.btn&quot;;</div><div class="line">	// Navigate to new page</div><div class="line">	wait 1707;</div><div class="line">	// assert element div.error contains [Invalid username or password]</div><div class="line">	assert &lt;@&quot;div.error&quot;/&gt; ~~ &quot;Invalid username or password&quot;;</div><div class="line">	// click log in</div><div class="line">	click &quot;ul.user-info-salutation &gt; li:nth-child(1) &gt; a:nth-child(2)&quot;;</div><div class="line">	// Navigate to new page</div><div class="line">	wait 1448;</div><div class="line">	// assert element div.col-xs-18 &gt; a:nth-child(1) contains [Recover your Password]</div><div class="line">	assert &lt;@&quot;div.col-xs-18 &gt; a:nth-child(1)&quot;/&gt; ~~ &quot;Recover your Password&quot;;</div><div class="line">	// click Username</div><div class="line">	click &quot;#name&quot;;</div><div class="line">	// input brandroytnm</div><div class="line">	input &quot;#name&quot; by &quot;brandroytnm&quot;;</div><div class="line">	// input P@ssw0rd</div><div class="line">	input &quot;#password&quot; by &quot;P@ssw0rd&quot;;</div><div class="line">	// click Login</div><div class="line">	click &quot;button.btn&quot;;</div><div class="line">	// Navigate to new page</div><div class="line">	wait 2260;</div><div class="line">	// assert element #salutation-username contains [androytnm]</div><div class="line">	assert &lt;@&quot;#salutation-username&quot;/&gt; ~~ &quot;androytnm&quot;;</div><div class="line">	</div><div class="line">	// @brandroytnm</div><div class="line">	jumpto &quot;https://www.npmjs.com/~brandroytnm&quot;;</div><div class="line">	wait 555;</div><div class="line">	// click a svg|</div><div class="line">	click &quot;svg.header-drop-down-icon&quot;;</div><div class="line">	// click Logout</div><div class="line">	click &quot;button.btn-link&quot;;</div><div class="line">	// Navigate to new page</div><div class="line">	wait 4581;</div><div class="line">	// assert element h1.title contains [Build amazing things]</div><div class="line">	assert &lt;@&quot;h1.title&quot;/&gt; ~~ &quot;Build amazing things&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<pre class="sublemon">
+#AUTOWAIT 500
+#TIMES 1
+
+process main () {
+
+    // npm
+    jumpto "https://www.npmjs.com/";
+    wait 3000;
+    // click log in
+    click "ul.user-info-salutation > li:nth-child(1) > a:nth-child(2)";
+    // Navigate to new page
+    wait 1398;
+    // click Username
+    click "#name";
+    // input brandroytnm
+    input "#name" by "brandroytnm";
+    // input 123456
+    input "#password" by "123456";
+    // click Login
+    click "button.btn";
+    // Navigate to new page
+    wait 1707;
+    // assert element div.error contains [Invalid username or password]
+    assert <@"div.error"> ~~ "Invalid username or password";
+    // click log in
+    click "ul.user-info-salutation > li:nth-child(1) > a:nth-child(2)";
+    // Navigate to new page
+    wait 1448;
+    // assert element div.col-xs-18 > a:nth-child(1) contains [Recover your Password]
+    assert <@"div.col-xs-18> a:nth-child(1)"/> ~~ "Recover your Password";
+    // click Username
+    click "#name";
+    // input brandroytnm
+    input "#name" by "brandroytnm";
+    // input P@ssw0rd
+    input "#password" by "P@ssw0rd";
+    // click Login
+    click "button.btn";
+    // Navigate to new page
+    wait 2260;
+    // assert element #salutation-username contains [androytnm]
+    assert <@"#salutation-username"> ~~ "androytnm";
+
+    // @brandroytnm
+    jumpto "https://www.npmjs.com/~brandroytnm";
+    wait 555;
+    // click a svg|
+    click "svg.header-drop-down-icon";
+    // click Logout
+    click "button.btn-link";
+    // Navigate to new page
+    wait 4581;
+    // assert element h1.title contains [Build amazing things]
+    assert <@"h1.title"> ~~ "Build amazing things";
+}
+</@"h1.title"></@"#salutation-username"></@"div.col-xs-18></@"div.error"></pre>
 			</div>
 		</div>
 	</article>

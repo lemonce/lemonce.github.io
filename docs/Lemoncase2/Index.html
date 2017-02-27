@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="/css/theme.css">
 	<link rel="stylesheet" href="/css/index.css">
+	<script src="https://use.fontawesome.com/201a2b367b.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
@@ -62,7 +63,7 @@
 				<h1>Lemoncase2 Guide</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-02-17
+					2017-02-20
 				</time>
 			</div>
 		</div>
@@ -72,7 +73,7 @@
  		<ul>
     		<li><a href="/docs/setup/download-install.html">download and install</a></li>
     		<li><a href="/docs/setup/firstrun.html">first run</a></li>
-    		<li><a href="/docs/setup/upgrade.html">upgrade</a></li>
+    		<li><a href="/docs/setup/interface.html">Lemonce interface</a></li>
  		</ul>
 	</div>
 	<div><a href="/docs/guide/index.html">Getting Started</a>
@@ -104,7 +105,7 @@
 	<div><a href="/docs/syntax.html">
 		Report
 	</a></div>
-	<div><a href="/docs/lemoncase2/index.html">lemoncase2</a>
+	<div><a href="/docs/lemoncase2/index.html">Lemoncase2</a>
 		<ul>
     		<li><a href="/docs/lemoncase2/instructionkeyword.html">instruction keyword</a></li>
     		<li><a href="/docs/lemoncase2/actionkeyword.html">action keyword</a></li>
@@ -120,7 +121,7 @@
 
 
 			<div class="page-inner">
-				<p>This guide will teach you how to use the programming language of Lemoncase2.</p>
+				<p>Lemoncase2 is a Javascript-like scripting language,which is used for developing scripts in Lemonce. Read this guide to help you understand the language.</p>
 <p>browser automation library: <a href="http://lemonce.github.io/lemoncase2" target="_blank" rel="external">http://lemonce.github.io/lemoncase2</a><br><br></p>
 <h2 id="Grammar"><a href="#Grammar" class="headerlink" title="Grammar"></a><a href="">Grammar</a></h2><hr>
 <p><strong>Zoom Table</strong></p>
@@ -216,11 +217,20 @@
 </tbody>
 </table>
 <p><strong>Idntifier</strong> </p>
-<p>Lemoncase2 is similar to JS.<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Var a = <span class="number">1</span>;</div></pre></td></tr></table></figure></p>
-<p>But you do not have to use <code>var</code> keyword (there’s no type check currently, haha)<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">a = <span class="number">1</span>;</div><div class="line">a = <span class="literal">true</span>;</div></pre></td></tr></table></figure></p>
+<p>Lemoncase2 is similar to JS.</p>
+<pre><code class="C">        Var a = 1;
+</code></pre>
+<p>But you do not have to use <code>var</code> keyword (there’s no type check currently, haha)</p>
+<pre><code class="C">        a = 1;
+        a = true;
+</code></pre>
 <p><strong>Datatype</strong></p>
 <p>Below is a list of data type you can use</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">number (e.g., 0.12, 1e-3)</div><div class="line">string (e.g., 'you', "me")</div><div class="line">Boolean (true/false)</div><div class="line">RegExp</div></pre></td></tr></table></figure>
+<pre><code class="C">        number (e.g., 0.12, 1e-3)
+        string (e.g., &#39;you&#39;, &quot;me&quot;)
+        Boolean (true/false)
+        RegExp
+</code></pre>
 <p>RegExp will be used as it is, to match against a string, if it is used with ~~ operator.</p>
 <p>Otherwise it will generate a random string based on the regexp pattern (use randexp underneath).</p>
 <p>Use it if you want to do some fuzzy testing.</p>
