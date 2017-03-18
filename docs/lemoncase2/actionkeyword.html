@@ -112,17 +112,29 @@
 			<div class="page-inner">
 				<h2 id="input"><a href="#input" class="headerlink" title="input"></a>input</h2><hr>
 <p>Type a string into an element like <input type="text"> or <textarea>.</textarea></p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">// &lt;input id="link" class="case" /&gt;</div><div class="line">input 'div#link.case' by "hello world.";</div></pre></td></tr></table></figure>
+<pre><code class="C">// &lt;input id=&quot;link&quot; class=&quot;case&quot; /&gt;
+input &#39;div#link.case&#39; by &quot;hello world.&quot;;
+</code></pre>
 <p><br></p>
 <h2 id="click"><a href="#click" class="headerlink" title="click"></a>click</h2><hr>
-<p>Click a HTML element.<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// &lt;a href="..."&gt;Text&lt;/a&gt;</span></div><div class="line">click <span class="string">'a'</span>;</div></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">// &lt;a id=&quot;link&quot; href=&quot;...&quot;&gt;Text&lt;/a&gt;</div><div class="line">click &apos;a#link&apos;;</div></pre></td></tr></table></figure>
-<p><br></p>
+<p>Click a HTML element.</p>
+<pre><code class="C">        // &lt;a href=&quot;...&quot;&gt;Text&lt;/a&gt;
+        click &#39;a&#39;;
+</code></pre>
+<pre><code>// &lt;a id=&quot;link&quot; href=&quot;...&quot;&gt;Text&lt;/a&gt;
+click &#39;a#link&#39;;
+</code></pre><p><br></p>
 <h2 id="dbclick"><a href="#dbclick" class="headerlink" title="dbclick"></a>dbclick</h2><hr>
-<p>Double click a HTML element.<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">// &lt;div id="link" class="case"&gt;Text&lt;/div&gt;</div><div class="line">dblclick 'div#link.case';</div></pre></td></tr></table></figure></p>
+<p>Double click a HTML element.</p>
+<pre><code class="C">// &lt;div id=&quot;link&quot; class=&quot;case&quot;&gt;Text&lt;/div&gt;
+dblclick &#39;div#link.case&#39;;
+</code></pre>
 <p><br></p>
 <h2 id="rclick"><a href="#rclick" class="headerlink" title="rclick"></a>rclick</h2><hr>
-<p>Right click a HTML element.<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">// &lt;div id="link" class="case"&gt;Text&lt;/div&gt;</div><div class="line">rclick 'div#link.case';</div></pre></td></tr></table></figure></p>
+<p>Right click a HTML element.</p>
+<pre><code class="C">// &lt;div id=&quot;link&quot; class=&quot;case&quot;&gt;Text&lt;/div&gt;
+rclick &#39;div#link.case&#39;;
+</code></pre>
 <p><br></p>
 <h2 id="move"><a href="#move" class="headerlink" title="move"></a>move</h2><hr>
 <p>Trigger move enter/leave events on a HTML element.Like the <code>Highlight</code> keyword in Selenium.<br><br></p>
@@ -134,7 +146,10 @@
 <p>Move an element to the center of the screen.<br><br></p>
 <h2 id="jumpto"><a href="#jumpto" class="headerlink" title="jumpto"></a>jumpto</h2><hr>
 <p>Jump to a complete URL.</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">jumpto <span class="string">"deepin.org"</span>  ×</div><div class="line">jumpto <span class="string">"www.deepin.org"</span>  ×</div><div class="line">jumpto <span class="string">"http://www.deepin.org"</span>  √</div></pre></td></tr></table></figure>
+<pre><code class="C">jumpto &quot;deepin.org&quot;  ×
+jumpto &quot;www.deepin.org&quot;  ×
+jumpto &quot;http://www.deepin.org&quot;  √
+</code></pre>
 <p><br></p>
 <h2 id="forward"><a href="#forward" class="headerlink" title="forward"></a>forward</h2><hr>
 <p><br></p>
@@ -162,7 +177,7 @@
 					<li><a class="text-muted" href="">
 						api doc
 					</a></li>
-					<li><a class="text-muted" href="/footer/SEO/index.html">
+					<li><a class="text-muted" href="/footer/blog/index.html">
 						blog
 					</a></li>
 				</ul>

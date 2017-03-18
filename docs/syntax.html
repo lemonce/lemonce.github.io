@@ -63,7 +63,7 @@
 				<h1>syntax</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-01-14
+					2017-01-22
 				</time>
 			</div>
 		</div>
@@ -111,15 +111,53 @@
 
 			<div class="page-inner">
 				<h2 id="Lemoncase-2"><a href="#Lemoncase-2" class="headerlink" title="Lemoncase 2"></a>Lemoncase 2</h2><p>A tiny language for writing tests.</p>
-<h3 id="Comments"><a href="#Comments" class="headerlink" title="Comments"></a>Comments</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// single line comment</span></div><div class="line"><span class="comment">/*</span></div><div class="line">multiline comment</div><div class="line">*/</div></pre></td></tr></table></figure>
-<h3 id="Literals"><a href="#Literals" class="headerlink" title="Literals"></a>Literals</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="literal">true</span>  : boolean</div><div class="line"><span class="literal">false</span> : boolean</div><div class="line"></div><div class="line"><span class="number">42</span>    : number</div><div class="line"><span class="number">3.14</span>  : number</div><div class="line"></div><div class="line"><span class="string">'a'</span>   : <span class="built_in">string</span></div><div class="line"><span class="string">"abc"</span> : <span class="built_in">string</span></div><div class="line"></div><div class="line">/abc/ : regular expression</div></pre></td></tr></table></figure>
-<p>Typical manipulation of literals<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="literal">true</span> || <span class="literal">false</span>; <span class="comment">// true</span></div><div class="line">(<span class="number">2</span> + <span class="number">4</span>) * (<span class="number">4</span> - <span class="number">9</span>); <span class="comment">// -30</span></div><div class="line"><span class="string">"abc"</span> + <span class="string">"def"</span>; <span class="comment">// "abcdef"</span></div></pre></td></tr></table></figure></p>
-<h3 id="Statement"><a href="#Statement" class="headerlink" title="Statement"></a>Statement</h3><p>Statement must end with a semicolon<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="number">1</span> + <span class="number">1</span>;</div></pre></td></tr></table></figure></p>
-<h3 id="variable"><a href="#variable" class="headerlink" title="variable"></a>variable</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">twentyFour = <span class="number">3</span> * <span class="number">8</span>;</div></pre></td></tr></table></figure>
-<h3 id="Conditional"><a href="#Conditional" class="headerlink" title="Conditional"></a>Conditional</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (x === <span class="number">40</span>) &#123;</div><div class="line">  x += <span class="number">1</span>;</div><div class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (x === <span class="number">38</span>) &#123;</div><div class="line">  x -= <span class="number">1</span>;</div><div class="line">&#125; <span class="keyword">else</span> &#123;</div><div class="line">  x = <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="loop"><a href="#loop" class="headerlink" title="loop"></a>loop</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">while</span> (x &lt; <span class="number">10</span>) &#123;</div><div class="line">  x += <span class="number">1</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="process-function"><a href="#process-function" class="headerlink" title="process (function)"></a>process (function)</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function">process <span class="title">square</span> <span class="params">(n)</span> </span>&#123;</div><div class="line">  <span class="keyword">return</span> n * n;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>call a function<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function">process <span class="title">main</span> <span class="params">()</span> </span>&#123;</div><div class="line">  FourSquare = square(<span class="number">4</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="Comments"><a href="#Comments" class="headerlink" title="Comments"></a>Comments</h3><pre><code class="C">// single line comment
+/*
+multiline comment
+*/
+</code></pre>
+<h3 id="Literals"><a href="#Literals" class="headerlink" title="Literals"></a>Literals</h3><pre><code class="C">true  : boolean
+false : boolean
+
+42    : number
+3.14  : number
+
+&#39;a&#39;   : string
+&quot;abc&quot; : string
+
+/abc/ : regular expression
+</code></pre>
+<p>Typical manipulation of literals</p>
+<pre><code class="C">true || false; // true
+(2 + 4) * (4 - 9); // -30
+&quot;abc&quot; + &quot;def&quot;; // &quot;abcdef&quot;
+</code></pre>
+<h3 id="Statement"><a href="#Statement" class="headerlink" title="Statement"></a>Statement</h3><p>Statement must end with a semicolon</p>
+<pre><code class="C">1 + 1;
+</code></pre>
+<h3 id="variable"><a href="#variable" class="headerlink" title="variable"></a>variable</h3><pre><code class="C">twentyFour = 3 * 8;
+</code></pre>
+<h3 id="Conditional"><a href="#Conditional" class="headerlink" title="Conditional"></a>Conditional</h3><pre><code class="C">if (x === 40) {
+  x += 1;
+} else if (x === 38) {
+  x -= 1;
+} else {
+  x = 0;
+}
+</code></pre>
+<h3 id="loop"><a href="#loop" class="headerlink" title="loop"></a>loop</h3><pre><code class="C">while (x &lt; 10) {
+  x += 1;
+}
+</code></pre>
+<h3 id="process-function"><a href="#process-function" class="headerlink" title="process (function)"></a>process (function)</h3><pre><code class="C">process square (n) {
+  return n * n;
+}
+</code></pre>
+<p>call a function</p>
+<pre><code class="C">process main () {
+  FourSquare = square(4);
+}
+</code></pre>
 
 			</div>
 		</div>
@@ -140,7 +178,7 @@
 					<li><a class="text-muted" href="">
 						api doc
 					</a></li>
-					<li><a class="text-muted" href="/footer/SEO/index.html">
+					<li><a class="text-muted" href="/footer/blog/index.html">
 						blog
 					</a></li>
 				</ul>
