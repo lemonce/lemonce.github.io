@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lemonce.net/zh-cn/docs/index.html</loc>
+    
+    <lastmod>2017-03-22T09:42:14.071Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/index.html</loc>
+    
+    <lastmod>2017-03-22T09:28:15.294Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lemonce.net/footer/blog/selenium-iframe-element-testing.html</loc>
     
     <lastmod>2017-03-18T09:09:03.000Z</lastmod>
@@ -215,20 +229,6 @@
     <loc>http://lemonce.net/compare.html</loc>
     
     <lastmod>2017-02-14T02:47:45.937Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/index.html</loc>
-    
-    <lastmod>2017-01-22T04:46:52.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/index.html</loc>
-    
-    <lastmod>2017-01-22T04:26:24.000Z</lastmod>
     
   </url>
   
