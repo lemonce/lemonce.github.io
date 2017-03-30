@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="utf-8">
+	<title>宏 &amp;&amp; 魔术字 - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="web ui testing tool, web application testing tool, automated web ui testing tool, automated web application testing tool, automated testing tools for web applications, gui testing tool, web ui testing, free web ui testing tools, free automation testing tools, web automation testing tools, regression testing tools, selenium, free, open source">
+	<meta name="description" content="UI Testing Tool For Web Applications: Lemonce Editor is a professional automation testing tool for web applications. Open Source and Free versions are available.">
+	<!-- Canonical links -->
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/theme.css">
+	<link rel="stylesheet" href="/css/index.css">
+	<script src="https://use.fontawesome.com/201a2b367b.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+	<div class="container mx-md-auto mx-0">
+		<button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#nav-content">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-header">
+			<a href="/zh-cn/" class="navbar-brand">Lemonce</a>
+		</div>
+		<div id="nav-content" class="collapse navbar-collapse">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="/zh-cn/" class="nav-link">
+						首页
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/feature.html" class="nav-link">
+						特性
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/compare.html" class="nav-link">
+						对比
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/news" class="nav-link">
+						新闻
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/docs/guide/index.html" class="nav-link">
+						文档
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+	<div id="wrap-page">
+	<article class="page clearfix">
+		<div class="page-header bg-teal-gradient py-5">
+			<div class="container">
+				<h1>宏 &amp;&amp; 魔术字</h1>
+				<time class="text-white">
+					最后更新：
+					2017-03-29
+				</time>
+			</div>
+		</div>
+		<div class="page-content container py-5">
+			<aside id="docs-sidebar" class="float-lg-left">
+	<div><a href="/zh-cn/docs/setup/index.html">设置</a>
+ 		<ul>
+    		<li><a href="/zh-cn/docs/setup/download-install.html">下载与安装</a></li>
+    		<li><a href="/zh-cn/docs/setup/firstrun.html">首次运行</a></li>
+    		<li><a href="/zh-cn/docs/setup/interface.html">灵萌测界面</a></li>
+ 		</ul>
+	</div>
+	
+	<div><a href="/zh-cn/docs/guide/index.html">开始测试</a>
+		<ul>
+    		<li><a href="/zh-cn/docs/guide/case.html">创建测试用例</a></li>
+    		<li><a href="/zh-cn/docs/guide/recorder.html">录制器的使用</a></li>
+    		<li><a href="/docs/guide/suite.html">完善测试套件</a></li>
+			<li><a href="/zh-cn/docs/guide/reports.html">查看测试报告</a></li>
+ 		</ul>
+	</div>
+
+	<div><a href="/zh-cn/docs/code-editor/index.html">编辑器</a>
+		<ul>
+    		<li><a href="/zh-cn/docs/code-editor/case-editor.html">用例编辑器</a></li>
+    		<li><a href="/zh-cn/docs/code-editor/suite-editor.html">套件编辑器</a></li>
+    		<li><a href="/docs/code-editor/webview.html">网络视图</a></li>
+ 		</ul>
+	</div>
+
+	<div><a href="/zh-cn/docs/lemoncase2/index.html">编程语言</a>
+		<ul>
+    		<li><a href="/zh-cn/docs/lemoncase2/instructionkeyword.html">指令关键字</a></li>
+    		<li><a href="/zh-cn/docs/lemoncase2/actionkeyword.html">动作关键字</a></li>
+    		<li><a href="/zh-cn/docs/lemoncase2/expression.html">表达式</a></li>
+			<li><a href="/zh-cn/docs/lemoncase2/subprocess.html">内置子过程</a></li>
+			<li><a href="/zh-cn/docs/lemoncase2/marco.html">宏</a></li>
+			<li><a href="/zh-cn/docs/lemoncase2/marco.html">魔术字</a></li>
+			<li><a href="/zh-cn/docs/lemoncase2/example.html">操作示例</a></li>
+ 		</ul>
+	</div>
+
+</aside>
+
+
+
+			<div class="page-inner">
+				<h2 id="TIMES"><a href="#TIMES" class="headerlink" title="#TIMES"></a>#TIMES</h2><hr>
+<p>决定了执行测试用例的次数，默认值为1。</p>
+<pre class="sublemon">
+// 这个测试用例会执行十次
+#TIMES 10
+</pre>
+
+<p><br></p>
+<h2 id="AUTOWAIT"><a href="#AUTOWAIT" class="headerlink" title="#AUTOWAIT"></a>#AUTOWAIT</h2><hr>
+<p>默认值为500毫秒。</p>
+<pre class="sublemon">
+
+// 
+</pre>
+
+<p><br></p>
+<h2 id="LIMIT"><a href="#LIMIT" class="headerlink" title="#LIMIT"></a>#LIMIT</h2><hr>
+<pre class="sublemon">
+// Auto scroll the window when trigger an instruction.
+#AUTOSCROLL
+</pre>
+
+<p><br></p>
+<h2 id="HREF"><a href="#HREF" class="headerlink" title="$HREF"></a>$HREF</h2><hr>
+<p>提取当前的链接。</p>
+<pre class="sublemon">
+process main {
+    jumpto "https://www.deepin.org/";
+    log #HREF;
+}
+</pre>
+
+<p><br></p>
+<h2 id="BUTTON"><a href="#BUTTON" class="headerlink" title="$BUTTON"></a>$BUTTON</h2><hr>
+<p>模拟鼠标按键的位置，可设定为左中右( $BUTTON = left/middle/right )。</p>
+<pre class="sublemon">
+//这是一个用 $BUTTON 模拟右键点击的子过程
+process rightclick(a) {
+    $BUTTON = "right";
+    click a;
+}
+</pre>
+
+<p><br></p>
+<h2 id="IT"><a href="#IT" class="headerlink" title="$IT"></a>$IT</h2><hr>
+<p>保存页面内某一元素的选择器。</p>
+<pre class="sublemon">
+process main () {
+    jumpto "https://www.baidu.com/"; // 跳转到百度
+    $IT = "#kw"; // 将百度搜索栏的选择器赋值给 $IT
+    click ; // 缺省状态默认对象为 $IT，此时会直接点击搜索栏
+    click '#su'; // $IT此时的值变为'#su',即下一次选择器出现的时候重新赋值给$IT
+}
+</pre>
+
+<p><br></p>
+<h2 id="LOOP"><a href="#LOOP" class="headerlink" title="$LOOP"></a>$LOOP</h2><hr>
+<p>提取当前循环的次数，一般都与 #TIMES 共同使用。</p>
+<pre class="sublemon">
+//
+#TIMES 3
+process main () {
+    jumpto "https://www.baidu.com/";
+    wait 500;
+    log $LOOP; //运行三次，分别输出 0,1,2
+}
+</pre>
+
+<p><br></p>
+
+			</div>
+		</div>
+	</article>
+</div>
+
+	<footer>
+	<div class="container pt-3">
+		<div class="row">
+			<div class="col-md-4 col">
+				<a href="/docs">
+					帮助
+				</a>
+				<ul class="list-unstyled">
+					<li><a class="text-muted" href="">
+						售后
+					</a></li>
+					<li><a class="text-muted" href="">
+						api 文档
+					</a></li>
+					<li><a class="text-muted" href="/footer/blog/index.html">
+						微博
+					</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col">
+				<a href="/">
+					关于
+				</a>
+				<ul class="list-unstyled">
+					<li><a class="text-muted" href="/eula.html">
+						用户协议
+					</a></li>
+					<li><a class="text-muted" href="/eula.html">
+						数据安全
+					</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col">
+				<a href="/contact.html" class="d-block">contact us</a>
+				<a href="/site-map.html" class="d-block">site map</a>
+			</div>
+		</div>
+
+		<div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between py-4">
+			<div class="btn-group dropup flex-md-last mb-3 mb-md-0">
+				<button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+					Language
+				</button>
+				<div class="dropdown-menu">
+					<a href="/" class="dropdown-item">English</a>
+					<a href="/zh-cn" class="dropdown-item">Chinese</a>
+				</div>
+			</div>
+			<span class="flex-md-first">
+				&copy;2014-2017
+					or-change, Co., Ltd. All rights reserved.
+				
+					<a class="text-faded-grey small" href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action"> 津ICP备14003159号-2</a>
+				
+			</span>
+		</div>
+	</div>
+</footer>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91537224-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/tether.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/smooth-scroll.min.js"></script>
+	<script src="/js/sublemon.min.js"></script>
+	<script src="/js/common.js"></script>
+</body>
+</html>

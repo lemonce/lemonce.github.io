@@ -78,7 +78,7 @@
 <li>Changed the internal frame from Augular to Vue.</li>
 </ul>
 <p>The new version is closer to beta right now and we will improve it gradually in the subsequent versions.<br>The UI of version 2 which has a big change compared with version 1 will be a whole new experience for you, but it will also help you to start your test more easily, especially for those who are used to Visual Studio Code.<br><br></p>
-<h2 id="Updates-for-version-2-0-1"><a href="#Updates-for-version-2-0-1" class="headerlink" title="Updates for version 2.0.1"></a>Updates for version 2.0.1</h2><h5 id="date-2017-02"><a href="#date-2017-02" class="headerlink" title="date:2017-02-"></a>date:2017-02-</h5><hr>
+<h2 id="Updates-for-version-2-0-1"><a href="#Updates-for-version-2-0-1" class="headerlink" title="Updates for version 2.0.1"></a>Updates for version 2.0.1</h2><hr>
 <p><strong>Bug Fix</strong></p>
 <ul>
 <li>Fixed the problem of dislocation output caused by communication delay (similar to the CPU overclocking error).</li>
@@ -90,19 +90,70 @@
 <li>Added that you can use the previous default selector to execute the action statement.</li>
 <li>Added the function to stop suite.</li>
 <li>Added the logic of case &amp;&amp; suite running and stoping button.</li>
-<li>Added command line.</li>
+<li>Added command line.<br><br></li>
 </ul>
-<p><br></p>
-<h2 id="Updates-for-version-2-0-3"><a href="#Updates-for-version-2-0-3" class="headerlink" title="Updates for version 2.0.3"></a>Updates for version 2.0.3</h2><h5 id="date-2017-02-1"><a href="#date-2017-02-1" class="headerlink" title="date:2017-02-"></a>date:2017-02-</h5><hr>
+<h2 id="Updates-for-version-2-0-3"><a href="#Updates-for-version-2-0-3" class="headerlink" title="Updates for version 2.0.3"></a>Updates for version 2.0.3</h2><hr>
 <p><strong>Bug Fix</strong></p>
 <ul>
-<li>Fixed case blank right-click menu defaults to case folder.</li>
-<li>Fixed the problem that $IT can save the state only once.</li>
-<li></li>
+<li>Fixed the issue that the webview not back to its original,pristine state when running another task.</li>
+</ul>
+<p><strong>Optimized</strong></p>
+<ul>
+<li>Optimized the delault case folder of the right-click menu in the case files editing area.</li>
+<li>Optimized the delault suite folder of the right-click menu in the suite files editing area.</li>
+<li>Adjusted the container’s style when the container was selected or not.</li>
+<li>Adjusted the width of the horizontal sroll to be consistent with the vertical one in the case editor.</li>
+<li>Canceled the output panel in the webview, which merged with the debugger. </li>
 </ul>
 <p><strong>New Functions</strong></p>
 <ul>
-<li>Added <code>Tab</code> right-click menu to allow close and separate views.</li>
+<li>Added a right-click memu of the tab window which provided a quick way to close or detach it.</li>
+<li>Added a unique icon in the webview tab to distinguish other tabs.</li>
+<li>Added a right-click menu of the webview tab which provided a quick way to close it.</li>
+<li>Added the debugger’s console panel to debug and analyze statements.</li>
+<li>Added the debugger’s output panel to log the status information.</li>
+<li>Added a paragraph mark in the output panel to assist tracking and locating the errors.<br><br></li>
+</ul>
+<h2 id="Updates-for-version-2-0-4"><a href="#Updates-for-version-2-0-4" class="headerlink" title="Updates for version 2.0.4"></a>Updates for version 2.0.4</h2><hr>
+<p><strong>Bug Fix</strong></p>
+<ul>
+<li>Fixed the issue that sometimes the built-in developer tools in the webview couldn’t be opened.</li>
+<li>Fixed the issue that “dblclick” don’t execute the double-click action.</li>
+<li>Fixed the issue that when the parameter and argument has the same name,the variables confused.</li>
+<li>Fixed the issue that sometimes the case can’t be stop running.</li>
+<li>Fixed issues that a kind of expressions allowed before(“4=3”).</li>
+</ul>
+<p><strong>Optimized</strong></p>
+<ul>
+<li>Optimized the calculation of the highlight displacement,all of the parent-node traversals calculated.</li>
+<li>Optimized the RPC communication model to assure its stability.</li>
+<li>Increased the recording accuracy.</li>
+<li>Canceled the moment model for faster loading.</li>
+</ul>
+<p><strong>New Functions</strong></p>
+<ul>
+<li>Added the option menu to choose the xpath selector as default before recording.</li>
+<li>Added a method “click /option/“ to choose the select drop-down menu.</li>
+<li>Added automatically word wrapped in the editor.<br><br></li>
+</ul>
+<h2 id="Updates-for-version-2-0-5"><a href="#Updates-for-version-2-0-5" class="headerlink" title="Updates for version 2.0.5"></a>Updates for version 2.0.5</h2><hr>
+<p><strong>Bug Fix</strong></p>
+<ul>
+<li>Fixed the issue that when using the inspect element, the current selection didn’t be replaced.</li>
+<li>Fixed the issue that the suite report displayed incorrectly.</li>
+</ul>
+<p><strong>Optimized</strong></p>
+<ul>
+<li>Optimized the style of the output panel.</li>
+<li>Optimized for displaying the graphical report.</li>
+</ul>
+<p><strong>New Functions</strong></p>
+<ul>
+<li>Added the array syntax.</li>
+<li>Added the object syntax.</li>
+<li>Added the “for in/of” syntax.</li>
+<li>Added the “$BUTTON” syntax to simulate operating the right/middle/left mouse button.</li>
+<li>Added using the up or down arrow key to browse the list of previous commands in the debugger console.<br><br></li>
 </ul>
 
 	</div>

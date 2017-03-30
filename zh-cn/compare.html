@@ -57,60 +57,288 @@
 </nav>
 
 	<div id="wrap-page">
-	<article class="page clearfix">
+	<article class="page">
 		<div class="page-header bg-teal-gradient py-5">
 			<div class="container">
 				<h1>对比</h1>
 				<time class="text-white">
 					最后更新：
-					2017-01-14
+					2017-03-28
 				</time>
 			</div>
 		</div>
 		<div class="page-content container py-5">
-			<aside id="doc-sidebar" class="float-lg-left">
-	<div><a href="/zh-cn/docs/setup/index.html">Set Up</a>
- 		<ul>
-    		<li><a href="/docs/setup/download-install.html">download and install</a></li>
-    		<li><a href="/docs/setup/firstrun.html">first run</a></li>
-    		<li><a href="/docs/setup/interface.html">Lemonce interface</a></li>
- 		</ul>
-	</div>
-	<div><a href="/zh-cn/docs/guide/index.html">Getting Started</a>
-		<ul>
-    		<li><a href="/docs/guide/case.html">create a test case</a></li>
-    		<li><a href="/docs/guide/recorder.html">use of recorder</a></li>
-    		<li><a href="/docs/guide/suite.html">complete a test suite</a></li>
-			<li><a href="/docs/guide/reports.html">view test reports</a></li>
- 		</ul>
-	</div>
-	<div><a href="/zh-cn/docs/code-editor/index.html">Code Editor</a>
-		<ul>
-    		<li><a href="/docs/code-editor/case-editor.html">case-editor</a></li>
-    		<li><a href="/docs/code-editor/suite-editor.html">suite-editor</a></li>
-			<li><a href="/docs/code-editor/webview.html">webview</a></li>
- 		</ul>
-	</div>
-	<div><a href="/zh-cn/docs/syntax.html">
-		Report
-	</a></div>
-	<div><a href="/zh-cn/docs/lemoncase2/index.html">Lemoncase2</a>
-		<ul>
-    		<li><a href="/docs/lemoncase2/instructionkeyword.html">instruction keyword</a></li>
-    		<li><a href="/docs/lemoncase2/actionkeyword.html">action keyword</a></li>
-    		<li><a href="/docs/lemoncase2/expression.html">expression</a></li>
-			<li><a href="/docs/lemoncase2/subprocess.html">inbuilt sub-process</a></li>
-    		<li><a href="/docs/lemoncase2/marco.html">marco</a></li>
-    		<li><a href="/docs/lemoncase2/scope.html">scope</a></li>
-    		<li><a href="/docs/lemoncase2/example.html">example</a></li>
- 		</ul>
-	</div>
-</aside>
-
-
-
-			<div class="page-inner">
-				<p>敬请期待</p>
+			<div class="page-inner2">
+				<h2 id="产品定位"><a href="#产品定位" class="headerlink" title="产品定位"></a>产品定位</h2><table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">Lemonce</th>
+<th style="text-align:center">Selenium</th>
+<th style="text-align:center">QTP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Works on all browsers在所有浏览器上运行</td>
+<td style="text-align:center">是 (v2.1)</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td>能否在 Mac OS / Windows / Linux 中运行</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td>Test every web applications</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td>工具集成度</td>
+<td style="text-align:center">高</td>
+<td style="text-align:center">低</td>
+<td style="text-align:center">高</td>
+</tr>
+<tr>
+<td>以 Chromium 为内核和执行环境</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td>采用 Webdriver 作为执行代理</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td>产品需要随着浏览器的更新而更新</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<p><br><br></p>
+<h2 id="编程语言"><a href="#编程语言" class="headerlink" title="编程语言"></a>编程语言</h2><table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">Lemonce</th>
+<th style="text-align:center">Selenium</th>
+<th style="text-align:center">QTP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>专用的测试语言</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td>编程语言的难易程度</td>
+<td style="text-align:center">简单</td>
+<td style="text-align:center">一般</td>
+<td style="text-align:center">一般</td>
+</tr>
+<tr>
+<td>Branches and cycle statements</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<p><br><br></p>
+<h2 id="录制测试用例"><a href="#录制测试用例" class="headerlink" title="录制测试用例"></a>录制测试用例</h2><table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">Lemonce</th>
+<th style="text-align:center">Selenium</th>
+<th style="text-align:center">QTP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>内容选择器</td>
+<td style="text-align:center">Sizzle</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td>多种方式选择页面元素</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td>元素选择方式</td>
+<td style="text-align:center">CSS/Sizzle/Xpath</td>
+<td style="text-align:center">CSS/Xpath</td>
+<td style="text-align:center">Xpath</td>
+</tr>
+<tr>
+<td>默认的元素选择方式</td>
+<td style="text-align:center">CssPath</td>
+<td style="text-align:center">Xpath</td>
+<td style="text-align:center">Xpath</td>
+</tr>
+<tr>
+<td>能否在 Iframe 中选择元素</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td>录制时自动生成注释</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td>录制页面操作精确度</td>
+<td style="text-align:center">高</td>
+<td style="text-align:center">中</td>
+<td style="text-align:center">高</td>
+</tr>
+<tr>
+<td>页面操作与跳转时的自动等待</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">否</td>
+</tr>
+</tbody>
+</table>
+<p><br><br></p>
+<h2 id="编辑测试用例"><a href="#编辑测试用例" class="headerlink" title="编辑测试用例"></a>编辑测试用例</h2><table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">Lemonce</th>
+<th style="text-align:center">Selenium</th>
+<th style="text-align:center">QTP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>录制生成代码的可读性</td>
+<td style="text-align:center">高</td>
+<td style="text-align:center">低</td>
+<td style="text-align:center">低</td>
+</tr>
+<tr>
+<td>录制生成的代码容易修改</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td>Reusable element bank</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td>Reusable sub-process library</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td>Import existing test cases to create new tests</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td>Reusability of code modules代码复用度</td>
+<td style="text-align:center">高</td>
+<td style="text-align:center">中</td>
+<td style="text-align:center">高</td>
+</tr>
+</tbody>
+</table>
+<p><br><br></p>
+<h2 id="运行测试用例"><a href="#运行测试用例" class="headerlink" title="运行测试用例"></a>运行测试用例</h2><table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">Lemonce</th>
+<th style="text-align:center">Selenium</th>
+<th style="text-align:center">QTP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>回放精准度</td>
+<td style="text-align:center">高</td>
+<td style="text-align:center">中</td>
+<td style="text-align:center">高</td>
+</tr>
+<tr>
+<td>Complete event dispatch</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td>用例回放速度</td>
+<td style="text-align:center">快</td>
+<td style="text-align:center">快</td>
+<td style="text-align:center">慢</td>
+</tr>
+<tr>
+<td>内置详细的测试报告</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">需要插件</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td>报告可读性</td>
+<td style="text-align:center">简单</td>
+<td style="text-align:center">困难</td>
+<td style="text-align:center">简单</td>
+</tr>
+<tr>
+<td>错误截图</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">需要插件</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<p><br><br></p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">Lemonce</th>
+<th style="text-align:center">Selenium</th>
+<th style="text-align:center">QTP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>搭建测试团队的成本</td>
+<td style="text-align:center">低</td>
+<td style="text-align:center">高</td>
+<td style="text-align:center">低</td>
+</tr>
+<tr>
+<td>后期是否提供技术滋瓷</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<p><br><br></p>
 
 			</div>
 		</div>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head prefix="og: http://ogp.me/ns#">
 	<meta charset="utf-8">
-	<title>Marco - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
+	<title>Marco &amp;&amp; Magic keyword - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="web ui testing tool, web application testing tool, automated web ui testing tool, automated web application testing tool, automated testing tools for web applications, gui testing tool, web ui testing, free web ui testing tools, free automation testing tools, web automation testing tools, regression testing tools, selenium, free, open source">
@@ -60,51 +60,52 @@
 	<article class="page clearfix">
 		<div class="page-header bg-teal-gradient py-5">
 			<div class="container">
-				<h1>Marco</h1>
+				<h1>Marco &amp;&amp; Magic keyword</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-02-24
+					2017-03-29
 				</time>
 			</div>
 		</div>
 		<div class="page-content container py-5">
-			<aside id="doc-sidebar" class="float-lg-left">
+			<aside id="docs-sidebar" class="float-lg-left">
 	<div><a href="/docs/setup/index.html">Set Up</a>
  		<ul>
-    		<li><a href="/docs/setup/download-install.html">download and install</a></li>
-    		<li><a href="/docs/setup/firstrun.html">first run</a></li>
+    		<li><a href="/docs/setup/download-install.html">download-install</a></li>
+    		<li><a href="/docs/setup/firstrun.html">firstrun</a></li>
     		<li><a href="/docs/setup/interface.html">Lemonce interface</a></li>
  		</ul>
 	</div>
+	
 	<div><a href="/docs/guide/index.html">Getting Started</a>
 		<ul>
     		<li><a href="/docs/guide/case.html">create a test case</a></li>
     		<li><a href="/docs/guide/recorder.html">use of recorder</a></li>
     		<li><a href="/docs/guide/suite.html">complete a test suite</a></li>
-			<li><a href="/docs/guide/reports.html">view test reports</a></li>
+			<li><a href="/docs/guide/reports.html">view test report</a></li>
  		</ul>
 	</div>
+
 	<div><a href="/docs/code-editor/index.html">Code Editor</a>
 		<ul>
     		<li><a href="/docs/code-editor/case-editor.html">case-editor</a></li>
     		<li><a href="/docs/code-editor/suite-editor.html">suite-editor</a></li>
-			<li><a href="/docs/code-editor/webview.html">webview</a></li>
+    		<li><a href="/docs/code-editor/webview.html">webview</a></li>
  		</ul>
 	</div>
-	<div><a href="/docs/syntax.html">
-		Report
-	</a></div>
-	<div><a href="/docs/lemoncase2/index.html">Lemoncase2</a>
+
+	<div><a href="/docs/lemoncase2/index.html">LemonCase2</a>
 		<ul>
     		<li><a href="/docs/lemoncase2/instructionkeyword.html">instruction keyword</a></li>
     		<li><a href="/docs/lemoncase2/actionkeyword.html">action keyword</a></li>
     		<li><a href="/docs/lemoncase2/expression.html">expression</a></li>
 			<li><a href="/docs/lemoncase2/subprocess.html">inbuilt sub-process</a></li>
-    		<li><a href="/docs/lemoncase2/marco.html">marco</a></li>
-    		<li><a href="/docs/lemoncase2/scope.html">scope</a></li>
-    		<li><a href="/docs/lemoncase2/example.html">example</a></li>
+			<li><a href="/docs/lemoncase2/marco.html">marco</a></li>
+			<li><a href="/docs/lemoncase2/marco.html">magic keyword</a></li>
+			<li><a href="/docs/lemoncase2/example.html">example</a></li>
  		</ul>
 	</div>
+
 </aside>
 
 
@@ -112,11 +113,10 @@
 			<div class="page-inner">
 				<h2 id="TIMES"><a href="#TIMES" class="headerlink" title="#TIMES"></a>#TIMES</h2><hr>
 <p>The times of running the same test case.The defaut value is 1.</p>
-<pre class="sublemon">
-// The case will run 10 times.
+<pre><code class="C">// The case will run 10 times.
 #TIMES 10
-</pre>
-
+</code></pre>
+<p><br></p>
 <h2 id="AUTOWAIT"><a href="#AUTOWAIT" class="headerlink" title="#AUTOWAIT"></a>#AUTOWAIT</h2><hr>
 <p>The defaut value is 500.</p>
 <pre class="sublemon">
@@ -124,11 +124,65 @@
 // 
 </pre>
 
+<p><br></p>
 <h2 id="LIMIT"><a href="#LIMIT" class="headerlink" title="#LIMIT"></a>#LIMIT</h2><hr>
 <pre class="sublemon">
 // Auto scroll the window when trigger an instruction.
 #AUTOSCROLL
 </pre>
+
+<p><br></p>
+<h2 id="HREF"><a href="#HREF" class="headerlink" title="$HREF"></a>$HREF</h2><hr>
+<p>Save the current URL.</p>
+<pre class="sublemon">
+//这是一个用 $BUTTON 模拟右键点击的子过程
+process rightclick(a) {
+    $BUTTON = "right";
+    click a;
+}
+</pre>
+
+<p><br></p>
+<h2 id="BUTTON"><a href="#BUTTON" class="headerlink" title="$BUTTON"></a>$BUTTON</h2><hr>
+<p>Simulate the three kinds of mouse click, $BUTTON = left/middle/right.</p>
+<pre class="sublemon">
+//This is a sub process simulating right-click with $BUTTON
+process rightclick(a) {
+    $BUTTON = "right";
+    click a;
+}
+</pre>
+
+<p><br></p>
+<h2 id="IT"><a href="#IT" class="headerlink" title="$IT"></a>$IT</h2><hr>
+<p>Save the selector of an element in the page.</p>
+<pre class="sublemon">
+process main () {
+    jumpto "https://www.deepin.org/";
+    wait 3000;
+    $IT = '#menu-main > li:nth-child(1) > a:nth-child(1) > span:nth-child(1)';
+    // save the selector of 'Home' button
+    click ;// default object is $IT,here IDE will click 'Home' button
+    click '#menu-main > li:nth-child(2) > a:nth-child(1) > span:nth-child(1)'; 
+    // $IT here will change to the current selector
+}
+</pre>
+
+<p><br></p>
+<h2 id="LOOP"><a href="#LOOP" class="headerlink" title="$LOOP"></a>$LOOP</h2><hr>
+<p>Save the current times of loop, often used with #TIMES.</p>
+<pre class="sublemon">
+#TIMES 3
+// the case will run three times
+process main () {
+    jumpto "https://www.deepin.org/";
+    wait 500;
+    log $LOOP; // output 0,1,2 respectively
+}
+</pre>
+
+<p><br></p>
+
 			</div>
 		</div>
 	</article>
