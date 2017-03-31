@@ -63,7 +63,7 @@
 				<h1>宏 &amp;&amp; 魔术字</h1>
 				<time class="text-white">
 					最后更新：
-					2017-03-29
+					2017-03-31
 				</time>
 			</div>
 		</div>
@@ -112,30 +112,43 @@
 
 			<div class="page-inner">
 				<h2 id="TIMES"><a href="#TIMES" class="headerlink" title="#TIMES"></a>#TIMES</h2><hr>
-<p>决定了执行测试用例的次数，默认值为1。</p>
+<p>决定了执行测试用例的次数，添加在主过程之前，默认值为1。</p>
 <pre class="sublemon">
 // 这个测试用例会执行十次
 #TIMES 10
+process main{
+
+}
 </pre>
 
 <p><br></p>
 <h2 id="AUTOWAIT"><a href="#AUTOWAIT" class="headerlink" title="#AUTOWAIT"></a>#AUTOWAIT</h2><hr>
-<p>默认值为500毫秒。</p>
+<p>每条语句执行间隔时间，默认等待500毫秒。</p>
 <pre class="sublemon">
+// 将主动等待时间改为一秒
+#AUTOWAIT 1000
+process main{
 
-// 
+}
 </pre>
 
 <p><br></p>
 <h2 id="LIMIT"><a href="#LIMIT" class="headerlink" title="#LIMIT"></a>#LIMIT</h2><hr>
+<p>每条语句等待选择器元素出现时长的上限，默认值为5秒</p>
 <pre class="sublemon">
-// Auto scroll the window when trigger an instruction.
-#AUTOSCROLL
-</pre>
+// 将被动等待时间改为十秒
+#LIMIT 10000
+process main{
 
-<p><br></p>
-<h2 id="HREF"><a href="#HREF" class="headerlink" title="$HREF"></a>$HREF</h2><hr>
-<p>提取当前的链接。</p>
+}
+</pre>
+<br>
+
+## $HREF
+---
+
+提取当前的链接。
+
 <pre class="sublemon">
 process main {
     jumpto "https://www.deepin.org/";
@@ -201,7 +214,7 @@ process main () {
 						api 文档
 					</a></li>
 					<li><a class="text-muted" href="/footer/blog/index.html">
-						微博
+						博客
 					</a></li>
 				</ul>
 			</div>

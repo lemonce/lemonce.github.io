@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://lemonce.net/2017/02/15/Lemonce-Editor-v1-2-2-beta/</loc>
+    <loc>http://lemonce.net/zh-cn/docs/setup/interface.html</loc>
     
-    <lastmod>2017-03-30T08:38:12.244Z</lastmod>
+    <lastmod>2017-03-31T07:18:49.393Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/lemoncase2/marco.html</loc>
+    
+    <lastmod>2017-03-31T05:34:51.115Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/lemoncase2/marco.html</loc>
+    
+    <lastmod>2017-03-31T05:34:21.857Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/2017/01/14/Lemonce-Editor-v2/</loc>
+    
+    <lastmod>2017-03-31T04:38:59.000Z</lastmod>
     
   </url>
   
@@ -33,20 +54,6 @@
     <loc>http://lemonce.net/docs/lemoncase2/actionkeyword.html</loc>
     
     <lastmod>2017-03-30T01:58:24.932Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/lemoncase2/marco.html</loc>
-    
-    <lastmod>2017-03-29T10:40:19.114Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/lemoncase2/marco.html</loc>
-    
-    <lastmod>2017-03-29T10:40:16.809Z</lastmod>
     
   </url>
   
@@ -159,13 +166,6 @@
     <loc>http://lemonce.net/zh-cn/docs/lemoncase2/subprocess.html</loc>
     
     <lastmod>2017-03-23T05:57:53.925Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/lemoncase2/magickeyword.html</loc>
-    
-    <lastmod>2017-03-23T05:57:53.888Z</lastmod>
     
   </url>
   
@@ -338,13 +338,6 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/docs/lemoncase2/magickeyword.html</loc>
-    
-    <lastmod>2017-02-15T02:06:11.603Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lemonce.net/docs/lemoncase2/lemoncasepath.html</loc>
     
     <lastmod>2017-02-15T02:06:11.600Z</lastmod>
@@ -394,14 +387,14 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/zh-cn/index.html</loc>
+    <loc>http://lemonce.net/zh-cn/docs/syntax.html</loc>
     
     <lastmod>2017-01-14T07:52:34.032Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://lemonce.net/zh-cn/docs/syntax.html</loc>
+    <loc>http://lemonce.net/zh-cn/index.html</loc>
     
     <lastmod>2017-01-14T07:52:34.032Z</lastmod>
     
