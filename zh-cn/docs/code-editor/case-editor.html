@@ -2,7 +2,7 @@
 <html lang="en">
 <head prefix="og: http://ogp.me/ns#">
 	<meta charset="utf-8">
-	<title>Case Editor - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
+	<title>用例编辑器 - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="web ui testing tool, web application testing tool, automated web ui testing tool, automated web application testing tool, automated testing tools for web applications, gui testing tool, web ui testing, free web ui testing tools, free automation testing tools, web automation testing tools, regression testing tools, selenium, free, open source">
@@ -60,10 +60,10 @@
 	<article class="page clearfix">
 		<div class="page-header bg-teal-gradient py-5">
 			<div class="container">
-				<h1>Case Editor</h1>
+				<h1>用例编辑器</h1>
 				<time class="text-white">
 					最后更新：
-					2017-03-12
+					2017-04-11
 				</time>
 			</div>
 		</div>
@@ -72,7 +72,6 @@
 	<div><a href="/zh-cn/docs/setup/index.html">设置</a>
  		<ul>
     		<li><a href="/zh-cn/docs/setup/download-install.html">下载与安装</a></li>
-    		<li><a href="/zh-cn/docs/setup/firstrun.html">首次运行</a></li>
     		<li><a href="/zh-cn/docs/setup/interface.html">灵萌测界面</a></li>
  		</ul>
 	</div>
@@ -90,7 +89,7 @@
 		<ul>
     		<li><a href="/zh-cn/docs/code-editor/case-editor.html">用例编辑器</a></li>
     		<li><a href="/zh-cn/docs/code-editor/suite-editor.html">套件编辑器</a></li>
-    		<li><a href="/docs/code-editor/webview.html">网络视图</a></li>
+    		<li><a href="/zh-cn/docs/code-editor/webview.html">网页视图</a></li>
  		</ul>
 	</div>
 
@@ -115,34 +114,35 @@
 					<strong class="toc-title">
 						页面内容：
 					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Tool-Bar"><span class="toc-text">Tool Bar</span></a></li></ol>
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#工具栏"><span class="toc-text">工具栏</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
-				<h2 id="Tool-Bar"><a href="#Tool-Bar" class="headerlink" title="Tool Bar"></a>Tool Bar</h2><hr>
-<p>The whole toolbar is as shown below.</p>
+				<h2 id="工具栏"><a href="#工具栏" class="headerlink" title="工具栏"></a>工具栏</h2><hr>
+<p>整个工具栏显示如下。</p>
 <p><img class="long-images" src="/images/code-editor/case-toolbar.png"><br><br></p>
 <p><i class="fa fa-file-code-o"></i>  <strong>New Case</strong>  </p>
-<p>Create a new case out of work space whose default name is ‘Untitle-0.lc2’,but you should find a path to save it.You can also use <code>Ctrl+N</code> on keyboard to complete this operation.</p>
+<p>在工作空间之外建立一个新的测试用例，默认命名为“Untitle-0.lc2”,但用户需要寻找一个路径去保存。用户也可以使用<code>Ctrl+N</code>来完成这一步操作。</p>
 <p><i class="fa fa-folder-open-o"></i> <strong>Open Case</strong></p>
-<p>Open a case in local system. You can also use <code>Ctrl+O</code> on keyboard to complete this operation.</p>
+<p>打开一个本地的用例。用户也可以使用<code>Ctrl+O</code>来完成这一步操作。</p>
 <p><i class="fa fa-floppy-o"></i> <strong>Save Case</strong> </p>
 <ul>
-<li>If the case is created in work space,just click the button to finish saving. </li>
-<li>If the case is created by clicking the button “New Case” and it is the first time to save it, you have to find a path to save it.<br>You can also use <code>Ctrl+S</code> to complete this operation.</li>
+<li>如果用例是在工作空间中创建的，只需要点击本按钮来完成保存。</li>
+<li>如果用例是通过菜单栏或者当前工具栏创建的，并且是第一次保存的时候，用户需要自己寻找一个路径去保存。</li>
 </ul>
+<p>也可以使用<code>Ctrl+S</code>快捷键进行操作。</p>
 <p><i class="fa fa-crosshairs"></i> <strong>Inspect Element</strong></p>
 <p>Select the elements in the page and output the HTML to the code area.Right click to exit.</p>
 <p><i class="fa fa-link"></i> <strong>Insert Link</strong></p>
-<p>Insert the current URL in code area where the mouse pointer is located.</p>
+<p>在代码生成的区域鼠标指针所在的位置插入当前网页的链接地址。</p>
 <p><i class="fa fa-play"></i> <strong>Start Case/</strong> <i class="fa fa-stop"></i> <strong>Stop Case</strong></p>
-<p>Start/Stop the current case.</p>
+<p>开始或停止当前用例。</p>
 <p><i class="fa fa-circle" style="color:red"></i> <strong>Start Record/</strong><i class="fa fa-stop-circle-o" style="color:red"></i> <strong>Stop Record</strong></p>
-<p>Convert all mouse and keyboard actions to codes.When starting recording, this button will change from <i class="fa fa-circle" style="color:red"></i> to <i class="fa fa-stop-circle-o" style="color:red"></i>. Click it again to stop recording.</p>
+<p>将鼠标和键盘的操作转换为代码。一旦开始录制，这个按钮会从 <i class="fa fa-circle" style="color:red"></i> 变为 <i class="fa fa-stop-circle-o" style="color:red"></i>。 再次点击以停止录制。</p>
 <p><i class="fa fa-undo"></i> <strong>Undo/</strong> <i class="fa fa-repeat"></i> <strong>Redo</strong></p>
-<p>Back/Forward to the previous/next code change, you can also use <code>Ctrl+Z</code>/<code>Ctrl+Y</code> to complete this operation.</p>
+<p>返回到上一步操作或前进到下一步操作，用户也可以使用 <code>Ctrl+Z</code>/<code>Ctrl+Y</code> 完成该操作。</p>
 <p><i class="fa fa-columns"></i> <strong>Split Editor</strong></p>
-<p>Split the editor and display the same content on the right, any changes on both sides will sync to the other side.Just like the split editor in Visual Studio Code.</p>
+<p>点击该按钮以分割编辑器，可以在编辑器另一侧显示相同的内容，并且任何对内容的改动都会同步到另一侧。工作原理和 Visual Studio Code 中的”分割编辑器“相同。</p>
 
 			</div>
 		</div>

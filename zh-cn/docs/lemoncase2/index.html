@@ -63,7 +63,7 @@
 				<h1>Lemoncase2 语言指南</h1>
 				<time class="text-white">
 					最后更新：
-					2017-03-30
+					2017-04-11
 				</time>
 			</div>
 		</div>
@@ -72,7 +72,6 @@
 	<div><a href="/zh-cn/docs/setup/index.html">设置</a>
  		<ul>
     		<li><a href="/zh-cn/docs/setup/download-install.html">下载与安装</a></li>
-    		<li><a href="/zh-cn/docs/setup/firstrun.html">首次运行</a></li>
     		<li><a href="/zh-cn/docs/setup/interface.html">灵萌测界面</a></li>
  		</ul>
 	</div>
@@ -90,7 +89,7 @@
 		<ul>
     		<li><a href="/zh-cn/docs/code-editor/case-editor.html">用例编辑器</a></li>
     		<li><a href="/zh-cn/docs/code-editor/suite-editor.html">套件编辑器</a></li>
-    		<li><a href="/docs/code-editor/webview.html">网络视图</a></li>
+    		<li><a href="/zh-cn/docs/code-editor/webview.html">网页视图</a></li>
  		</ul>
 	</div>
 
@@ -136,57 +135,50 @@
 <tbody>
 <tr>
 <td style="text-align:center">import</td>
-<td style="text-align:center">click</td>
+<td style="text-align:center">click / dbclick</td>
 <td style="text-align:center">&lt;@”cssPath”&gt;</td>
 <td style="text-align:center">#TIMES</td>
 <td style="text-align:center">$HREF</td>
 </tr>
 <tr>
-<td style="text-align:center">in</td>
-<td style="text-align:center">dbclick</td>
+<td style="text-align:center">process</td>
+<td style="text-align:center">input…by</td>
 <td style="text-align:center">&lt;#”cssPath”&gt;</td>
 <td style="text-align:center">#AUTOWAIT</td>
 <td style="text-align:center">$BUTTON</td>
 </tr>
 <tr>
-<td style="text-align:center">process</td>
-<td style="text-align:center">input…by</td>
+<td style="text-align:center">return</td>
+<td style="text-align:center">move</td>
 <td style="text-align:center">&lt;!”cssPath”&gt;</td>
 <td style="text-align:center">#LIMIT</td>
 <td style="text-align:center">$IT</td>
 </tr>
 <tr>
-<td style="text-align:center">return</td>
-<td style="text-align:center">move</td>
+<td style="text-align:center">for…in</td>
+<td style="text-align:center">hold</td>
 <td style="text-align:center">A~~B</td>
 <td style="text-align:center"></td>
 <td style="text-align:center">$LOOP</td>
 </tr>
 <tr>
-<td style="text-align:center">for…in</td>
-<td style="text-align:center">hold</td>
-<td style="text-align:center">A==B</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
 <td style="text-align:center">for…of</td>
 <td style="text-align:center">drop</td>
-<td style="text-align:center">A!=B</td>
+<td style="text-align:center">A==B</td>
 <td style="text-align:center"></td>
 <td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">if…else</td>
 <td style="text-align:center">scroll</td>
-<td style="text-align:center">RegExp</td>
+<td style="text-align:center">A!=B</td>
 <td style="text-align:center"></td>
 <td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">continue</td>
 <td style="text-align:center">jumpto</td>
-<td style="text-align:center"></td>
+<td style="text-align:center">RegExp</td>
 <td style="text-align:center"></td>
 <td style="text-align:center"></td>
 </tr>
@@ -206,14 +198,7 @@
 </tr>
 <tr>
 <td style="text-align:center"></td>
-<td style="text-align:center">forward</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">back</td>
+<td style="text-align:center">forward / back</td>
 <td style="text-align:center"></td>
 <td style="text-align:center"></td>
 <td style="text-align:center"></td>
@@ -308,7 +293,7 @@ a = true;
 <li>ceil/floor/max/min/random</li>
 <li>length/charAt/indexOf/substr/trim<br><br></li>
 </ul>
-<h2 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a><a href="">作用域</a></h2><hr>
+<h2 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a><a href="/">作用域</a></h2><hr>
 <p>全局作用域。在 Lemoncase2 主过程中无需 <code>return</code> 关键词，主过程没有参数，<code>process main { }</code> 是程序的主入口。<br><br></p>
 <h2 id="操作示例"><a href="#操作示例" class="headerlink" title="操作示例"></a><a href="/zh-cn/docs/lemoncase2/example.html">操作示例</a></h2><hr>
 <p>以下是几个关于 Lemoncase2 语言的操作示例。<a href="/zh-cn/docs/lemoncase2/example.html"><code>了解更多</code></a></p>

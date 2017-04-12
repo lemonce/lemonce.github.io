@@ -63,7 +63,7 @@
 				<h1>指令关键字</h1>
 				<time class="text-white">
 					最后更新：
-					2017-03-28
+					2017-04-11
 				</time>
 			</div>
 		</div>
@@ -72,7 +72,6 @@
 	<div><a href="/zh-cn/docs/setup/index.html">设置</a>
  		<ul>
     		<li><a href="/zh-cn/docs/setup/download-install.html">下载与安装</a></li>
-    		<li><a href="/zh-cn/docs/setup/firstrun.html">首次运行</a></li>
     		<li><a href="/zh-cn/docs/setup/interface.html">灵萌测界面</a></li>
  		</ul>
 	</div>
@@ -90,7 +89,7 @@
 		<ul>
     		<li><a href="/zh-cn/docs/code-editor/case-editor.html">用例编辑器</a></li>
     		<li><a href="/zh-cn/docs/code-editor/suite-editor.html">套件编辑器</a></li>
-    		<li><a href="/docs/code-editor/webview.html">网络视图</a></li>
+    		<li><a href="/zh-cn/docs/code-editor/webview.html">网页视图</a></li>
  		</ul>
 	</div>
 
@@ -115,11 +114,21 @@
 					<strong class="toc-title">
 						页面内容：
 					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#process"><span class="toc-text">process</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#assert"><span class="toc-text">assert</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#return"><span class="toc-text">return</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#wait"><span class="toc-text">wait</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#log"><span class="toc-text">log</span></a></li></ol>
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#import"><span class="toc-text">import</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#process"><span class="toc-text">process</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#return"><span class="toc-text">return</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#for…in"><span class="toc-text">for…in</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#for…of"><span class="toc-text">for…of</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#if…else"><span class="toc-text">if…else</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#continue"><span class="toc-text">continue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#while"><span class="toc-text">while</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#log"><span class="toc-text">log</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
-				<h2 id="process"><a href="#process" class="headerlink" title="process"></a>process</h2><hr>
+				<h2 id="import"><a href="#import" class="headerlink" title="import"></a>import</h2><hr>
+<p>引用一个子过程。</p>
+<pre class="sublemon">//这是一个实现右键的过程
+process main(){
+
+}
+
+</pre>  
+
+<p><br></p>
+<h2 id="process"><a href="#process" class="headerlink" title="process"></a>process</h2><hr>
 <p>定义一个过程，包括<code>process main</code>和 <code>process sub</code>。</p>
 <pre class="sublemon">//这是一个主过程
 process main(){
@@ -132,15 +141,7 @@ process anyname(){
 }
 </pre>  
 
-<h2 id="assert"><a href="#assert" class="headerlink" title="assert"></a>assert</h2><hr>
-<p>断言一个表达式为真（在一定的时间内）</p>
-<pre class="sublemon">//断言存在一个id为'test'的输入框
-assert <#"textarea#test">;
-
-//断言id名为‘test’的输入框会在两秒钟内出现
-assert <#"textarea#test"> in 2000;
-</#"textarea#test"></#"textarea#test"></pre>
-
+<p><br></p>
 <h2 id="return"><a href="#return" class="headerlink" title="return"></a>return</h2><hr>
 <p><code>return</code>语句用于结束一个子过程并且返回相应的值到子过程变量。执行到<code>return</code>语句时，子过程会立刻停止。</p>
 <pre class="sublemon">
@@ -159,13 +160,102 @@ process counter() {
 }
 </pre>
 
-<h2 id="wait"><a href="#wait" class="headerlink" title="wait"></a>wait</h2><hr>
-<p>等待一定的时间（以毫秒为单位）。</p>
+<p><br></p>
+<h2 id="for…in"><a href="#for…in" class="headerlink" title="for…in"></a>for…in</h2><hr>
+<p><code>return</code>语句用于结束一个子过程并且返回相应的值到子过程变量。执行到<code>return</code>语句时，子过程会立刻停止。</p>
 <pre class="sublemon">
-//编辑器会等待3000毫秒再执行下一个动作
-wait 3000;
+process main () {
+    counter();   
+    }  
+process counter() {
+    count = 1;
+    while(count < 5){        // count=1,2,3,4
+        log count + 'A';
+        count +=1;
+        log count + 'B';    // count=2,3,4,5
+      }
+    return;
+    log count + 'C';        // 子过程已结束，本语句不会执行      
+}
 </pre>
 
+<p><br></p>
+<h2 id="for…of"><a href="#for…of" class="headerlink" title="for…of"></a>for…of</h2><hr>
+<p><code>return</code>语句用于结束一个子过程并且返回相应的值到子过程变量。执行到<code>return</code>语句时，子过程会立刻停止。</p>
+<pre class="sublemon">
+process main () {
+    counter();   
+    }  
+process counter() {
+    count = 1;
+    while(count < 5){        // count=1,2,3,4
+        log count + 'A';
+        count +=1;
+        log count + 'B';    // count=2,3,4,5
+      }
+    return;
+    log count + 'C';        // 子过程已结束，本语句不会执行      
+}
+</pre>
+
+<p><br></p>
+<h2 id="if…else"><a href="#if…else" class="headerlink" title="if…else"></a>if…else</h2><hr>
+<p><code>return</code>语句用于结束一个子过程并且返回相应的值到子过程变量。执行到<code>return</code>语句时，子过程会立刻停止。</p>
+<pre class="sublemon">
+process main () {
+    counter();   
+    }  
+process counter() {
+    count = 1;
+    while(count < 5){        // count=1,2,3,4
+        log count + 'A';
+        count +=1;
+        log count + 'B';    // count=2,3,4,5
+      }
+    return;
+    log count + 'C';        // 子过程已结束，本语句不会执行      
+}
+</pre>
+
+<p><br></p>
+<h2 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h2><hr>
+<p><code>return</code>语句用于结束一个子过程并且返回相应的值到子过程变量。执行到<code>return</code>语句时，子过程会立刻停止。</p>
+<pre class="sublemon">
+process main () {
+    counter();   
+    }  
+process counter() {
+    count = 1;
+    while(count < 5){        // count=1,2,3,4
+        log count + 'A';
+        count +=1;
+        log count + 'B';    // count=2,3,4,5
+      }
+    return;
+    log count + 'C';        // 子过程已结束，本语句不会执行      
+}
+</pre>
+
+<p><br></p>
+<h2 id="while"><a href="#while" class="headerlink" title="while"></a>while</h2><hr>
+<p><code>while</code>语句用于结束一个子过程并且返回相应的值到子过程变量。执行到<code>return</code>语句时，子过程会立刻停止。</p>
+<pre class="sublemon">
+process main () {
+    counter();   
+    }  
+process counter() {
+    count = 1;
+    while(count < 5){        // count=1,2,3,4
+        log count + 'A';
+        count +=1;
+        log count + 'B';    // count=2,3,4,5
+      }
+    return;
+    log count + 'C';        // 子过程已结束，本语句不会执行      
+}
+</pre>
+
+<p><br></p>
 <h2 id="log"><a href="#log" class="headerlink" title="log"></a>log</h2><hr>
 <p>记录一个表达式的值。</p>
 <pre class="sublemon">

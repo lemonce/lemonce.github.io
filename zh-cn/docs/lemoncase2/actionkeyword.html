@@ -63,7 +63,7 @@
 				<h1>动作关键字</h1>
 				<time class="text-white">
 					最后更新：
-					2017-03-30
+					2017-04-11
 				</time>
 			</div>
 		</div>
@@ -72,7 +72,6 @@
 	<div><a href="/zh-cn/docs/setup/index.html">设置</a>
  		<ul>
     		<li><a href="/zh-cn/docs/setup/download-install.html">下载与安装</a></li>
-    		<li><a href="/zh-cn/docs/setup/firstrun.html">首次运行</a></li>
     		<li><a href="/zh-cn/docs/setup/interface.html">灵萌测界面</a></li>
  		</ul>
 	</div>
@@ -90,7 +89,7 @@
 		<ul>
     		<li><a href="/zh-cn/docs/code-editor/case-editor.html">用例编辑器</a></li>
     		<li><a href="/zh-cn/docs/code-editor/suite-editor.html">套件编辑器</a></li>
-    		<li><a href="/docs/code-editor/webview.html">网络视图</a></li>
+    		<li><a href="/zh-cn/docs/code-editor/webview.html">网页视图</a></li>
  		</ul>
 	</div>
 
@@ -115,7 +114,7 @@
 					<strong class="toc-title">
 						页面内容：
 					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#click-dbclick"><span class="toc-text">click / dbclick</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#input…by"><span class="toc-text">input…by</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#move"><span class="toc-text">move</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hold"><span class="toc-text">hold</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#drop"><span class="toc-text">drop</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#scroll"><span class="toc-text">scroll</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jumpto"><span class="toc-text">jumpto</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#forward-back"><span class="toc-text">forward / back</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#refresh"><span class="toc-text">refresh</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#upload"><span class="toc-text">upload</span></a></li></ol>
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#click-dbclick"><span class="toc-text">click / dbclick</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#input…by"><span class="toc-text">input…by</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#move"><span class="toc-text">move</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hold"><span class="toc-text">hold</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#drop"><span class="toc-text">drop</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#scroll"><span class="toc-text">scroll</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jumpto"><span class="toc-text">jumpto</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#wait"><span class="toc-text">wait</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#assert"><span class="toc-text">assert</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#forward-back"><span class="toc-text">forward / back</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#refresh"><span class="toc-text">refresh</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#upload"><span class="toc-text">upload</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
@@ -147,6 +146,24 @@ jumpto "www.deepin.org";
 
 jumpto "http://www.deepin.org"; 
 </pre>
+
+<p><br></p>
+<h2 id="wait"><a href="#wait" class="headerlink" title="wait"></a>wait</h2><hr>
+<p>等待一定的时间（以毫秒为单位）。</p>
+<pre class="sublemon">
+//编辑器会等待3000毫秒再执行下一个动作
+wait 3000;
+</pre>
+
+<p><br></p>
+<h2 id="assert"><a href="#assert" class="headerlink" title="assert"></a>assert</h2><hr>
+<p>断言一个表达式为真（在一定的时间内）</p>
+<pre class="sublemon">//断言存在一个id为'test'的输入框
+assert <#"textarea#test">;
+
+//断言id名为‘test’的输入框会在两秒钟内出现
+assert <#"textarea#test"> in 2000;
+</#"textarea#test"></#"textarea#test"></pre>
 
 <p><br></p>
 <h2 id="forward-back"><a href="#forward-back" class="headerlink" title="forward / back"></a>forward / back</h2><hr>
