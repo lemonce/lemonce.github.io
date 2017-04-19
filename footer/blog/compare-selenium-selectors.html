@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="utf-8">
+	<title>Compare Lemonce and Selenium Selectors - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="web ui testing tool, web application testing tool, automated web ui testing tool, automated web application testing tool, automated testing tools for web applications, gui testing tool, web ui testing, free web ui testing tools, free automation testing tools, web automation testing tools, regression testing tools, selenium, free, open source">
+	<meta name="description" content="UI Testing Tool For Web Applications: Lemonce Editor is a professional automation testing tool for web applications. Open Source and Free versions are available.">
+	<!-- Canonical links -->
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/theme.css">
+	<link rel="stylesheet" href="/css/index.css">
+	<script src="https://use.fontawesome.com/201a2b367b.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+	<div class="container mx-md-auto mx-0">
+		<button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#nav-content">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-header">
+			<a href="/" class="navbar-brand">Lemonce</a>
+		</div>
+		<div id="nav-content" class="collapse navbar-collapse">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="/" class="nav-link">
+						Home
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/feature.html" class="nav-link">
+						Features
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/compare.html" class="nav-link">
+						Compare
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/news" class="nav-link">
+						News
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/docs/guide/index.html" class="nav-link">
+						Docs
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+	<div id="wrap-page">
+	<article class="page">
+		<div class="page-header bg-teal-gradient py-5">
+			<div class="container">
+				<h1>Compare Lemonce and Selenium Selectors</h1>
+				<time class="text-white">
+					Last Updated:
+					2017-04-19
+				</time>
+			</div>
+		</div>
+		<div class="page-content container py-5">
+			<div class="page-inner2">
+				<h2 id="Element-Location"><a href="#Element-Location" class="headerlink" title="Element Location"></a>Element Location</h2><hr>
+<p>Compared to Selenium selectors, Lemonce selectors have many outstanding advantages that can make a test automation project to easily achieve accurate web element identification and precise location. Lemonce uses enhanced CSS selector, Xpath selector, as well as Sizzle selector, which can locate element by content. It supports iframe penetration location and intelligent identification for different selectors. In addition, Lemonce has a great programming language，LemonCase2, which has simple and concise language grammars to make coding work easier, so unlike Selenium that requires complicated coding and heavy workload to handle element location, Lemonce allows testers to achieve better testing performance with minimal coding work. </p>
+<p>Object location (web element location) is the core process of web test automation. For handling a web element, firstly you need identify the web element properly. It is like the way you identify a person who has some varied unique characteristics or identifications. For example, you may find the person with his or her ID number, name, address, etc. </p>
+<p>The following comparisons will let you understand a smart web app testing team should choose Lemonce instead of Selenium to perform web test automation, especially for handling web element identification and location.</p>
+<p>Selenium<br>Selenium provides a number of webelement location methods and Webdriver offers rich APIs. There are multiple element location strategies: id, name, CSS selectors, xpath, and so on. CSS selector has higher efficiency than xpath when locating web elements,( Read more in Selenium WebDriver Selector section). </p>
+<p>WebElement Object Location Strategies:<br>ID：driver.findElement(By.id(<elementid>))<br>Name：driver.findElement(By.name(<elementname>))<br>className：driver.findElement(By.className(<elementclassname>))<br>tagName：driver.findElement(By.tagName(<htmltagname>))<br>linkText：driver.findElement(By.linkText(<linktext>))<br>partialLinkText：driver.findElement(By.partialLinkText(<partiallinktext>))<br>css：driver.findElement(By.cssSelector(<cssselector>))<br>xpath：driver.findElement(By.xpath(<xpathquery>))</xpathquery></cssselector></partiallinktext></linktext></htmltagname></elementclassname></elementname></elementid></p>
+<p>LemonCase2<br>LemonCase2, a key part of Lemonce testing tool, is a proprietary programming language for web testing. Like Selenium Webdriver, it supports multiple selectors. In addition, LemonCase2 can support Sizzle Selector and has intelligent identification for different selectors, no matter it is CSS selector , xpath selector, or sizzle selector. </p>
+<p>LemonCase2 (Compared with Webdriver webElement)<br>ID：” #<elementid>“<br>Name：” [name=<elementname>]”<br>className：”.<elementclassname>“<br>tagName：”<htmltagname>“<br>linkText：”[href=<linktext>]”<br>partialLinkText：”[href*=<partiallinktext>]”<br>css：”<cssselector>“<br>xpath：”<xpathquery>“</xpathquery></cssselector></partiallinktext></linktext></htmltagname></elementclassname></elementname></elementid></p>
+<h2 id="Selenium-Webdriver-Selector"><a href="#Selenium-Webdriver-Selector" class="headerlink" title="Selenium Webdriver Selector"></a>Selenium Webdriver Selector</h2><hr>
+<p>Selenium Webdriver：CSS selector，xpath selector，Dom selector, and others like selector，name selector. Dom selector requires complicated programming, testers must have in-depth learning on JavaScript. Even though it has highest execution efficiency, this selector seldom is used as final web element selection solution. So Dom selector will not be introduced below.<br>Most selenium selectors are the subset of CSS selector. That is, other selector solutions, including ID selector, name selector, and even xpath selector can use CSS selector as equivalent alternative. CSS selector has powerful functions with concise grammar. But there is some learning cost required to grasp it. (And sometimes you need take care of Selenium CSS selector multiple classes.)  Here are some examples to show how CSS selector substitute other selectors：<br>Selenium ID selector：By.id(<elementid>)<br>Selenium CSS selector（equivalent to ID selector）：By.cssSelector(#<elementid>)<br>Selenium name selector：By.name(<elementname>)<br>Selenium CSSselector（equivalent to nameselector）：By.cssSelector([name=<elementname>])<br>Selenium className selector：By.className(<elementclassname>)<br>Selenium CSS selector（equivalent to nameselector）：By.cssSelector(.<elementclassname>)<br>Because Selenium IDE can only support xpath recording, and xpath is relatively easy to learn, that is why Selenium beginners and most users use xpath selector solution.<br>Xpath selector has lower learning cost than css selector，but with efficiency problem and the issue that it cannot locate web elements with changed paths.<br>Xpath’s execution efficiency is quite low in IE, and this shortcoming is usually suffered criticism by web app testers. Else, xpath selector has lower efficiency than CSS selector because of its design issue, and there are some relative discussions on Stack Overflow (<a href="http://stackoverflow.com/questions/1909584/xpath-to-css-selector" target="_blank" rel="external">http://stackoverflow.com/questions/1909584/xpath-to-css-selector</a>):<br>“Unfortunately CSS won’t parse the entire tree when move up and down till it finds what it is after. This is the main reason why XPath is so slow. CSS finds an item and then can move laterally through the DOM. The CSS below will find the input box that is after the TD that has class=TCN which holds your span with text in the table.”</elementclassname></elementclassname></elementname></elementname></elementid></elementid></p>
+<p>Among those users who don’t master CSS selector, they usually manually modify the recorded xpath selector codes and change them into codes using ID selector, Name selector , etc., so as to increase test efficiency. However, elements in many web projects don’t have ID or name properties, so there is no way to simply achieve element selection through this kind of electors.<br>CSS selector is more powerful with abundant and accurate object location solution and the efficiency is much better than xpath selector. Sauce lab sofficial site provides specific instructions web pages to teach users how to completely switch xpath selectors into css selectors:<br><a href="https://saucelabs.com/resources/articles/selenium-tips-css-selectors" target="_blank" rel="external">https://saucelabs.com/resources/articles/selenium-tips-css-selectors</a></p>
+<h2 id="LemonCase2-Selector"><a href="#LemonCase2-Selector" class="headerlink" title="LemonCase2 Selector"></a>LemonCase2 Selector</h2><hr>
+<p>LemonCase2 originally supports those improved CSS selector, xpath selector, and sizzle selector. (Sizzle selector is a selector based on special CSS selector that is expanded by JQuerys and increases many features CSS selector doesn’t own. The most well-known feature is location selection by element content. </p>
+<ol>
+<li>Reduce:<br>Compared to Selenium, LemonCase2 doesn’t have ID selector，name selector, and Dom selector, because CSS selector overlaps the selector features of ID selector, name selector, and Dom selector has some defects such as high learning threshold and difficult encapsulation.</li>
+<li>Enhance:<br>A)    Iframe Penetration selector<br>LemonCase2 expands original CSS selector, xpath selectorand sizzle selector, includes Iframe penetration selection symbol l”&lt;”，which enables the expanded selector to support direct element location inside iframes.<br>(see more in Lemonce vs Selenium:Iframe Element Testing)<br>B)    Sizzle selector<br>In addition, CSS selector section adds the support for sizzle selector, expands the original features of CSS selector so that it can support the selector feature that can locate element by content.<br>Sizzle selector is much friendly with testers. The webpage element location depends on its contents.  So the selector itself has more clear meanings (semantic expression) . Here is an example：</li>
+</ol>
+<p><img></p>
+<p>For the button of “Sign in” in Google,<br>CSS selector path: ‘#gbw &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(1) &gt; a:nth-child(1)’<br>Xpath selector path: “/*[@id=’gbw’]/div/div/div[2]/div[3]/div/a[1]”<br>Sizzle selector path: “a:contains(Sign in)”<br>Element selection based on contents can simplify selector to a certain extent, and enhance the readability of selector, so users can understand more information about the target elements. Therefore, it accomplishes the semantization of selectors.<br>Furthermore, iterative development usually will lead to failures in locating object element because its path has changed. Sizzle content selector allows element path to be set default in some scenarios and focus on element contents. This feature can avoid location problem caused by changed element path, enhance the reusability of test cases, so as to tremendously reduce the maintenance cost. </p>
+<p>C)    Intelligent Identification for Different Selectors:<br>When Selenium uses different selectors, it need make some statements specifically. For example:<br>css：driver.findElement(By.cssSelector(<cssselector>))<br>xpath：driver.findElement(By.xpath(<xpathquery>))</xpathquery></cssselector></p>
+<p>Lemonce Compiler can intelligently identify selectors according to their different characteristics, so the coding workload will be reduced.<br>css：”<cssselector>“<br>xpath：”<xpathquery>“<br>sizzle：”<sizzleselector>“</sizzleselector></xpathquery></cssselector></p>
+<ol>
+<li>Solve Selenium selector problems：<br>A)    Support CSS selector recording:<br>CSS selector has some learning threshold. But direct CSS selector recording method, or the feature of element capturer, can directly capture the element’s optimized css path. This approach can reduce the learning cost of CSS selector to a certain extent. Else, Lemonce also supports xpath selector recording, which may bring better testing experience.<br>B)    Increase xpath selector’s execution efficiency:<br>Because xpath selector itself can be switched to CSS selector with Lemonce grammar compiler that can automatically transform xpath selector into CSS selector before execution.  In this way, xpath is able to have the same execution efficiency as CSS selector in different browsers.<br>C)    With sizzle selector’s further enhancement on CSS selector, the object location based on element content can properly solve the object element location problems in Selenium.<br>The improved CSS selector and xpath selector can achieve direct element location inside iframes. (see more in Lemonce vs Selenium:Iframe Element Testing)<br>D)    Selector Intelligent Identification:<br>When multiple selectors are used in testing codes to describe different elements, lemonCase2 compiler will compare characteristics of different selectors with regular expression matching, and then achieve intelligent identifications for different selectors. This method will make language grammar more simple and concise with no necessary to work in the way like Selenium grammar to add some identification symbols ( such as By.cssSelector()，By.xpath() etc.) to differentiate different selectors. Here are some examples</li>
+</ol>
+<p>click “#gbw”;  //click an element selected by CSS selector<br>click”[@id=’gbw’]”;  // click an element selected by xpath selector</p>
+<h2 id="Complexity-Comparisons-of-Frequently-used-Operation-Grammar（Selenium-VS-lemonCase2）"><a href="#Complexity-Comparisons-of-Frequently-used-Operation-Grammar（Selenium-VS-lemonCase2）" class="headerlink" title="Complexity Comparisons of Frequently-used Operation Grammar（Selenium VS lemonCase2）"></a>Complexity Comparisons of Frequently-used Operation Grammar（Selenium VS lemonCase2）</h2><hr>
+<p>【Notes】These simple grammar comparisons are to present advantages of LemonCase2 selector and its grammar. To see more detailed grammar comparisons, please view the specific documentation of grammar comparisons.</p>
+<pre><code>Selenium Webdiver    LemonCase2
+</code></pre><p>Left Click with Mouse    Actions action = new Actions(driver);<br>action.click(driver.findElement(By.xpath(<xpathquery>)));    $BUTTON = left;<br>click “<xpathquery>“;<br>    Driver driver=new Driver();<br>driver.findElement(By.cssSelector(<cssselector>)).click();    //$BUTTON Default Value left<br>click “<cssselector>“;<br>Double Left Click with Mouse     Driver driver=new Driver();<br>driver.findElement(By.xpath(<xpathquery>)).click();    dblclick “<xpathquery>“;<br>Press Left Mouse Button    Actions action = new Actions(driver);<br>action.clickAndHold(driver.findElemen(By.xpath(<xpathquery>)));    //$BUTTON Default Value left<br>hold “(<xpathquery>“;<br>Drag Element with Mouse     Actions action = new Actions(driver);<br>action.moveToElement(driver.findElement(By.xpath(<xpathquery>)));    move “(<xpathquery>“;<br>Right Click with Mouse    Actions action = new Actions(driver) ;<br>action.contextClick(driver.findElement(By.xpath(<xpathquery>)));    $BUTTON = right;<br>click “(<xpathquery>“;<br>Combined Mouse Action 1<br>Drag object element onto a specific element     Actions action = new Actions(driver);<br>action.dragAndDrop(driver.findElement(By.xpath(xpath)),driver.findElement(By.xpath(<xpathquery>)));    hold “(<xpathquery>“;<br>move “(<xpathquery>“;<br>drop;<br>Combined Mouse Action 2<br>Drag object element onto a specific element    //Three Actions: Drag to Choose, Press and Hold Mouse, And Release Mouse<br>action.clickAndHold(driver.findElement(By.id(“1”))).moveToElement(driver.findElement(By.id(“3”))).perform();<br>action.release();    hold “#1”;<br>move “#3”;<br>drop;</xpathquery></xpathquery></xpathquery></xpathquery></xpathquery></xpathquery></xpathquery></xpathquery></xpathquery></xpathquery></xpathquery></cssselector></cssselector></xpathquery></xpathquery></p>
+<p>From the selector comparisons above, you may understand Lemonce can be a great Selenium alternative, especially because the powerful features of its selectors can implement precise element identification and selection. And moreover, you don’t need spend much time to solve those problems and issues in Selenium, including those require much coding work on Selenuim selector by class, by text or innertext, or more complicated issues like selenium css selector nth child. Lemonce has its unique simple programming language with concise and intuitive grammar to allow you to create complex test cases easily and efficiently with very low learning cost.  If you use Selenium testing tools, you have to master one or two programming or script languages such as python, c#, Java, etc. which require more learning costs, especially for a testing team which members use different kinds of programming languages.</p>
+<p>So, choose Lemonce Editor for web test automation, and get rid of tedious problems and defects caused by Selenium.</p>
+
+			</div>
+		</div>
+	</article>
+</div>
+
+	<footer>
+	<div class="container pt-3">
+		<div class="row">
+			<div class="col-md-4 col">
+				<ul class="list-unstyled">
+					<li><a class="text-muted" href="/docs/guide/index.html">
+						Help
+					</a></li>
+					<li><a class="text-muted" href="/docs/lemoncase2/index.html">
+						Docs
+					</a></li>
+					<li><a class="text-muted" href="https://github.com/lemonce/lemonce-publisher/releases">
+						Download
+					</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col">
+				<ul class="list-unstyled">
+					<li><a class="text-muted" href="/">
+						About
+					</a></li>
+					<li><a class="text-muted" href="/eula.html">
+						Agreement
+					</a></li>
+					<li><a class="text-muted" href="/contact.html">
+						Contact us
+					</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col">
+				<ul class="list-unstyled">
+					<li><a class="text-muted" href="/feature.html">
+						Features
+					</a></li>
+					<li><a class="text-muted" href="/compare.html">
+						Compare
+					</a></li>
+					<li><a class="text-muted" href="/news">
+						News
+					</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div>
+			<span>
+				blog
+			</span>
+			<a href="/footer/blog/selenium-iframe-element-testing.html" class="blog-item">Lemonce vs Selenium:Iframe Element Testing</a>
+			<a href="/footer/blog/compare-selenium-selectors.html" class="blog-item">Compare Lemonce and Selenium Selectors</a>
+		</div>
+
+		<div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between py-4">
+			<div class="btn-group dropup flex-md-last mb-3 mb-md-0">
+				<button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+					Language
+				</button>
+				<div class="dropdown-menu">
+					<a href="/" class="dropdown-item">English</a>
+					<a href="/zh-cn" class="dropdown-item">Chinese</a>
+				</div>
+			</div>
+			<span class="flex-md-first">
+				&copy;2014-2017
+					or-change, Co., Ltd. All rights reserved.
+				
+					<a class="text-faded-grey small" href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action"> JIN-ICP14003159-2</a>
+				
+			</span>
+		</div>
+	</div>
+</footer>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91537224-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/tether.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/smooth-scroll.min.js"></script>
+	<script src="/js/sublemon.min.js"></script>
+	<script src="/js/common.js"></script>
+</body>
+</html>
