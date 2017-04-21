@@ -159,9 +159,9 @@
 <p>Here is an example: for the button of “Sign in” in Google.</p>
 <p> <img src="/images/blog/selector-1.png"></p>
 <ul>
-<li>CSS selector path: ‘#gbw &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(1) &gt; a:nth-child(1)’</li>
-<li>Xpath selector path: “/*[@id=’gbw’]/div/div/div[2]/div[3]/div/a[1]”</li>
-<li>Sizzle selector path: “a:contains(Sign in)” </li>
+<li>CSS selector path: <code>#gbw &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(1) &gt; a:nth-child(1)</code></li>
+<li>Xpath selector path: <code>/*[@id=&#39;gbw&#39;]/div/div/div[2]/div[3]/div/a[1]</code></li>
+<li>Sizzle selector path: <code>a:contains(Sign in)</code> </li>
 </ul>
 <p>Element selection based on contents can simplify selector to a certain extent, and enhance the readability of selector, so users can understand more information about the target elements. Therefore, it accomplishes the semantization of selectors.</p>
 <p>Furthermore, iterative development usually will lead to failures in locating object element because its path has changed. Sizzle content selector allows element path to be set default in some scenarios and focus on element contents. This feature can avoid location problem caused by changed element path, enhance the reusability of test cases, so as to tremendously reduce the maintenance cost. </p>
@@ -204,7 +204,7 @@ When multiple selectors are used in testing codes to describe different elements
     <code>action.click(driver.findElement(By.xpath(&lt;xpathQuery&gt;)));</code></td>
   </tr>
   <tr>
-    <td><code>$BUTTON = left;</code><br><code>click&quot;&lt;xpathQuery&gt;&quot;;</code></td>
+    <td><code>//$BUTTON Default Value left</code><br><code>click&quot;&lt;xpathQuery&gt;&quot;;</code></td>
     <td><code>Actions action = new Actions(driver);</code>
     <code>action.click(driver.findElement(By.xpath(&lt;xpathQuery&gt;)));</code></td>
   </tr>
@@ -216,10 +216,9 @@ When multiple selectors are used in testing codes to describe different elements
   </tr>
   <tr>
     <td>Press Left Mouse Button</td>
-    <td><code>//$BUTTON Default Value left;</code>
-    <code>hold &quot;(&lt;xpathQuery&gt;&quot;;</code></td>
+    <td><code>//$BUTTON Default Value left</code><br><code>hold &quot;(&lt;xpathQuery&gt;&quot;;</code></td>
     <td><code>Actions action = new Actions(driver);</code>
-    <code>action.clickAndHold(driver.findElemen(By.xpath(&lt;xpathQuery&gt;)));</code></td>
+    <code>action.clickAndHold(driver.findElement(By.xpath(&lt;xpathQuery&gt;)));</code></td>
   </tr>
   <tr>
     <td>Drag Element with Mouse</td>
@@ -229,25 +228,20 @@ When multiple selectors are used in testing codes to describe different elements
   </tr>
   <tr>
     <td>Right Click with Mouse</td>
-    <td><code>$BUTTON = right;</code>
-    <code>click&quot;&lt;xpathQuery&gt;&quot;;</code></td>
+    <td><code>$BUTTON = right;</code><br><code>click&quot;&lt;xpathQuery&gt;&quot;;</code></td>
     <td><code>Actions action = new Actions(driver);</code>
     <code>action.contextClick(driver.findElement(By.xpath(&lt;xpathQuery&gt;)));</code></td>
   </tr>
   <tr>
     <td>Drag object element onto a specific element </td>
-    <td><code>hold &quot;(&lt;xpathQuery&gt;&quot;;</code>
-    <code>move &quot;(&lt;xpathQuery&gt;&quot;;</code>
-    <code>drop;</code></td>
+    <td><code>hold &quot;(&lt;xpathQuery&gt;&quot;;</code><br><code>move &quot;(&lt;xpathQuery&gt;&quot;;</code><br><code>drop;</code></td>
     <td><code>Actions action = new Actions(driver);</code>
     <code>action.dragAndDrop(driver.findElement(By.xpath(xpath)),
     driver.findElement(By.xpath(&lt;xpathQuery&gt;)));</code></td>
   </tr>
   <tr>
     <td>Drag object element onto a specific element</td>
-    <td><code>hold &quot;#1&quot;;</code>
-    <code>move &quot;#3&quot;;</code>
-    <code>drop</code></td>
+    <td><code>hold &quot;#1&quot;;</code><br><code>move &quot;#3&quot;;</code><br><code>drop</code></td>
     <td><code>Actions action = new Actions(driver);</code>
     <code>action.clickAndHold(driver.findElement(By.id(&quot;1&quot;)))
     .moveToElement(driver.findElement(By.id(&quot;3&quot;))).perform();</code></td>
