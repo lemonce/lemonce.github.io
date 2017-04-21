@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="utf-8">
+	<title>版本更新消息 - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="web ui testing tool, web application testing tool, automated web ui testing tool, automated web application testing tool, automated testing tools for web applications, gui testing tool, web ui testing, free web ui testing tools, free automation testing tools, web automation testing tools, regression testing tools, selenium, free, open source">
+	<meta name="description" content="UI Testing Tool For Web Applications: Lemonce Editor is a professional automation testing tool for web applications. Open Source and Free versions are available.">
+	<!-- Canonical links -->
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/theme.css">
+	<link rel="stylesheet" href="/css/index.css">
+	<script src="https://use.fontawesome.com/201a2b367b.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+	<div class="container mx-md-auto mx-0">
+		<button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#nav-content">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-header">
+			<a href="/zh-cn/" class="navbar-brand">Lemonce</a>
+		</div>
+		<div id="nav-content" class="collapse navbar-collapse">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="/zh-cn/" class="nav-link">
+						首页
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/feature.html" class="nav-link">
+						特性
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/compare.html" class="nav-link">
+						对比
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/news.html" class="nav-link">
+						新闻
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/docs/guide/index.html" class="nav-link">
+						文档
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+	<div id="wrap-page">
+	<article class="page">
+		<div class="page-header bg-teal-gradient py-5">
+			<div class="container">
+				<h1>版本更新消息</h1>
+				<time class="text-white">
+					最后更新：
+					2017-04-21
+				</time>
+			</div>
+		</div>
+		<div class="page-content container py-5">
+			<div class="page-inner2">
+				<h2 id="版本更新-2-0-6"><a href="#版本更新-2-0-6" class="headerlink" title="版本更新 2.0.6"></a>版本更新 2.0.6</h2><hr>
+<p><strong>修复</strong></p>
+<ul>
+<li>某些情况下录制点击动作时，额外多录制一次的问题</li>
+<li>注释对应语言</li>
+</ul>
+<p><strong>优化</strong></p>
+<ul>
+<li>当录制跳转语句时，默认等待2s</li>
+<li><code>format</code>方法的实现方式</li>
+</ul>
+<p><strong>新增</strong></p>
+<ul>
+<li>上传功能及语法</li>
+<li>csv批量导入的命令行操作<br><br></li>
+</ul>
+<h2 id="版本更新-2-0-5"><a href="#版本更新-2-0-5" class="headerlink" title="版本更新 2.0.5"></a>版本更新 2.0.5</h2><hr>
+<p><strong>修复</strong></p>
+<ul>
+<li>抓取器默认替换原选中的选择器内容</li>
+<li>suite生成报告的新接口，正确连接并显示</li>
+</ul>
+<p><strong>优化</strong></p>
+<ul>
+<li>控制台输出样式</li>
+<li>suite运行后report报告功能及图形显示</li>
+</ul>
+<p><strong>新增</strong></p>
+<ul>
+<li>数组语法</li>
+<li>对象语法</li>
+<li><code>for in/of</code> 遍历器语法</li>
+<li>鼠标全按钮动作仿真 <code>$BUTTON(=right,middle,left)</code>语法（支持鼠标右键）</li>
+<li>调试器（console）按上箭头可以回溯历史命令<br><br></li>
+</ul>
+<h2 id="版本更新-2-0-4"><a href="#版本更新-2-0-4" class="headerlink" title="版本更新 2.0.4"></a>版本更新 2.0.4</h2><hr>
+<p><strong>修复</strong></p>
+<ul>
+<li>可以稳定的打开调试器，解决了某些场景下无法打开调试器的错误</li>
+<li>修复 <code>dblclick</code> 双击动作的触发问题</li>
+<li>修复 LCVM 子过程 parameter 和 arguments 同名时，变量访问混乱的问题</li>
+<li>开始执行测试可以在任何时候及时停止</li>
+<li>修复 ‘4=3’表达式可以通过的错误</li>
+</ul>
+<p><strong>优化</strong></p>
+<ul>
+<li>高亮偏移计算已经正确遍历到根节点</li>
+<li>使用了更加稳定的RPC通讯提高回放的稳定性</li>
+<li>提高了录制器的准确率</li>
+<li>裁剪了 moment 模块，提高了一些加载速度</li>
+</ul>
+<p><strong>新增</strong></p>
+<ul>
+<li>新增 录制器可以使用xpath表示选择器</li>
+<li>新增 可以使用 <code>click &lt;option&gt;</code> 的方式操作下拉菜单</li>
+<li>新增 编辑器自动换行<br><br></li>
+</ul>
+<h2 id="版本更新-2-0-3"><a href="#版本更新-2-0-3" class="headerlink" title="版本更新 2.0.3"></a>版本更新 2.0.3</h2><hr>
+<p><strong>修复</strong></p>
+<ul>
+<li>WebView未清空上次执行状态而影响测试结果的问题</li>
+</ul>
+<p><strong>优化</strong></p>
+<ul>
+<li>case 空白区右键菜单，默认进入 case 文件夹</li>
+<li>suite 空白区右键菜单，默认进入 suite 文件夹</li>
+<li>container激活及未激活状态样式变化更显著</li>
+<li>case Editor横向及纵向滚动条宽度保持一致</li>
+<li>浏览器 WebView 输出面板，输出面板与 debugger 控制台合并 </li>
+</ul>
+<p><strong>新增</strong></p>
+<ul>
+<li>Tab的右键菜单，允许关闭和分离视图</li>
+<li>webview Tab提示图标</li>
+<li>浏览器Tab右键菜单关闭webview</li>
+<li>debugger控制台窗口，调试语句</li>
+<li>debugger输出窗口，输出case及suite运行状态</li>
+<li>debugger调试状态段落标记，辅助查找错误提示行<br><br></li>
+</ul>
+<h2 id="版本更新-2-0-1"><a href="#版本更新-2-0-1" class="headerlink" title="版本更新 2.0.1"></a>版本更新 2.0.1</h2><hr>
+<p><strong>修复</strong></p>
+<ul>
+<li>修正通信延迟产生的（类似CPU超频错误）错位输出的问题</li>
+<li>修复<code>$IT</code>仅保存一次状态的问题</li>
+</ul>
+<p><strong>新增</strong></p>
+<ul>
+<li>新增录制时 shift+click 可以录制 move 功能</li>
+<li>新增录制时 Ctrl+click 可以录制 assert 功能</li>
+<li>新增缺省选择器时，可默认使用上次选择器执行动作语句</li>
+<li>新增suite停止功能</li>
+<li>新增case运行及停止点击按钮的逻辑</li>
+<li>新增suite运行及停止点击按钮的逻辑</li>
+<li>新增命令行功能<br><br></li>
+</ul>
+<h2 id="版本更新-2-0-0"><a href="#版本更新-2-0-0" class="headerlink" title="版本更新 2.0.0"></a>版本更新 2.0.0</h2><hr>
+<p>今天（2017-02-15）灵萌测2.0.0版本正式上线。相比于之前的1.0版本，2.0版本主要有以下几个大的改动。</p>
+<ul>
+<li>采用了新版本的引擎</li>
+<li>采用了自主开发的 LemonceDriver ，能够避开 WebDriver 所带来的一些问题 </li>
+<li>将内部的框架从 Augular 改为 Vue</li>
+</ul>
+<p>目前新的大版本更趋近于一个试用版本，我们会在后续的小版本更新中进行持续的改进。2.0版本的界面相对于之前的版本有一个大的改动，但是会帮助用户更直观简捷地开展测试，特别是曾经使用过VS Code用户。<br><br></p>
+
+			</div>
+		</div>
+	</article>
+</div>
+
+	<footer>
+	<div class="container pt-3">
+		<div class="row">
+			<div class="col-md-4 col">
+				<ul class="list-unstyled">
+					<li><a class="text-muted" href="/zh-cn/docs/guide/index.html">
+						帮助
+					</a></li>
+					<li><a class="text-muted" href="/zh-cn/docs/lemoncase2/index.html">
+						文档
+					</a></li>
+					<li><a class="text-muted" href="https://pan.baidu.com/s/1eRZrtuy">
+						下载
+					</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col">
+				<ul class="list-unstyled">
+					<li><a class="text-muted" href="/zh-cn/">
+						关于
+					</a></li>
+					<li><a class="text-muted" href="/eula.html">
+						用户协议
+					</a></li>
+					<li><a class="text-muted" href="/contact.html">
+						联系我们
+					</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col">
+				<ul class="list-unstyled">
+					<li><a class="text-muted" href="/zh-cn/feature.html">
+						特性
+					</a></li>
+					<li><a class="text-muted" href="/zh-cn/compare.html">
+						对比
+					</a></li>
+					<li><a class="text-muted" href="/news">
+						新闻
+					</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div>
+			<span>
+				博客
+			</span>
+			<a href="/footer/blog/selenium-iframe-element-testing.html" class="blog-item">Lemonce vs Selenium:Iframe Element Testing</a>
+			<a href="/footer/blog/compare-selenium-selectors.html" class="blog-item">Compare Lemonce and Selenium Selectors</a>
+		</div>
+
+		<div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between py-4">
+			<div class="btn-group dropup flex-md-last mb-3 mb-md-0">
+				<button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+					Language
+				</button>
+				<div class="dropdown-menu">
+					<a href="/" class="dropdown-item">English</a>
+					<a href="/zh-cn" class="dropdown-item">Chinese</a>
+				</div>
+			</div>
+			<span class="flex-md-first">
+				&copy;2014-2017
+					or-change, Co., Ltd. All rights reserved.
+				
+					<a class="text-faded-grey small" href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action"> 津ICP备14003159号-2</a>
+				
+			</span>
+		</div>
+	</div>
+</footer>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91537224-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/tether.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/smooth-scroll.min.js"></script>
+	<script src="/js/sublemon.min.js"></script>
+	<script src="/js/common.js"></script>
+</body>
+</html>
