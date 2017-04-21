@@ -2,23 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://lemonce.net/2017/01/14/Lemonce-Editor-v2/</loc>
+    <loc>http://lemonce.net/zh-cn/feature.html</loc>
     
-    <lastmod>2017-04-19T06:11:31.000Z</lastmod>
+    <lastmod>2017-04-21T06:50:32.200Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://lemonce.net/footer/blog/compare-selenium-selectors.html</loc>
+    <loc>http://lemonce.net/news.html</loc>
     
-    <lastmod>2017-04-19T06:04:02.495Z</lastmod>
+    <lastmod>2017-04-21T06:45:51.335Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://lemonce.net/footer/blog/selenium-iframe-element-testing.html</loc>
     
-    <lastmod>2017-04-19T05:24:48.752Z</lastmod>
+    <lastmod>2017-04-21T06:38:12.268Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/footer/blog/compare-selenium-selectors.html</loc>
+    
+    <lastmod>2017-04-21T06:22:48.241Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/news.html</loc>
+    
+    <lastmod>2017-04-21T03:05:02.846Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/2017/01/14/Lemonce-Editor-v2/</loc>
+    
+    <lastmod>2017-04-19T06:11:31.000Z</lastmod>
     
   </url>
   
@@ -110,13 +131,6 @@
     <loc>http://lemonce.net/docs/setup/index.html</loc>
     
     <lastmod>2017-04-12T03:25:22.652Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/feature.html</loc>
-    
-    <lastmod>2017-04-11T13:39:09.699Z</lastmod>
     
   </url>
   
