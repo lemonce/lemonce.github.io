@@ -2,7 +2,7 @@
 <html lang="en">
 <head prefix="og: http://ogp.me/ns#">
 	<meta charset="utf-8">
-	<title>View test reports - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
+	<title>查看测试报告 - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="web ui testing tool, web application testing tool, automated web ui testing tool, automated web application testing tool, automated testing tools for web applications, gui testing tool, web ui testing, free web ui testing tools, free automation testing tools, web automation testing tools, regression testing tools, selenium, free, open source">
@@ -60,10 +60,10 @@
 	<article class="page clearfix">
 		<div class="page-header bg-teal-gradient py-5">
 			<div class="container">
-				<h1>View test reports</h1>
+				<h1>查看测试报告</h1>
 				<time class="text-white">
 					最后更新：
-					2017-02-15
+					2017-04-25
 				</time>
 			</div>
 		</div>
@@ -114,11 +114,30 @@
 					<strong class="toc-title">
 						页面内容：
 					</strong>
-					
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-用例列表区"><span class="toc-text">1 用例列表区</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-语句日志区"><span class="toc-text">2 语句日志区</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-测试代码区"><span class="toc-text">3 测试代码区</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
-				<p>The test report is divided into three areas. The case-area lists all of the test cases for the entire test task, the contents of the log-area and the code-area correspond to each other as a sub area of each test case.</p>
+				<p>测试套件执行完成之后，灵萌测会自动生成相应的测试报告。测试报告分为三个主要的部分，测试用例列表区域，相应测试用例语句日志区域以及完整的测试代码区域。
+<img class="large-images" src="/images/guide/report-01.png"></p>
+<p>报告的最下方会显示本次套件通过和失败的用例个数，以及整个套件执行的时间。</p>
+<p>在本次示例中，如下图所示。可见测试套件中共有两个用例，通过1个，失败1个，执行时间总计为32.742秒（包括了单独用例执行时间及用例间切换时间）。</p>
+<p><img class="long-images" src="/images/guide/report-02.png"></p>
+<p><br></p>
+<h2 id="1-用例列表区"><a href="#1-用例列表区" class="headerlink" title="1 用例列表区"></a>1 用例列表区</h2><hr>
+<p>用例列表区域在最左部的黑色区域。本次示例如下图所示。</p>
+<p><img src="/images/guide/report-03.png"></p>
+<p>可见用例列表区包括了以下功能及信息，选中的用例会以灰色高亮显示。</p>
+<ul>
+<li><p><strong>搜索用例功能。</strong>位于顶部的“search”方框内，当一个suite中用例较多时，可使用该功能针对case的名称进行精确查找。</p>
+</li>
+<li><p><strong>用例执行信息。</strong>包括了用例名称，名称下方为执行时间，名称右方为执行的通过情况，其中为通过，为失败。</p>
+</li>
+</ul>
+<p><br></p>
+<h2 id="2-语句日志区"><a href="#2-语句日志区" class="headerlink" title="2 语句日志区"></a>2 语句日志区</h2><hr>
+<p>本区域将用例中</p>
+<h2 id="3-测试代码区"><a href="#3-测试代码区" class="headerlink" title="3 测试代码区"></a>3 测试代码区</h2><hr>
 
 			</div>
 		</div>
