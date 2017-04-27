@@ -63,7 +63,7 @@
 				<h1>宏 &amp;&amp; 魔术字</h1>
 				<time class="text-white">
 					最后更新：
-					2017-03-31
+					2017-04-25
 				</time>
 			</div>
 		</div>
@@ -114,7 +114,7 @@
 					<strong class="toc-title">
 						页面内容：
 					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#TIMES"><span class="toc-text">#TIMES</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AUTOWAIT"><span class="toc-text">#AUTOWAIT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LIMIT"><span class="toc-text">#LIMIT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BUTTON"><span class="toc-text">$BUTTON</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IT"><span class="toc-text">$IT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LOOP"><span class="toc-text">$LOOP</span></a></li></ol>
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#TIMES"><span class="toc-text">#TIMES</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AUTOWAIT"><span class="toc-text">#AUTOWAIT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LIMIT"><span class="toc-text">#LIMIT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HREF"><span class="toc-text">$HREF</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BUTTON"><span class="toc-text">$BUTTON</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IT"><span class="toc-text">$IT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LOOP"><span class="toc-text">$LOOP</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
@@ -149,17 +149,14 @@ process main{
 
 }
 </pre>
-<br>
 
-## $HREF
----
-
-提取当前的链接。
-
+<p><br></p>
+<h2 id="HREF"><a href="#HREF" class="headerlink" title="$HREF"></a>$HREF</h2><hr>
+<p>提取当前的链接。</p>
 <pre class="sublemon">
 process main {
     jumpto "https://www.deepin.org/";
-    log #HREF;
+    log $HREF;
 }
 </pre>
 

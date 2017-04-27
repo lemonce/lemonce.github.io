@@ -2,7 +2,7 @@
 <html lang="en">
 <head prefix="og: http://ogp.me/ns#">
 	<meta charset="utf-8">
-	<title>Example - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
+	<title>操作示例 - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="web ui testing tool, web application testing tool, automated web ui testing tool, automated web application testing tool, automated testing tools for web applications, gui testing tool, web ui testing, free web ui testing tools, free automation testing tools, web automation testing tools, regression testing tools, selenium, free, open source">
@@ -60,10 +60,10 @@
 	<article class="page clearfix">
 		<div class="page-header bg-teal-gradient py-5">
 			<div class="container">
-				<h1>Example</h1>
+				<h1>操作示例</h1>
 				<time class="text-white">
 					最后更新：
-					2017-03-23
+					2017-04-25
 				</time>
 			</div>
 		</div>
@@ -114,23 +114,23 @@
 					<strong class="toc-title">
 						页面内容：
 					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hello-World"><span class="toc-text">Hello World</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#A-Typical-test-case"><span class="toc-text">A Typical test case</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Typical-examples"><span class="toc-text">Typical examples</span></a></li></ol>
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hello-World"><span class="toc-text">Hello World</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#简短示例"><span class="toc-text">简短示例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#经典示例"><span class="toc-text">经典示例</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
 				<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><hr>
-<p>How to output the most classic phrase.</p>
+<p>如何输出最经典的 Hellow World。</p>
 <pre class="sublemon">
 process main {
     log 'hello world';
 }
 </pre>
 
-
-<h2 id="A-Typical-test-case"><a href="#A-Typical-test-case" class="headerlink" title="A Typical test case"></a>A Typical test case</h2><hr>
-<p>A test case that runs only once.</p>
+<p><br></p>
+<h2 id="简短示例"><a href="#简短示例" class="headerlink" title="简短示例"></a>简短示例</h2><hr>
+<p>执行五遍的测试用例。</p>
 <pre class="sublemon">
-#TIMES 1
+#TIMES 5
 
 process main {
     jumpto '[URL]';
@@ -141,66 +141,45 @@ process main {
 }
 </pre>
 
-
-<h2 id="Typical-examples"><a href="#Typical-examples" class="headerlink" title="Typical examples"></a>Typical examples</h2><hr>
-<p>Test a user registration page.</p>
+<p><br></p>
+<h2 id="经典示例"><a href="#经典示例" class="headerlink" title="经典示例"></a>经典示例</h2><hr>
+<p>测试一个页面的用户登录。</p>
 <pre class="sublemon">
-#AUTOWAIT 500
-#TIMES 1
-
 process main () {
 
-    // npm
-    jumpto "https://www.npmjs.com/";
-    wait 3000;
-    // click log in
-    click "ul.user-info-salutation > li:nth-child(1) > a:nth-child(2)";
-    // Navigate to new page
-    wait 1398;
-    // click Username
-    click "#name";
-    // input brandroytnm
-    input "#name" by "brandroytnm";
-    // input 123456
-    input "#password" by "123456";
+    // Deepin Technology Community
+    jumpto "https://www.deepin.org/en/";
+    wait 2333;
+    // click div|
+    click "#hs-site-navigation > div:nth-child(1)";
     // click Login
-    click "button.btn";
-    // Navigate to new page
-    wait 1707;
-    // assert element div.error contains [Invalid username or password]
-    assert <@"div.error"> ~~ "Invalid username or password";
-    // click log in
-    click "ul.user-info-salutation > li:nth-child(1) > a:nth-child(2)";
-    // Navigate to new page
-    wait 1448;
-    // assert element div.col-xs-18 > a:nth-child(1) contains [Recover your Password]
-    assert <@"div.col-xs-18> a:nth-child(1)"/> ~~ "Recover your Password";
-    // click Username
-    click "#name";
-    // input brandroytnm
-    input "#name" by "brandroytnm";
-    // input P@ssw0rd
-    input "#password" by "P@ssw0rd";
-    // click Login
-    click "button.btn";
-    // Navigate to new page
-    wait 2260;
-    // assert element #salutation-username contains [androytnm]
-    assert <@"#salutation-username"> ~~ "androytnm";
-
-    // @brandroytnm
-    jumpto "https://www.npmjs.com/~brandroytnm";
-    wait 555;
-    // click a svg|
-    click "svg.header-drop-down-icon";
-    // click Logout
-    click "button.btn-link";
-    // Navigate to new page
-    wait 4581;
-    // assert element h1.title contains [Build amazing things]
-    assert <@"h1.title"> ~~ "Build amazing things";
+    click "#menu-main > li:nth-child(11) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1) > span:nth-child(1)";
+    // Navigate to New Page
+    wait 2000;
+    // click deepinID
+    click "#loginform > div:nth-child(3) > a:nth-child(1)";
+    // Navigate to New Page
+    wait 2000;
+    // click a text field
+    click "#content > form:nth-child(2) > input:nth-child(4)";
+    // type in lemonceide
+    input "#content > form:nth-child(2) > input:nth-child(4)" by "lemonceide";
+    // type in P@ssw0rd
+    input "#content > form:nth-child(2) > input:nth-child(6)" by "P@ssw0rd";
+    // click SIGN IN
+    click "#content > form:nth-child(2) > input:nth-child(9)";
+    // Navigate to New Page
+    wait 2000;
+    // click div|
+    click "#hs-site-navigation > div:nth-child(1)";
+    // click Deepin ID
+    click "#menu-main > li:nth-child(11) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1) > span:nth-child(1)";
+    // Navigate to New Page
+    wait 2000;
+    // assert element <body> div:nth-child(4) > div:nth-child(1) > div:nth-child(1)> contains [lemonceide]
+    assert <@"body> div:nth-child(4) > div:nth-child(1) > div:nth-child(1)"/> ~~ "lemonceide";
 }
-</@"h1.title"></@"#salutation-username"></@"div.col-xs-18></@"div.error"></pre>
+</@"body></body></pre>
 			</div>
 		</div>
 	</article>

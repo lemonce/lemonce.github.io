@@ -63,7 +63,7 @@
 				<h1>Expression</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-02-23
+					2017-04-25
 				</time>
 			</div>
 		</div>
@@ -137,12 +137,14 @@ log <@ '#no'="">; // Output false</@></@></@></pre>
 
 <p><strong>&lt;! [selector:string] /&gt;</strong> </p>
 <p>Check for element visibility.The result is <code>true</code> if such element exist &amp;&amp; width &gt; 0 &amp;&amp; height &gt; 0.Otherwise it is <code>false</code>.</p>
-<p><code>&lt;div id=&quot;link&quot; class=&quot;case&quot;&gt;Text&lt;/div&gt;</code><br><code>&lt;div id=&quot;link2&quot; style=&quot;display:none&quot;&gt;Text&lt;/div&gt;</code></p>
+<p><code>&lt;div id=&quot;link&quot; class=&quot;case&quot;&gt;Text&lt;/div&gt;</code>
+<code>&lt;div id=&quot;link2&quot; style=&quot;display:none&quot;&gt;Text&lt;/div&gt;</code></p>
 <pre class="sublemon">
 log <@ 'a'="">; // Output false
 log <@ 'div'="">; // Output true
 log <@ '#link2'="">; // Output false</@></@></@></pre>
 
+<p><br></p>
 <h2 id="Compare-operator"><a href="#Compare-operator" class="headerlink" title="Compare operator"></a>Compare operator</h2><hr>
 <p><strong>[exp_A:string] ~~ [exp_B:string|RegExp]</strong></p>
 <ul>
