@@ -63,7 +63,7 @@
 				<h1>Expression</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-04-25
+					2017-04-28
 				</time>
 			</div>
 		</div>
@@ -119,31 +119,31 @@
 			</aside>
 			<div class="page-inner">
 				<h2 id="Selector-operator"><a href="#Selector-operator" class="headerlink" title="Selector operator"></a>Selector operator</h2><hr>
-<p><strong>&lt;# [selector:string] /&gt;</strong> </p>
+<p>Take HTML below as an example.</p>
+<pre><code>&lt;div id=&quot;link&quot; class=&quot;case&quot;&gt;
+    &lt;p&gt;Text1&lt;/p&gt;
+    &lt;div&gt;
+        &lt;p&gt;Text2&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p><strong>&lt;# [selector:string] /&gt;</strong> </p>
 <p>Get the number of elements that matches the selector.</p>
-<p><code>&lt;div id=&quot;link&quot; class=&quot;case&quot;&gt;Text&lt;/div&gt;</code></p>
-<pre class="sublemon">
-log <# 'div'="">; // Output 1
-log <# '#link'="">; // Output 1
-log <# '#no'="">; // Output 0</#></#></#></pre>
-
+<p><code>log &lt;# &quot;div&quot;/&gt;; // Output:2</code><br>
+<code>log &lt;# &quot;#link&quot;/&gt;; // Output:1</code><br>
+<code>log &lt;# &quot;.case&quot;/&gt;; // Output:1</code></p>
+<p>Calculation expressions and variables can be applied.</p>
+<p><code>log &lt;# &quot;div&quot;/&gt;+1~~3; // 输出：true</code><br>
+<code>x=&quot;div&quot;; log &lt;# x/&gt;; // 输出：2</code></p>
 <p><strong>&lt;@ [selector:string] /&gt;</strong> </p>
-<p>Get the innerHTML of the 1st element that matches the selector.The result is a string or <code>false</code> if there’s no match.</p>
-<p><code>&lt;div id=&quot;link&quot; class=&quot;case&quot;&gt;Text&lt;/div&gt;</code></p>
-<pre class="sublemon">
-log <@ 'div'="">; // Output Text
-log <@ '#link'="">; // Output Text
-log <@ '#no'="">; // Output false</@></@></@></pre>
-
+<p>Get the innerHTML of the 1st element that matches the selector.The result is a string or <code>false</code> if there”s no match.</p>
+<p><code>log &lt;@ &quot;div&quot;/&gt;; // Output:Text1\n\nText2</code><br>
+<code>log &lt;@ &quot;div &gt; div&quot;/&gt;; // Output:Text2</code><br>
+<code>log &lt;@ &quot;p&quot;/&gt;; // Output:Text1</code></p>
 <p><strong>&lt;! [selector:string] /&gt;</strong> </p>
 <p>Check for element visibility.The result is <code>true</code> if such element exist &amp;&amp; width &gt; 0 &amp;&amp; height &gt; 0.Otherwise it is <code>false</code>.</p>
-<p><code>&lt;div id=&quot;link&quot; class=&quot;case&quot;&gt;Text&lt;/div&gt;</code>
-<code>&lt;div id=&quot;link2&quot; style=&quot;display:none&quot;&gt;Text&lt;/div&gt;</code></p>
-<pre class="sublemon">
-log <@ 'a'="">; // Output false
-log <@ 'div'="">; // Output true
-log <@ '#link2'="">; // Output false</@></@></@></pre>
-
+<p><code>log &lt;! &quot;a&quot;/&gt;; // Output:false</code><br>
+<code>log &lt;! &quot;div&quot;/&gt;; // Output:true</code><br>
+<code>log &lt;! &quot;#link&quot;/&gt;; // Output:true</code></p>
 <p><br></p>
 <h2 id="Compare-operator"><a href="#Compare-operator" class="headerlink" title="Compare operator"></a>Compare operator</h2><hr>
 <p><strong>[exp_A:string] ~~ [exp_B:string|RegExp]</strong></p>
