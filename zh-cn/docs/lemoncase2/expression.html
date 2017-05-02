@@ -147,20 +147,34 @@
 <code>log &lt;! &quot;#link&quot;/&gt;; // 输出： true</code></p>
 <p><br></p>
 <h2 id="比较符"><a href="#比较符" class="headerlink" title="比较符"></a>比较符</h2><hr>
-<p><strong>[exp_A:string] ~~ [exp_B:string|RegExp]</strong></p>
+<p><strong>~~ : 约等于</strong></p>
 <ul>
-<li><p>exp_B 若不是一个字符串或正则表达式，输出：false. </p>
-</li>
-<li><p>exp_A 若不是一个字符串，输出：false.</p>
-</li>
-<li><p>exp_A 若和 exp_B(RegExp) 不匹配，输出：false.</p>
-</li>
-<li><p>exp_A has a sub string like exp_B， true.</p>
-</li>
-<li><p>exp_A is matched to exp_B(RegExp)， true.</p>
-</li>
+<li>[string] ~~ [string] 字符串A中有一段字符串和字符串B相同<br></li>
+<li>[string] ~~ [/RegExp/] 字符串A中有一段字符串和正则表达式B相同<br></li>
 </ul>
-<p><strong>[exp_A:string] !~ [exp_B:string|RegExp]</strong></p>
+<p><code>&quot;Lemonce&quot;~~/[A-Z][a-t]/  //输出：true</code><br>
+<code>&quot;Lemonce&quot;~~&quot;mon&quot; //输出：true</code></p>
+<p><strong>== : 等于</strong></p>
+<ul>
+<li>[string] == [string] 字符串A与字符串B完全相同<br></li>
+<li>[var] == [var] 变量A与变量B完全相同<br></li>
+</ul>
+<p><code>&quot;Lemonce&quot; == &quot;Lemonce&quot; //输出：true</code><br>
+<code>&quot;x&quot; == &quot;x&quot; //输出：true</code></p>
+<p><strong>!~ : 不约等于</strong></p>
+<ul>
+<li>[string] !~ [string] 字符串A中没有任何一段字符串和字符串B相同<br></li>
+<li>[string] !~ [/RegExp/] 字符串A中没有任何一段字符串和正则表达式B相同<br></li>
+</ul>
+<p><code>&quot;Lemonce&quot;!~/L[A-Z][a-t]/  //输出：true</code><br>
+<code>&quot;Lemonce&quot;!~&quot;mon&quot; //输出：false</code></p>
+<p><strong>!= : 不等于</strong></p>
+<ul>
+<li>[string] != [string] 字符串A与字符串B不相同<br></li>
+<li>[var] != [var] 变量A与变量B不相同<br></li>
+</ul>
+<p><code>&quot;Lemonce&quot; != &quot;Lemonce&quot; //输出：false</code><br>
+<code>&quot;x&quot; != &quot;y&quot; //输出：true</code></p>
 
 			</div>
 		</div>
