@@ -63,7 +63,7 @@
 				<h1>动作关键字</h1>
 				<time class="text-white">
 					最后更新：
-					2017-04-25
+					2017-05-02
 				</time>
 			</div>
 		</div>
@@ -172,8 +172,28 @@ assert <#"textarea#test"> in 2000;
 
 <p><br></p>
 <h2 id="forward-back"><a href="#forward-back" class="headerlink" title="forward / back"></a>forward / back</h2><hr>
+<p><code>forward</code> 去到下一个网页；<code>back</code> 回到上一个网页。</p>
+<pre class="sublemon">
+    jumpto "https://www.baidu.com/";  
+    //跳转到百度
+    wait 2333;
+    click "#kw";  
+    //点击搜索框
+    input "#kw" by "deepin";  
+    //搜索栏中输入“deepin”
+    click "#1 > h3:nth-child(1) > a:nth-child(1)";  
+    //进入“深度”主页
+    wait 2000;
+    back;  
+    //回到搜索页
+    wait 2000;
+    forward;  
+    //前进到“深度”主页
+</pre>
+
 <p><br></p>
 <h2 id="refresh"><a href="#refresh" class="headerlink" title="refresh"></a>refresh</h2><hr>
+<p>刷新当前页面。</p>
 <p><br></p>
 <h2 id="upload"><a href="#upload" class="headerlink" title="upload"></a>upload</h2><hr>
 
