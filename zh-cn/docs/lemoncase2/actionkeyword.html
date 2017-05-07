@@ -51,6 +51,16 @@
 						文档
 					</a>
 				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/" class="nav-link">
+						购买
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/" class="nav-link">
+						下载
+					</a>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -63,7 +73,7 @@
 				<h1>动作关键字</h1>
 				<time class="text-white">
 					最后更新：
-					2017-05-02
+					2017-05-07
 				</time>
 			</div>
 		</div>
@@ -114,7 +124,7 @@
 					<strong class="toc-title">
 						页面内容：
 					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#click-dblclick"><span class="toc-text">click / dblclick</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#input…by"><span class="toc-text">input…by</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#move"><span class="toc-text">move</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hold"><span class="toc-text">hold</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#drop"><span class="toc-text">drop</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#scroll"><span class="toc-text">scroll</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jumpto"><span class="toc-text">jumpto</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#wait"><span class="toc-text">wait</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#assert"><span class="toc-text">assert</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#forward-back"><span class="toc-text">forward / back</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#refresh"><span class="toc-text">refresh</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#upload"><span class="toc-text">upload</span></a></li></ol>
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#click-dblclick"><span class="toc-text">click / dblclick</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#input…by"><span class="toc-text">input…by</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#move"><span class="toc-text">move</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hold"><span class="toc-text">hold</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#drop"><span class="toc-text">drop</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#scroll"><span class="toc-text">scroll</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jumpto-back-forward-refresh"><span class="toc-text">jumpto / back / forward / refresh</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#wait"><span class="toc-text">wait</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#assert"><span class="toc-text">assert</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#upload"><span class="toc-text">upload</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
@@ -142,14 +152,26 @@ input 'div#link.case' by "hello world.";
 <h2 id="scroll"><a href="#scroll" class="headerlink" title="scroll"></a>scroll</h2><hr>
 <p>滚动页面，保持选中元素位于屏幕中部</p>
 <p><br></p>
-<h2 id="jumpto"><a href="#jumpto" class="headerlink" title="jumpto"></a>jumpto</h2><hr>
-<p>跳转到一个URL链接。链接可以采用以下三种方式填写，都能完成跳转。</p>
+<h2 id="jumpto-back-forward-refresh"><a href="#jumpto-back-forward-refresh" class="headerlink" title="jumpto / back / forward / refresh"></a>jumpto / back / forward / refresh</h2><hr>
+<p><code>jumpto</code> 跳转到一个URL链接；<code>forward</code> 向前移动一页；<code>back</code> 后退一页；<code>refresh</code> 刷新当前网页。</p>
 <pre class="sublemon">
-jumpto "deepin.org"; 
+process main () {
 
-jumpto "www.deepin.org"; 
-
-jumpto "http://www.deepin.org"; 
+    // Deepin Technology Community
+    jumpto "https://www.deepin.org/en/";
+    wait 2333;
+    // click span|
+    click "#hs-site-navigation > div:nth-child(1) > span:nth-child(1)";
+    // click Projects
+    click "#menu-main > li:nth-child(2) > a:nth-child(1) > span:nth-child(1)";
+    // Navigate to New Page
+    wait 2000;
+    back;
+    wait 2000;
+    forward;
+    wait 2000;
+    refresh;
+}
 </pre>
 
 <p><br></p>
@@ -171,32 +193,27 @@ assert <#"textarea#test"> in 2000;
 </#"textarea#test"></#"textarea#test"></pre>
 
 <p><br></p>
-<h2 id="forward-back"><a href="#forward-back" class="headerlink" title="forward / back"></a>forward / back</h2><hr>
-<p><code>forward</code> 去到下一个网页；<code>back</code> 回到上一个网页。</p>
-<pre class="sublemon">
-    jumpto "https://www.baidu.com/";  
-    //跳转到百度
-    wait 2333;
-    click "#kw";  
-    //点击搜索框
-    input "#kw" by "deepin";  
-    //搜索栏中输入“deepin”
-    click "#1 > h3:nth-child(1) > a:nth-child(1)";  
-    //进入“深度”主页
-    wait 2000;
-    back;  
-    //回到搜索页
-    wait 2000;
-    forward;  
-    //前进到“深度”主页
-</pre>
-
-<p><br></p>
-<h2 id="refresh"><a href="#refresh" class="headerlink" title="refresh"></a>refresh</h2><hr>
-<p>刷新当前页面。</p>
-<p><br></p>
 <h2 id="upload"><a href="#upload" class="headerlink" title="upload"></a>upload</h2><hr>
+<p>如果一个测试需要上传一个文件到一个 web 应用程序，可以采用 <code>upload</code> 命令来上传。语法格式为：<code>upload [the path of a file]</code>。以下是例子。</p>
+<p><strong>注意</strong>：在 Windows 系统中路径采用的是”\”，需要用户改为 “/“ 或进行转译 “\\” 才能在灵萌测中运行。如”C:\Users\1.img”需要在灵萌测中改为”C:/Users/1.img”。</p>
+<pre class="sublemon">
+#AUTOWAIT 1000
+process main () {
 
+    // Angular file upload - flow.js
+    jumpto "http://flowjs.github.io/ng-flow/";
+    wait 3333;
+    // 点击 Basic upload
+    click "div.ng-scope > .drop > span.btn-default";
+    upload ["path of file1","path of file2"];
+    wait 4000;
+    // 点击 Single image upload
+    click "body > div:nth-child(1) > section:nth-child(2) > div:nth-child(10) > div:nth-child(4) > span:nth-child(1)";
+    upload ["path of file3","path of file4"];
+    // 当只支持上传一个文件时，lemonce会默认上传第一个文件
+    wait 4000;
+}
+</pre>
 			</div>
 		</div>
 	</article>

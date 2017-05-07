@@ -51,6 +51,16 @@
 						Docs
 					</a>
 				</li>
+				<li class="nav-item">
+					<a href="/" class="nav-link">
+						Purchase
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/" class="nav-link">
+						Download
+					</a>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -63,7 +73,7 @@
 				<h1>Action Keyword</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-05-02
+					2017-05-07
 				</time>
 			</div>
 		</div>
@@ -98,7 +108,7 @@
     		<li><a href="/docs/lemoncase2/instructionkeyword.html">instruction keyword</a></li>
     		<li><a href="/docs/lemoncase2/actionkeyword.html">action keyword</a></li>
     		<li><a href="/docs/lemoncase2/expression.html">expression</a></li>
-			<li><a href="/docs/lemoncase2/subprocess.html">inbuilt sub-process</a></li>
+			<li><a href="/docs/lemoncase2/subprocess.html">native sub-process</a></li>
 			<li><a href="/docs/lemoncase2/marco.html">marco</a></li>
 			<li><a href="/docs/lemoncase2/marco.html">magic keyword</a></li>
 			<li><a href="/docs/lemoncase2/example.html">example</a></li>
@@ -114,7 +124,7 @@
 					<strong class="toc-title">
 						contents
 					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#click-dblclick"><span class="toc-text">click / dblclick</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#input…by"><span class="toc-text">input…by</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#move"><span class="toc-text">move</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hold"><span class="toc-text">hold</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#drop"><span class="toc-text">drop</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#scroll"><span class="toc-text">scroll</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jumpto"><span class="toc-text">jumpto</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#wait"><span class="toc-text">wait</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#assert"><span class="toc-text">assert</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#forward-back"><span class="toc-text">forward / back</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#refresh"><span class="toc-text">refresh</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#upload"><span class="toc-text">upload</span></a></li></ol>
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#click-dblclick"><span class="toc-text">click / dblclick</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#input…by"><span class="toc-text">input…by</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#move"><span class="toc-text">move</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hold"><span class="toc-text">hold</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#drop"><span class="toc-text">drop</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#scroll"><span class="toc-text">scroll</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jumpto-back-forward-refresh"><span class="toc-text">jumpto / back / forward / refresh</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#wait"><span class="toc-text">wait</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#assert"><span class="toc-text">assert</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#upload"><span class="toc-text">upload</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
@@ -141,14 +151,26 @@ input 'div#link.case' by "hello world.";
 <h2 id="scroll"><a href="#scroll" class="headerlink" title="scroll"></a>scroll</h2><hr>
 <p>Move an element to the center of the screen.</p>
 <p><br></p>
-<h2 id="jumpto"><a href="#jumpto" class="headerlink" title="jumpto"></a>jumpto</h2><hr>
-<p>Jump to a URL.</p>
+<h2 id="jumpto-back-forward-refresh"><a href="#jumpto-back-forward-refresh" class="headerlink" title="jumpto / back / forward / refresh"></a>jumpto / back / forward / refresh</h2><hr>
+<p><code>jumpto</code> jump to a URL;<code>forward</code> move forward to the next page; <code>back</code> move back to the previous page；<code>refresh</code> refresh the current page.</p>
 <pre class="sublemon">
-jumpto "deepin.org"; 
+    process main () {
 
-jumpto "www.deepin.org"; 
-
-jumpto "http://www.deepin.org"; 
+    // Deepin Technology Community
+    jumpto "https://www.deepin.org/en/";
+    wait 2333;
+    // click span|
+    click "#hs-site-navigation > div:nth-child(1) > span:nth-child(1)";
+    // click Projects
+    click "#menu-main > li:nth-child(2) > a:nth-child(1) > span:nth-child(1)";
+    // Navigate to New Page
+    wait 2000;
+    back;
+    wait 2000;
+    forward;
+    wait 2000;
+    refresh;
+}
 </pre>
 
 <p><br></p>
@@ -170,11 +192,23 @@ assert <#"textarea#test"> in 2000;
 </#"textarea#test"></#"textarea#test"></pre>
 
 <p><br></p>
-<h2 id="forward-back"><a href="#forward-back" class="headerlink" title="forward / back"></a>forward / back</h2><hr>
-<p><br></p>
-<h2 id="refresh"><a href="#refresh" class="headerlink" title="refresh"></a>refresh</h2><hr>
-<p><br></p>
 <h2 id="upload"><a href="#upload" class="headerlink" title="upload"></a>upload</h2><hr>
+<p><pre class="sublemon"></pre></p>
+<p>#AUTOWAIT 1000
+process main () {</p>
+<pre><code>// Angular file upload - flow.js
+jumpto &quot;http://flowjs.github.io/ng-flow/&quot;;
+wait 3333;
+// click Basic upload
+click &quot;div.ng-scope &gt; .drop &gt; span.btn-default&quot;;
+upload [&quot;path of file1&quot;,&quot;path of file2&quot;];
+wait 4000;
+// click Single image upload
+click &quot;body &gt; div:nth-child(1) &gt; section:nth-child(2) &gt; div:nth-child(10) &gt; div:nth-child(4) &gt; span:nth-child(1)&quot;;
+upload [&quot;path of file3&quot;,&quot;path of file4&quot;];
+// 
+wait 4000;
+</code></pre><p>}</p>
 
 			</div>
 		</div>

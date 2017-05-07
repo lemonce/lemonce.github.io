@@ -51,6 +51,16 @@
 						文档
 					</a>
 				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/" class="nav-link">
+						购买
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/" class="nav-link">
+						下载
+					</a>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -63,7 +73,7 @@
 				<h1>内置子过程</h1>
 				<time class="text-white">
 					最后更新：
-					2017-05-03
+					2017-05-07
 				</time>
 			</div>
 		</div>
@@ -114,13 +124,13 @@
 					<strong class="toc-title">
 						页面内容：
 					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Data"><span class="toc-text">Data</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Type"><span class="toc-text">Type</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Math"><span class="toc-text">Math</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#String"><span class="toc-text">String</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array"><span class="toc-text">Array</span></a></li></ol>
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Date"><span class="toc-text">Date</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Type"><span class="toc-text">Type</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Math"><span class="toc-text">Math</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#String"><span class="toc-text">String</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array"><span class="toc-text">Array</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
 				<p>所有的内置子过程都需要有如下的形式：<code>子过程名称()</code>。</p>
 <p><br></p>
-<h2 id="Data"><a href="#Data" class="headerlink" title="Data"></a>Data</h2><hr>
+<h2 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h2><hr>
 <p><strong>now</strong></p>
 <p><code>now()</code> 方法返回自1970年1月1日 00:00:00 UTC到当前时间的毫秒数。</p>
 <pre class="sublemon">
@@ -129,9 +139,13 @@ log now(); //输出 1483200000
 </pre>
 
 <p><strong>format</strong></p>
-<p><code>format</code> 与上方的 <code>now</code> 共同使用，以某种确定的格式输出当前的时间。关于<code>format</code>更详细的使用方式请<a href="https://www.npmjs.com/package/dateformat" target="_blank" rel="external">点击这里</a>。</p>
+<p><code>format</code> 以某种确定的格式输出指定的时间，可与上方的 <code>now</code> 共同使用，。关于<code>format</code>更详细的使用方式请<a href="https://www.npmjs.com/package/dateformat" target="_blank" rel="external">点击这里</a>。</p>
 <pre class="sublemon">
-//假设以2017年1月1日，0时0分为当前时间
+//用于输出某一天的相关信息
+format("May 11 2012"，"fullDate"); //输出：Friday,May 11,2017
+format("May 11 2012"，"isoDate"); //输出：2012-05-11
+
+/用于输出当前的信息，假设以2017年1月1日，0时0分为当前时间
 log format(now,"yyyy-mm-dd");
 //输出：2017-01-01
 log format(now,"yyyy-m-d");
@@ -142,9 +156,6 @@ log format(now,"dddd,mmmm dS,yyyy,h:MM:ss TT");
 //输出：Sunday，January 1st,2017,0:00:00 AM
 log format(now,"isoDateTime");
 //输出：2017-01-01T00:00+0800
-
-//也可以用于输出某一天的完整信息
-format("Jan 1 2017"，"fullDate"); //输出：Sunday,January 1st,2017
 </pre>
 
 <p><br></p>
