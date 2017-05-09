@@ -52,8 +52,8 @@
 					</a>
 				</li>
 				<li class="nav-item">
-					<a href="/zh-cn/" class="nav-link">
-						购买
+					<a href="https://license.lemonce.com" class="nav-link">
+						License
 					</a>
 				</li>
 				<li class="nav-item">
@@ -73,7 +73,7 @@
 				<h1>动作关键字</h1>
 				<time class="text-white">
 					最后更新：
-					2017-05-07
+					2017-05-08
 				</time>
 			</div>
 		</div>
@@ -130,6 +130,20 @@
 			<div class="page-inner">
 				<h2 id="click-dblclick"><a href="#click-dblclick" class="headerlink" title="click / dblclick"></a>click / dblclick</h2><hr>
 <p>单击或双击一个HTML的页面元素。</p>
+<pre class="sublemon">
+process main () {
+
+    jumpto "https://support.mozilla.org/en-US/";
+    wait 2333;
+
+    //双击"#tabzilla"
+    dblclick "#tabzilla";
+
+    //单击"#tabzilla"
+    click "#tabzilla";
+}
+</pre>
+
 <p><br></p>
 <h2 id="input…by"><a href="#input…by" class="headerlink" title="input…by"></a>input…by</h2><hr>
 <p>输入一段字符串到文档框中去。 </p>
@@ -141,35 +155,79 @@ input 'div#link.case' by "hello world.";
 
 <p><br></p>
 <h2 id="move"><a href="#move" class="headerlink" title="move"></a>move</h2><hr>
-<p>对HTML页面元素触发鼠标移动/移出的动作。</p>
+<p>对HTML页面元素触发鼠标移入移出的动作。该动作可触发CSShover。</p>
+<pre class="sublemon">
+process main () {
+
+    jumpto "https://www.deepin.org/en/";
+    wait 2333;
+    click '#hs-site-navigation > div:nth-child(1)';
+
+    // 在以下三个页面元素上移动
+    move '#menu-main > li:nth-child(2) > a:nth-child(1) > span:nth-child(1)';
+    move '#menu-main > li:nth-child(3) > a:nth-child(1) > span:nth-child(1)';
+    move '#menu-main > li:nth-child(4) > a:nth-child(1) > span:nth-child(1)';
+}
+</pre>
+
 <p><br></p>
 <h2 id="hold"><a href="#hold" class="headerlink" title="hold"></a>hold</h2><hr>
-<p>鼠标持续点住一个元素。</p>
+<p>鼠标持续点住一个元素。具体的示例在下方的<code>drop</code>中。</p>
 <p><br></p>
 <h2 id="drop"><a href="#drop" class="headerlink" title="drop"></a>drop</h2><hr>
 <p>鼠标释放一个元素。</p>
+<pre class="sublemon">
+process main () {
+
+    jumpto "https://jqueryui.com/draggable/";
+    wait 2333;
+
+    //持续点住页面上的一个元素，用move来完成拖拽和指针移动
+    hold '#content > iframe:nth-child(5) < #draggable';
+    move '#content > iframe:nth-child(5) < html';
+
+    //释放该元素
+    drop;
+}
+</pre>
+
 <p><br></p>
 <h2 id="scroll"><a href="#scroll" class="headerlink" title="scroll"></a>scroll</h2><hr>
-<p>滚动页面，保持选中元素位于屏幕中部</p>
-<p><br></p>
-<h2 id="jumpto-back-forward-refresh"><a href="#jumpto-back-forward-refresh" class="headerlink" title="jumpto / back / forward / refresh"></a>jumpto / back / forward / refresh</h2><hr>
-<p><code>jumpto</code> 跳转到一个URL链接；<code>forward</code> 向前移动一页；<code>back</code> 后退一页；<code>refresh</code> 刷新当前网页。</p>
+<p>滚动页面，保持选中元素位于屏幕中部。</p>
 <pre class="sublemon">
 process main () {
 
     // Deepin Technology Community
     jumpto "https://www.deepin.org/en/";
     wait 2333;
-    // click span|
+
+    //
+    scroll '#hs-top-footer';
+}
+</pre>
+
+<p><br></p>
+<h2 id="jumpto-back-forward-refresh"><a href="#jumpto-back-forward-refresh" class="headerlink" title="jumpto / back / forward / refresh"></a>jumpto / back / forward / refresh</h2><hr>
+<p><code>jumpto</code> 跳转到一个URL链接；<code>forward</code> 向前移动一页；<code>back</code> 后退一页；<code>refresh</code> 刷新当前网页。</p>
+<pre class="sublemon">
+process main () {
+
+    // jumpto
+    jumpto "https://www.deepin.org/en/";
+    wait 2333;
     click "#hs-site-navigation > div:nth-child(1) > span:nth-child(1)";
-    // click Projects
     click "#menu-main > li:nth-child(2) > a:nth-child(1) > span:nth-child(1)";
-    // Navigate to New Page
     wait 2000;
+
+    //back 回到首页
     back;
     wait 2000;
+
+    //forward 前进到doc页
     forward;
     wait 2000;
+
+    //refresh 刷新当前doc页
     refresh;
 }
 </pre>
@@ -188,7 +246,7 @@ wait 3000;
 <pre class="sublemon">//断言存在一个id为'test'的输入框
 assert <#"textarea#test">;
 
-//断言id名为‘test’的输入框会在两秒钟内出现
+//断言id名为'test'的输入框会在两秒钟内出现
 assert <#"textarea#test"> in 2000;
 </#"textarea#test"></#"textarea#test"></pre>
 
