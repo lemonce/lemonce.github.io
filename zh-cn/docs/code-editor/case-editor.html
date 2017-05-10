@@ -73,7 +73,7 @@
 				<h1>用例编辑器</h1>
 				<time class="text-white">
 					最后更新：
-					2017-04-21
+					2017-05-10
 				</time>
 			</div>
 		</div>
@@ -124,13 +124,13 @@
 					<strong class="toc-title">
 						页面内容：
 					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#工具栏"><span class="toc-text">工具栏</span></a></li></ol>
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#工具栏"><span class="toc-text">工具栏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主界面"><span class="toc-text">主界面</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
 				<h2 id="工具栏"><a href="#工具栏" class="headerlink" title="工具栏"></a>工具栏</h2><hr>
 <p>整个工具栏显示如下。</p>
-<p><img class="long-images" src="/images/code-editor/case-toolbar.png">
+<p><img src="/images/code-editor/case-toolbar.png">
 <br></p>
 <p><i class="fa fa-file-code-o"></i>  <strong>新建 Case</strong>  </p>
 <p>在工作空间之外建立一个新的测试用例，默认命名为“Untitle-0.lc2”,但用户需要寻找一个路径去保存。用户也可以使用<code>Ctrl+N</code>来完成这一步操作。</p>
@@ -146,16 +146,31 @@
 <p>选中页面内一个元素并在代码区域输出该元素的CSSPath。点击鼠标右键以退出。</p>
 <p><i class="fa fa-link"></i> <strong>插入链接</strong></p>
 <p>在代码生成的区域鼠标指针所在的位置插入当前网页的链接地址。</p>
-<p><i class="fa fa-play"></i> <strong>运行 Case/</strong> <i class="fa fa-stop"></i> <strong>停止运行 Case</strong></p>
-<p>开始或停止当前用例。</p>
-<p><i class="fa fa-circle" style="color:red"></i> <strong>Start Record/</strong><i class="fa fa-stop-circle-o" style="color:red"></i> <strong>Stop Record</strong></p>
+<p><i class="fa fa-play"></i> <strong>运行 Case /</strong> <i class="fa fa-pause"></i> <strong>暂停 Case /</strong> <i class="fa fa-play-circle-o"></i> <strong>继续运行 Case</strong></p>
+<p>开始、暂停或继续当前用例。</p>
+<p><i class="fa fa-stop"></i> <strong>停止 Case</strong></p>
+<p>停止正在运行的当前用例。</p>
+<p><i class="fa fa-circle" style="color:red"></i> <strong>开始录制/</strong> <i class="fa fa-stop-circle-o" style="color:red"></i> <strong>结束录制</strong></p>
 <p>将鼠标和键盘的操作转换为代码。一旦开始录制，这个按钮会从 <i class="fa fa-circle" style="color:red"></i> 变为 <i class="fa fa-stop-circle-o" style="color:red"></i>。 再次点击以停止录制。</p>
 <p><strong>selector / xpath</strong></p>
-<p>在录制过程中，获取页面内元素的两种选择器。<code>selector</code>为默认的CSSPath,<code>xpath</code>为XPath。</p>
-<p><i class="fa fa-undo"></i> <strong>撤销/</strong> <i class="fa fa-repeat"></i> <strong>重复</strong></p>
+<p>在录制过程中，获取页面内元素选择器的两种选择方式。<code>selector</code>为默认的CSSPath,<code>xpath</code>为XPath。</p>
+<p><i class="fa fa-undo"></i> <strong>撤销 /</strong> <i class="fa fa-repeat"></i> <strong>重复</strong></p>
 <p>返回到上一步操作或前进到下一步操作，用户也可以使用 <code>Ctrl+Z</code>/<code>Ctrl+Y</code> 完成该操作。</p>
 <p><i class="fa fa-columns"></i> <strong>分离视图</strong></p>
 <p>点击该按钮以分割编辑器，可以在编辑器另一侧显示相同的内容，并且任何对内容的改动都会同步到另一侧。工作原理和 Visual Studio Code 中的“分割编辑器”相同。</p>
+<p><br></p>
+<h2 id="主界面"><a href="#主界面" class="headerlink" title="主界面"></a>主界面</h2><hr>
+<p>整个主界面展示如下。分为两个部分：</p>
+<ul>
+<li>Case 列表</li>
+<li>代码编辑区</li>
+</ul>
+<p><img class="large-images" src="/images/code-editor/case-interface.png">
+<br></p>
+<p><strong>Case 列表</strong></p>
+<p>Case 列表展示的是工作空间中的所有的 Case，双击以激活需要编辑的 Case，会在 Lemonce 右方弹出该 Case 中所包含的代码。</p>
+<p><strong>Case 代码</strong></p>
+<p>用户通过录制或者键盘输入都会在此区域生成相应的lc2代码，可以直接在编辑区内对代码进行增删改查。</p>
 
 			</div>
 		</div>

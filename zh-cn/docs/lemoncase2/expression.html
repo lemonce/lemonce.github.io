@@ -73,7 +73,7 @@
 				<h1>表达式</h1>
 				<time class="text-white">
 					最后更新：
-					2017-04-28
+					2017-05-09
 				</time>
 			</div>
 		</div>
@@ -129,33 +129,36 @@
 			</aside>
 			<div class="page-inner">
 				<h2 id="选择器表达式"><a href="#选择器表达式" class="headerlink" title="选择器表达式"></a>选择器表达式</h2><hr>
-<p>以下是 Lemoncase2 的三种选择器操作表达式，帮助用户更好地选择页面元素相应的属性。
-以下方的一段 HTML 为例。</p>
-<pre><code>&lt;div id=&quot;link&quot; class=&quot;case&quot;&gt;
-    &lt;p&gt;Text1&lt;/p&gt;
-    &lt;div&gt;
-        &lt;p&gt;Text2&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</code></pre><p><strong>&lt;# [selector:string] /&gt;</strong> </p>
-<p>输出：该选择器的个数。</p>
-<p><code>log &lt;# &quot;div&quot;/&gt;; // 输出：2</code><br>
-<code>log &lt;# &quot;#link&quot;/&gt;; // 输出：1</code><br>
-<code>log &lt;# &quot;.case&quot;/&gt;; // 输出：1</code></p>
-<p>支持计算表达式与变量。</p>
-<p><code>log &lt;# &quot;div&quot;/&gt;+1~~3; // 输出：true</code><br>
-<code>x=&quot;div&quot;; log &lt;# x/&gt;; // 输出：2</code></p>
-<p><strong>&lt;@ [selector:string] /&gt;</strong> </p>
-<p>选取 HTML 内部第一个与该选择器匹配的元素中的内容。如果不存在相应内容，则输出：<code>false</code>。</p>
-<p><code>log &lt;@ &quot;div&quot;/&gt;; // 输出：Text1\n\nText2</code><br>
-<code>log &lt;@ &quot;div &gt; div&quot;/&gt;; // 输出：Text2</code><br>
-<code>log &lt;@ &quot;p&quot;/&gt;; // 输出：Text1</code></p>
-<p><strong>&lt;! [selector:string] /&gt;</strong> </p>
-<p>检查该元素是否存在。如果存在输出：<code>true</code>，不存在输出：<code>false</code>.</p>
-<p><code>log &lt;! &quot;a&quot;/&gt;; // 输出： false</code><br>
-<code>log &lt;! &quot;div&quot;/&gt;; // 输出： true</code><br>
-<code>log &lt;! &quot;#link&quot;/&gt;; // 输出： true</code></p>
-<p><br></p>
+<p>以下是 Lemoncase2 的三种选择器操作表达式，帮助用户更好地选择页面元素相应的属性。</p>
+<ul>
+<li><p><strong>&lt;# [selector:string] /&gt;</strong> 
+输出：该选择器的个数。支持计算表达式与变量。</p>
+</li>
+<li><p><strong>&lt;@ [selector:string] /&gt;</strong> 
+选取 HTML 内部第一个与该选择器匹配的元素中的内容。如果不存在相应内容，则输出：<code>null</code>。</p>
+</li>
+<li><p><strong>&lt;! [selector:string] /&gt;</strong> 
+检查该元素是否存在。如果存在输出：<code>true</code>，不存在输出：<code>null</code>.</p>
+</li>
+</ul>
+<p>示例如下：</p>
+<pre><code>process main () {
+
+    jumpto &quot;https://login.deepin.org/oauth2/authorize?client_id=fcb9f8cac81074100b9482d534767a1fecc148b3&amp;redirect_uri=https%3A%2F%2Faccount.deepin.org%2Flogin&amp;response_type=code&amp;scope=base%2Cuser%3Aread%2Cuser%3Aedit%2Cprofile%3Aread%2Cprofile%3Aedit&quot;;
+    wait 2333;
+
+    // &lt;# &quot;selector&quot;/&gt;
+    log &lt;# &quot;div&quot;/&gt;; //输出&quot;div&quot;的个数
+    log &lt;# &quot;.links&quot;/&gt;+1; //支持表达式和变量
+
+    // &lt;@ &quot;selector&quot;/&gt;
+    log &lt;@ &quot;.msg&quot;/&gt;;  //输出类&quot;msg&quot;内部的文字
+
+    // &lt;! &quot;selector&quot;/&gt;
+    log &lt;! &quot;[name=username]&quot;/&gt;; //验证&quot;[name=username]&quot;是否存在
+    log &lt;! &quot;.a&quot;/&gt;;
+}
+</code></pre><p><br></p>
 <h2 id="比较符"><a href="#比较符" class="headerlink" title="比较符"></a>比较符</h2><hr>
 <p><strong>~~ : 约等于</strong></p>
 <ul>
