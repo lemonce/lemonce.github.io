@@ -73,7 +73,7 @@
 				<h1>Action Keyword</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-05-07
+					2017-05-13
 				</time>
 			</div>
 		</div>
@@ -130,6 +130,20 @@
 			<div class="page-inner">
 				<h2 id="click-dblclick"><a href="#click-dblclick" class="headerlink" title="click / dblclick"></a>click / dblclick</h2><hr>
 <p>Click or double click a HTML element.</p>
+<pre class="sublemon">
+process main () {
+
+    jumpto "https://support.mozilla.org/en-US/";
+    wait 2333;
+
+    //double click "#tabzilla"
+    dblclick "#tabzilla";
+
+    //click "#tabzilla"
+    click "#tabzilla";
+}
+</pre>
+
 <p><br></p>
 <h2 id="input…by"><a href="#input…by" class="headerlink" title="input…by"></a>input…by</h2><hr>
 <p>Type a string into an element like <input type="text"> or <textarea>.</textarea></p>
@@ -140,42 +154,86 @@ input 'div#link.case' by "hello world.";
 
 <p><br></p>
 <h2 id="move"><a href="#move" class="headerlink" title="move"></a>move</h2><hr>
-<p>Trigger move enter/leave events on a HTML element.</p>
+<p>Trigger onmouseenter or onmouseleave events on a HTML element. This action can trigger CSShover.</p>
+<pre class="sublemon">
+process main () {
+
+    jumpto "https://www.deepin.org/en/";
+    wait 2333;
+    click '#hs-site-navigation > div:nth-child(1)';
+
+    // Move on the 3 elements in the following.
+    move '#menu-main > li:nth-child(2) > a:nth-child(1) > span:nth-child(1)';
+    move '#menu-main > li:nth-child(3) > a:nth-child(1) > span:nth-child(1)';
+    move '#menu-main > li:nth-child(4) > a:nth-child(1) > span:nth-child(1)';
+}
+</pre>
+
 <p><br></p>
 <h2 id="hold"><a href="#hold" class="headerlink" title="hold"></a>hold</h2><hr>
-<p>Hold an element by mouse.</p>
+<p>Hold an element by mouse continuely. The specific example is shown in the <code>drop</code> below.</p>
 <p><br></p>
 <h2 id="drop"><a href="#drop" class="headerlink" title="drop"></a>drop</h2><hr>
 <p>Release an element by mouse.</p>
+<pre class="sublemon">
+process main () {
+
+    jumpto "https://jqueryui.com/draggable/";
+    wait 2333;
+
+    //Click on an element in the page, use `move` to achieve drag and pointer movement.
+    hold '#content > iframe:nth-child(5) < #draggable';
+    move '#content > iframe:nth-child(5) < html';
+
+    //Release the element.
+    drop;
+}
+</pre>
+
 <p><br></p>
 <h2 id="scroll"><a href="#scroll" class="headerlink" title="scroll"></a>scroll</h2><hr>
-<p>Move an element to the center of the screen.</p>
-<p><br></p>
-<h2 id="jumpto-back-forward-refresh"><a href="#jumpto-back-forward-refresh" class="headerlink" title="jumpto / back / forward / refresh"></a>jumpto / back / forward / refresh</h2><hr>
-<p><code>jumpto</code> jump to a URL;<code>forward</code> move forward to the next page; <code>back</code> move back to the previous page；<code>refresh</code> refresh the current page.</p>
+<p>Scroll the page and keep the selected element in the center of the screen.</p>
 <pre class="sublemon">
-    process main () {
+process main () {
 
     // Deepin Technology Community
     jumpto "https://www.deepin.org/en/";
     wait 2333;
-    // click span|
+
+    //
+    scroll '#hs-top-footer';
+}
+</pre>
+
+<p><br></p>
+<h2 id="jumpto-back-forward-refresh"><a href="#jumpto-back-forward-refresh" class="headerlink" title="jumpto / back / forward / refresh"></a>jumpto / back / forward / refresh</h2><hr>
+<p><code>jumpto</code> jump to a URL; <code>forward</code> move forward to the next page; <code>back</code> move back to the previous page；<code>refresh</code> refresh the current page.</p>
+<pre class="sublemon">
+process main () {
+
+    // jumpto
+    jumpto "https://www.deepin.org/en/";
+    wait 2333;
     click "#hs-site-navigation > div:nth-child(1) > span:nth-child(1)";
-    // click Projects
     click "#menu-main > li:nth-child(2) > a:nth-child(1) > span:nth-child(1)";
-    // Navigate to New Page
     wait 2000;
+
+    //back : Get back to the homepage.
     back;
     wait 2000;
+
+    //forward : Get forward to the doc page.
     forward;
     wait 2000;
+
+    //refresh : Refresh the doc page.
     refresh;
 }
 </pre>
 
 <p><br></p>
 <h2 id="wait"><a href="#wait" class="headerlink" title="wait"></a>wait</h2><hr>
-<p>Wait a few time like a person.</p>
+<p>Wait a few time like a person［in milliseconds］.</p>
 <pre class="sublemon">
 //Editor will wait 3000ms to start the next action.
 wait 3000;
@@ -183,8 +241,9 @@ wait 3000;
 
 <p><br></p>
 <h2 id="assert"><a href="#assert" class="headerlink" title="assert"></a>assert</h2><hr>
-<p>Assert that the expression is true[ within overtime].</p>
-<pre class="sublemon">//Asserts the existence of a input box with the id of "test".
+<p>Assert that the expression is true [within certain time].</p>
+<pre class="sublemon">
+//Asserts the existence of a input box with the id of "test".
 assert <#"textarea#test">;
 
 //Asserts that a input box with the id of "test" will appear in 2 seconds.
@@ -193,23 +252,26 @@ assert <#"textarea#test"> in 2000;
 
 <p><br></p>
 <h2 id="upload"><a href="#upload" class="headerlink" title="upload"></a>upload</h2><hr>
-<p><pre class="sublemon"></pre></p>
-<p>#AUTOWAIT 1000
-process main () {</p>
-<pre><code>// Angular file upload - flow.js
-jumpto &quot;http://flowjs.github.io/ng-flow/&quot;;
-wait 3333;
-// click Basic upload
-click &quot;div.ng-scope &gt; .drop &gt; span.btn-default&quot;;
-upload [&quot;path of file1&quot;,&quot;path of file2&quot;];
-wait 4000;
-// click Single image upload
-click &quot;body &gt; div:nth-child(1) &gt; section:nth-child(2) &gt; div:nth-child(10) &gt; div:nth-child(4) &gt; span:nth-child(1)&quot;;
-upload [&quot;path of file3&quot;,&quot;path of file4&quot;];
-// 
-wait 4000;
-</code></pre><p>}</p>
+<p>If a test needs to upload a file to a web application, you can use the <code>upload</code> command to upload. The syntax is: <code>upload [the path of a file]</code>. There’s one example in the following.</p>
+<p><strong>Attention</strong>：For Windows users, scine ‘\’ is used in the system path, you need to change ‘\’ to ‘/‘ or use escape character like ‘\\’ to ensure lemonce runs successfully. For example, ‘C:\Users\1.img’ needs to be transformed into ‘C:/Users/1.img’ in lemonce.</p>
+<pre class="sublemon">
+#AUTOWAIT 1000
+process main () {
 
+    // Angular file upload - flow.js
+    jumpto "http://flowjs.github.io/ng-flow/";
+    wait 3333;
+    // Click 'Basic upload'.
+    click "div.ng-scope > .drop > span.btn-default";
+    upload ["path of file1","path of file2"];
+    wait 4000;
+    // Click 'Single image upload'.
+    click "body > div:nth-child(1) > section:nth-child(2) > div:nth-child(10) > div:nth-child(4) > span:nth-child(1)";
+    upload ["path of file3","path of file4"];
+    // Lemonce will upload the first file by default when only one file is supported.
+    wait 4000;
+}
+</pre>
 			</div>
 		</div>
 	</article>

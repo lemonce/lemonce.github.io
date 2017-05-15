@@ -73,7 +73,7 @@
 				<h1>动作关键字</h1>
 				<time class="text-white">
 					最后更新：
-					2017-05-08
+					2017-05-15
 				</time>
 			</div>
 		</div>
@@ -141,8 +141,7 @@ process main () {
 
     //单击"#tabzilla"
     click "#tabzilla";
-}
-</pre>
+}</pre>
 
 <p><br></p>
 <h2 id="input…by"><a href="#input…by" class="headerlink" title="input…by"></a>input…by</h2><hr>
@@ -150,8 +149,7 @@ process main () {
 <p><input type="text"> 或者 <textarea></textarea></p>
 <pre class="sublemon">
 // eg: id="link" class="case" 
-input 'div#link.case' by "hello world.";
-</pre>
+input 'div#link.case' by "hello world.";</pre>
 
 <p><br></p>
 <h2 id="move"><a href="#move" class="headerlink" title="move"></a>move</h2><hr>
@@ -167,8 +165,7 @@ process main () {
     move '#menu-main > li:nth-child(2) > a:nth-child(1) > span:nth-child(1)';
     move '#menu-main > li:nth-child(3) > a:nth-child(1) > span:nth-child(1)';
     move '#menu-main > li:nth-child(4) > a:nth-child(1) > span:nth-child(1)';
-}
-</pre>
+}</pre>
 
 <p><br></p>
 <h2 id="hold"><a href="#hold" class="headerlink" title="hold"></a>hold</h2><hr>
@@ -188,8 +185,7 @@ process main () {
 
     //释放该元素
     drop;
-}
-</pre>
+}</pre>
 
 <p><br></p>
 <h2 id="scroll"><a href="#scroll" class="headerlink" title="scroll"></a>scroll</h2><hr>
@@ -203,8 +199,7 @@ process main () {
 
     //
     scroll '#hs-top-footer';
-}
-</pre>
+}</pre>
 
 <p><br></p>
 <h2 id="jumpto-back-forward-refresh"><a href="#jumpto-back-forward-refresh" class="headerlink" title="jumpto / back / forward / refresh"></a>jumpto / back / forward / refresh</h2><hr>
@@ -229,32 +224,31 @@ process main () {
 
     //refresh 刷新当前doc页
     refresh;
-}
-</pre>
+}</pre>
 
 <p><br></p>
 <h2 id="wait"><a href="#wait" class="headerlink" title="wait"></a>wait</h2><hr>
 <p>等待一定的时间（以毫秒为单位）。</p>
 <pre class="sublemon">
 //编辑器会等待3000毫秒再执行下一个动作
-wait 3000;
-</pre>
+wait 3000;</pre>
 
 <p><br></p>
 <h2 id="assert"><a href="#assert" class="headerlink" title="assert"></a>assert</h2><hr>
 <p>断言一个表达式为真（在一定的时间内）</p>
-<pre class="sublemon">//断言存在一个id为'test'的输入框
+<pre class="sublemon">
+//断言存在一个id为'test'的输入框
 assert <#"textarea#test">;
 
 //断言id名为'test'的输入框会在两秒钟内出现
-assert <#"textarea#test"> in 2000;
-</#"textarea#test"></#"textarea#test"></pre>
+assert <#"textarea#test"> in 2000;</#"textarea#test"></#"textarea#test"></pre>
 
 <p><br></p>
 <h2 id="upload"><a href="#upload" class="headerlink" title="upload"></a>upload</h2><hr>
 <p>如果一个测试需要上传一个文件到一个 web 应用程序，可以采用 <code>upload</code> 命令来上传。语法格式为：<code>upload [the path of a file]</code>。以下是例子。</p>
-<p><strong>注意</strong>：在 Windows 系统中路径采用的是”\”，需要用户改为 “/“ 或进行转译 “\\” 才能在灵萌测中运行。如”C:\Users\1.img”需要在灵萌测中改为”C:/Users/1.img”。</p>
+<p><strong>注意</strong>：在 Windows 系统中路径采用的是”\”，需要用户改为 “/“ 或进行转义 “\\” 才能在灵萌测中运行。如”C:\Users\1.img”需要在灵萌测中改为”C:/Users/1.img”。</p>
 <pre class="sublemon">
+
 #AUTOWAIT 1000
 process main () {
 
@@ -270,8 +264,7 @@ process main () {
     upload ["path of file3","path of file4"];
     // 当只支持上传一个文件时，lemonce会默认上传第一个文件
     wait 4000;
-}
-</pre>
+}</pre>
 			</div>
 		</div>
 	</article>

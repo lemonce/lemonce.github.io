@@ -73,7 +73,7 @@
 				<h1>查看测试报告</h1>
 				<time class="text-white">
 					最后更新：
-					2017-04-25
+					2017-05-13
 				</time>
 			</div>
 		</div>
@@ -141,13 +141,30 @@
 <ul>
 <li><p><strong>搜索用例功能。</strong>位于顶部的“search”方框内，当一个suite中用例较多时，可使用该功能针对case的名称进行精确查找。</p>
 </li>
-<li><p><strong>用例执行信息。</strong>包括了用例名称，名称下方为执行时间，名称右方为执行的通过情况，其中为通过，为失败。</p>
+<li><p><strong>用例执行信息。</strong>包括了用例名称，名称下方为执行时间，名称右方为执行的通过情况，其中 <i class="fa fa-check" style="color:green"></i> 为通过， <i class="fa fa-close" style="color:red"></i> 为失败。</p>
 </li>
 </ul>
 <p><br></p>
 <h2 id="2-语句日志区"><a href="#2-语句日志区" class="headerlink" title="2 语句日志区"></a>2 语句日志区</h2><hr>
-<p>本区域将用例中</p>
+<p>日志区域将每一条测试用例中的执行语句以列表的形式展现出来。除此之外还包括了以下的信息：</p>
+<ul>
+<li>整条测试用例以 case started 开始， case done 结束。</li>
+<li>断言失败后，会对当前错误的 webview 进行截图并保存。</li>
+<li>断言失败后生产”Assertion Failure”的日志，会以红色进行警示。</li>
+</ul>
+<p><img src="/images/guide/report-04.png"></p>
+<p>每一条语句日志区包括了三项信息，选中的日志会以浅灰色高亮显示，并且在测试代码区域相应的语句也会显示高亮。</p>
+<ul>
+<li><p><strong>当前语句的执行信息。</strong> 与录制时自动生成的注释相比，表述得更加清楚，并且可以显示断言是否成功。</p>
+</li>
+<li><p><strong>执行开始或持续时间。</strong> 执行开始时间以”hh-mm-ss” 的格式显示；对于某些动作语句如<code>click</code> <code>input</code>等，会显示执行的持续时间。</p>
+</li>
+<li><p><strong>语句所在的行数。</strong></p>
+</li>
+</ul>
+<p><br></p>
 <h2 id="3-测试代码区"><a href="#3-测试代码区" class="headerlink" title="3 测试代码区"></a>3 测试代码区</h2><hr>
+<p>和编辑器中的代码区域相同，测试代码区展示了每一条测试用例的全部lc2代码与注释。</p>
 
 			</div>
 		</div>

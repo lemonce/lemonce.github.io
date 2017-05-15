@@ -73,7 +73,7 @@
 				<h1>Expression</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-05-06
+					2017-05-15
 				</time>
 			</div>
 		</div>
@@ -129,47 +129,65 @@
 			</aside>
 			<div class="page-inner">
 				<h2 id="Selector-operator"><a href="#Selector-operator" class="headerlink" title="Selector operator"></a>Selector operator</h2><hr>
-<p>Take HTML below as an example.</p>
-<pre><code>&lt;div id=&quot;link&quot; class=&quot;case&quot;&gt;
-    &lt;p&gt;Text1&lt;/p&gt;
-    &lt;div&gt;
-        &lt;p&gt;Text2&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</code></pre><p><strong>&lt;# [selector:string] /&gt;</strong> </p>
-<p>Get the number of elements that matches the selector.</p>
-<p><code>log &lt;# &quot;div&quot;/&gt;; // Output:2</code><br>
-<code>log &lt;# &quot;#link&quot;/&gt;; // Output:1</code><br>
-<code>log &lt;# &quot;.case&quot;/&gt;; // Output:1</code></p>
-<p>Calculation expressions and variables can be applied.</p>
-<p><code>log &lt;# &quot;div&quot;/&gt;+1~~3; // Output：true</code><br>
-<code>x=&quot;div&quot;; log &lt;# x/&gt;; // Output：2</code></p>
-<p><strong>&lt;@ [selector:string] /&gt;</strong> </p>
-<p>Get the innerHTML of the 1st element that matches the selector.The result is a string or <code>false</code> if there”s no match.</p>
-<p><code>log &lt;@ &quot;div&quot;/&gt;; // Output:Text1\n\nText2</code><br>
-<code>log &lt;@ &quot;div &gt; div&quot;/&gt;; // Output:Text2</code><br>
-<code>log &lt;@ &quot;p&quot;/&gt;; // Output:Text1</code></p>
-<p><strong>&lt;! [selector:string] /&gt;</strong> </p>
-<p>Check for element visibility.The result is <code>true</code> if such element exist &amp;&amp; width &gt; 0 &amp;&amp; height &gt; 0.Otherwise it is <code>false</code>.</p>
-<p><code>log &lt;! &quot;a&quot;/&gt;; // Output:false</code><br>
-<code>log &lt;! &quot;div&quot;/&gt;; // Output:true</code><br>
-<code>log &lt;! &quot;#link&quot;/&gt;; // Output:true</code></p>
-<p><br></p>
-<h2 id="Compare-operator"><a href="#Compare-operator" class="headerlink" title="Compare operator"></a>Compare operator</h2><hr>
-<p><strong>[exp_A:string] ~~ [exp_B:string|RegExp]</strong></p>
+<p>The following show 3 different kinds of selector operation statements in Lemoncase2, which can help users select the corresponding attributes of  page elements more conveniently.</p>
 <ul>
-<li><p>exp_B is not a string or RegExp, false. </p>
+<li><p><strong>&lt;# [selector:string] /&gt;</strong> 
+Get the number of elements that matches the selector. Calculation expressions and variables can be applied.</p>
 </li>
-<li><p>exp_A is not a string, false.</p>
+<li><p><strong>&lt;@ [selector:string] /&gt;</strong> 
+Get the innerHTML of the 1st element that matches the selector. If related content does not exist, output <code>null</code>.</p>
 </li>
-<li><p>exp_A is not matched to exp_B(RegExp), false.</p>
-</li>
-<li><p>exp_A has a sub string like exp_B, true.</p>
-</li>
-<li><p>exp_A is matched to exp_B(RegExp), true.</p>
+<li><p><strong>&lt;! [selector:string] /&gt;</strong> 
+Check whether the element exists or not. Output <code>true</code> if such element exists, otherwise output <code>null</code>.</p>
 </li>
 </ul>
-<p><strong>[exp_A:string] !~ [exp_B:string|RegExp]</strong></p>
+<p>The example shows bellow:</p>
+<pre><code>process main () {
+
+    jumpto &quot;https://login.deepin.org/oauth2/authorize?client_id=fcb9f8cac81074100b9482d534767a1fecc148b3&amp;redirect_uri=https%3A%2F%2Faccount.deepin.org%2Flogin&amp;response_type=code&amp;scope=base%2Cuser%3Aread%2Cuser%3Aedit%2Cprofile%3Aread%2Cprofile%3Aedit&quot;;
+    wait 2333;
+
+    // &lt;# &quot;selector&quot;/&gt;
+    log &lt;# &quot;div&quot;/&gt;; // Out put the number of &quot;div&quot; elements.
+    log &lt;# &quot;.links&quot;/&gt;+1; // Support expressions and variables.
+
+    // &lt;@ &quot;selector&quot;/&gt;
+    log &lt;@ &quot;.msg&quot;/&gt;;  // Output the inside text of the class &quot;msg&quot;.
+
+    // &lt;! &quot;selector&quot;/&gt;
+    log &lt;! &quot;[name=username]&quot;/&gt;; // To check whether &quot;[name=username]&quot; exists or not.
+    log &lt;! &quot;.a&quot;/&gt;;
+}
+</code></pre><p><br></p>
+<h2 id="Compare-operator"><a href="#Compare-operator" class="headerlink" title="Compare operator"></a>Compare operator</h2><hr>
+<p><strong>~~ : Approximately equal to</strong></p>
+<ul>
+<li>[string] ~~ [string] A part of string A is the same as string B.<br></li>
+<li>[string] ~~ [/RegExp/] A part of string A can matches the regular expression B.<br></li>
+</ul>
+<p><code>&quot;Lemonce&quot;~~/[A-Z][a-t]/  //Output：true</code><br>
+<code>&quot;Lemonce&quot;~~&quot;mon&quot; //Output：true</code></p>
+<p><strong>== : Equal to</strong></p>
+<ul>
+<li>[string] == [string] String A is exactly the same as string B.<br></li>
+<li>[var] == [var] Variable A is exactly the same as variable B.<br></li>
+</ul>
+<p><code>&quot;Lemonce&quot; == &quot;Lemonce&quot; //Output：true</code><br>
+<code>&quot;x&quot; == &quot;x&quot; //Output：true</code></p>
+<p><strong>!~ : Not appromimately equal to</strong></p>
+<ul>
+<li>[string] !~ [string] No part of string A is the same as string B.<br></li>
+<li>[string] !~ [/RegExp/] No part of string A could match the regular expression B.<br></li>
+</ul>
+<p><code>&quot;Lemonce&quot;!~/L[A-Z][a-t]/  //Output：true</code><br>
+<code>&quot;Lemonce&quot;!~&quot;mon&quot; //Output：false</code></p>
+<p><strong>!= : Not equal to</strong></p>
+<ul>
+<li>[string] != [string] String A is different from string B.<br></li>
+<li>[var] != [var] Variable A is different from string B.<br></li>
+</ul>
+<p><code>&quot;Lemonce&quot; != &quot;Lemonce&quot; //Output：false</code><br>
+<code>&quot;x&quot; != &quot;y&quot; //Output：true</code></p>
 
 			</div>
 		</div>

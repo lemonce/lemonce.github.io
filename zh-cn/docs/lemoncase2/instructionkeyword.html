@@ -73,7 +73,7 @@
 				<h1>指令关键字</h1>
 				<time class="text-white">
 					最后更新：
-					2017-05-02
+					2017-05-15
 				</time>
 			</div>
 		</div>
@@ -140,8 +140,7 @@ process main(){
 //这是一个子过程，除了使用‘main'作为关键词以外，您可以使用任意不带特殊符号的字符串来对子过程进行命名。
 process anyname(){ 
 
-}
-</pre>  
+}</pre>  
 
 <p><br></p>
 <h2 id="return"><a href="#return" class="headerlink" title="return"></a>return</h2><hr>
@@ -159,8 +158,7 @@ process counter() {
       }
     return;
     log count + 'C';        // 子过程已结束，本语句不会执行      
-}
-</pre>
+}</pre>
 
 <p><br></p>
 <h2 id="for…in"><a href="#for…in" class="headerlink" title="for…in"></a>for…in</h2><hr>
@@ -178,8 +176,7 @@ process main () {
 }
 //Output:
 //A[a]=1
-//A[b]=2
-</pre>
+//A[b]=2</pre>
 
 <p><br></p>
 <h2 id="for…of"><a href="#for…of" class="headerlink" title="for…of"></a>for…of</h2><hr>
@@ -214,8 +211,7 @@ process main () {
 //o
 //n
 //c
-//e
-</pre>
+//e</pre>
 
 <p><br></p>
 <h2 id="if…else"><a href="#if…else" class="headerlink" title="if…else"></a>if…else</h2><hr>
@@ -235,8 +231,7 @@ else {
     log "3";
  }
 }
-//Output "3"
-</pre>
+//Output "3"</pre>
 
 <p><br></p>
 <h2 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h2><hr>
@@ -254,12 +249,11 @@ while (i < 5) {
    n += i;
    log n;  //Output 1,3,7,12
    }
-}
-</pre>
+}</pre>
 
 <p><br></p>
 <h2 id="while"><a href="#while" class="headerlink" title="while"></a>while</h2><hr>
-<p><code>while</code>语句用于结束一个子过程并且返回相应的值到子过程变量。执行到<code>return</code>语句时，子过程会立刻停止。</p>
+<p><code>while</code>产生一个当满足条件为true时便执行指定语句的循环。每次执行语句前，条件都会被评估。</p>
 <pre class="sublemon">
 process main () {
     counter();   
@@ -273,16 +267,14 @@ process counter() {
       }
     return;
     log count + 'C';        // 子过程已结束，本语句不会执行      
-}
-</pre>
+}</pre>
 
 <p><br></p>
 <h2 id="log"><a href="#log" class="headerlink" title="log"></a>log</h2><hr>
 <p>向控制台输出一条消息。可以输出测试用例中已定义的变量，表达式，字符串等等。</p>
 <pre class="sublemon">
 log '2'+3    //输出  23
-log true    //输出  true
-</pre>
+log true    //输出  true</pre>
 
 			</div>
 		</div>

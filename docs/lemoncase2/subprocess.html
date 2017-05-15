@@ -73,7 +73,7 @@
 				<h1>Native sub-process</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-05-06
+					2017-05-15
 				</time>
 			</div>
 		</div>
@@ -131,32 +131,54 @@
 				<p>All the native sub-process should have a form as <code>sub-process()</code>.</p>
 <p><br></p>
 <h2 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h2><hr>
-<p><strong>now</strong></p>
-<p>Time stamp.The <code>now()</code> method returns the number of milliseconds elapsed since 1 January 1970 00:00:00 UTC.</p>
+<p><strong>now( )</strong></p>
+<p><code>now()</code> method returns the number of milliseconds elapsed from January 1st 1970, 00:00:00 UTC to the current time.</p>
 <pre class="sublemon">
-//set 2017-1-1,00:00 as current time
-log now(); //Output 1483200000
-</pre>
+//Set 2017-1-1,00:00 as current time
+log now(); //Output 1483200000</pre>
 
-<p><strong>format</strong></p>
+<p><strong>format( )</strong></p>
+<p><code>format()</code> returns specified time in a certain format, and could be used with the <code>now()</code> above together. More details about <code>format()</code> usage please <a href="https://www.npmjs.com/package/dateformat" target="_blank" rel="external">click here</a>.</p>
+<pre class="sublemon">
+//Output formated time.
+format("May 11 2012"，"fullDate"); //Output：Friday,May 11,2017
+format("May 11 2012"，"isoDate"); //Output：2012-05-11
+
+//Assuming January 1, 2017, 0:00 to be the current time. Output formated current time.
+log format(now,"yyyy-mm-dd");
+//Output：2017-01-01
+log format(now,"yyyy-m-d");
+//Output：2017-1-1
+log format(now,"mm-d");
+//Output：01-1
+log format(now,"dddd,mmmm dS,yyyy,h:MM:ss TT");
+//Output：Sunday，January 1st,2017,0:00:00 AM
+log format(now,"isoDateTime");
+//Output：2017-01-01T00:00+0800</pre>
+
 <p><br></p>
 <h2 id="Type"><a href="#Type" class="headerlink" title="Type"></a>Type</h2><hr>
 <p><strong>bool( )</strong></p>
-<p>Convert a variable/number/RegExp to a Boolean format.  </p>
+<p><code>bool()</code> is a boolean object wrapper which could convert a variable/number/RegExp to a Boolean format.  </p>
 <pre class="sublemon">
-bool(3.14) // Output true
-bool(3>4) // Output false</pre>
+bool(3.14) // Output  true
+bool(3>4) // Output  false</pre>
 
 <p><strong>number( )</strong></p>
-<p>The <code>number()</code> is a wrapper object allowing you to work with numerical values. A Number object is created using the <code>number()</code> constructor.</p>
+<p><code>number()</code> is a wrapper object allowing you to work with numerical values. A Number object is created using the <code>number()</code> constructor.</p>
 <pre class="sublemon">
 number('3.14') // Output  3.14
 number('3'+'2') // Output  32</pre>
 
+<p><strong>string( )</strong></p>
+<p>The global object <code>string()</code> is a constructor for a string or a sequence of characters. Values could also be converted or generated into strings with <code>string()</code>.</p>
+<pre class="sublemon">
+log length(string(3.14)); //Output  4</pre>
+
 <p><br></p>
 <h2 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h2><hr>
 <p><strong>abs( )</strong></p>
-<p>The <code>abs()</code> returns the absolute value of a number, that is abs(x)=|x|.</p>
+<p><code>abs()</code> returns the absolute value of a number, that is abs(x)=|x|.</p>
 <pre class="sublemon">
 abs(-3.14) // Output  3.14
 abs('') // Output  0
@@ -164,28 +186,28 @@ abs() // Output  NaN
 abs('string') // Output  NaN</pre>
 
 <p><strong>ceil( )</strong></p>
-<p>The <code>ceil(number)</code> returns the smallest integer greater than or equal to a given number.</p>
+<p><code>ceil(number)</code> returns the smallest integer greater than or equal to a given number.</p>
 <pre class="sublemon">
 ceil(3.14) // Output  4
 ceil(-3.14) // Output  -3</pre>
 
 <p><strong>floor( )</strong></p>
-<p>The <code>floor(number)</code> returns the largest integer less than or equal to a given number.</p>
+<p><code>floor(number)</code> returns the largest integer less than or equal to a given number.</p>
 <pre class="sublemon">
 floor(3.14) // Output  3
 floor(-3.14) // Output  -4</pre>
 
 <p><strong>max( )</strong></p>
-<p>The <code>max(number1,number2,...)</code> returns the largest of zero or more numbers.</p>
+<p><code>max(number1,number2,...)</code> returns the maximum of a set of numbers.</p>
 <pre class="sublemon">
 max(3+2,number('3'+'2'))  // Output  32</pre>
 
 <p><strong>min( )</strong></p>
-<p>The <code>min(number1,number2,...)</code> returns the smallest of zero or more numbers.</p>
-<p><strong>random( )</strong></p>
-<p>The <code>random()</code> function returns a floating-point, pseudo-random number in the range [0, 1) that is, from 0 (inclusive) up to but not including 1 (exclusive), which you can then scale to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user.</p>
+<p><code>min(number1,number2,...)</code> returns the minimum of a set of numbers.</p>
+<p><strong>random( )</strong>
+<code>random()</code> function returns a float pseudo-random number in the range [0, 1), that is, from 0 (inclusive) up to but not including 1 (exclusive), which you can then scale it to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user.</p>
 <pre class="sublemon">
-//Output a random number between the specified values
+//Output a random number in a specified range.
 random() * (max - min) + min </pre>
 
 <p><br></p>
@@ -201,7 +223,7 @@ length("Lemonce") //Output  7</pre>
 charAt('Lemonce',5)  //Output 'c'</pre>
 
 <p><strong>indexOf( )</strong></p>
-<p>The <code>indexOf(dstSting,testString)</code> method returns the index within the calling String object of the first occurrence of the specified value, starting the search at fromIndex. Returns -1 if the value is not found.</p>
+<p>The <code>indexOf(dstSting,testString)</code> method returns the index within the calling string object of the first occurrence of the specified value, starting the search at fromIndex. Returns -1 if the value is not found.</p>
 <pre class="sublemon">
 indexOf('Lemonce','L')  //Output  0
 indexOf('Lemonce','e')  //Output  1
@@ -220,6 +242,34 @@ trim('  Lemon case  ')  //Output 'Lemon case'</pre>
 
 <p><br></p>
 <h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><hr>
+<p>The array object is a global object used to construct arrays: they are advanced, list-type objects. The format is <code>arrayname = [element1,element2,...]</code>, in which arrayname[0] = element1. Take the array in the following for example：</p>
+<pre class="sublemon">
+process main () {
+smartphones = ["Smartisan","iPhone","Mi"];//Define an array.
+}</pre>
+
+<p><strong>length( )</strong> </p>
+<p><code>length(array)</code> returns the length of a array. You can also use <code>array.length</code>.</p>
+<pre class="sublemon">
+log length("smartphones"); //Output  3
+log smartphones.length;//Output 3</pre>
+
+<p><strong>for…in/of</strong></p>
+<p>Use <code>for (var in/of array)</code> to traverse an array. You can also view the usage of <code>for...in/of</code> in <a href="/zh-cn/docs/lemoncase2/instructionkeyword.html">instruction keyword</a>.</p>
+<pre class="sublemon">
+for (x in smartphones){
+    log x;  //Output 0,1,2
+}
+for (x of smartphones){
+    log x;  //Output Smartisan,iPhone,Mi
+}</pre>
+
+<p><strong>indexOf()</strong></p>
+<p><code>indexOf(array,element)</code> indicates the position of a specified element.</p>
+<pre class="sublemon">
+log indexOf(smartphones,"Smartisan"); //Output 0
+log smartphones.indexOf("iPhone"); //Does not support this syntax，output -1.</pre>
+
 
 			</div>
 		</div>
