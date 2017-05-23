@@ -73,7 +73,7 @@
 				<h1>Lemoncase2 Guide</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-05-17
+					2017-05-19
 				</time>
 			</div>
 		</div>
@@ -108,6 +108,7 @@
     		<li><a href="/docs/lemoncase2/instructionkeyword.html">instruction keyword</a></li>
     		<li><a href="/docs/lemoncase2/actionkeyword.html">action keyword</a></li>
     		<li><a href="/docs/lemoncase2/expression.html">expression</a></li>
+			<li><a href="/docs/lemoncase2/selector.html">selector</a></li>
 			<li><a href="/docs/lemoncase2/subprocess.html">native sub-process</a></li>
 			<li><a href="/docs/lemoncase2/macro.html">macro</a></li>
 			<li><a href="/docs/lemoncase2/magic.html">magic keyword</a></li>
@@ -119,7 +120,7 @@
 
 
 
-			<aside id="toc" class="float-lg-right" role="navigation">
+			<aside id="toc" class="float-lg-right hidden-sm-down" role="navigation">
 				<div id="toc-inner">
 					<strong class="toc-title">
 						contents
@@ -129,8 +130,8 @@
 			</aside>
 			<div class="page-inner">
 				<p>Lemoncase2 is a Javascript-like scripting language,which is used for developing scripts in Lemonce. Read this guide to help you understand the language.</p>
-<p>browser automation library: <a href="http://lemonce.github.io/lemoncase2" target="_blank" rel="external">http://lemonce.github.io/lemoncase2</a>
-<br></p>
+<p>browser automation library: <a href="http://lemonce.github.io/lemoncase2" target="_blank" rel="external">http://lemonce.github.io/lemoncase2</a></p>
+<p><br></p>
 <h2 id="Grammar"><a href="#Grammar" class="headerlink" title="Grammar"></a><a href="/docs/lemoncase2/index.html">Grammar</a></h2><hr>
 <h4 id="Zoom-Table"><a href="#Zoom-Table" class="headerlink" title="Zoom Table"></a><strong>Zoom Table</strong></h4><table>
 <thead>
@@ -146,21 +147,21 @@
 <tr>
 <td style="text-align:center">import</td>
 <td style="text-align:center">click / dbclick</td>
-<td style="text-align:center">&lt;@”cssPath”&gt;</td>
+<td style="text-align:center">&lt;@”<a href="/docs/lemoncase2/selector.html">selector</a>“&gt;</td>
 <td style="text-align:center">#TIMES</td>
 <td style="text-align:center">$HREF</td>
 </tr>
 <tr>
 <td style="text-align:center">process</td>
 <td style="text-align:center">input…by</td>
-<td style="text-align:center">&lt;#”cssPath”&gt;</td>
+<td style="text-align:center">&lt;#”selector”&gt;</td>
 <td style="text-align:center">#AUTOWAIT</td>
 <td style="text-align:center">$BUTTON</td>
 </tr>
 <tr>
 <td style="text-align:center">return</td>
 <td style="text-align:center">move</td>
-<td style="text-align:center">&lt;!”cssPath”&gt;</td>
+<td style="text-align:center">&lt;!”selector”&gt;</td>
 <td style="text-align:center">#LIMIT</td>
 <td style="text-align:center">$IT</td>
 </tr>
@@ -307,13 +308,13 @@ a = true;
 <li>$HREF</li>
 <li>$BUTTON</li>
 <li>$IT</li>
-<li>$LOOP
-<br></li>
+<li>$LOOP</li>
 </ul>
+<p><br></p>
 <h2 id="Scope"><a href="#Scope" class="headerlink" title="Scope"></a><a href="/docs/lemoncase2/index.html">Scope</a></h2><hr>
 <p>Global scope. 
-There is no <code>return</code> keyword in LC2.The main process has no parameter.<code>process main { }</code> is the program’s entry.
-<br></p>
+There is no <code>return</code> keyword in LC2.The main process has no parameter.<code>process main { }</code> is the program’s entry.</p>
+<p><br></p>
 <h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a><a href="/docs/lemoncase2/example.html">Example</a></h2><hr>
 <p>Here are some examples for you to get started with the LC2 language. <a href="/zh-cn/docs/lemoncase2/example.html"><code>Read more.</code></a></p>
 <p><strong>Hello World</strong> </p>

@@ -73,7 +73,7 @@
 				<h1>Case Editor</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-04-21
+					2017-05-23
 				</time>
 			</div>
 		</div>
@@ -108,6 +108,7 @@
     		<li><a href="/docs/lemoncase2/instructionkeyword.html">instruction keyword</a></li>
     		<li><a href="/docs/lemoncase2/actionkeyword.html">action keyword</a></li>
     		<li><a href="/docs/lemoncase2/expression.html">expression</a></li>
+			<li><a href="/docs/lemoncase2/selector.html">selector</a></li>
 			<li><a href="/docs/lemoncase2/subprocess.html">native sub-process</a></li>
 			<li><a href="/docs/lemoncase2/macro.html">macro</a></li>
 			<li><a href="/docs/lemoncase2/magic.html">magic keyword</a></li>
@@ -119,23 +120,23 @@
 
 
 
-			<aside id="toc" class="float-lg-right" role="navigation">
+			<aside id="toc" class="float-lg-right hidden-sm-down" role="navigation">
 				<div id="toc-inner">
 					<strong class="toc-title">
 						contents
 					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Tool-Bar"><span class="toc-text">Tool Bar</span></a></li></ol>
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Tool-Bar"><span class="toc-text">Tool Bar</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Main-Interface"><span class="toc-text">Main Interface</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
 				<h2 id="Tool-Bar"><a href="#Tool-Bar" class="headerlink" title="Tool Bar"></a>Tool Bar</h2><hr>
-<p>The whole toolbar is as shown below.</p>
-<p><img class="long-images" src="/images/code-editor/case-toolbar.png">
+<p>The whole toolbar is shown below.</p>
+<p><img src="/images/code-editor/case-toolbar.png">
 <br></p>
 <p><i class="fa fa-file-code-o"></i>  <strong>New Case</strong>  </p>
-<p>Create a new case out of work space whose default name is ‘Untitle-0.lc2’,but you should find a path to save it.You can also use <code>Ctrl+N</code> on keyboard to complete this operation.</p>
+<p>Create a new case out of work space with a default name ‘Untitle-0.lc2’, you should still find a path to save it later.You can also use <code>Ctrl+N</code> on keyboard to complete this operation.</p>
 <p><i class="fa fa-folder-open-o"></i> <strong>Open Case</strong></p>
-<p>Open a case in local system. You can also use <code>Ctrl+O</code> on keyboard to complete this operation.</p>
+<p>Open a case in your local system. You can also use <code>Ctrl+O</code> on keyboard to complete this operation.</p>
 <p><i class="fa fa-floppy-o"></i> <strong>Save Case</strong> </p>
 <ul>
 <li>If the case is created in work space,just click the button to finish saving. </li>
@@ -146,8 +147,10 @@ You can also use <code>Ctrl+S</code> to complete this operation.</li>
 <p>Select the elements in the page and output the its CSSPath to the code area.Right click to exit.</p>
 <p><i class="fa fa-link"></i> <strong>Insert Link</strong></p>
 <p>Insert the current URL in code area where the mouse pointer is located.</p>
-<p><i class="fa fa-play"></i> <strong>Start Case/</strong> <i class="fa fa-stop"></i> <strong>Stop Case</strong></p>
-<p>Start/Stop the current case.</p>
+<p><i class="fa fa-play"></i> <strong>Start Case /</strong> <i class="fa fa-pause"></i> <strong>Pause Case /</strong> <i class="fa fa-play-circle-o"></i> <strong>Continue Case</strong></p>
+<p>Start, pause, or continue the current case.</p>
+<p><i class="fa fa-stop"></i> <strong>Stop Case</strong></p>
+<p>Stop the current case.</p>
 <p><i class="fa fa-circle" style="color:red"></i> <strong>Start Record/</strong><i class="fa fa-stop-circle-o" style="color:red"></i> <strong>Stop Record</strong></p>
 <p>Convert all mouse and keyboard actions to codes.When starting recording, this button will change from <i class="fa fa-circle" style="color:red"></i> to <i class="fa fa-stop-circle-o" style="color:red"></i>. Click it again to stop recording.</p>
 <p><strong>selector &amp;&amp; xpath</strong></p>
@@ -156,6 +159,19 @@ You can also use <code>Ctrl+S</code> to complete this operation.</li>
 <p>Back/Forward to the previous/next code change, you can also use <code>Ctrl+Z</code>/<code>Ctrl+Y</code> to complete this operation.</p>
 <p><i class="fa fa-columns"></i> <strong>Split Editor</strong></p>
 <p>Split the editor and display the same content on the right, any changes on both sides will sync to the other side.Just like the split editor in Visual Studio Code.</p>
+<p><br></p>
+<h2 id="Main-Interface"><a href="#Main-Interface" class="headerlink" title="Main Interface"></a>Main Interface</h2><hr>
+<p>The whole main interface is shown below, and is separated into 2 parts：</p>
+<ul>
+<li>Case List</li>
+<li>Coding area</li>
+</ul>
+<p><img class="large-images" src="/images/code-editor/case-interface.png">
+<br></p>
+<p><strong>Case List</strong></p>
+<p>The Case List shows all the cases in the workspace. You can activate the case to be edited by double clicking it, and then the code contained in the selected case will pop up in the coding area.</p>
+<p><strong>Case Code</strong></p>
+<p>By recording or keyboard inputing, you can generate corresponding code in this area. Direct editing in the coding area is also allowed.</p>
 
 			</div>
 		</div>

@@ -73,7 +73,7 @@
 				<h1>Suite Editor</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-04-18
+					2017-05-20
 				</time>
 			</div>
 		</div>
@@ -108,6 +108,7 @@
     		<li><a href="/docs/lemoncase2/instructionkeyword.html">instruction keyword</a></li>
     		<li><a href="/docs/lemoncase2/actionkeyword.html">action keyword</a></li>
     		<li><a href="/docs/lemoncase2/expression.html">expression</a></li>
+			<li><a href="/docs/lemoncase2/selector.html">selector</a></li>
 			<li><a href="/docs/lemoncase2/subprocess.html">native sub-process</a></li>
 			<li><a href="/docs/lemoncase2/macro.html">macro</a></li>
 			<li><a href="/docs/lemoncase2/magic.html">magic keyword</a></li>
@@ -119,26 +120,27 @@
 
 
 
-			<aside id="toc" class="float-lg-right" role="navigation">
+			<aside id="toc" class="float-lg-right hidden-sm-down" role="navigation">
 				<div id="toc-inner">
 					<strong class="toc-title">
 						contents
 					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Tool-Bar"><span class="toc-text">Tool Bar</span></a></li></ol>
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Tool-Bar"><span class="toc-text">Tool Bar</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Main-Interface"><span class="toc-text">Main Interface</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
 				<h2 id="Tool-Bar"><a href="#Tool-Bar" class="headerlink" title="Tool Bar"></a>Tool Bar</h2><hr>
-<p>The whole toolbar is as shown below.</p>
-<p><img class="long-images" src="/images/code-editor/suite-toolbar.png"><br><br></p>
+<p>The whole toolbar is shown below.</p>
+<p><img class="long-images" src="/images/code-editor/suite-toolbar.png">
+<br></p>
 <p><i class="fa fa-file-text-o"></i> <strong>New Suite</strong>  </p>
-<p>Create a new suite out of work space whose default name is ‘Untitle-0.lct’,but you should find a path to save it. Here you can’t use <code>Ctrl+N</code> which only can be applied for create a new case.</p>
+<p>Create a new suite out of work space with a default name ‘Untitle-0.lct’, and you should still find a path to save it later. Here you <strong>can’t use</strong> <code>Ctrl+N</code> because this shortcut can only be used to create a new case.</p>
 <p><i class="fa fa-folder-open-o"></i> <strong>Open Suite</strong></p>
 <p>Open a suite in local system.</p>
 <p><i class="fa fa-floppy-o"></i> <strong>Save Suite</strong> </p>
 <ul>
 <li>If the suite is created in work space,just click the button to finish saving. </li>
-<li>If the suite is created by clicking the button “New Suite” and it is the first time to save it, you must find a path to save it.<br>You can also use <code>Ctrl+S</code> to complete this operation.</li>
+<li>If the suite is created by clicking the button “New Suite” and it is the first time to save it, you must find a path to save it. You can also use <code>Ctrl+S</code> to complete this operation.</li>
 </ul>
 <p><i class="fa fa-times"></i> <strong>Remove Suite</strong></p>
 <p>Remove but not delete the selected case which is highlighted with gray.</p>
@@ -150,6 +152,29 @@
 <p>Split the editor and display the same content on the right, any changes on both sides will sync to the other side.Just like the split editor in Visual Studio Code.</p>
 <p><i class="fa fa-list-alt"></i> <strong>Toggle Explorer</strong></p>
 <p>Open case library.Here you can choose the cases to add to current suite.</p>
+<p><br></p>
+<h2 id="Main-Interface"><a href="#Main-Interface" class="headerlink" title="Main Interface"></a>Main Interface</h2><hr>
+<p>The whole main interface is shown below, and is separated into 3 parts:</p>
+<ul>
+<li>Suite list</li>
+<li>Case list</li>
+<li>Case libirary</li>
+</ul>
+<p><img class="large-images" src="/images/code-editor/suite-interface.png">
+<br></p>
+<p><strong>Suite list</strong>
+Suite list shows all the suite in your work space. You can activate the suite to be edited by double clicking it. The cases contained in the suite will show in the case list on the right side.</p>
+<p><strong>Case list</strong>
+Case list shows the cases in the current suite. The case list contains 3 cols: case Number, case Name, and current case status. The status of the case includes: </p>
+<ul>
+<li><code>Ready</code>: The case needs to be run.</li>
+<li><code>Pass</code>: The case has been tested successfully.</li>
+<li><code>Failed</code>: The case failed.</li>
+</ul>
+<p><strong>Case library</strong>
+The case library shows all the cases under the current workspace sorted by the name of the case. Double-click the required case to import it into the case list and generate the test suite that the user needs.</p>
+<p><strong>Attention:</strong> 
+If the user renames a case which has been already referenced in a suite, the name  will not change in the <code>case list</code>, but will change and sycronize in the <code>case library</code>. In this situation, you needs to re-import the case from the <code>case library</code>, otherwise the suite may not be able to run successfully.</p>
 
 			</div>
 		</div>

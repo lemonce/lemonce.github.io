@@ -73,7 +73,7 @@
 				<h1>内置子过程</h1>
 				<time class="text-white">
 					最后更新：
-					2017-05-14
+					2017-05-20
 				</time>
 			</div>
 		</div>
@@ -108,6 +108,7 @@
     		<li><a href="/zh-cn/docs/lemoncase2/instructionkeyword.html">指令关键字</a></li>
     		<li><a href="/zh-cn/docs/lemoncase2/actionkeyword.html">动作关键字</a></li>
     		<li><a href="/zh-cn/docs/lemoncase2/expression.html">表达式</a></li>
+			<li><a href="/zh-cn/docs/lemoncase2/selector.html">选择器</a></li>
 			<li><a href="/zh-cn/docs/lemoncase2/subprocess.html">内置子过程</a></li>
 			<li><a href="/zh-cn/docs/lemoncase2/macro.html">宏</a></li>
 			<li><a href="/zh-cn/docs/lemoncase2/magic.html">魔术字</a></li>
@@ -119,7 +120,7 @@
 
 
 
-			<aside id="toc" class="float-lg-right" role="navigation">
+			<aside id="toc" class="float-lg-right hidden-sm-down" role="navigation">
 				<div id="toc-inner">
 					<strong class="toc-title">
 						页面内容：
@@ -131,14 +132,16 @@
 				<p>所有的内置子过程都需要有如下的形式：<code>子过程名称()</code>。</p>
 <p><br></p>
 <h2 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h2><hr>
-<p><strong>now( )</strong></p>
-<p><code>now()</code> 方法返回自1970年1月1日 00:00:00 UTC到当前时间的毫秒数。</p>
+<p><strong>now</strong></p>
+<p></p><p class="alert alert-warning">now( )</p>
+返回自1970年1月1日 00:00:00 UTC到当前时间的毫秒数。<p></p>
 <pre class="sublemon">
 //假设以2017年1月1日，0时0分为当前时间
 log now(); //输出 1483200000</pre>
 
-<p><strong>format( )</strong></p>
-<p><code>format( )</code> 以某种确定的格式输出指定的时间，可与上方的 <code>now( )</code> 共同使用。关于<code>format( )</code>更详细的使用方式请<a href="https://www.npmjs.com/package/dateformat" target="_blank" rel="external">点击这里</a>。</p>
+<p><strong>format</strong></p>
+<p></p><p class="alert alert-warning">format(“time”,”display-format”)<br>format(“now”,”display-format”)</p>
+以某种确定的格式输出指定的时间，可与上方的 <strong>now</strong> 共同使用。关于 <strong>format</strong> 更详细的使用方式请<a href="https://www.npmjs.com/package/dateformat" target="_blank" rel="external">点击这里</a>。<p></p>
 <pre class="sublemon">
 //用于输出某一天的相关信息
 format("May 11 2012"，"fullDate"); //输出：Friday,May 11,2017
@@ -158,72 +161,85 @@ log format(now,"isoDateTime");
 
 <p><br></p>
 <h2 id="Type"><a href="#Type" class="headerlink" title="Type"></a>Type</h2><hr>
-<p><strong>bool( )</strong></p>
-<p><code>bool()</code> 对象是一个布尔值的对象包装器。可以将变量、数字或正则转换为布尔值。</p>
+<p><strong>bool</strong></p>
+<p></p><p class="alert alert-warning">bool([variable,number,RegExp])</p>
+bool 对象是一个布尔值的对象包装器。可以将变量、数字或正则转换为布尔值。<p></p>
 <pre class="sublemon">
 bool(3.14) // 输出 true
 bool(3>4) // 输出 false</pre>
 
-<p><strong>number( )</strong></p>
-<p><code>number()</code> 对象是经过封装的能让你处理数字值的对象。number 对象由 number() 构造器创建。</p>
+<p><strong>number</strong></p>
+<p></p><p class="alert alert-warning">number(“string”)</p>
+number 对象是经过封装的能让你处理数字值的对象。number 对象由 number() 构造器创建。<p></p>
 <pre class="sublemon">
 number('3.14') // 输出  3.14
-number('3'+'2') // 输出  32</pre>
+number('3'+'2') // 输出  32
+number('') // 输出  0</pre>
 
-<p><strong>string( )</strong></p>
-<p><code>string()</code> 全局对象是一个用于字符串或一个字符序列的构造函数。也能使用 <code>string</code> 将其他值生成或转换成字符串。</p>
+<p><strong>string</strong></p>
+<p></p><p class="alert alert-warning">string([variable,number]),</p>
+string 全局对象是一个用于字符串或一个字符序列的构造函数。也能使用 <code>string</code> 将其他值生成或转换成字符串。<p></p>
 <pre class="sublemon">
-log length(string(3.14)); //输出  4</pre>
+log length(string(3+0.14)); //输出  4</pre>
 
 <p><br></p>
 <h2 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h2><hr>
-<p><strong>abs( )</strong></p>
-<p><code>abs(number)</code> 返回当前数字的绝对值, abs(x)=|x|。</p>
+<p><strong>abs</strong></p>
+<p></p><p class="alert alert-warning">abs([number])</p>
+返回当前数字的绝对值, abs(x)=|x|。<p></p>
 <pre class="sublemon">
 abs(-3.14) // 输出  3.14
 abs('') // 输出  0
 abs() // 输出  NaN
 abs('string') // 输出  NaN</pre>
 
-<p><strong>ceil( )</strong></p>
-<p><code>ceil(number)</code> 返回大于当前数字的最小的整数。</p>
+<p><strong>ceil</strong></p>
+<p></p><p class="alert alert-warning">ceil([number])</p>
+返回大于当前数字的最小的整数。<p></p>
 <pre class="sublemon">
 ceil(3.14) // 输出  4
 ceil(-3.14) // 输出  -3</pre>
 
-<p><strong>floor( )</strong></p>
-<p><code>floor(number)</code> 返回小于当前数字的最大整数。</p>
+<p><strong>floor</strong></p>
+<p></p><p class="alert alert-warning">floor([number])</p>
+返回小于当前数字的最大整数。<p></p>
 <pre class="sublemon">
 floor(3.14) // 输出  3
 floor(-3.14) // 输出  -4</pre>
 
-<p><strong>max( )</strong></p>
-<p><code>max(number1,number2,...)</code> 返回一组数中的最大值。</p>
+<p><strong>max</strong></p>
+<p></p><p class="alert alert-warning">max([number1],[number2],…)</p>
+返回一组数中的最大值。<p></p>
 <pre class="sublemon">
 max(3+2,number('3'+'2'))  // 输出  32</pre>
 
-<p><strong>min( )</strong></p>
-<p><code>min(number1,number2,...)</code> 返回一组数中的最小值。</p>
-<p><strong>random( )</strong></p>
-<p><code>random()</code> 返回一个浮点，伪随机数在范围[0，1)，然后用户可以缩放到所需的范围。实现选择初始种子进行随机数生成算法；它不能被用户选择或重置。</p>
+<p><strong>min</strong></p>
+<p></p><p class="alert alert-warning">min([number1],[number2],…)</p>
+返回一组数中的最小值。<p></p>
+<p><strong>random</strong></p>
+<p></p><p class="alert alert-warning">random()</p>
+返回一个浮点，伪随机数在范围[0，1)，然后用户可以缩放到所需的范围。实现选择初始种子进行随机数生成算法；它不能被用户选择或重置。<p></p>
 <pre class="sublemon">
 //在一个特定的范围输出一个随机数
 random() * (max - min) + min </pre>
 
 <p><br></p>
 <h2 id="String"><a href="#String" class="headerlink" title="String"></a>String</h2><hr>
-<p><strong>length( )</strong> </p>
-<p><code>length(string)</code>表示一个字符串的长度。</p>
+<p><strong>length</strong> </p>
+<p></p><p class="alert alert-warning">length(“string”)</p>
+表示一个字符串的长度。<p></p>
 <pre class="sublemon">
 length("Lemonce") //输出  7</pre>
 
-<p><strong>charAt( )</strong></p>
-<p><code>charAt(string,pos)</code> 从一个字符串中返回指定的字符。</p>
+<p><strong>charAt</strong></p>
+<p></p><p class="alert alert-warning">charAt(“string”,[position:number])</p>
+从一个字符串中返回指定的字符。<p></p>
 <pre class="sublemon">
 charAt('Lemonce',5)  //输出 'c'</pre>
 
-<p><strong>indexOf( )</strong></p>
-<p><code>indexOf(dstSting,testString)</code> 方法返回调用 String 对象中第一次出现的指定值的索引，开始在 fromIndex 进行搜索。如果未找到该值，则返回-1。</p>
+<p><strong>indexOf</strong></p>
+<p></p><p class="alert alert-warning">indexOf(“wholeString”,”testString”)</p>
+返回调用 String 对象中第一次出现的指定值的索引，开始在 fromIndex 进行搜索。如果未找到该值，则返回-1。<p></p>
 <pre class="sublemon">
 indexOf('Lemonce','L')  //输出  0
 indexOf('Lemonce','e')  //输出  1

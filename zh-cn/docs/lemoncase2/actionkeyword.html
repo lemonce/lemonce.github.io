@@ -73,7 +73,7 @@
 				<h1>动作关键字</h1>
 				<time class="text-white">
 					最后更新：
-					2017-05-15
+					2017-05-23
 				</time>
 			</div>
 		</div>
@@ -108,6 +108,7 @@
     		<li><a href="/zh-cn/docs/lemoncase2/instructionkeyword.html">指令关键字</a></li>
     		<li><a href="/zh-cn/docs/lemoncase2/actionkeyword.html">动作关键字</a></li>
     		<li><a href="/zh-cn/docs/lemoncase2/expression.html">表达式</a></li>
+			<li><a href="/zh-cn/docs/lemoncase2/selector.html">选择器</a></li>
 			<li><a href="/zh-cn/docs/lemoncase2/subprocess.html">内置子过程</a></li>
 			<li><a href="/zh-cn/docs/lemoncase2/macro.html">宏</a></li>
 			<li><a href="/zh-cn/docs/lemoncase2/magic.html">魔术字</a></li>
@@ -119,16 +120,18 @@
 
 
 
-			<aside id="toc" class="float-lg-right" role="navigation">
+			<aside id="toc" class="float-lg-right hidden-sm-down" role="navigation">
 				<div id="toc-inner">
 					<strong class="toc-title">
 						页面内容：
 					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#click-dblclick"><span class="toc-text">click / dblclick</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#input…by"><span class="toc-text">input…by</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#move"><span class="toc-text">move</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hold"><span class="toc-text">hold</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#drop"><span class="toc-text">drop</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#scroll"><span class="toc-text">scroll</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jumpto-back-forward-refresh"><span class="toc-text">jumpto / back / forward / refresh</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#wait"><span class="toc-text">wait</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#assert"><span class="toc-text">assert</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#upload"><span class="toc-text">upload</span></a></li></ol>
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#click-dblclick"><span class="toc-text">click / dblclick</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#input…by"><span class="toc-text">input…by</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#move"><span class="toc-text">move</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hold"><span class="toc-text">hold</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#drop"><span class="toc-text">drop</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#scroll"><span class="toc-text">scroll</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jumpto"><span class="toc-text">jumpto</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#back-forward-refresh"><span class="toc-text">back / forward / refresh</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#wait"><span class="toc-text">wait</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#assert"><span class="toc-text">assert</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#upload"><span class="toc-text">upload</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
 				<h2 id="click-dblclick"><a href="#click-dblclick" class="headerlink" title="click / dblclick"></a>click / dblclick</h2><hr>
+<p class="alert alert-warning">click/dblclick “<a href="/zh-cn/docs/lemoncase2/selector.html">selector</a>“;</p>
+
 <p>单击或双击一个HTML的页面元素。</p>
 <pre class="sublemon">
 process main () {
@@ -145,7 +148,8 @@ process main () {
 
 <p><br></p>
 <h2 id="input…by"><a href="#input…by" class="headerlink" title="input…by"></a>input…by</h2><hr>
-<p>输入一段字符串到文档框中去。 </p>
+<p></p><p class="alert alert-warning">input “<a href="/zh-cn/docs/lemoncase2/selector.html">selector</a>“ by “string”;</p>
+输入一段字符串到文档框中去。 <p></p>
 <p><input type="text"> 或者 <textarea></textarea></p>
 <pre class="sublemon">
 // eg: id="link" class="case" 
@@ -153,7 +157,8 @@ input 'div#link.case' by "hello world.";</pre>
 
 <p><br></p>
 <h2 id="move"><a href="#move" class="headerlink" title="move"></a>move</h2><hr>
-<p>对HTML页面元素触发鼠标移入移出的动作。该动作可触发CSShover。</p>
+<p></p><p class="alert alert-warning">move “<a href="/zh-cn/docs/lemoncase2/selector.html">selector</a>“;</p>
+对HTML页面元素触发鼠标移入移出的动作。该动作可触发CSShover。<p></p>
 <pre class="sublemon">
 process main () {
 
@@ -169,10 +174,12 @@ process main () {
 
 <p><br></p>
 <h2 id="hold"><a href="#hold" class="headerlink" title="hold"></a>hold</h2><hr>
-<p>鼠标持续点住一个元素。具体的示例在下方的<code>drop</code>中。</p>
+<p></p><p class="alert alert-warning">hold “<a href="/zh-cn/docs/lemoncase2/selector.html">selector</a>“;</p>
+鼠标持续点住一个元素。具体的示例在下方的<code>drop</code>中。<p></p>
 <p><br></p>
 <h2 id="drop"><a href="#drop" class="headerlink" title="drop"></a>drop</h2><hr>
-<p>鼠标释放一个元素。</p>
+<p></p><p class="alert alert-warning">drop;</p>
+鼠标释放一个元素。<p></p>
 <pre class="sublemon">
 process main () {
 
@@ -189,7 +196,8 @@ process main () {
 
 <p><br></p>
 <h2 id="scroll"><a href="#scroll" class="headerlink" title="scroll"></a>scroll</h2><hr>
-<p>滚动页面，保持选中元素位于屏幕中部。</p>
+<p></p><p class="alert alert-warning">scroll “<a href="/zh-cn/docs/lemoncase2/selector.html">selector</a>“;</p>
+滚动页面，保持选中元素位于屏幕中部。<p></p>
 <pre class="sublemon">
 process main () {
 
@@ -202,8 +210,13 @@ process main () {
 }</pre>
 
 <p><br></p>
-<h2 id="jumpto-back-forward-refresh"><a href="#jumpto-back-forward-refresh" class="headerlink" title="jumpto / back / forward / refresh"></a>jumpto / back / forward / refresh</h2><hr>
-<p><code>jumpto</code> 跳转到一个URL链接；<code>forward</code> 向前移动一页；<code>back</code> 后退一页；<code>refresh</code> 刷新当前网页。</p>
+<h2 id="jumpto"><a href="#jumpto" class="headerlink" title="jumpto"></a>jumpto</h2><hr>
+<p></p><p class="alert alert-warning">jumpto “URL”;</p>
+跳转到一个URL链接。<p></p>
+<p><br></p>
+<h2 id="back-forward-refresh"><a href="#back-forward-refresh" class="headerlink" title="back / forward / refresh"></a>back / forward / refresh</h2><hr>
+<p></p><p class="alert alert-warning">back;<br>forward;<br>refresh;</p>
+<code>back</code> 后退一页；<code>forward</code> 向前移动一页；<code>refresh</code> 刷新当前网页。<p></p>
 <pre class="sublemon">
 process main () {
 
@@ -228,27 +241,33 @@ process main () {
 
 <p><br></p>
 <h2 id="wait"><a href="#wait" class="headerlink" title="wait"></a>wait</h2><hr>
-<p>等待一定的时间（以毫秒为单位）。</p>
+<p></p><p class="alert alert-warning">wait [time:number]</p>
+等待一定的时间（以毫秒为单位）。<p></p>
 <pre class="sublemon">
 //编辑器会等待3000毫秒再执行下一个动作
 wait 3000;</pre>
 
 <p><br></p>
 <h2 id="assert"><a href="#assert" class="headerlink" title="assert"></a>assert</h2><hr>
-<p>断言一个表达式为真（在一定的时间内）</p>
+<p></p><p class="alert alert-warning">assert [expression] in [time:number]</p>
+断言一个表达式为真或假（在一定的时间内），具体参照以下示例。关于表达式的更多介绍，<a href="/zh-cn/docs/lemoncase2/expression.html">点击这里</a>。<p></p>
 <pre class="sublemon">
-//断言存在一个id为'test'的输入框
-assert <#"textarea#test">;
+
+//断言id为'test'的输入框个数为1个
+assert <# "textarea#test"=""> == 1;
+
+//断言id为'test'的输入框包含'Lemonce'
+assert <@ "testarea#test"=""> ~~ "Lemonce"
 
 //断言id名为'test'的输入框会在两秒钟内出现
-assert <#"textarea#test"> in 2000;</#"textarea#test"></#"textarea#test"></pre>
+assert <# "textarea#test"=""> in 2000;</#></@></#></pre>
 
 <p><br></p>
 <h2 id="upload"><a href="#upload" class="headerlink" title="upload"></a>upload</h2><hr>
-<p>如果一个测试需要上传一个文件到一个 web 应用程序，可以采用 <code>upload</code> 命令来上传。语法格式为：<code>upload [the path of a file]</code>。以下是例子。</p>
+<p></p><p class="alert alert-warning">upload [“filePath1”,”filePath2”]</p>
+如果一个测试需要上传一个文件到一个 web 应用程序，可以采用 <code>upload</code> 命令来上传。以下是例子。<p></p>
 <p><strong>注意</strong>：在 Windows 系统中路径采用的是”\”，需要用户改为 “/“ 或进行转义 “\\” 才能在灵萌测中运行。如”C:\Users\1.img”需要在灵萌测中改为”C:/Users/1.img”。</p>
 <pre class="sublemon">
-
 #AUTOWAIT 1000
 process main () {
 
@@ -257,11 +276,11 @@ process main () {
     wait 3333;
     // 点击 Basic upload
     click "div.ng-scope > .drop > span.btn-default";
-    upload ["path of file1","path of file2"];
+    upload ["C:/1.lc2"];
     wait 4000;
     // 点击 Single image upload
     click "body > div:nth-child(1) > section:nth-child(2) > div:nth-child(10) > div:nth-child(4) > span:nth-child(1)";
-    upload ["path of file3","path of file4"];
+    upload ["C:/1.jpg","D:/2.png"];
     // 当只支持上传一个文件时，lemonce会默认上传第一个文件
     wait 4000;
 }</pre>
