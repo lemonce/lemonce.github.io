@@ -73,7 +73,7 @@
 				<h1>Instruction keyword</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-05-13
+					2017-05-24
 				</time>
 			</div>
 		</div>
@@ -130,7 +130,8 @@
 			</aside>
 			<div class="page-inner">
 				<h2 id="process"><a href="#process" class="headerlink" title="process"></a>process</h2><hr>
-<p>Define a process,including <code>process main</code> and <code>process sub</code>.</p>
+<p></p><p class="alert alert-warning">process main{ }<br>process sub{ }</p>
+Define a process,including <code>process main</code> and <code>process sub</code>.<p></p>
 <pre class="sublemon">//This is a main process.
 process main(){
 
@@ -139,12 +140,12 @@ process main(){
 //This is a sub process which can be named with different keywords without special characters (except 'main').
 process anyname(){ 
 
-}
-</pre>  
+}</pre>  
 
 <p><br></p>
 <h2 id="return"><a href="#return" class="headerlink" title="return"></a>return</h2><hr>
-<p>The <code>return</code> statement ends sub-process execution and specifies a value to be returned to the sub-process caller. A sub-process immediately stops at the point where return is called.</p>
+<p></p><p class="alert alert-warning">return;</p>
+The <code>return</code> statement ends sub-process execution and specifies a value to be returned to the sub-process caller. A sub-process immediately stops at the point where return is called.<p></p>
 <pre class="sublemon">
 process main () {
     counter();   
@@ -158,12 +159,12 @@ process counter() {
       }
     return;
     log count + 'C';        // Never appears. 
-}
-</pre>
+}</pre>
 
 <p><br></p>
 <h2 id="for…in"><a href="#for…in" class="headerlink" title="for…in"></a>for…in</h2><hr>
-<p>The <code>for...in</code> statement iterates over the enumerable properties of an object, in original insertion order. For each distinct property, statements can be executed.</p>
+<p></p><p class="alert alert-warning">for (variable in object){ }</p>
+The <code>for...in</code> statement iterates over the enumerable properties of an object, in original insertion order. For each distinct property, statements can be executed.<p></p>
 <p>Syntax：</p>
 <pre><code>for(variable in object){
 
@@ -177,12 +178,12 @@ process main () {
 }
 //Output:
 //A[a]=1
-//A[b]=2
-</pre>
+//A[b]=2</pre>
 
 <p><br></p>
 <h2 id="for…of"><a href="#for…of" class="headerlink" title="for…of"></a>for…of</h2><hr>
-<p>The <code>for...of</code> statement creates a loop iterating over iterable objects, invoking a custom iteration hook with statements to be executed for the value of each distinct property.</p>
+<p></p><p class="alert alert-warning">for (variable of object){ statement }</p>
+The <code>for...of</code> statement creates a loop iterating over iterable objects, invoking a custom iteration hook with statements to be executed for the value of each distinct property.<p></p>
 <p>Syntax：</p>
 <pre><code>for (variable of object){
     statement
@@ -213,12 +214,12 @@ process main () {
 //o
 //n
 //c
-//e
-</pre>
+//e</pre>
 
 <p><br></p>
 <h2 id="if…else"><a href="#if…else" class="headerlink" title="if…else"></a>if…else</h2><hr>
-<p>The <code>if</code> statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement can be executed.</p>
+<p></p><p class="alert alert-warning">if (condition)<br>statement1<br>[else<br>statement2]</p>
+The <code>if</code> statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement can be executed.<p></p>
 <pre class="sublemon">
 process main () {
 a=4;
@@ -234,12 +235,12 @@ else {
     log "3";
  }
 }
-//Output "3"
-</pre>
+//Output "3"</pre>
 
 <p><br></p>
 <h2 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h2><hr>
-<p>The <code>continue</code> statement terminates execution of the statements in the current iteration of the current or labeled loop, and continues execution of the loop with the next iteration.</p>
+<p></p><p class="alert alert-warning">continue;</p>
+The <code>continue</code> statement terminates execution of the statements in the current iteration of the current or labeled loop, and continues execution of the loop with the next iteration.<p></p>
 <pre class="sublemon">
 process main () {
 i = 0;
@@ -253,12 +254,12 @@ while (i < 5) {
    n += i;
    log n;  //Output 1,3,7,12
    }
-}
-</pre>
+}</pre>
 
 <p><br></p>
 <h2 id="while"><a href="#while" class="headerlink" title="while"></a>while</h2><hr>
-<p>The <code>while</code> statement creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement.</p>
+<p></p><p class="alert alert-warning">while (condition)<br> statement</p>
+The <code>while</code> statement creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement.<p></p>
 <pre class="sublemon">
 process main () {
     counter();   
@@ -272,16 +273,15 @@ process counter() {
       }
     return;
     log count + 'C';        // This statement never appears. 
-}
-</pre>
+}</pre>
 
 <p><br></p>
 <h2 id="log"><a href="#log" class="headerlink" title="log"></a>log</h2><hr>
-<p>Output a message to the console. You can output variables, expressions, strings etc. that have been defined in the test case.</p>
+<p></p><p class="alert alert-warning">log [expression,variable,string];</p>
+Output a message to the console. You can output variables, expressions, strings etc. that have been defined in the test case.<p></p>
 <pre class="sublemon">
 log '2'+3    //Output  23
-log true    //Output  true
-</pre>
+log true    //Output  true</pre>
 
 			</div>
 		</div>

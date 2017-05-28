@@ -73,7 +73,7 @@
 				<h1>Lemoncase2 Guide</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-05-19
+					2017-05-28
 				</time>
 			</div>
 		</div>
@@ -125,7 +125,7 @@
 					<strong class="toc-title">
 						contents
 					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Grammar"><span class="toc-text">Grammar</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Zoom-Table"><span class="toc-text">Zoom Table</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Identifier"><span class="toc-text">Identifier</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Datatype"><span class="toc-text">Datatype</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Instruction-keyword"><span class="toc-text">Instruction keyword</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Action-keyword"><span class="toc-text">Action keyword</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Expression"><span class="toc-text">Expression</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Inbuilt-sub-process"><span class="toc-text">Inbuilt sub-process</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Marco"><span class="toc-text">Marco</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Magic-keyword"><span class="toc-text">Magic keyword</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Scope"><span class="toc-text">Scope</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Example"><span class="toc-text">Example</span></a></li></ol>
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Grammar"><span class="toc-text">Grammar</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Scope"><span class="toc-text">Scope</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Example"><span class="toc-text">Example</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
@@ -133,7 +133,8 @@
 <p>browser automation library: <a href="http://lemonce.github.io/lemoncase2" target="_blank" rel="external">http://lemonce.github.io/lemoncase2</a></p>
 <p><br></p>
 <h2 id="Grammar"><a href="#Grammar" class="headerlink" title="Grammar"></a><a href="/docs/lemoncase2/index.html">Grammar</a></h2><hr>
-<h4 id="Zoom-Table"><a href="#Zoom-Table" class="headerlink" title="Zoom Table"></a><strong>Zoom Table</strong></h4><table>
+<p><strong>Zoom Table</strong></p>
+<table>
 <thead>
 <tr>
 <th style="text-align:center"><a href="/docs/lemoncase2/instructionkeyword.html">Instruction keyword</a></th>
@@ -154,14 +155,14 @@
 <tr>
 <td style="text-align:center">process</td>
 <td style="text-align:center">input…by</td>
-<td style="text-align:center">&lt;#”selector”&gt;</td>
+<td style="text-align:center">&lt;#”<a href="/docs/lemoncase2/selector.html">selector</a>“&gt;</td>
 <td style="text-align:center">#AUTOWAIT</td>
 <td style="text-align:center">$BUTTON</td>
 </tr>
 <tr>
 <td style="text-align:center">return</td>
 <td style="text-align:center">move</td>
-<td style="text-align:center">&lt;!”selector”&gt;</td>
+<td style="text-align:center">&lt;!”<a href="/docs/lemoncase2/selector.html">selector</a>“&gt;</td>
 <td style="text-align:center">#LIMIT</td>
 <td style="text-align:center">$IT</td>
 </tr>
@@ -230,16 +231,18 @@
 </tr>
 </tbody>
 </table>
-<h4 id="Identifier"><a href="#Identifier" class="headerlink" title="Identifier"></a><strong>Identifier</strong></h4><p>Lemoncase2 is similar to JS in identifiers.</p>
+<p><strong>Identifier</strong> </p>
+<p>Lemoncase2 is similar to JS in identifiers.</p>
 <pre class="sublemon">
 var a = 1; // You have to identify 'var' in JS.
 //On the contrary, you do not have to use 'var' keyword in LC2.
 //So this is a wrong statement in Lemoncase.
 a = 1;
-a = true;
-</pre>
+a = true;</pre>
 
-<h4 id="Datatype"><a href="#Datatype" class="headerlink" title="Datatype"></a><strong>Datatype</strong></h4><p>The following shows a list of data types which can be used in LC2.</p>
+<p><br>
+<strong>Datatype</strong></p>
+<p>The following shows a list of data types which can be used in LC2.</p>
 <ul>
 <li>number (e.g., 0.12, 1e-3)</li>
 <li>string (e.g., ‘you’, “me”)</li>
@@ -247,10 +250,10 @@ a = true;
 <li>RegExp</li>
 </ul>
 <p>When you use ~~ operator, the RegExp will be used to match the string, otherwise it will generate a random string based on the RegExp.</p>
-<p>RegExp can be used it if you want to do some fuzzy testing.
-<br>
-<br></p>
-<h4 id="Instruction-keyword"><a href="#Instruction-keyword" class="headerlink" title="Instruction keyword"></a><strong>Instruction keyword</strong></h4><p>Below are the instruction keywords in LC2. <a href="/docs/lemoncase2/instructionkeyword.html"><code>Read more.</code></a></p>
+<p>RegExp can be used it if you want to do some fuzzy testing.</p>
+<p><br>
+<strong>Instruction keyword</strong> </p>
+<p>Below are the instruction keywords in LC2. <a href="/docs/lemoncase2/instructionkeyword.html"><code>Read more.</code></a></p>
 <ul>
 <li>import</li>
 <li>process (main/sub)</li>
@@ -259,51 +262,63 @@ a = true;
 <li>if…else</li>
 <li>continue</li>
 <li>while</li>
-<li>log
-<br>
-<br></li>
+<li>log</li>
 </ul>
-<h4 id="Action-keyword"><a href="#Action-keyword" class="headerlink" title="Action keyword"></a><strong>Action keyword</strong></h4><p>Below are the action keywords in LC2. <a href="/docs/lemoncase2/actionkeyword.html"><code>Read more.</code></a></p>
+<p><br>
+<strong>Action keyword</strong> </p>
+<p>Below are the action keywords in LC2. <a href="/docs/lemoncase2/actionkeyword.html"><code>Read more.</code></a></p>
 <ul>
-<li>click/dbclick</li>
+<li>click/dblclick</li>
 <li>input…by</li>
 <li>move/hold/drop</li>
 <li>scroll</li>
 <li>jumpto</li>
+<li>back/forward/refresh</li>
 <li>wait</li>
 <li>assert</li>
-<li>forward/back</li>
-<li>refresh</li>
-<li>upload
-<br>
-<br></li>
+<li>upload</li>
 </ul>
-<h4 id="Expression"><a href="#Expression" class="headerlink" title="Expression"></a><strong>Expression</strong></h4><p>Below are the expressions in LC2. <a href="/docs/lemoncase2/expression.html"><code>Read more.</code></a></p>
+<p><br>
+<strong>Expression</strong> </p>
+<p>Below are the expressions in LC2. <a href="/docs/lemoncase2/expression.html"><code>Read more.</code></a></p>
 <ul>
-<li>&lt;@ [selector:string] /&gt;/&lt;# [selector:string] /&gt;/&lt;! [selector:string] /&gt;</li>
-<li>[exp_A:string] ~~ [exp_B:string|RegExp]</li>
-<li>[exp_A:string] !~ [exp_B:string|RegExp]
-<br>
-<br></li>
+<li>&lt;# “selector” /&gt;</li>
+<li>&lt;@ “selector” /&gt;</li>
+<li>&lt;! “selector” /&gt;</li>
+<li>“stringA” ~~ “stringB”</li>
+<li>“stringA” ~~ /RegExp/</li>
+<li>“stringA” == “stringB”</li>
+<li>[var] == [var]????</li>
 </ul>
-<h4 id="Inbuilt-sub-process"><a href="#Inbuilt-sub-process" class="headerlink" title="Inbuilt sub-process"></a><strong>Inbuilt sub-process</strong></h4><p>Below are the types of the inbuilt sub-process in LC2. <a href="/docs/lemoncase2/subprocess.html"><code>Read more.</code></a></p>
+<p><br>
+<strong>Selector</strong> </p>
+<p>Below are the type of selectors applied in Lemoncase2.<a href="docs/lemoncase2/selector.html"><code>Read more.</code></a></p>
 <ul>
-<li>format/now</li>
-<li>bool/number</li>
-<li>ceil/floor/max/min/random</li>
-<li>length/charAt/indexOf/substr/trim
-<br>
-<br></li>
+<li>css selector</li>
+<li>xpath</li>
+<li>sizzle</li>
 </ul>
-<h4 id="Marco"><a href="#Marco" class="headerlink" title="Marco"></a><strong>Marco</strong></h4><p>Macro is the global setting for your case during runtime. <a href="/docs/lemoncase2/marco.html"><code>Read more.</code></a></p>
+<p><br>
+<strong>Native sub-process</strong> </p>
+<p>Below are the types of the inbuilt sub-process in LC2. <a href="/docs/lemoncase2/subprocess.html"><code>Read more.</code></a></p>
+<ul>
+<li>now/format</li>
+<li>bool/number/string</li>
+<li>abs/ceil/floor/max/min/random</li>
+<li>length/charAt/indexOf/substr/trim</li>
+<li>length/for…in/for…of/indexOf</li>
+</ul>
+<p><br>
+<strong>Marco</strong> </p>
+<p>Macro is the global setting for your case during runtime. <a href="/docs/lemoncase2/marco.html"><code>Read more.</code></a></p>
 <ul>
 <li>#TIMES</li>
 <li>#AUTOWAIT</li>
-<li>#LIMIT
-<br>
-<br></li>
+<li>#LIMIT</li>
 </ul>
-<h4 id="Magic-keyword"><a href="#Magic-keyword" class="headerlink" title="Magic keyword"></a><strong>Magic keyword</strong></h4><p>Below are the magic keywords which stand for some special functions. <a href="/docs/lemoncase2/marco.html"><code>Read more.</code></a></p>
+<p><br>
+<strong>Magic keyword</strong></p>
+<p>Below are the magic keywords which stand for some special functions. <a href="/docs/lemoncase2/marco.html"><code>Read more.</code></a></p>
 <ul>
 <li>$HREF</li>
 <li>$BUTTON</li>

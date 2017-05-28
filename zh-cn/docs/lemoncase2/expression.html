@@ -73,7 +73,7 @@
 				<h1>表达式</h1>
 				<time class="text-white">
 					最后更新：
-					2017-05-09
+					2017-05-24
 				</time>
 			</div>
 		</div>
@@ -131,17 +131,15 @@
 			<div class="page-inner">
 				<h2 id="选择器表达式"><a href="#选择器表达式" class="headerlink" title="选择器表达式"></a>选择器表达式</h2><hr>
 <p>以下是 Lemoncase2 的三种选择器操作表达式，帮助用户更好地选择页面元素相应的属性。</p>
-<ul>
-<li><p><strong>&lt;# [selector:string] /&gt;</strong> 
-输出：该选择器的个数。支持计算表达式与变量。</p>
-</li>
-<li><p><strong>&lt;@ [selector:string] /&gt;</strong> 
-选取 HTML 内部第一个与该选择器匹配的元素中的内容。如果不存在相应内容，则输出：<code>null</code>。</p>
-</li>
-<li><p><strong>&lt;! [selector:string] /&gt;</strong> 
-检查该元素是否存在。如果存在输出：<code>true</code>，不存在输出：<code>null</code>.</p>
-</li>
-</ul>
+<p><br>
+<span class="alert alert-warning"><strong>&lt;# <a href="/zh-cn/docs/lemoncase2/selector.html">“selector”</a> /&gt;</strong> </span></p>
+<p>输出：该选择器的个数。支持计算表达式与变量。</p>
+<p><br>
+<span class="alert alert-warning"><strong>&lt;@ <a href="/zh-cn/docs/lemoncase2/selector.html">“selector”</a> /&gt;</strong> </span></p>
+<p>选取 HTML 内部第一个与该选择器匹配的元素中的内容。如果不存在相应内容，则输出：<code>null</code>。</p>
+<p><br>
+<span class="alert alert-warning"><strong>&lt;! <a href="/zh-cn/docs/lemoncase2/selector.html">“selector”</a> /&gt;</strong> </span></p>
+<p>检查该元素是否存在。如果存在输出：<code>true</code>，不存在输出：<code>null</code>.</p>
 <p>示例如下：</p>
 <pre><code>process main () {
 
@@ -156,7 +154,7 @@
     log &lt;@ &quot;.msg&quot;/&gt;;  //输出类&quot;msg&quot;内部的文字
 
     // &lt;! &quot;selector&quot;/&gt;
-    log &lt;! &quot;[name=username]&quot;/&gt;; //验证&quot;[name=username]&quot;是否存在
+    log &lt;! &quot;[name=username]&quot;/&gt;`; //验证&quot;[name=username]&quot;是否存在
     log &lt;! &quot;.a&quot;/&gt;;
 }
 </code></pre><p><br></p>
