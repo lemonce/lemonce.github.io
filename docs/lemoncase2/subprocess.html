@@ -2,7 +2,7 @@
 <html lang="en">
 <head prefix="og: http://ogp.me/ns#">
 	<meta charset="utf-8">
-	<title>Native sub-process - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
+	<title>Standard built-in objects - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="web ui testing tool, web application testing tool, automated web ui testing tool, automated web application testing tool, automated testing tools for web applications, gui testing tool, web ui testing, free web ui testing tools, free automation testing tools, web automation testing tools, regression testing tools, selenium, free, open source">
@@ -70,10 +70,10 @@
 	<article class="page clearfix">
 		<div class="page-header bg-teal-gradient py-5">
 			<div class="container">
-				<h1>Native sub-process</h1>
+				<h1>Standard built-in objects</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-05-28
+					2017-05-29
 				</time>
 			</div>
 		</div>
@@ -109,7 +109,7 @@
     		<li><a href="/docs/lemoncase2/actionkeyword.html">action keyword</a></li>
     		<li><a href="/docs/lemoncase2/expression.html">expression</a></li>
 			<li><a href="/docs/lemoncase2/selector.html">selector</a></li>
-			<li><a href="/docs/lemoncase2/subprocess.html">native sub-process</a></li>
+			<li><a href="/docs/lemoncase2/subprocess.html">standard built-in objects</a></li>
 			<li><a href="/docs/lemoncase2/macro.html">macro</a></li>
 			<li><a href="/docs/lemoncase2/magic.html">magic keyword</a></li>
 			<li><a href="/docs/lemoncase2/example.html">example</a></li>
@@ -125,13 +125,55 @@
 					<strong class="toc-title">
 						contents
 					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Date"><span class="toc-text">Date</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Type"><span class="toc-text">Type</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Math"><span class="toc-text">Math</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#String"><span class="toc-text">String</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array"><span class="toc-text">Array</span></a></li></ol>
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Array"><span class="toc-text">Array</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Bool"><span class="toc-text">Bool</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Date"><span class="toc-text">Date</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Type"><span class="toc-text">Type</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Math"><span class="toc-text">Math</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#String"><span class="toc-text">String</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
-				<p>All the Native sub-process should have a form as <code>sub-process()</code>.</p>
+				<p>All the standard built-in objects in LC2 are shown below.</p>
+<p><br></p>
+<h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><hr>
+<p>The array object is a global object used to construct arrays: they are advanced, list-type objects. The format is <code>arrayName = [element1,element2,...]</code>, in which arrayName[0] = element1. Take the array in the following for example：</p>
+<pre class="sublemon">
+process main () {
+smartphones = ["Smartisan","iPhone","Mi"];//Define an array.
+}</pre>
+
+<p><strong>length</strong> </p>
+<p></p><p class="alert alert-warning">length(“array”)<br>array.length</p>
+returns the length of a array. <p></p>
+<pre class="sublemon">
+log length("smartphones"); //Output  3
+log smartphones.length;//Output 3</pre>
+
+<p><strong>for…in/of</strong></p>
+<p></p><p class="alert alert-warning">for(var in array)<br>for(var of array)</p>
+traverse an array. You can also view the usage of <code>for...in/of</code> in <a href="/docs/lemoncase2/instructionkeyword.html">instruction keyword</a>.<p></p>
+<pre class="sublemon">
+for (x in smartphones){
+    log x;  //Output 0,1,2
+}
+for (x of smartphones){
+    log x;  //Output Smartisan,iPhone,Mi
+}</pre>
+
+<p><strong>indexOf</strong></p>
+<p></p><p class="alert alert-warning">indexOf(array,element)</p>
+indicates the position of a specified element.<p></p>
+<pre class="sublemon">
+log indexOf(smartphones,"Smartisan"); //Output 0
+log smartphones.indexOf("iPhone"); //Does not support this syntax，output -1.</pre>
+
+<p><br></p>
+<h2 id="Bool"><a href="#Bool" class="headerlink" title="Bool"></a>Bool</h2><hr>
+<p></p><p class="alert alert-warning">bool([variable,number,RegExp])</p>
+a boolean object wrapper which could convert a variable/number/RegExp to a Boolean format.  <p></p>
+<pre class="sublemon">
+bool(3.14) // Output  true
+bool(3>4) // Output  false</pre>
+
 <p><br></p>
 <h2 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h2><hr>
+<p>Creates a JavaScript Date instance that represents a single moment in time. Date objects are based on a time value that is the number of milliseconds since 1 January, 1970 UTC.</p>
 <p><strong>now</strong></p>
 <p></p><p class="alert alert-warning">now();</p>
 returns the number of milliseconds elapsed from January 1st 1970, 00:00:00 UTC to the current time.<p></p>
@@ -251,40 +293,6 @@ substr('Lemoncase',2)  //Output 'moncase'</pre>
 removes whitespace from both ends of a string. Whitespace in this context is all the whitespace characters (space, tab, no-break space, etc.) and all the line terminator characters (LF, CR, etc.).<p></p>
 <pre class="sublemon">
 trim('  Lemon case  ')  //Output 'Lemon case'</pre>
-
-<p><br></p>
-<h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><hr>
-<p>The array object is a global object used to construct arrays: they are advanced, list-type objects. The format is <code>arrayName = [element1,element2,...]</code>, in which arrayName[0] = element1. Take the array in the following for example：</p>
-<pre class="sublemon">
-process main () {
-smartphones = ["Smartisan","iPhone","Mi"];//Define an array.
-}</pre>
-
-<p><strong>length</strong> </p>
-<p></p><p class="alert alert-warning">length(“array”)<br>array.length</p>
-returns the length of a array. <p></p>
-<pre class="sublemon">
-log length("smartphones"); //Output  3
-log smartphones.length;//Output 3</pre>
-
-<p><strong>for…in/of</strong></p>
-<p></p><p class="alert alert-warning">for(var in array)<br>for(var of array)</p>
-traverse an array. You can also view the usage of <code>for...in/of</code> in <a href="/docs/lemoncase2/instructionkeyword.html">instruction keyword</a>.<p></p>
-<pre class="sublemon">
-for (x in smartphones){
-    log x;  //Output 0,1,2
-}
-for (x of smartphones){
-    log x;  //Output Smartisan,iPhone,Mi
-}</pre>
-
-<p><strong>indexOf</strong></p>
-<p></p><p class="alert alert-warning">indexOf(array,element)</p>
-indicates the position of a specified element.<p></p>
-<pre class="sublemon">
-log indexOf(smartphones,"Smartisan"); //Output 0
-log smartphones.indexOf("iPhone"); //Does not support this syntax，output -1.</pre>
-
 
 			</div>
 		</div>

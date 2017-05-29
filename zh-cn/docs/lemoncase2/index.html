@@ -73,7 +73,7 @@
 				<h1>Lemoncase2 语言指南</h1>
 				<time class="text-white">
 					最后更新：
-					2017-05-28
+					2017-05-29
 				</time>
 			</div>
 		</div>
@@ -109,7 +109,7 @@
     		<li><a href="/zh-cn/docs/lemoncase2/actionkeyword.html">动作关键字</a></li>
     		<li><a href="/zh-cn/docs/lemoncase2/expression.html">表达式</a></li>
 			<li><a href="/zh-cn/docs/lemoncase2/selector.html">选择器</a></li>
-			<li><a href="/zh-cn/docs/lemoncase2/subprocess.html">内置子过程</a></li>
+			<li><a href="/zh-cn/docs/lemoncase2/subprocess.html">内置对象</a></li>
 			<li><a href="/zh-cn/docs/lemoncase2/macro.html">宏</a></li>
 			<li><a href="/zh-cn/docs/lemoncase2/magic.html">魔术字</a></li>
 			<li><a href="/zh-cn/docs/lemoncase2/example.html">操作示例</a></li>
@@ -287,7 +287,7 @@ a = true;</pre>
 <li>“stringA” ~~ “stringB”</li>
 <li>“stringA” ~~ /RegExp/</li>
 <li>“stringA” == “stringB”</li>
-<li>[var] == [var]????</li>
+<li>[var] == [var]</li>
 </ul>
 <p><br>
 <strong>选择器</strong> </p>
@@ -298,14 +298,17 @@ a = true;</pre>
 <li>sizzle</li>
 </ul>
 <p><br>
-<strong>内置子过程</strong></p>
-<p>以下是所有形式的内置子过程。<a href="/zh-cn/docs/lemoncase2/subprocess.html"><code>了解更多</code></a></p>
+<strong>内置对象</strong></p>
+<p>以下是所有形式的内置对象。<a href="/zh-cn/docs/lemoncase2/subprocess.html"><code>了解更多</code></a></p>
 <ul>
-<li>now/format</li>
-<li>bool/number/string</li>
-<li>abs/ceil/floor/max/min/random</li>
-<li>length/charAt/indexOf/substr/trim</li>
-<li>length/for…in/for…of/indexOf</li>
+<li>Array (length,indexOf,for…in/of)</li>
+<li>Bool</li>
+<li>Date (now,format)</li>
+<li>Math (abs,ceil,floor,max,min,random)</li>
+<li>Number </li>
+<li>Object</li>
+<li>RegExp </li>
+<li>String (length,charAt,indexOf,substr,trim)</li>
 </ul>
 <p><br>
 <strong>宏</strong></p>
