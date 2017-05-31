@@ -73,7 +73,7 @@
 				<h1>Standard built-in objects</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-05-29
+					2017-05-31
 				</time>
 			</div>
 		</div>
@@ -109,7 +109,7 @@
     		<li><a href="/docs/lemoncase2/actionkeyword.html">action keyword</a></li>
     		<li><a href="/docs/lemoncase2/expression.html">expression</a></li>
 			<li><a href="/docs/lemoncase2/selector.html">selector</a></li>
-			<li><a href="/docs/lemoncase2/subprocess.html">standard built-in objects</a></li>
+			<li><a href="/docs/lemoncase2/subprocess.html">built-in objects</a></li>
 			<li><a href="/docs/lemoncase2/macro.html">macro</a></li>
 			<li><a href="/docs/lemoncase2/magic.html">magic keyword</a></li>
 			<li><a href="/docs/lemoncase2/example.html">example</a></li>
@@ -125,20 +125,25 @@
 					<strong class="toc-title">
 						contents
 					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Array"><span class="toc-text">Array</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Bool"><span class="toc-text">Bool</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Date"><span class="toc-text">Date</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Type"><span class="toc-text">Type</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Math"><span class="toc-text">Math</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#String"><span class="toc-text">String</span></a></li></ol>
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Array"><span class="toc-text">Array</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Bool"><span class="toc-text">Bool</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Date"><span class="toc-text">Date</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Math"><span class="toc-text">Math</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Number"><span class="toc-text">Number</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#String"><span class="toc-text">String</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
 				<p>All the standard built-in objects in LC2 are shown below.</p>
 <p><br></p>
 <h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><hr>
-<p>The array object is a global object used to construct arrays: they are advanced, list-type objects. The format is <code>arrayName = [element1,element2,...]</code>, in which arrayName[0] = element1. Take the array in the following for example：</p>
+<p></p><p class="alert alert-warning">array0[element1,element2,…]; array0[n]=element(n+1)<br>array1[array0,element1,…]</p>
+The array object is a global object used to construct arrays: they are advanced, list-type objects. Take the array in the following for example：<p></p>
 <pre class="sublemon">
 process main () {
-smartphones = ["Smartisan","iPhone","Mi"];//Define an array.
+Smartisan = ["T1","T2","M1"];// define an array named "Smartisan"
+smartphones = [Smartisan,"iPhone","Mi"];//define an array named "smartphones"
+log Smartisan[0];//output T1
+log smartphones[0][2];//output M1
 }</pre>
 
-<p><strong>length</strong> </p>
+<p><br>
+<strong>length</strong> </p>
 <p></p><p class="alert alert-warning">length(“array”)<br>array.length</p>
 returns the length of a array. <p></p>
 <pre class="sublemon">
@@ -174,7 +179,8 @@ bool(3>4) // Output  false</pre>
 <p><br></p>
 <h2 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h2><hr>
 <p>Creates a JavaScript Date instance that represents a single moment in time. Date objects are based on a time value that is the number of milliseconds since 1 January, 1970 UTC.</p>
-<p><strong>now</strong></p>
+<p><br>
+<strong>now</strong></p>
 <p></p><p class="alert alert-warning">now();</p>
 returns the number of milliseconds elapsed from January 1st 1970, 00:00:00 UTC to the current time.<p></p>
 <pre class="sublemon">
@@ -182,7 +188,7 @@ returns the number of milliseconds elapsed from January 1st 1970, 00:00:00 UTC t
 log now(); //Output 1483200000</pre>
 
 <p><strong>format</strong></p>
-<p></p><p class="alert alert-warning">format(“time”,”display-format”)<br>format(“now”,”display-format”)</p>
+<p></p><p class="alert alert-warning">format(“time”,”display-format”)<br>format(now(),”display-format”)</p>
 returns specified time in a certain format, and could be used with the <strong>now</strong> above together. More details about <strong>format</strong> usage please <a href="https://www.npmjs.com/package/dateformat" target="_blank" rel="external">click here</a>.<p></p>
 <pre class="sublemon">
 //Output formated time.
@@ -190,33 +196,11 @@ log format("May 11 2012","fullDate"); //Output：Friday,May 11,2017
 log format("May 11 2012","isoDate"); //Output：2012-05-11
 
 //Assuming January 1, 2017, 0:00 to be the current time. Output formated current time.
-log format(now,"yyyy-mm-dd");//Output：2017-01-01
-log format(now,"yyyy-m-d");//Output：2017-1-1
-log format(now,"mm-d");//Output：01-1
-log format(now,"dddd,mmmm dS,yyyy,h:MM:ss TT");//Output：Sunday,January 1st,2017,0:00:00 AM
-log format(now,"isoDateTime");//Output：2017-01-01T00:00+0800</pre>
-
-<p><br></p>
-<h2 id="Type"><a href="#Type" class="headerlink" title="Type"></a>Type</h2><hr>
-<p><strong>bool</strong></p>
-<p></p><p class="alert alert-warning">bool([variable,number,RegExp])</p>
-a boolean object wrapper which could convert a variable/number/RegExp to a Boolean format.  <p></p>
-<pre class="sublemon">
-bool(3.14) // Output  true
-bool(3>4) // Output  false</pre>
-
-<p><strong>number</strong></p>
-<p></p><p class="alert alert-warning">number(“string”)</p>
-<code>number()</code> is a wrapper object allowing you to work with numerical values. A Number object is created using the <code>number()</code> constructor.<p></p>
-<pre class="sublemon">
-number('3.14') // Output  3.14
-number('3'+'2') // Output  32</pre>
-
-<p><strong>string</strong></p>
-<p></p><p class="alert alert-warning">string([variable,number])</p>
-The global object <code>string()</code> is a constructor for a string or a sequence of characters. Values could also be converted or generated into strings with <code>string()</code>.<p></p>
-<pre class="sublemon">
-log length(string(3.14)); //Output  4</pre>
+log format(now(),"yyyy-mm-dd");//Output：2017-01-01
+log format(now(),"yyyy-m-d");//Output：2017-1-1
+log format(now(),"mm-d");//Output：01-1
+log format(now(),"dddd,mmmm dS,yyyy,h:MM:ss TT");//Output：Sunday,January 1st,2017,0:00:00 AM
+log format(now(),"isoDateTime");//Output：2017-01-01T00:00+0800</pre>
 
 <p><br></p>
 <h2 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h2><hr>
@@ -260,8 +244,23 @@ returns a float pseudo-random number in the range [0, 1), that is, from 0 (inclu
 random() * (max - min) + min </pre>
 
 <p><br></p>
+<h2 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h2><hr>
+<p></p><p class="alert alert-warning">number(“string”)</p>
+number is a wrapper object allowing you to work with numerical values. A Number object is created using the <strong>number()</strong> constructor.<p></p>
+<pre class="sublemon">
+number('3.14') // 输出  3.14
+number('3'+'2') // 输出  32
+number('') // 输出  0</pre>
+
+<p><br></p>
 <h2 id="String"><a href="#String" class="headerlink" title="String"></a>String</h2><hr>
-<p><strong>length</strong> </p>
+<p></p><p class="alert alert-warning">string([variable,number])</p>
+The global object <code>string()</code> is a constructor for a string or a sequence of characters. Values could also be converted or generated into strings with <code>string()</code>.<p></p>
+<pre class="sublemon">
+log length(string(3.14)); //Output  4</pre>
+
+<p><br>
+<strong>length</strong> </p>
 <p></p><p class="alert alert-warning">length(“string”)</p>
 represents the length of a string.<p></p>
 <pre class="sublemon">
