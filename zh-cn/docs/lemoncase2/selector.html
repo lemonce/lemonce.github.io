@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="utf-8">
+	<title>选择器 - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="web ui testing tool, web application testing tool, automated web ui testing tool, automated web application testing tool, automated testing tools for web applications, gui testing tool, web ui testing, free web ui testing tools, free automation testing tools, web automation testing tools, regression testing tools, selenium, free, open source">
+	<meta name="description" content="UI Testing Tool For Web Applications: Lemonce Editor is a professional automation testing tool for web applications. Open Source and Free versions are available.">
+	<!-- Canonical links -->
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/theme.css">
+	<link rel="stylesheet" href="/css/index.css">
+	<script src="https://use.fontawesome.com/201a2b367b.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+	<div class="container mx-md-auto mx-0">
+		<button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#nav-content">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-header">
+			<a href="/zh-cn/" class="navbar-brand">Lemonce</a>
+		</div>
+		<div id="nav-content" class="collapse navbar-collapse">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="/zh-cn/" class="nav-link">
+						首页
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/feature.html" class="nav-link">
+						特性
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/compare.html" class="nav-link">
+						对比
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/news.html" class="nav-link">
+						新闻
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/docs/guide/index.html" class="nav-link">
+						文档
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="https://license.lemonce.com" class="nav-link">
+						License
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="http://download.lemonce.com/LemonceSetup_2.0.7_950166.exe" class="nav-link">
+						下载
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+	<div id="wrap-page">
+	<article class="page clearfix">
+		<div class="page-header bg-teal-gradient py-5">
+			<div class="container">
+				<h1>选择器</h1>
+				<time class="text-white">
+					最后更新：
+					2017-05-20
+				</time>
+			</div>
+		</div>
+		<div class="page-content container py-5">
+			<aside id="docs-sidebar" class="float-lg-left">
+	<div><a href="/zh-cn/docs/setup/index.html">设置</a>
+ 		<ul>
+    		<li><a href="/zh-cn/docs/setup/download-install.html">下载与安装</a></li>
+    		<li><a href="/zh-cn/docs/setup/interface.html">灵萌测界面</a></li>
+ 		</ul>
+	</div>
+	
+	<div><a href="/zh-cn/docs/guide/index.html">开始测试</a>
+		<ul>
+    		<li><a href="/zh-cn/docs/guide/case.html">创建测试用例</a></li>
+    		<li><a href="/zh-cn/docs/guide/recorder.html">录制器的使用</a></li>
+    		<li><a href="/zh-cn/docs/guide/suite.html">完善测试套件</a></li>
+			<li><a href="/zh-cn/docs/guide/reports.html">查看测试报告</a></li>
+ 		</ul>
+	</div>
+
+	<div><a href="/zh-cn/docs/code-editor/index.html">编辑器</a>
+		<ul>
+    		<li><a href="/zh-cn/docs/code-editor/case-editor.html">用例编辑器</a></li>
+    		<li><a href="/zh-cn/docs/code-editor/suite-editor.html">套件编辑器</a></li>
+    		<li><a href="/zh-cn/docs/code-editor/webview.html">网页视图</a></li>
+ 		</ul>
+	</div>
+
+	<div><a href="/zh-cn/docs/lemoncase2/index.html">编程语言</a>
+		<ul>
+    		<li><a href="/zh-cn/docs/lemoncase2/instructionkeyword.html">指令关键字</a></li>
+    		<li><a href="/zh-cn/docs/lemoncase2/actionkeyword.html">动作关键字</a></li>
+    		<li><a href="/zh-cn/docs/lemoncase2/expression.html">表达式</a></li>
+			<li><a href="/zh-cn/docs/lemoncase2/selector.html">选择器</a></li>
+			<li><a href="/zh-cn/docs/lemoncase2/subprocess.html">内置对象</a></li>
+			<li><a href="/zh-cn/docs/lemoncase2/macro.html">宏</a></li>
+			<li><a href="/zh-cn/docs/lemoncase2/magic.html">魔术字</a></li>
+			<li><a href="/zh-cn/docs/lemoncase2/example.html">操作示例</a></li>
+ 		</ul>
+	</div>
+
+</aside>
+
+
+
+			<aside id="toc" class="float-lg-right hidden-sm-down" role="navigation">
+				<div id="toc-inner">
+					<strong class="toc-title">
+						页面内容：
+					</strong>
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#css-selector"><span class="toc-text">css selector</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#xpath"><span class="toc-text">xpath</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sizzle"><span class="toc-text">sizzle</span></a></li></ol>
+				</div>
+			</aside>
+			<div class="page-inner">
+				<p>灵萌测支持 css，xpath 及 sizzle 三种形式的选择器，其中 css 和 xpath 选择器可以在录制的时候自动实现。</p>
+<p><br></p>
+<h2 id="css-selector"><a href="#css-selector" class="headerlink" title="css selector"></a><a href="https://www.w3.org/TR/CSS2/selector.html" target="_blank" rel="external">css selector</a></h2><hr>
+<p>以下是关于 css selector 的几个示例，具体的使用文档请<a href="http://www.w3school.com.cn/cssref/css_selectors.asp" target="_blank" rel="external">点击此处查看</a>。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">css selector</th>
+<th style="text-align:center">examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">.class</td>
+<td style="text-align:center">.intro</td>
+</tr>
+<tr>
+<td style="text-align:center">#id</td>
+<td style="text-align:center">#username</td>
+</tr>
+<tr>
+<td style="text-align:center">[attribute=value]</td>
+<td style="text-align:center">[name=google]</td>
+</tr>
+<tr>
+<td style="text-align:center">:nth-child()</td>
+<td style="text-align:center">div&gt;p:nth-child(2)</td>
+</tr>
+</tbody>
+</table>
+<p>在录制的过程中，选择器下拉菜单默认选择 selector，即以 css 选择器进行录制，也可以自己在编辑器中手写，手写的 css 选择器会更加简洁。</p>
+<p>假设用户要完成在谷歌首页<strong>点击搜索栏</strong>，再<strong>把鼠标移动到右上角登录按钮</strong>这两个操作，用 css 选择器显示的语句如下：</p>
+<pre class="sublemon">
+process main () {
+
+    // Google
+    jumpto "https://www.google.com/";
+    wait 2333;
+
+    // 点击搜索栏
+    click "#lst-ib";
+    // 鼠标移动到右上角登录按钮
+    move "#gb_70";
+}</pre>
+
+<p><code>click</code> 和 <code>move</code> 动作关键词之后，跟随的即为 css selector 的 id 选择器，分别为：</p>
+<ul>
+<li>#lst-ib</li>
+<li>#gb_70</li>
+</ul>
+<p><br></p>
+<h2 id="xpath"><a href="#xpath" class="headerlink" title="xpath"></a><a href="https://en.wikipedia.org/wiki/XPath" target="_blank" rel="external">xpath</a></h2><hr>
+<p>关于 xpath 选择器具体的使用文档，请<a href="http://www.w3school.com.cn/xpath/xpath_intro.asp" target="_blank" rel="external">点击此处查看</a>。</p>
+<p>在录制过程中，在选择器下拉菜单可以选择 xpath，录制出来的选择器代码都是以 xpath 显示。也可以自己在编辑器中手写 xpath ，同样以上方的 case 为例，用 xpath 选择器显示的代码如下：</p>
+<pre class="sublemon">
+process main () {
+
+    // Google
+    jumpto "https://www.google.com/";
+    wait 2333;
+
+    // 点击搜索栏
+    click "/*[@id='lst-ib']";
+    // 鼠标移动到右上角登录按钮
+    move "/*[@id='gbw']/div/div/div[2]/div[3]/div/a";
+}</pre>
+
+<p><code>click</code> 和 <code>move</code> 动作关键词之后，跟随的即为 xpath 选择器，分别为：</p>
+<ul>
+<li>/*[@id=’lst-ib’]</li>
+<li>/*[@id=’gbw’]/div/div/div[2]/div[3]/div/a</li>
+</ul>
+<p><br></p>
+<h2 id="sizzle"><a href="#sizzle" class="headerlink" title="sizzle"></a><a href="https://github.com/jquery/sizzle/wiki" target="_blank" rel="external">sizzle</a></h2><hr>
+<p>关于 sizzle 选择器具体的使用文档，请点击上方的标题查看。</p>
+<p>在网站开发的过程中，某些网页中的元素的 xpath 或者 css 选择器可能会发生变化。此时可以尝试采用 sizzle 选择器。</p>
+<p>录制结束之后，可以把代码中的选择器进行手工改动为 sizzle。同样以上方的 case 为例，用 sizzle 选择器显示的代码如下：</p>
+<pre class="sublemon">
+process main () {
+
+    // Google
+    jumpto "https://www.google.com/";
+    wait 2333;
+
+    // 点击搜索栏
+    click "#lst-ib:eq(0)";
+    // 鼠标移动到右上角登录按钮
+    move "a:contains(Sign in)";
+}</pre>
+
+<p><code>click</code> 和 <code>move</code> 动作关键词之后，跟随的即为 sizzle 选择器，分别为：</p>
+<ul>
+<li>#lst-ib:eq(0)</li>
+<li>a:contains(Sign in)</li>
+</ul>
+<p>其中 <code>:contains(innerText)</code>是一种比较常用的 sizzle 选择方式，对于一些 css 和 xpath 选择器可能产生变化，但网页显示内容却不发生改变的元素，sizzle 能够大幅提高同一 case 复用度，降低维护成本。</p>
+
+			</div>
+		</div>
+	</article>
+</div>
+
+	<footer>
+	<div class="container pt-3">
+		<div class="row">
+			<div class="col-md-4 col">
+				<ul class="list-unstyled">
+					<li><a class="text-muted" href="/zh-cn/docs/guide/index.html">
+						帮助
+					</a></li>
+					<li><a class="text-muted" href="/zh-cn/docs/lemoncase2/index.html">
+						文档
+					</a></li>
+					<li><a class="text-muted" href="http://download.lemonce.com/LemonceSetup_2.0.7_950166.exe">
+						下载
+					</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col">
+				<ul class="list-unstyled">
+					<li><a class="text-muted" href="/zh-cn/">
+						关于
+					</a></li>
+					<li><a class="text-muted" href="/eula.html">
+						用户协议
+					</a></li>
+					<li><a class="text-muted" href="/contact.html">
+						联系我们
+					</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col">
+				<ul class="list-unstyled">
+					<li><a class="text-muted" href="/zh-cn/feature.html">
+						特性
+					</a></li>
+					<li><a class="text-muted" href="/zh-cn/compare.html">
+						对比
+					</a></li>
+					<li><a class="text-muted" href="/news">
+						新闻
+					</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div>
+			<span>
+				博客
+			</span>
+			<a href="/footer/blog/selenium-iframe-element-testing.html" class="blog-item">Lemonce vs Selenium:Iframe Element Testing</a>
+			<a href="/footer/blog/compare-selenium-selectors.html" class="blog-item">Compare Lemonce and Selenium Selectors</a>
+		</div>
+
+		<div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between py-4">
+			<div class="btn-group dropup flex-md-last mb-3 mb-md-0">
+				<button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+					Language
+				</button>
+				<div class="dropdown-menu">
+					<a href="/" class="dropdown-item">English</a>
+					<a href="/zh-cn" class="dropdown-item">Chinese</a>
+				</div>
+			</div>
+			<span class="flex-md-first">
+				&copy;2014-2017
+					or-change, Co., Ltd. All rights reserved.
+				
+					<a class="text-faded-grey small" href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action"> 津ICP备14003159号-2</a>
+				
+			</span>
+		</div>
+	</div>
+</footer>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91537224-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/tether.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/smooth-scroll.min.js"></script>
+	<script src="/js/sublemon.min.js"></script>
+	<script src="/js/common.js"></script>
+</body>
+</html>
