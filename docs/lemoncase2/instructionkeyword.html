@@ -78,7 +78,7 @@
 				<h1>Instruction keyword</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-05-24
+					2017-06-01
 				</time>
 			</div>
 		</div>
@@ -150,7 +150,7 @@ process anyname(){
 <p><br></p>
 <h2 id="return"><a href="#return" class="headerlink" title="return"></a>return</h2><hr>
 <p></p><p class="alert alert-warning">return;</p>
-The <code>return</code> statement ends sub-process execution and specifies a value to be returned to the sub-process caller. A sub-process immediately stops at the point where return is called.<p></p>
+Ends sub-process execution and specifies a value to be returned to the sub-process caller. A sub-process immediately stops at the point where return is called.<p></p>
 <pre class="sublemon">
 process main () {
     counter();   
@@ -169,12 +169,8 @@ process counter() {
 <p><br></p>
 <h2 id="for…in"><a href="#for…in" class="headerlink" title="for…in"></a>for…in</h2><hr>
 <p></p><p class="alert alert-warning">for (variable in object){ }</p>
-The <code>for...in</code> statement iterates over the enumerable properties of an object, in original insertion order. For each distinct property, statements can be executed.<p></p>
-<p>Syntax：</p>
-<pre><code>for(variable in object){
-
-}
-</code></pre><pre class="sublemon">
+Iterates over the enumerable properties of an object, in original insertion order. For each distinct property, statements can be executed.<p></p>
+<pre class="sublemon">
 process main () {
     A = {a:1,b:2};
     for (x in A){
@@ -188,12 +184,8 @@ process main () {
 <p><br></p>
 <h2 id="for…of"><a href="#for…of" class="headerlink" title="for…of"></a>for…of</h2><hr>
 <p></p><p class="alert alert-warning">for (variable of object){ statement }</p>
-The <code>for...of</code> statement creates a loop iterating over iterable objects, invoking a custom iteration hook with statements to be executed for the value of each distinct property.<p></p>
-<p>Syntax：</p>
-<pre><code>for (variable of object){
-    statement
-    }
-</code></pre><pre class="sublemon">
+Creates a loop iterating over iterable objects, invoking a custom iteration hook with statements to be executed for the value of each distinct property.<p></p>
+<pre class="sublemon">
 //Iterating over an Array.
 process main () {
  A = [10,20,30];
@@ -224,7 +216,7 @@ process main () {
 <p><br></p>
 <h2 id="if…else"><a href="#if…else" class="headerlink" title="if…else"></a>if…else</h2><hr>
 <p></p><p class="alert alert-warning">if (condition)<br>statement1<br>[else<br>statement2]</p>
-The <code>if</code> statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement can be executed.<p></p>
+Executes a statement if a specified condition is truthy. If the condition is falsy, another statement can be executed.<p></p>
 <pre class="sublemon">
 process main () {
 a=4;
@@ -245,7 +237,7 @@ else {
 <p><br></p>
 <h2 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h2><hr>
 <p></p><p class="alert alert-warning">continue;</p>
-The <code>continue</code> statement terminates execution of the statements in the current iteration of the current or labeled loop, and continues execution of the loop with the next iteration.<p></p>
+Terminates execution of the statements in the current iteration of the current or labeled loop, and continues execution of the loop with the next iteration.<p></p>
 <pre class="sublemon">
 process main () {
 i = 0;
@@ -264,7 +256,7 @@ while (i < 5) {
 <p><br></p>
 <h2 id="while"><a href="#while" class="headerlink" title="while"></a>while</h2><hr>
 <p></p><p class="alert alert-warning">while (condition)<br> statement</p>
-The <code>while</code> statement creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement.<p></p>
+Creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement.<p></p>
 <pre class="sublemon">
 process main () {
     counter();   
@@ -339,7 +331,7 @@ log true    //Output  true</pre>
 
 		<div>
 			<span>
-				Blog
+				footer.blog
 			</span>
 			<a href="/footer/blog/selenium-iframe-element-testing.html" class="blog-item">Lemonce vs Selenium:Iframe Element Testing</a>
 			<a href="/footer/blog/compare-selenium-selectors.html" class="blog-item">Compare Lemonce and Selenium Selectors</a>

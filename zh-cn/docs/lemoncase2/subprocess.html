@@ -78,7 +78,7 @@
 				<h1>内置对象</h1>
 				<time class="text-white">
 					最后更新：
-					2017-05-31
+					2017-06-01
 				</time>
 			</div>
 		</div>
@@ -149,10 +149,10 @@ log smartphones[0][2];//输出 M1
 
 <p><br>
 <strong>length</strong> </p>
-<p></p><p class="alert alert-warning">length(“array”)<br>array.length</p>
+<p></p><p class="alert alert-warning">length(array)<br>array.length</p>
 表示一个数组的长度。<p></p>
 <pre class="sublemon">
-log length("smartphones"); //输出  3
+log length(smartphones); //输出  3
 log smartphones.length;//输出 3</pre>
 
 <p><strong>for…in/of</strong></p>
@@ -187,7 +187,7 @@ bool(3-3) // 输出 false</pre>
 <p>创建 Date 实例用来处理日期和时间。 Date 对象基于1970年1月1日（世界标准时间）起的毫秒数。</p>
 <p><br>
 <strong>now</strong></p>
-<p></p><p class="alert alert-warning">now( )</p>
+<p></p><p class="alert alert-warning">now()</p>
 返回自世界标准时间到当前时间的毫秒数。<p></p>
 <pre class="sublemon">
 //假设以2017年1月1日，0时0分为当前时间
@@ -261,7 +261,7 @@ number('') // 输出  0</pre>
 <p><br></p>
 <h2 id="String"><a href="#String" class="headerlink" title="String"></a>String</h2><hr>
 <p></p><p class="alert alert-warning">string([variable,number])</p>
-string 全局对象是一个用于字符串或一个字符序列的构造函数。也能使用 <code>string</code> 将其他值生成或转换成字符串。<p></p>
+全局对象 string 是一个用于字符串或一个字符序列的构造函数。也能使用它将其他值生成或转换成字符串。<p></p>
 <pre class="sublemon">
 log length(string(3+0.14)); //输出  4</pre>
 
@@ -274,12 +274,12 @@ length("Lemonce") //输出  7</pre>
 
 <p><strong>charAt</strong></p>
 <p></p><p class="alert alert-warning">charAt(“string”,[letterPosition:number])</p>
-从一个字符串中返回指定的字符。<p></p>
+从一个字符串中返回指定的字符。从0开始计数。<p></p>
 <pre class="sublemon">
-charAt('Lemonce',5)  //输出 'c'</pre>
+charAt('Lemonce',5)  //输出 c</pre>
 
 <p><strong>indexOf</strong></p>
-<p></p><p class="alert alert-warning">indexOf(“wholeString”,”testString”)</p>
+<p></p><p class="alert alert-warning">indexOf(“wholeString”,”chosenLetter”)</p>
 返回调用 String 对象中第一次出现的指定值的索引，开始在 fromIndex 进行搜索。如果未找到该值，则返回-1。<p></p>
 <pre class="sublemon">
 indexOf('Lemonce','L')  //输出  0
@@ -349,7 +349,7 @@ trim('  Lemon case  ')  //输出 'Lemon case'</pre>
 
 		<div>
 			<span>
-				博客
+				footer.blog
 			</span>
 			<a href="/footer/blog/selenium-iframe-element-testing.html" class="blog-item">Lemonce vs Selenium:Iframe Element Testing</a>
 			<a href="/footer/blog/compare-selenium-selectors.html" class="blog-item">Compare Lemonce and Selenium Selectors</a>
