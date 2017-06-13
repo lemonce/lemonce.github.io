@@ -78,7 +78,7 @@
 				<h1>Expression</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-05-24
+					2017-06-11
 				</time>
 			</div>
 		</div>
@@ -148,19 +148,23 @@
 <p>The example shows bellow:</p>
 <pre><code>process main () {
 
-    jumpto &quot;https://login.deepin.org/oauth2/authorize?client_id=fcb9f8cac81074100b9482d534767a1fecc148b3&amp;redirect_uri=https%3A%2F%2Faccount.deepin.org%2Flogin&amp;response_type=code&amp;scope=base%2Cuser%3Aread%2Cuser%3Aedit%2Cprofile%3Aread%2Cprofile%3Aedit&quot;;
+    // The world&#39;s leading software development platform · GitHub
+    jumpto &quot;https://github.com/&quot;;
     wait 2333;
 
     // &lt;# &quot;selector&quot;/&gt;
-    log &lt;# &quot;div&quot;/&gt;; // Out put the number of &quot;div&quot; elements.
-    log &lt;# &quot;.links&quot;/&gt;+1; // Support expressions and variables.
+    log &lt;# &quot;div&quot;/&gt;; // Output the number of tag &quot;div&quot;
+    log &lt;# &quot;.form&quot;/&gt;+1; // Output the number of class &quot;form&quot;
 
     // &lt;@ &quot;selector&quot;/&gt;
-    log &lt;@ &quot;.msg&quot;/&gt;;  // Output the inside text of the class &quot;msg&quot;.
+    log &lt;@ &quot;h1&quot;/&gt;;  // Output the inner text of  tag &quot;h1&quot;
+    log &lt;@ &quot;label[for*=user]&quot;/&gt;;
+    log &lt;@ &quot;#user\\[login\\]&quot;/&gt;; // Need translation symbol
+    log &lt;@ &quot;.form-control[name=timestamp_secret] + button&quot;/&gt;; // Adjacent sibling selector is available
 
     // &lt;! &quot;selector&quot;/&gt;
-    log &lt;! &quot;[name=username]&quot;/&gt;; // To check whether &quot;[name=username]&quot; exists or not.
-    log &lt;! &quot;.a&quot;/&gt;;
+    log &lt;! &quot;#js&quot;/&gt;; // id=&quot;js&quot; doesn&#39;t exist in html
+    log &lt;! &quot;a&quot;/&gt;;// tag a exists in html
 }
 </code></pre><p><br></p>
 <h2 id="Compare-operator"><a href="#Compare-operator" class="headerlink" title="Compare operator"></a>Compare operator</h2><hr>
