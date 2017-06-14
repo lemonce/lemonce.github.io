@@ -78,7 +78,7 @@
 				<h1>内置对象</h1>
 				<time class="text-white">
 					最后更新：
-					2017-06-01
+					2017-06-14
 				</time>
 			</div>
 		</div>
@@ -163,7 +163,7 @@ for (x in smartphones){
     log x;  //输出 0,1,2
 }
 for (x of smartphones){
-    log x;  //输出 Smartisan,iPhone,Mi
+    log x;  //输出 ["T1","T2","M1"],iPhone,Mi
 }</pre>
 
 <p><strong>indexOf</strong></p>
@@ -180,7 +180,8 @@ log smartphones.indexOf("iPhone"); //语法错误，输出 -1。</pre>
 <pre class="sublemon">
 bool(3.14) // 输出 true
 bool(3>4) // 输出 false
-bool(3-3) // 输出 false</pre>
+bool(3-3) // 输出 false
+bool(/[a-z]/) // 输出 true</pre>
 
 <p><br></p>
 <h2 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h2><hr>
@@ -242,6 +243,9 @@ max(3+2,number('3'+'2'))  // 输出  32</pre>
 <p><strong>min</strong></p>
 <p></p><p class="alert alert-warning">min([number1],[number2],…)</p>
 返回一组数中的最小值。<p></p>
+<pre class="sublemon">
+min(3+2,number('3'+'2'))  // 输出  5</pre>
+
 <p><strong>random</strong></p>
 <p></p><p class="alert alert-warning">random()</p>
 返回一个浮点，伪随机数在范围[0，1)，然后用户可以缩放到所需的范围。实现选择初始种子进行随机数生成算法；它不能被用户选择或重置。<p></p>
@@ -288,7 +292,7 @@ indexOf('Lemonce','l')  //输出  -1</pre>
 
 <p><strong>substr</strong></p>
 <p></p><p class="alert alert-warning">substr(“string”,[startLetter:number],[length:number])</p>
-<code>substr(string,from,[length])</code> 返回一个字符串在开始索引到结束索引之间的一个子集, 或从开始索引直到字符串的末尾的一个子集。<p></p>
+返回一个字符串在开始索引到结束索引之间的一个子集, 或从开始索引直到字符串的末尾的一个子集。<p></p>
 <pre class="sublemon">
 substr('Lemoncase',2,3)  //输出 'mon'
 substr('Lemoncase',2)  //输出 'moncase'</pre>

@@ -78,7 +78,7 @@
 				<h1>Standard built-in objects</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-06-01
+					2017-06-14
 				</time>
 			</div>
 		</div>
@@ -163,7 +163,7 @@ for (x in smartphones){
     log x;  //Output 0,1,2
 }
 for (x of smartphones){
-    log x;  //Output Smartisan,iPhone,Mi
+    log x;  //Output ["T1","T2","M1"],iPhone,Mi
 }</pre>
 
 <p><strong>indexOf</strong></p>
@@ -180,7 +180,8 @@ a boolean object wrapper which could convert a variable/number/RegExp to a Boole
 <pre class="sublemon">
 bool(3.14) // Output  true
 bool(3>4) // Output  false
-bool(3-3) // Output false</pre>
+bool(3-3) // Output false
+bool(/[a-z]/) // Output true</pre>
 
 <p><br></p>
 <h2 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h2><hr>
@@ -242,6 +243,9 @@ max(3+2,number('3'+'2'))  // Output  32</pre>
 <p><strong>min</strong></p>
 <p></p><p class="alert alert-warning">min([number1],[number2],…)</p>
 returns the minimum of a set of numbers.<p></p>
+<pre class="sublemon">
+min(3+2,number('3'+'2'))  // 输出  5</pre>
+
 <p><strong>random</strong></p>
 <p></p><p class="alert alert-warning">random()</p>
 returns a float pseudo-random number in the range [0, 1), that is, from 0 (inclusive) up to but not including 1 (exclusive), which you can then scale it to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user.<p></p>
