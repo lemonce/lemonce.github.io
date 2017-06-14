@@ -2,7 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://lemonce.net/docs/lemoncase2/subprocess.html</loc>
+    <loc>http://lemonce.net/docs/setup/trial-purchase.html</loc>
+    
+    <lastmod>2017-06-14T09:21:01.173Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/setup/trial-purchase.html</loc>
+    
+    <lastmod>2017-06-14T09:16:10.579Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/code-editor/case-editor.html</loc>
+    
+    <lastmod>2017-06-14T08:36:05.211Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/setup/interface.html</loc>
+    
+    <lastmod>2017-06-14T06:48:37.903Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/lemoncase2/subprocess.html</loc>
     
     <lastmod>2017-06-14T05:02:43.034Z</lastmod>
     
@@ -16,21 +44,21 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/zh-cn/docs/lemoncase2/subprocess.html</loc>
+    <loc>http://lemonce.net/docs/lemoncase2/subprocess.html</loc>
     
     <lastmod>2017-06-14T05:02:43.034Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://lemonce.net/docs/lemoncase2/macro.html</loc>
+    <loc>http://lemonce.net/docs/lemoncase2/magic.html</loc>
     
     <lastmod>2017-06-14T05:02:43.019Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://lemonce.net/docs/lemoncase2/magic.html</loc>
+    <loc>http://lemonce.net/docs/lemoncase2/macro.html</loc>
     
     <lastmod>2017-06-14T05:02:43.019Z</lastmod>
     
@@ -54,13 +82,6 @@
     <loc>http://lemonce.net/zh-cn/docs/lemoncase2/instructionkeyword.html</loc>
     
     <lastmod>2017-06-13T08:10:29.633Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/code-editor/case-editor.html</loc>
-    
-    <lastmod>2017-06-13T07:48:10.742Z</lastmod>
     
   </url>
   
@@ -236,13 +257,6 @@
     <loc>http://lemonce.net/docs/setup/interface.html</loc>
     
     <lastmod>2017-04-29T09:34:48.010Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/setup/interface.html</loc>
-    
-    <lastmod>2017-04-29T09:30:32.185Z</lastmod>
     
   </url>
   
