@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lemonce.net/docs/setup/trial-purchase.html</loc>
+    
+    <lastmod>2017-06-19T09:46:50.274Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/setup/trial-purchase.html</loc>
+    
+    <lastmod>2017-06-19T09:46:17.565Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/news.html</loc>
+    
+    <lastmod>2017-06-19T07:54:43.960Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/news.html</loc>
+    
+    <lastmod>2017-06-19T07:41:57.481Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/lemoncase2/instructionkeyword.html</loc>
+    
+    <lastmod>2017-06-19T04:42:16.566Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/lemoncase2/instructionkeyword.html</loc>
+    
+    <lastmod>2017-06-19T04:38:31.696Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lemonce.net/docs/guide/index.html</loc>
     
     <lastmod>2017-06-15T10:18:14.782Z</lastmod>
@@ -149,28 +191,14 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/zh-cn/docs/setup/trial-purchase.html</loc>
-    
-    <lastmod>2017-06-15T04:25:12.690Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/setup/trial-purchase.html</loc>
-    
-    <lastmod>2017-06-14T09:21:01.173Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/lemoncase2/magic.html</loc>
+    <loc>http://lemonce.net/zh-cn/docs/lemoncase2/subprocess.html</loc>
     
     <lastmod>2017-06-14T05:02:43.034Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://lemonce.net/zh-cn/docs/lemoncase2/subprocess.html</loc>
+    <loc>http://lemonce.net/zh-cn/docs/lemoncase2/magic.html</loc>
     
     <lastmod>2017-06-14T05:02:43.034Z</lastmod>
     
@@ -208,20 +236,6 @@
     <loc>http://lemonce.net/zh-cn/docs/lemoncase2/actionkeyword.html</loc>
     
     <lastmod>2017-06-13T09:02:21.058Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/lemoncase2/instructionkeyword.html</loc>
-    
-    <lastmod>2017-06-13T08:10:29.633Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/lemoncase2/instructionkeyword.html</loc>
-    
-    <lastmod>2017-06-13T05:52:47.004Z</lastmod>
     
   </url>
   
@@ -299,20 +313,6 @@
     <loc>http://lemonce.net/docs/lemoncase2/example.html</loc>
     
     <lastmod>2017-05-20T11:48:17.629Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/news.html</loc>
-    
-    <lastmod>2017-05-18T08:59:24.496Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/news.html</loc>
-    
-    <lastmod>2017-05-18T08:49:02.847Z</lastmod>
     
   </url>
   

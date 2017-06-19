@@ -78,7 +78,7 @@
 				<h1>Instruction keyword</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-06-13
+					2017-06-19
 				</time>
 			</div>
 		</div>
@@ -151,19 +151,25 @@ process anyname(){
 <p><br></p>
 <h2 id="return"><a href="#return" class="headerlink" title="return"></a>return</h2><hr>
 <p></p><p class="alert alert-warning">return [expression];</p>
-Ends sub-process execution and specifies a value to be returned to the sub-process caller. A sub-process immediately stops at the point where return is called.
+Ends process execution(and specifies a value to be returned). A process immediately stops at the point where <code>return</code> is called.<p></p>
+<pre class="sublemon">
 process main () {
   log square(10);
-}<p></p>
-<p>process square(x){
+  return;
+  log "Mi";
+}
+
+process square(x){
     log 1+1;
     return x*x;
-    log “Smartisan”;
+    log "Smartisan";
 }
 //Output:
 //2 first,output 1+1 in process square
 //100 next,output 100 in process main
-//“Smartisan” will not appear cause the process square has already stopped</p>
+//"Smartisan" will not appear cause the process square has already stopped
+//"Mi" will not appear cause the process main has already stopped</pre>
+
 <p><br></p>
 <h2 id="for…in"><a href="#for…in" class="headerlink" title="for…in"></a>for…in</h2><hr>
 <p></p><p class="alert alert-warning">for (variable in object){ }</p>

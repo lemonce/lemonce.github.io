@@ -78,7 +78,7 @@
 				<h1>指令关键字</h1>
 				<time class="text-white">
 					最后更新：
-					2017-06-13
+					2017-06-19
 				</time>
 			</div>
 		</div>
@@ -167,10 +167,12 @@ process anyname(){
 <p><br></p>
 <h2 id="return"><a href="#return" class="headerlink" title="return"></a>return</h2><hr>
 <p></p><p class="alert alert-warning">return [expression];</p>
-用于结束一个子过程并且返回相应的值到子过程变量。执行到<code>return</code>语句时，子过程会立刻停止。<p></p>
+用于结束一个过程（并且返回相应的值）。执行到<code>return</code>语句时，该过程会立刻停止。<p></p>
 <pre class="sublemon">
 process main () {
   log square(10);
+  return;
+  log "Mi";
 }
 
 process square(x){
@@ -181,7 +183,8 @@ process square(x){
 //输出:
 //2（先输出子过程中1+1的值）
 //100（再输出主过程的10*10）
-//"Smartisan"在子过程的 return 之后，不会输出</pre>
+//"Smartisan"在子过程的 return 之后，不会输出
+//"Mi"在主过程的 return 之后，不会输出</pre>
 
 <p><br></p>
 <h2 id="for…in"><a href="#for…in" class="headerlink" title="for…in"></a>for…in</h2><hr>
