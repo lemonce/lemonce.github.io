@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lemonce.net/docs/setup/trial-license.html</loc>
+    
+    <lastmod>2017-06-21T11:02:04.838Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/setup/trial-license.html</loc>
+    
+    <lastmod>2017-06-21T11:01:29.522Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lemonce.net/feature.html</loc>
     
     <lastmod>2017-06-21T08:39:30.729Z</lastmod>
@@ -40,20 +54,6 @@
     <loc>http://lemonce.net/footer/blog/selenium-iframe-element-testing.html</loc>
     
     <lastmod>2017-06-21T03:59:58.143Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/setup/trial-purchase.html</loc>
-    
-    <lastmod>2017-06-19T09:46:50.274Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/setup/trial-purchase.html</loc>
-    
-    <lastmod>2017-06-19T09:46:17.565Z</lastmod>
     
   </url>
   
