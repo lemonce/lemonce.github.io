@@ -78,7 +78,7 @@
 				<h1>Lemonce Update News</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-06-19
+					2017-06-21
 				</time>
 			</div>
 		</div>
@@ -87,39 +87,37 @@
 				<h2 id="Updates-for-version-2-0-8"><a href="#Updates-for-version-2-0-8" class="headerlink" title="Updates for version 2.0.8"></a>Updates for version 2.0.8</h2><hr>
 <p><strong>Bug Fix</strong></p>
 <ul>
-<li>the logs in the console can be selected and copied.</li>
-<li>Fixed the bugs when open one more forms.</li>
-<li>Fixed the translation of recorder generating syntax</li>
-<li>Fixed some syntax highlighting.</li>
+<li>Fixed the issue that the recorder couldn’t create the correct selector which required an escape character to change semantics.</li>
 </ul>
 <p><strong>Optimized</strong></p>
 <ul>
-<li>Click <i class="fa fa-play"></i> in case editor will open webview automatically.</li>
-<li>Optimized the communiacation model and improved the stability of the test execution.</li>
-<li>Lemonce will ask you whether to save current case or suite before quit.</li>
+<li>Adjusted the syntax highlighting.</li>
+<li>Optimized the XPath analyzer.</li>
+<li>Optimized that the text in the output/console pannel can be selected and copied.</li>
+<li>Optimized that when click the <i class="fa fa-play"></i> button in the case editor,the webview will be opened automatically.</li>
+<li>Optimized the communiacation program to ensure the cases/suites running well.</li>
+<li>Optimized that when quit lemonce, there will be a popup to prompt you.</li>
 </ul>
 <p><strong>New Functions</strong></p>
 <ul>
-<li>Added keyboard simulation operation.</li>
-<li>Added XPath analyzer.</li>
-<li>Added <i class="fa fa-download"></i> button in tool bar of case editor to import other cases.</li>
-<li>Added <button>Ctrl+S</button> to save cases.</li>
+<li>Added the <code>keyboard</code> syntax to simulate the whole keyboard operations.</li>
+<li>Added <i class="fa fa-download"></i> button in the case editor for importing cases quickly.</li>
+<li>Added <button>Ctrl+S</button> to save the current active case.</li>
 </ul>
 <h2 id="Updates-for-version-2-0-7"><a href="#Updates-for-version-2-0-7" class="headerlink" title="Updates for version 2.0.7"></a>Updates for version 2.0.7</h2><hr>
 <p><strong>Bug Fix</strong></p>
 <ul>
-<li>Fixed the issue thatsometimes the web URL show the “about:blank” address  when page jumping.</li>
-<li>Fixed the issue that the action was executed once more.</li>
+<li>Fixed the issue that sometimes the address bar in the webvew showing the wrong “about:blank” address when jumping into a new page.</li>
+<li>Fixed the issue that sometimes the driver executed the action statement twice.</li>
 </ul>
 <p><strong>Optimized</strong></p>
 <ul>
 <li>Optimized that the webview will be rebooted when running cases crash.</li>
-<li>Optimized that the output pannel will show the debugging messages when the upload file does not exist.</li>
-<li>Optimized that the output pannel will show the debugging messages when the upload control not supported.</li>
+<li>Optimized that the output pannel will show more information for debugging when the upload fail.</li>
 </ul>
 <p><strong>New Functions</strong></p>
 <ul>
-<li>Added the function that pause the running case.</li>
+<li>Added <i class="fa fa-pause"></i> button to pause the running case.</li>
 <li>LC_Driver support the keyboard event.</li>
 <li>LCVM support the focusin/out event.</li>
 <li>Added the <code>forward</code> syntax.</li>

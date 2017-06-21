@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lemonce.net/feature.html</loc>
+    
+    <lastmod>2017-06-21T08:39:30.729Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/feature.html</loc>
+    
+    <lastmod>2017-06-21T08:28:16.213Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/news.html</loc>
+    
+    <lastmod>2017-06-21T08:06:05.395Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/news.html</loc>
+    
+    <lastmod>2017-06-21T08:06:01.509Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lemonce.net/solutions/iframe-testing-tool.html</loc>
     
     <lastmod>2017-06-21T06:03:17.709Z</lastmod>
@@ -26,20 +54,6 @@
     <loc>http://lemonce.net/zh-cn/docs/setup/trial-purchase.html</loc>
     
     <lastmod>2017-06-19T09:46:17.565Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/news.html</loc>
-    
-    <lastmod>2017-06-19T07:54:43.960Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/news.html</loc>
-    
-    <lastmod>2017-06-19T07:41:57.481Z</lastmod>
     
   </url>
   
@@ -205,13 +219,6 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/zh-cn/docs/lemoncase2/magic.html</loc>
-    
-    <lastmod>2017-06-14T05:02:43.034Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lemonce.net/docs/lemoncase2/subprocess.html</loc>
     
     <lastmod>2017-06-14T05:02:43.034Z</lastmod>
@@ -220,6 +227,13 @@
   
   <url>
     <loc>http://lemonce.net/zh-cn/docs/lemoncase2/subprocess.html</loc>
+    
+    <lastmod>2017-06-14T05:02:43.034Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/lemoncase2/magic.html</loc>
     
     <lastmod>2017-06-14T05:02:43.034Z</lastmod>
     
@@ -338,13 +352,6 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/zh-cn/feature.html</loc>
-    
-    <lastmod>2017-04-21T06:50:32.200Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lemonce.net/2017/01/14/Lemonce-Editor-v2/</loc>
     
     <lastmod>2017-04-19T06:11:31.000Z</lastmod>
@@ -355,13 +362,6 @@
     <loc>http://lemonce.net/zh-cn/compare.html</loc>
     
     <lastmod>2017-04-11T13:39:09.614Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/feature.html</loc>
-    
-    <lastmod>2017-04-11T13:39:09.609Z</lastmod>
     
   </url>
   
