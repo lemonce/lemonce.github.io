@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lemonce.net/solutions/iframe-testing-tool.html</loc>
+    
+    <lastmod>2017-06-26T04:24:15.691Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lemonce.net/docs/setup/trial-license.html</loc>
     
     <lastmod>2017-06-21T11:02:04.838Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>http://lemonce.net/news.html</loc>
     
     <lastmod>2017-06-21T08:06:01.509Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/solutions/iframe-testing-tool.html</loc>
-    
-    <lastmod>2017-06-21T06:03:17.709Z</lastmod>
     
   </url>
   
