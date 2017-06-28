@@ -2,23 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lemonce.net/zh-cn/docs/guide/index.html</loc>
+    
+    <lastmod>2017-06-28T13:03:41.352Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/setup/interface.html</loc>
+    
+    <lastmod>2017-06-27T10:58:00.291Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/guide/reports.html</loc>
+    
+    <lastmod>2017-06-27T10:52:49.331Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/guide/suite.html</loc>
+    
+    <lastmod>2017-06-27T07:06:00.070Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/guide/suite.html</loc>
+    
+    <lastmod>2017-06-27T07:05:59.146Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/guide/recorder.html</loc>
+    
+    <lastmod>2017-06-27T07:01:25.274Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/guide/recorder.html</loc>
+    
+    <lastmod>2017-06-27T07:00:32.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/guide/index.html</loc>
+    
+    <lastmod>2017-06-27T06:57:01.707Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/guide/case.html</loc>
+    
+    <lastmod>2017-06-26T08:44:12.168Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/setup/trial-purchase.html</loc>
+    
+    <lastmod>2017-06-26T07:06:19.488Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/setup/trial-purchase.html</loc>
+    
+    <lastmod>2017-06-26T05:35:50.421Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lemonce.net/solutions/iframe-testing-tool.html</loc>
     
     <lastmod>2017-06-26T04:24:15.691Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/setup/trial-license.html</loc>
-    
-    <lastmod>2017-06-21T11:02:04.838Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/setup/trial-license.html</loc>
-    
-    <lastmod>2017-06-21T11:01:29.522Z</lastmod>
     
   </url>
   
@@ -51,6 +114,13 @@
   </url>
   
   <url>
+    <loc>http://lemonce.net/footer/blog/compare-selenium-selectors.html</loc>
+    
+    <lastmod>2017-06-21T04:01:18.061Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lemonce.net/footer/blog/selenium-iframe-element-testing.html</loc>
     
     <lastmod>2017-06-21T03:59:58.143Z</lastmod>
@@ -68,13 +138,6 @@
     <loc>http://lemonce.net/zh-cn/docs/lemoncase2/instructionkeyword.html</loc>
     
     <lastmod>2017-06-19T04:38:31.696Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/guide/index.html</loc>
-    
-    <lastmod>2017-06-15T10:18:14.782Z</lastmod>
     
   </url>
   
@@ -121,23 +184,9 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/docs/setup/interface.html</loc>
-    
-    <lastmod>2017-06-15T09:02:37.768Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lemonce.net/zh-cn/docs/setup/interface.html</loc>
     
     <lastmod>2017-06-15T09:02:36.544Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/guide/index.html</loc>
-    
-    <lastmod>2017-06-15T08:48:43.440Z</lastmod>
     
   </url>
   
@@ -149,44 +198,9 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/docs/guide/suite.html</loc>
-    
-    <lastmod>2017-06-15T08:38:13.371Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/guide/suite.html</loc>
-    
-    <lastmod>2017-06-15T08:38:12.223Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lemonce.net/zh-cn/docs/guide/case.html</loc>
     
     <lastmod>2017-06-15T08:27:19.142Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/guide/case.html</loc>
-    
-    <lastmod>2017-06-15T08:26:54.602Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/guide/recorder.html</loc>
-    
-    <lastmod>2017-06-15T08:20:20.048Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/guide/recorder.html</loc>
-    
-    <lastmod>2017-06-15T08:19:56.187Z</lastmod>
     
   </url>
   
@@ -345,13 +359,6 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/footer/blog/compare-selenium-selectors.html</loc>
-    
-    <lastmod>2017-05-02T02:31:55.395Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lemonce.net/2017/01/14/Lemonce-Editor-v2/</loc>
     
     <lastmod>2017-04-19T06:11:31.000Z</lastmod>
@@ -362,13 +369,6 @@
     <loc>http://lemonce.net/zh-cn/compare.html</loc>
     
     <lastmod>2017-04-11T13:39:09.614Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/guide/reports.html</loc>
-    
-    <lastmod>2017-03-26T04:40:32.643Z</lastmod>
     
   </url>
   

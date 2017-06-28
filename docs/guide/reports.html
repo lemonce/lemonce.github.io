@@ -2,7 +2,7 @@
 <html lang="en">
 <head prefix="og: http://ogp.me/ns#">
 	<meta charset="utf-8">
-	<title>View test reports - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
+	<title>View Test Report - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="web ui testing tool, web application testing tool, automated web ui testing tool, automated web application testing tool, automated testing tools for web applications, gui testing tool, web ui testing, free web ui testing tools, free automation testing tools, web automation testing tools, regression testing tools, selenium, free, open source, selenium alternatives,alternative to selenium">
@@ -75,10 +75,10 @@
 	<article class="page clearfix">
 		<div class="page-header bg-teal-gradient py-5">
 			<div class="container">
-				<h1>View test reports</h1>
+				<h1>View Test Report</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-03-26
+					2017-06-27
 				</time>
 			</div>
 		</div>
@@ -87,7 +87,7 @@
 	<div><a href="/docs/setup/index.html">Set Up</a>
  		<ul>
     		<li><a href="/docs/setup/download-install.html">download and install</a></li>
-			<li><a href="/docs/setup/trial-license.html">trial and license</a></li>
+			<li><a href="/docs/setup/trial-purchase.html">trial and purchase</a></li>
     		<li><a href="/docs/setup/interface.html">Lemonce interface</a></li>
  		</ul>
 	</div>
@@ -131,11 +131,44 @@
 					<strong class="toc-title">
 						contents
 					</strong>
-					
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Case-list"><span class="toc-text">1 Case list</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Logs"><span class="toc-text">2 Logs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Codes"><span class="toc-text">3 Codes</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
-				<p>The test report is divided into three areas. The case-area lists all of the test cases for the entire test task, the contents of the log-area and the code-area correspond to each other as a sub area of each test case.</p>
+				<p>The test report is divided into three areas. The case-area lists all of the test cases for the entire test task, the contents of the log-area and the code-area correspond to each other as a sub area of each test case.
+<img class="guide-images" src="/images/guide/report-01.png"></p>
+<p><br></p>
+<h2 id="1-Case-list"><a href="#1-Case-list" class="headerlink" title="1 Case list"></a>1 Case list</h2><hr>
+<p>Case list is in the black area on the left,and the example is shown below.</p>
+<p><img src="/images/guide/report-03.png"></p>
+<p>Case list has the following features and information,and the selected case is highlighted in gray. </p>
+<ul>
+<li><p><strong>search function</strong> To complete exact case searching when a suite has many cases.</p>
+</li>
+<li><p><strong>execution information</strong> Include the name of cases,the time of execution and if the cases pass or not. <i class="fa fa-check" style="color:green"></i> means passed， <i class="fa fa-close" style="color:red"></i>  means failed.</p>
+</li>
+</ul>
+<p><br></p>
+<h2 id="2-Logs"><a href="#2-Logs" class="headerlink" title="2 Logs"></a>2 Logs</h2><hr>
+<p>The logs show the execution statements in each of the test cases in the form of a list. In addition, the following information is included:</p>
+<ul>
+<li>A case starts with a “case started” log and finish with a “case done” log.</li>
+<li>After the assertion fails,screenshots of the current webview will be saved.</li>
+<li>the logs of “Assertion Failure” will be in red.</li>
+</ul>
+<p><img src="/images/guide/report-04.png"></p>
+<p>Every log contains three parts of information,and the selected log is highlighted in gray while the corresponding codes will be highlighted,too.</p>
+<ul>
+<li><p><strong>execution comments for current log</strong> More detailed and clear than the comments which is generated automatically in code-editor.</p>
+</li>
+<li><p><strong>execution start or duration</strong> Execution start time is displayed in “hh-mm-ss” format;for <code>click</code> or <code>input</code>,log will shows duration time.</p>
+</li>
+<li><p><strong>the number of code rows</strong></p>
+</li>
+</ul>
+<p><br></p>
+<h2 id="3-Codes"><a href="#3-Codes" class="headerlink" title="3 Codes"></a>3 Codes</h2><hr>
+<p>All the LC2 codes and comments of the current case.</p>
 
 			</div>
 		</div>
