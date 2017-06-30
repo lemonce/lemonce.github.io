@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lemonce.net/docs/guide/index.html</loc>
+    
+    <lastmod>2017-06-30T08:31:24.076Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lemonce.net/zh-cn/docs/guide/index.html</loc>
     
-    <lastmod>2017-06-28T13:03:41.352Z</lastmod>
+    <lastmod>2017-06-29T08:03:41.281Z</lastmod>
     
   </url>
   
@@ -47,13 +54,6 @@
     <loc>http://lemonce.net/docs/guide/recorder.html</loc>
     
     <lastmod>2017-06-27T07:00:32.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/guide/index.html</loc>
-    
-    <lastmod>2017-06-27T06:57:01.707Z</lastmod>
     
   </url>
   
