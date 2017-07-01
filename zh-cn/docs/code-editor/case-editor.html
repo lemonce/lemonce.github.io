@@ -52,12 +52,16 @@
 					</a>
 				</li>
 				<li class="nav-item">
-					<a href="https://license.lemonce.com" class="nav-link">
+					<a href="https://license.lemonce.com"
+						class="nav-link"
+						onclick="ga('send', 'event', 'click', 'license', 'header button')">
 						购买
 					</a>
 				</li>
 				<li class="nav-item">
-					<a href="http://download.lemonce.com/latest/setup.exe" class="nav-link">
+					<a href="http://download.lemonce.com/latest/setup.exe"
+						class="nav-link"
+						onclick="ga('send', 'event', 'download', 'free trial', 'header button')">
 						下载
 					</a>
 				</li>
@@ -78,7 +82,7 @@
 				<h1>用例编辑器</h1>
 				<time class="text-white">
 					最后更新：
-					2017-06-15
+					2017-07-01
 				</time>
 			</div>
 		</div>
@@ -137,7 +141,7 @@
 			<div class="page-inner">
 				<h2 id="工具栏"><a href="#工具栏" class="headerlink" title="工具栏"></a>工具栏</h2><hr>
 <p>整个工具栏显示如下。</p>
-<p><img src="/images/code-editor/case-toolbar.png"></p>
+<p><img class="box-shadow" src="/images/code-editor/case-toolbar.png"></p>
 <p><br>
 <i class="fa fa-file-code-o"></i>  <strong>新建 Case</strong>  </p>
 <p>在工作空间之外建立一个新的测试用例，默认命名为“Untitle-0.lc2”,但用户需要寻找一个路径去保存。用户也可以使用 <button>Ctrl+N</button> 来完成这一步操作。</p>
