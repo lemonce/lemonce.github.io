@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lemonce.net/docs/lemoncase2/instructionkeyword.html</loc>
+    
+    <lastmod>2017-07-11T05:05:05.316Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/lemoncase2/instructionkeyword.html</loc>
+    
+    <lastmod>2017-07-11T05:02:02.641Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lemonce.net/news.html</loc>
     
     <lastmod>2017-07-09T02:51:53.163Z</lastmod>
@@ -201,20 +215,6 @@
     <loc>http://lemonce.net/footer/blog/selenium-iframe-element-testing.html</loc>
     
     <lastmod>2017-06-21T03:59:58.143Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/lemoncase2/instructionkeyword.html</loc>
-    
-    <lastmod>2017-06-19T04:42:16.566Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/lemoncase2/instructionkeyword.html</loc>
-    
-    <lastmod>2017-06-19T04:38:31.696Z</lastmod>
     
   </url>
   

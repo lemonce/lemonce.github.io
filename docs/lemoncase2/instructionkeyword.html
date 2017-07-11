@@ -82,7 +82,7 @@
 				<h1>Instruction keyword</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-06-19
+					2017-07-11
 				</time>
 			</div>
 		</div>
@@ -135,11 +135,34 @@
 					<strong class="toc-title">
 						contents
 					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#process"><span class="toc-text">process</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#return"><span class="toc-text">return</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#for…in"><span class="toc-text">for…in</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#for…of"><span class="toc-text">for…of</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#if…else"><span class="toc-text">if…else</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#continue"><span class="toc-text">continue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#while"><span class="toc-text">while</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#log"><span class="toc-text">log</span></a></li></ol>
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#import"><span class="toc-text">import</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#process"><span class="toc-text">process</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#return"><span class="toc-text">return</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#for…in"><span class="toc-text">for…in</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#for…of"><span class="toc-text">for…of</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#if…else"><span class="toc-text">if…else</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#continue"><span class="toc-text">continue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#while"><span class="toc-text">while</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#log"><span class="toc-text">log</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
-				<h2 id="process"><a href="#process" class="headerlink" title="process"></a>process</h2><hr>
+				<h2 id="import"><a href="#import" class="headerlink" title="import"></a>import</h2><hr>
+<p></p><p class="alert alert-warning">import “./../case.lc2”</p>
+Import another case or more.You should write the code  before <code>process main</code>,or you can click the button <i class="fa fa-download"></i> in the toolbar of <a href="/docs/code-editor/case-editor.html">Case-Editor</a> to complete import.<p></p>
+<p>The case below shows how to import <code>$BUTTON</code> in <a href="/docs/lemoncase2/magic.html">Magic Keyword</a>.</p>
+<pre class="sublemon">//Import the case named "rightclick.lc2"
+import "./rightclick.lc2";
+process main () {
+    // New Page
+    jumpto "https://www.github.com/";
+    wait 2333;
+    // click a text field
+    click "#user\\[login\\]"; //Here click means rightclick
+}</pre>
+
+<p>The case “rightclick.lc2” shows below.</p>
+<pre class="sublemon">
+//This is a sub-process simulating right-click with $BUTTON.​
+process rightclick(a) {
+    $BUTTON = "right";
+    click a;
+}</pre>
+
+<p><br></p>
+<h2 id="process"><a href="#process" class="headerlink" title="process"></a>process</h2><hr>
 <p></p><p class="alert alert-warning">process main{ }<br>process sub{ }</p>
 Define a process,including <code>process main</code> and <code>process sub</code>.<p></p>
 <pre class="sublemon">//This is a main process.

@@ -82,7 +82,7 @@
 				<h1>指令关键字</h1>
 				<time class="text-white">
 					最后更新：
-					2017-06-19
+					2017-07-11
 				</time>
 			</div>
 		</div>
@@ -141,17 +141,25 @@
 			<div class="page-inner">
 				<h2 id="import"><a href="#import" class="headerlink" title="import"></a>import</h2><hr>
 <p></p><p class="alert alert-warning">import “./../case.lc2”</p>
-调用一个或多个其它的子过程 case 文件，写在当前 case 的 process main之前。也可以使用<a href="/zh-cn/docs/code-editor/case-editor.html">用例编辑器</a>工具栏中的 <i class="fa fa-download"></i> 来进行调用。<p></p>
+调用一个或多个其它的子过程 case 文件，写在当前 case 的 <code>process main</code> 之前。也可以使用<a href="/zh-cn/docs/code-editor/case-editor.html">用例编辑器</a>工具栏中的 <i class="fa fa-download"></i> 来进行调用。<p></p>
 <p>下面的示例为调用<a href="/zh-cn/docs/lemoncase2/magic.html">魔术字</a>中 <code>$BUTTON</code> 的示例子过程。</p>
 <pre class="sublemon">//引用文件名为"rightclick.lc2"的case文件
-import "./rightclick.lc2";
 
+import "./rightclick.lc2";
 process main () {
     // New Page
     jumpto "https://www.github.com/";
     wait 2333;
     // click a text field
     click "#user\\[login\\]"; //此处点击方式为右键点击
+}</pre>
+
+<p>关于<code>$BUTTON</code> 文件名为”rightclick.lc2”的 case 文件如下所示。</p>
+<pre class="sublemon">
+//这是一个用 $BUTTON 模拟右键点击的子过程
+process rightclick(a) {
+    $BUTTON = "right";
+    click a;
 }</pre>
 
 <p><br></p>
