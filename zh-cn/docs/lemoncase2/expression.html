@@ -82,7 +82,7 @@
 				<h1>表达式</h1>
 				<time class="text-white">
 					最后更新：
-					2017-06-11
+					2017-07-15
 				</time>
 			</div>
 		</div>
@@ -151,27 +151,29 @@
 <span class="alert alert-warning"><strong>&lt;! <a href="/zh-cn/docs/lemoncase2/selector.html">“selector”</a> /&gt;</strong> </span></p>
 <p>检查该元素是否存在。如果存在输出：<code>true</code>，不存在输出：<code>null</code>.</p>
 <p>示例如下：</p>
-<pre><code>process main () {
+<pre class="sublemon">
+process main () {
 
-    // The world&#39;s leading software development platform · GitHub
-    jumpto &quot;https://github.com/&quot;;
+    // The world's leading software development platform · GitHub
+    jumpto "https://github.com/";
     wait 2333;
 
-    // &lt;# &quot;selector&quot;/&gt;
-    log &lt;# &quot;div&quot;/&gt;; // 输出页面中&quot;div&quot;标签的个数
-    log &lt;# &quot;.form&quot;/&gt;+1; // 输出页面中&quot;form&quot;类型的个数
+    // <# "selector"="">
+    log <# "div"="">; // 输出页面中"div"标签的个数
+    log <# ".form"="">+1; // 输出页面中"form"类型的个数
 
-    // &lt;@ &quot;selector&quot;/&gt;
-    log &lt;@ &quot;h1&quot;/&gt;;  // 输出&quot;h1&quot;中的内容
-    log &lt;@ &quot;label[for*=user]&quot;/&gt;; //
-    log &lt;@ &quot;#user\\[login\\]&quot;/&gt;; // 需要转译符
-    log &lt;@ &quot;.form-control[name=timestamp_secret] + button&quot;/&gt;; // 支持相邻兄弟选择器
+    // <@ "selector"="">
+    log <@ "h1"="">;  // 输出"h1"中的内容
+    log <@ "label[for*="user]"/">; //
+    log <@ "#user\\[login\\]"="">; // 需要转译符
+    log <@ ".form-control[name="timestamp_secret]" +="" button"="">; // 支持相邻兄弟选择器
 
-    // &lt;! &quot;selector&quot;/&gt;
-    log &lt;! &quot;#js&quot;/&gt;; // &quot;js&quot;ID在html中不存在
-    log &lt;! &quot;a&quot;/&gt;;// &quot;a&quot;标签在html中存在
-}
-</code></pre><p><br></p>
+    // <! "selector"/>
+    log <! "#js"/>; // "js"ID在html中不存在
+    log <! "a"/>;// "a"标签在html中存在
+}</@></@></@></@></@></#></#></#></pre>
+
+<p><br></p>
 <h2 id="比较符"><a href="#比较符" class="headerlink" title="比较符"></a>比较符</h2><hr>
 <p><strong>~~ : 约等于</strong></p>
 <ul>
