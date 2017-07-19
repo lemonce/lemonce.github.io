@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lemonce.net/footer/blog/selenium-iframe-element-testing.html</loc>
+    
+    <lastmod>2017-07-19T08:54:48.237Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/guide/index.html</loc>
+    
+    <lastmod>2017-07-19T08:51:12.388Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/setup/interface.html</loc>
+    
+    <lastmod>2017-07-19T08:50:06.002Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lemonce.net/zh-cn/docs/lemoncase2/subprocess.html</loc>
     
     <lastmod>2017-07-19T07:07:15.961Z</lastmod>
@@ -58,13 +79,6 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/zh-cn/docs/guide/index.html</loc>
-    
-    <lastmod>2017-07-16T12:03:53.001Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lemonce.net/zh-cn/news.html</loc>
     
     <lastmod>2017-07-15T09:44:41.885Z</lastmod>
@@ -82,13 +96,6 @@
     <loc>http://lemonce.net/docs/setup/interface.html</loc>
     
     <lastmod>2017-07-08T05:18:47.594Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/setup/interface.html</loc>
-    
-    <lastmod>2017-07-08T05:16:27.413Z</lastmod>
     
   </url>
   
@@ -254,13 +261,6 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/footer/blog/selenium-iframe-element-testing.html</loc>
-    
-    <lastmod>2017-06-21T03:59:58.143Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lemonce.net/zh-cn/docs/guide/case.html</loc>
     
     <lastmod>2017-06-15T08:27:19.142Z</lastmod>
@@ -296,14 +296,14 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/docs/lemoncase2/macro.html</loc>
+    <loc>http://lemonce.net/docs/lemoncase2/magic.html</loc>
     
     <lastmod>2017-06-14T05:02:43.019Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://lemonce.net/docs/lemoncase2/magic.html</loc>
+    <loc>http://lemonce.net/docs/lemoncase2/macro.html</loc>
     
     <lastmod>2017-06-14T05:02:43.019Z</lastmod>
     
