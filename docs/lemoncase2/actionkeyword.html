@@ -82,7 +82,7 @@
 				<h1>Action keyword</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-06-13
+					2017-07-19
 				</time>
 			</div>
 		</div>
@@ -266,7 +266,19 @@ Assert that the expression is true [within certain time].<p></p>
 assert <#"textarea#test">;
 
 //Asserts that a input box with the id of "test" will appear in 2 seconds.
-assert <#"textarea#test"> in 2000;</#"textarea#test"></#"textarea#test"></pre>
+assert <#"textarea#test"> in 2000;
+
+process main () {
+
+    // The world's leading software development platform · GitHub
+    jumpto "https://github.com/";
+    // wait
+    wait 2333;
+    // click "login"
+    click "#user\\[login\\]";
+    // assert
+    assert <@'h1'> ~~ "Built" in 1000;
+}</@'h1'></#"textarea#test"></#"textarea#test"></pre>
 
 <p><br></p>
 <h2 id="upload"><a href="#upload" class="headerlink" title="upload"></a>upload</h2><hr>

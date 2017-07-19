@@ -82,7 +82,7 @@
 				<h1>指令关键字</h1>
 				<time class="text-white">
 					最后更新：
-					2017-07-16
+					2017-07-19
 				</time>
 			</div>
 		</div>
@@ -203,46 +203,55 @@ process square(x){
 以任意顺序遍历一个对象的可枚举属性。对于每个不同的属性，语句都会被执行。<p></p>
 <pre class="sublemon">
 process main () {
-    A = {a:1,b:2};
-    for (x in A){
-        log "A["+x+"]="+A[x];
+    // for...in(数组)
+    X=["Smartisan","Mi"];
+    for (i in X){
+    log "X[" +i+ "]="+ X[i];
+  }
+
+    // for...in(数组)
+    A = {1:1,2:2};
+    for (a in A){
+    log "A["+a+"]="+A[a];
   }
 }
 //输出:
-//A[a]=1
-//A[b]=2</pre>
+//X[0]=Smartisan
+//X[1]=Mi
+//A[1]=1
+//A[2]=2</pre>
 
 <p><br></p>
 <h2 id="for…of"><a href="#for…of" class="headerlink" title="for…of"></a>for…of</h2><hr>
 <p></p><p class="alert alert-warning">for (variable of object){ statement }</p>
 在可迭代对象上创建一个迭代循环，对每个不同属性的属性值,调用一个自定义的有执行语句的迭代挂钩.<p></p>
 <pre class="sublemon">
-//遍历一个数组
-process main () {
- A = [10,20,30];
-  for (x of A){
-      log x;
-  }
-}
-//输出
-//10
-//20
-//30
 
-//遍历一个字符串
 process main () {
-  for (x of "Lemonce"){
-      log x;
+  // for...of(字符串)，遍历一个字符串
+  B = "Lemonce";
+  for (b of B){
+    log b;
+  }
+
+  // for...of(数组)，遍历一个数组
+  C = [20,30,40];
+  for (c of C){
+    log c;
   }
 }
-//输出:
+
+//输出
 //L
 //e
 //m
 //o
 //n
 //c
-//e</pre>
+//e
+//20
+//30
+//40</pre>
 
 <p><br></p>
 <h2 id="if…else"><a href="#if…else" class="headerlink" title="if…else"></a>if…else</h2><hr>
@@ -275,7 +284,6 @@ i = 0;
 n = 0;
 while (i < 5) {
    i=i+1;
-   log i;
    if (i === 3) {
       continue;
    }
@@ -308,8 +316,8 @@ process counter() {
 <p></p><p class="alert alert-warning">log [expression,variable,string];</p>
 向控制台输出一条消息。可以输出测试用例中已定义的变量，表达式，字符串等等。<p></p>
 <pre class="sublemon">
-log '2'+3    //输出  23
-log true    //输出  true</pre>
+log '2'+3;    //输出  23
+log true;    //输出  true</pre>
 
 			</div>
 		</div>

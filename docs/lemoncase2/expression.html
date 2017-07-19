@@ -82,7 +82,7 @@
 				<h1>Expression</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-06-11
+					2017-07-19
 				</time>
 			</div>
 		</div>
@@ -146,7 +146,7 @@
 <p>Get the number of elements that matches the selector. Calculation expressions and variables can be applied.</p>
 <p><br>
 <span class="alert alert-warning"><strong>&lt;@ <a href="/docs/lemoncase2/selector.html">“selector”</a> /&gt;</strong> </span></p>
-<p>Get the innerHTML of the 1st element that matches the selector. If related content does not exist, output <code>null</code>.</p>
+<p>Get the visible contents of inner-text of the 1st element that matches the selector. If related content does not exist, output <code>null</code>.</p>
 <p><br>
 <span class="alert alert-warning"><strong>&lt;! <a href="/docs/lemoncase2/selector.html">“selector”</a> /&gt;</strong> </span></p>
 <p>Check whether the element exists or not. Output <code>true</code> if such element exists, otherwise output <code>null</code>.</p>
@@ -158,8 +158,8 @@
     wait 2333;
 
     // &lt;# &quot;selector&quot;/&gt;
-    log &lt;# &quot;div&quot;/&gt;; // Output the number of tag &quot;div&quot;
-    log &lt;# &quot;.form&quot;/&gt;+1; // Output the number of class &quot;form&quot;
+    log &lt;# &quot;div&quot; /&gt;; // Output the number of tag &quot;div&quot;
+    log &lt;# &quot;.form&quot; /&gt;+1; // Output the number of class &quot;form&quot;
 
     // &lt;@ &quot;selector&quot;/&gt;
     log &lt;@ &quot;h1&quot;/&gt;;  // Output the inner text of  tag &quot;h1&quot;

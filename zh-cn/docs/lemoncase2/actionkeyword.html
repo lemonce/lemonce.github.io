@@ -82,7 +82,7 @@
 				<h1>动作关键字</h1>
 				<time class="text-white">
 					最后更新：
-					2017-06-13
+					2017-07-19
 				</time>
 			</div>
 		</div>
@@ -272,7 +272,19 @@ assert <# "textarea#test"=""> == 1;
 assert <@ "testarea#test"=""> ~~ "Lemonce"
 
 //断言id名为'test'的输入框会在两秒钟内出现
-assert <# "textarea#test"=""> in 2000;</#></@></#></pre>
+assert <# "textarea#test"=""> in 2000;
+
+process main () {
+
+    // The world's leading software development platform · GitHub
+    jumpto "https://github.com/";
+    // wait
+    wait 2333;
+    // click "login"
+    click "#user\\[login\\]";
+    // assert
+    assert <@'h1'> ~~ "Built" in 1000;
+}</@'h1'></#></@></#></pre>
 
 <p><br></p>
 <h2 id="upload"><a href="#upload" class="headerlink" title="upload"></a>upload</h2><hr>
