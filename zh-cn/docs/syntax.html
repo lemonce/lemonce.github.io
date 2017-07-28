@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="utf-8">
+	<title>语法 - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="web ui testing tool, web application testing tool, automated web ui testing tool, automated web application testing tool, automated testing tools for web applications, gui testing tool, web ui testing, free web ui testing tools, free automation testing tools, web automation testing tools, regression testing tools, selenium, free, open source">
+	<meta name="description" content="UI Testing Tool For Web Applications: Lemonce Editor is a professional automation testing tool for web applications. Open Source and Free versions are available.">
+	<!-- Canonical links -->
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/theme.css">
+	<link rel="stylesheet" href="/css/index.css">
+	<script src="https://use.fontawesome.com/201a2b367b.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+	<div class="container mx-md-auto mx-0">
+		<button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#nav-content">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-header">
+			<a href="/zh-cn/" class="navbar-brand">Lemonce</a>
+		</div>
+		<div id="nav-content" class="collapse navbar-collapse">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="/zh-cn/" class="nav-link">
+						首页
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/feature.html" class="nav-link">
+						特性
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/compare.html" class="nav-link">
+						对比
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/news" class="nav-link">
+						新闻
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/zh-cn/docs/guide/index.html" class="nav-link">
+						文档
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+	<div id="wrap-page">
+	<article class="page clearfix">
+		<div class="page-header bg-teal-gradient py-5">
+			<div class="container">
+				<h1>语法</h1>
+				<time class="text-white">
+					最后更新：
+					2017-01-14
+				</time>
+			</div>
+		</div>
+		<div class="page-content container py-5">
+			<aside id="docs-sidebar" class="float-lg-left">
+	<div><a href="/zh-cn/docs/setup/index.html">设置</a>
+ 		<ul>
+    		<li><a href="/zh-cn/docs/setup/download-install.html">下载与安装</a></li>
+    		<li><a href="/zh-cn/docs/setup/firstrun.html">首次运行</a></li>
+    		<li><a href="/zh-cn/docs/setup/interface.html">灵萌测界面</a></li>
+ 		</ul>
+	</div>
+	
+	<div><a href="/zh-cn/docs/guide/index.html">开始测试</a>
+		<ul>
+    		<li><a href="/zh-cn/docs/guide/case.html">创建测试用例</a></li>
+    		<li><a href="/zh-cn/docs/guide/recorder.html">录制器的使用</a></li>
+    		<li><a href="/docs/guide/suite.html">完善测试套件</a></li>
+			<li><a href="/zh-cn/docs/guide/reports.html">查看测试报告</a></li>
+ 		</ul>
+	</div>
+
+	<div><a href="/zh-cn/docs/code-editor/index.html">编辑器</a>
+		<ul>
+    		<li><a href="/zh-cn/docs/code-editor/case-editor.html">用例编辑器</a></li>
+    		<li><a href="/zh-cn/docs/code-editor/suite-editor.html">套件编辑器</a></li>
+    		<li><a href="/docs/code-editor/webview.html">网络视图</a></li>
+ 		</ul>
+	</div>
+
+	<div><a href="/zh-cn/docs/lemoncase2/index.html">编程语言</a>
+		<ul>
+    		<li><a href="/zh-cn/docs/lemoncase2/instructionkeyword.html">指令关键字</a></li>
+    		<li><a href="/zh-cn/docs/lemoncase2/actionkeyword.html">动作关键字</a></li>
+    		<li><a href="/zh-cn/docs/lemoncase2/expression.html">表达式</a></li>
+			<li><a href="/zh-cn/docs/lemoncase2/subprocess.html">内置子过程</a></li>
+			<li><a href="/zh-cn/docs/lemoncase2/marco.html">宏</a></li>
+			<li><a href="/zh-cn/docs/lemoncase2/marco.html">魔术字</a></li>
+			<li><a href="/zh-cn/docs/lemoncase2/example.html">操作示例</a></li>
+ 		</ul>
+	</div>
+
+</aside>
+
+
+
+			<aside id="toc" class="float-lg-right" role="navigation">
+				<div id="toc-inner">
+					<strong class="toc-title">
+						页面内容：
+					</strong>
+					<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Lemoncase2"><span class="toc-text">Lemoncase2</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#语法"><span class="toc-text">语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#变量-stable"><span class="toc-text">变量 - stable</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#类型"><span class="toc-text">类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#宏指令"><span class="toc-text">宏指令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#TIMES-times-number-1-stable"><span class="toc-text">#TIMES [times:number|1] - stable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#INTERVAL-interval-number-3000-stable"><span class="toc-text">#INTERVAL [interval:number|3000] - stable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SCREEN-width-number-height-number-beta"><span class="toc-text">#SCREEN [width:number],[height:number] - beta</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AUTOWAIT-beta"><span class="toc-text">#AUTOWAIT - beta</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#LIMIT-time-number-stable"><span class="toc-text">#LIMIT [time:number] - stable</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#指令"><span class="toc-text">指令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#assert-exp-in-overtime-number-stable"><span class="toc-text">assert [exp][ in [overtime:number]] - stable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#verify-exp-in-overtime-number-beta"><span class="toc-text">verify [exp][ in [overtime:number]] - beta</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#wait-time-number-stable"><span class="toc-text">wait [time:number] - stable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#log-exp-stable"><span class="toc-text">log [exp] - stable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jumpto-exp-stable"><span class="toc-text">jumpto [exp] - stable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#refresh-beta"><span class="toc-text">refresh - beta</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#process-identifier-statements-locked"><span class="toc-text">process [identifier] { [statements] } - locked</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#action-selector-string-by-to-params-params1-params2"><span class="toc-text">[action] [selector:string] by/to [params|params1,params2]</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#input-stable"><span class="toc-text">input - stable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#click-stable"><span class="toc-text">click - stable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#dblclick-stable"><span class="toc-text">dblclick - stable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rclick-stable"><span class="toc-text">rclick - stable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#select-selector-string-by-value-string-index-number-stable"><span class="toc-text">select [selector:string] by [value:string|index:number] - stable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#movein-beta"><span class="toc-text">movein - beta</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#moveout-beta"><span class="toc-text">moveout - beta</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scroll-beta"><span class="toc-text">scroll - beta</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#check-deprecated"><span class="toc-text">check - deprecated</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#uncheck-deprecated"><span class="toc-text">uncheck - deprecated</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#表达式-stable"><span class="toc-text">表达式 - stable</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#扩展-css-选择器-stable"><span class="toc-text">扩展 css 选择器 - stable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#选择器操作符-beta"><span class="toc-text">选择器操作符 - beta</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#比较操作符-stable"><span class="toc-text">比较操作符 - stable</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#作用域-beta"><span class="toc-text">作用域 - beta</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#内置过程-beta"><span class="toc-text">内置过程 - beta</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#魔法关键字-beta"><span class="toc-text">魔法关键字 - beta</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#例子"><span class="toc-text">例子</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hello-world"><span class="toc-text">Hello, world</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#通常的用法"><span class="toc-text">通常的用法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#测试一个用户注册页面"><span class="toc-text">测试一个用户注册页面</span></a></li></ol></li></ol>
+				</div>
+			</aside>
+			<div class="page-inner">
+				<h1 id="Lemoncase2"><a href="#Lemoncase2" class="headerlink" title="Lemoncase2"></a>Lemoncase2</h1><p>用来描述测试用例的语言</p>
+<h1 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h1><p>所有的语句必须以分号 ; 结尾<br>例：<br><code>click &#39;here&#39;;</code></p>
+<h2 id="变量-stable"><a href="#变量-stable" class="headerlink" title="变量 - stable"></a>变量 - stable</h2><p>类似于 python ：  </p>
+<pre><code class="Python">a = 1;
+a = true;
+</code></pre>
+<h2 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h2><p><strong>Lemoncase2 有以下数据类型</strong></p>
+<ul>
+<li>数值 (e.g., 0.12, 1e-3)</li>
+<li>字符 (e.g., ‘you’, “me”)</li>
+<li>布尔 (true/false)</li>
+<li>正则 (/abs/i)</li>
+</ul>
+<h2 id="宏指令"><a href="#宏指令" class="headerlink" title="宏指令"></a>宏指令</h2><p>宏指令定义了测试用例运行的参数。</p>
+<h3 id="TIMES-times-number-1-stable"><a href="#TIMES-times-number-1-stable" class="headerlink" title="#TIMES [times:number|1] - stable"></a>#TIMES [times:number|1] - stable</h3><pre><code class="C">// 用例会运行 10 次。
+#TIMES 10
+</code></pre>
+<h3 id="INTERVAL-interval-number-3000-stable"><a href="#INTERVAL-interval-number-3000-stable" class="headerlink" title="#INTERVAL [interval:number|3000] - stable"></a>#INTERVAL [interval:number|3000] - stable</h3><pre><code class="C">// 用例执行的间隔是 1000 毫秒。
+#INTERVAL 1000
+</code></pre>
+<h3 id="SCREEN-width-number-height-number-beta"><a href="#SCREEN-width-number-height-number-beta" class="headerlink" title="#SCREEN [width:number],[height:number] - beta"></a>#SCREEN [width:number],[height:number] - beta</h3><pre><code class="C">// 将待测页面的宽度设为 800px 高度设为 height 600px。
+#SCREEN 800,600
+</code></pre>
+<h3 id="AUTOWAIT-beta"><a href="#AUTOWAIT-beta" class="headerlink" title="#AUTOWAIT - beta"></a>#AUTOWAIT - beta</h3><pre><code class="C">// 自动等待
+#AUTOSCROLL
+</code></pre>
+<h3 id="LIMIT-time-number-stable"><a href="#LIMIT-time-number-stable" class="headerlink" title="#LIMIT [time:number] - stable"></a>#LIMIT [time:number] - stable</h3><pre><code class="C">// 时间限制
+#LIMIT 50
+</code></pre>
+<h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><h3 id="assert-exp-in-overtime-number-stable"><a href="#assert-exp-in-overtime-number-stable" class="headerlink" title="assert [exp][ in [overtime:number]] - stable"></a>assert [exp][ in [overtime:number]] - stable</h3><p>断言当前的表达式[时间限制]。</p>
+<h3 id="verify-exp-in-overtime-number-beta"><a href="#verify-exp-in-overtime-number-beta" class="headerlink" title="verify [exp][ in [overtime:number]] - beta"></a>verify [exp][ in [overtime:number]] - beta</h3><p>检测当前的表达式[时间限制]。和 assert 不一样的地方在于，即使失败，用例也会继续执行。</p>
+<h3 id="wait-time-number-stable"><a href="#wait-time-number-stable" class="headerlink" title="wait [time:number] - stable"></a>wait [time:number] - stable</h3><p>等待一定时间。</p>
+<h3 id="log-exp-stable"><a href="#log-exp-stable" class="headerlink" title="log [exp] - stable"></a>log [exp] - stable</h3><p>在控制台中输出表达式的结果。</p>
+<h3 id="jumpto-exp-stable"><a href="#jumpto-exp-stable" class="headerlink" title="jumpto [exp] - stable"></a>jumpto [exp] - stable</h3><p>跳转到一个链接。</p>
+<h3 id="refresh-beta"><a href="#refresh-beta" class="headerlink" title="refresh - beta"></a>refresh - beta</h3><p>刷新当前页面。</p>
+<h3 id="process-identifier-statements-locked"><a href="#process-identifier-statements-locked" class="headerlink" title="process [identifier] { [statements] } - locked"></a>process [identifier] { [statements] } - locked</h3><p>定义一个过程 / 函数。</p>
+<h3 id="action-selector-string-by-to-params-params1-params2"><a href="#action-selector-string-by-to-params-params1-params2" class="headerlink" title="[action] [selector:string] by/to [params|params1,params2]"></a>[action] [selector:string] by/to [params|params1,params2]</h3><p>模拟用户操作的指令。</p>
+<blockquote>
+<p>动作指令关键字</p>
+</blockquote>
+<h3 id="input-stable"><a href="#input-stable" class="headerlink" title="input - stable"></a>input - stable</h3><p>输入文字到 input 元素 <code>&lt;input type=&quot;text&quot; /&gt;</code> 或 <code>&lt;textarea&gt;</code>.</p>
+<pre><code class="C">// &lt;input id=&quot;link&quot; class=&quot;case&quot; /&gt;
+input &#39;div#link.case&#39; by &quot;hello world.&quot;;
+</code></pre>
+<h3 id="click-stable"><a href="#click-stable" class="headerlink" title="click - stable"></a>click - stable</h3><p>鼠标左键单击一个元素.</p>
+<pre><code class="C">// &lt;a href=&quot;...&quot;&gt;Text&lt;/a&gt;
+click &#39;a&#39;;
+
+// &lt;a id=&quot;link&quot; href=&quot;...&quot;&gt;Text&lt;/a&gt;
+click &#39;a#link&#39;;
+</code></pre>
+<h3 id="dblclick-stable"><a href="#dblclick-stable" class="headerlink" title="dblclick - stable"></a>dblclick - stable</h3><p>鼠标双击一个元素.</p>
+<pre><code class="C">// &lt;div id=&quot;link&quot; class=&quot;case&quot;&gt;Text&lt;/div&gt;
+dblclick &#39;div#link.case&#39;;
+</code></pre>
+<h3 id="rclick-stable"><a href="#rclick-stable" class="headerlink" title="rclick - stable"></a>rclick - stable</h3><p>鼠标右键单击一个元素.</p>
+<pre><code class="C">// &lt;div id=&quot;link&quot; class=&quot;case&quot;&gt;Text&lt;/div&gt;
+rclick &#39;div#link.case&#39;;
+</code></pre>
+<h3 id="select-selector-string-by-value-string-index-number-stable"><a href="#select-selector-string-by-value-string-index-number-stable" class="headerlink" title="select [selector:string] by [value:string|index:number] - stable"></a>select [selector:string] by [value:string|index:number] - stable</h3><p>从选择列表下拉中选中 &lt;option&gt; 目标是 &lt;select&gt; 元素。参数可以是： value|index.<br><em>(仅能使用在 &lt;select&gt; 元素上)</em></p>
+<pre><code class="C">// &lt;select&gt;
+//   &lt;option value=&quot;a&quot;&gt;&lt;/option&gt; // index:0
+//   &lt;option value=&quot;b&quot;&gt;&lt;/option&gt; // index:1 &lt;-- 这个会被选中
+//   &lt;option value=&quot;c&quot;&gt;&lt;/option&gt; // index:2
+// &lt;/select&gt;
+
+select &quot;select&quot; by 1;
+
+// 或
+
+select &quot;select&quot; by &quot;b&quot;;
+</code></pre>
+<h3 id="movein-beta"><a href="#movein-beta" class="headerlink" title="movein - beta"></a>movein - beta</h3><p>鼠标经过一个HTML元素.</p>
+<h3 id="moveout-beta"><a href="#moveout-beta" class="headerlink" title="moveout - beta"></a>moveout - beta</h3><p>鼠标移出一个HTML元素.</p>
+<h3 id="scroll-beta"><a href="#scroll-beta" class="headerlink" title="scroll - beta"></a>scroll - beta</h3><p>滚动到页面上的一个位置.</p>
+<p>目前版本不支持对 <code>&lt;iframe&gt;</code> 元素派发事件, 所以如果待测页面正在使用如 JEECG 等“企业级”应用时，很多指令不会正常触发.</p>
+<p>执行动作指令时，如果发生任何异常，例如无法找到目标元素，用例执行会终止并在控制台中报错.  </p>
+<h3 id="check-deprecated"><a href="#check-deprecated" class="headerlink" title="check - deprecated"></a>check - deprecated</h3><p>选中一个单选框。</p>
+<h3 id="uncheck-deprecated"><a href="#uncheck-deprecated" class="headerlink" title="uncheck - deprecated"></a>uncheck - deprecated</h3><p>取消选中一个单选框。</p>
+<h2 id="表达式-stable"><a href="#表达式-stable" class="headerlink" title="表达式 - stable"></a>表达式 - stable</h2><blockquote>
+<p>表达式和任何c系列的语言是完全一样的</p>
+</blockquote>
+<p>例：</p>
+<pre><code class="C">1 + 2 * 3;
+&#39;Hello&#39; + &#39;, world!&#39;;
+</code></pre>
+<h3 id="扩展-css-选择器-stable"><a href="#扩展-css-选择器-stable" class="headerlink" title="扩展 css 选择器 - stable"></a>扩展 css 选择器 - stable</h3><p>Lemoncase2 默认支持 css 选择器，你可以使用：</p>
+<ul>
+<li>原生 DOM API 中的 querySelectorAll.</li>
+<li>jQuery Sizzle ^2.3.0.<ul>
+<li><em>你可以使用如 :contain(). 等原生 API 里面没有的选择器</em></li>
+</ul>
+</li>
+<li>iframe 选择器 <code>&lt;</code> 来选中 <code>&lt;iframe&gt;</code> 中的元素*</li>
+</ul>
+<pre><code class="html">&lt;!-- From top frame --&gt;
+&lt;iframe id=&quot;top&quot;&gt;
+    #document
+    &lt;html&gt;
+        &lt;body&gt;
+            &lt;iframe id=&quot;project&quot;&gt;
+                #document
+                &lt;html&gt;
+                    &lt;body&gt;
+                        &lt;a href=&quot;./&quot;&gt;link&lt;/a&gt; &lt;!-- select it. --&gt;
+                        &lt;b&gt;link&lt;/b&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            &lt;/iframe&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+&lt;/iframe&gt;
+</code></pre>
+<ul>
+<li><code>iframe &lt; iframe &lt; a</code></li>
+<li><code>* &lt; * &lt; a</code></li>
+<li><code>#top &lt; #project &lt; a</code></li>
+<li><code>* &lt; #project &lt; a:contain(link)</code></li>
+</ul>
+<h3 id="选择器操作符-beta"><a href="#选择器操作符-beta" class="headerlink" title="选择器操作符 - beta"></a>选择器操作符 - beta</h3><p><code>&lt;# [selector:string] /&gt;</code></p>
+<pre><code class="C">// 返回符合选择器的元素的数量.
+// &lt;div id=&quot;link&quot; class=&quot;case&quot;&gt;Text&lt;/div&gt;
+
+log &lt;# &#39;div&#39;/&gt;; // Output 1
+log &lt;# &#39;#link&#39;/&gt;; // Output 1
+log &lt;# &#39;#no&#39;/&gt;; // Output 0
+</code></pre>
+<p><code>&lt;@ [selector:string] /&gt;</code></p>
+<pre><code class="C">// 获取一个符合选择器的 HTML 元素的内容.
+// 返回字符串或 `false` ，如果没有匹配到任何元素.
+
+// &lt;div id=&quot;link&quot; class=&quot;case&quot;&gt;Text&lt;/div&gt;
+
+log &lt;@ &#39;div&#39;/&gt;; // 输出 Text
+log &lt;@ &#39;#link&#39;/&gt;; // 输出 Text
+log &lt;@ &#39;#no&#39;/&gt;; // 输出 false
+</code></pre>
+<p><code>&lt;! [selector:string] /&gt;</code></p>
+<pre><code class="C">// 检查元素是否可见.
+// 返回 `true` 如果元素存在并且可见.
+// 否则返回 `false`
+
+// &lt;div id=&quot;link&quot; class=&quot;case&quot;&gt;Text&lt;/div&gt;
+// &lt;div id=&quot;link2&quot; style=&quot;display:none&quot;&gt;Text&lt;/div&gt;
+
+log &lt;@ &#39;a&#39;/&gt;; // 返回 false
+log &lt;@ &#39;div&#39;/&gt;; // 返回 true
+log &lt;@ &#39;#link2&#39;/&gt;; // 返回 false
+</code></pre>
+<h3 id="比较操作符-stable"><a href="#比较操作符-stable" class="headerlink" title="比较操作符 - stable"></a>比较操作符 - stable</h3><blockquote>
+<p>比较操作符左右的两个表达式，并返回 true 或 false.</p>
+</blockquote>
+<p><code>[exp_A:string] ~~ [exp_B:string|RegExp]</code></p>
+<ul>
+<li>exp_B 如果不是字符串或正则，返回 false.</li>
+<li>exp_A 如果不是字符串，返回 false.</li>
+<li>exp_A 如果不符合正则 exp_B 则返回 false.</li>
+<li>exp_A 字符串中如果包含字符串 exp_B 则返回 true.</li>
+<li>exp_A 符合正则 exp_B 则返回 true.</li>
+</ul>
+<p><code>[exp_A:string] !~ [exp_B:string|RegExp]</code></p>
+<ul>
+<li>等同于 !(exp_A ~~ exp_B).</li>
+</ul>
+<h1 id="作用域-beta"><a href="#作用域-beta" class="headerlink" title="作用域 - beta"></a>作用域 - beta</h1><ul>
+<li><code>全局作用域</code> 全局的变量哪里都能访问.</li>
+<li><code>过程 / 函数 作用域</code> 变量只有在过程的生命周期内有效.  </li>
+</ul>
+<h2 id="内置过程-beta"><a href="#内置过程-beta" class="headerlink" title="内置过程 - beta"></a>内置过程 - beta</h2><ul>
+<li>number(any): number</li>
+<li>bool(any): boolean</li>
+<li>length(str?: string): number</li>
+<li>charAt(string, index): string</li>
+<li>indexOf(string, string): number</li>
+<li>substr(string, index): string</li>
+<li>min(num1: number, num2: number): number</li>
+<li>max(num1: number, num2: number): number</li>
+<li>random(seed?: regexp): string</li>
+<li>abs(num: number): number</li>
+<li>ceil(num: number): number</li>
+<li>floor(num: number): number</li>
+<li>round(num: number): number</li>
+<li>format(date: Date): string</li>
+<li>now(): number</li>
+</ul>
+<h2 id="魔法关键字-beta"><a href="#魔法关键字-beta" class="headerlink" title="魔法关键字 - beta"></a>魔法关键字 - beta</h2><ul>
+<li>$href: 获取当前链接</li>
+<li>$loop: 获取当前运行的次数</li>
+</ul>
+<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><p>你要的Hello, world在这里.</p>
+<h2 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello, world"></a>Hello, world</h2><pre><code class="C">process main {
+    log &#39;hello world&#39;;
+}
+</code></pre>
+<h2 id="通常的用法"><a href="#通常的用法" class="headerlink" title="通常的用法"></a>通常的用法</h2><p>只运行一次的用例.</p>
+<pre><code class="C">#TIMES 1
+
+process main {
+    jumpto &#39;[URL]&#39;;
+    wait 2000;
+    ...
+    [statement]
+    ...
+}
+</code></pre>
+<h2 id="测试一个用户注册页面"><a href="#测试一个用户注册页面" class="headerlink" title="测试一个用户注册页面"></a>测试一个用户注册页面</h2><pre><code class="C">#TIMES 1
+#INTERVAL 3000
+
+process main {
+    jumpto &#39;/#/register&#39;;
+    wait 2000;
+    // There are 5 text boxes.
+    assert &lt;#&#39;#userInfoFrom input&#39;/&gt; === 5;
+    // There is a captcha svg.
+    assert &lt;!&quot;img.pull-right&quot;/&gt;;
+    // There is a login button.
+    assert &lt;!&quot;#userInfoFrom &gt; button.btn&quot;/&gt;;
+    // There is a home button.
+    assert &lt;@&quot;#global-back-button&quot;/&gt; ~~ &#39;glyphicon-home&#39;;
+
+    userNameRule = &quot;#name-rule &gt; div&quot;;
+
+    // Input username length &lt; 6
+    input &quot;#account-name&quot; by &#39;12345&#39;;
+    assert &lt;@userNameRule/&gt; ~~ &#39;不少于6个字符&#39;;
+
+    // Input username length &gt; 16
+    input &quot;#account-name&quot; by /\w{17}/;
+    assert &lt;@userNameRule/&gt; ~~ &#39;不超过16个字符&#39;;
+
+    // Username is blank
+    input &quot;#account-name&quot; by &#39;&#39;;
+    assert &lt;@userNameRule/&gt; ~~ &#39;用户名不为空&#39;;
+
+    // Username is repeat.
+    input &quot;#account-name&quot; by &#39;active&#39;;
+    click &quot;#account-email&quot;;
+    assert &lt;!&quot;#name-repeat&quot;/&gt; &amp;&amp; &lt;@&quot;#name-repeat&quot;/&gt; ~~ &#39;用户名重复&#39; in 2000;
+
+    // Blank email.
+    emailRule = &quot;#email-rule &gt; div&quot;;
+    input &quot;#account-email&quot; by &#39;&#39;;
+    assert &lt;@emailRule/&gt; ~~ &#39;邮箱不为空&#39;;
+
+    // Error email
+    input &quot;#account-email&quot; by &#39;fdsf&#39;;
+    assert &lt;@emailRule/&gt; ~~ &#39;请输入正确格式的邮箱&#39;;
+
+    // Repeat email
+    input &quot;#account-email&quot; by &#39;lichao@or-change.cn&#39;;
+    click &quot;#account-password&quot;;
+    assert &lt;!&quot;#emial-repeat&quot;/&gt; &amp;&amp; &lt;@&quot;#emial-repeat&quot;/&gt; ~~ &#39;邮箱重复&#39; in 2000;
+
+    // Input password length &lt; 8
+    input &quot;#account-password&quot; by /\w{1,7}/;
+    assert &lt;@&quot;#password-rule &gt; div&quot;/&gt; ~~ &#39;不少于8个字符&#39;;
+    // Input password length &gt;20
+    input &quot;#account-password&quot; by /\w{20,}/;
+    assert &lt;@&quot;#password-rule &gt; div&quot;/&gt; ~~ &#39;不超过20个字符&#39;;
+    // Blank password
+    input &quot;#account-password&quot; by &#39; &#39;;
+    assert &lt;@&quot;#password-rule &gt; div&quot;/&gt; ~~ &#39;密码不为空&#39;;
+    // Error char.
+    input &quot;#account-password&quot; by &#39;测试测试测试测试&#39;;
+    assert &lt;@&quot;#password-rule &gt; div&quot;/&gt; ~~ &#39;您输入了非法字符&#39;;
+
+    // Password !== Confirm
+    password = /\w{10}/;
+    input &quot;#account-password&quot; by password;
+    input &quot;#account-password-confirm&quot; by password + &#39;a&#39;;
+    assert &lt;@&quot;#confirm-rule &gt; div&quot;/&gt; ~~ &#39;两次输入不一致&#39;;
+
+}
+</code></pre>
+
+			</div>
+		</div>
+	</article>
+</div>
+
+	<footer>
+	<div class="container pt-3">
+		<div class="row">
+			<div class="col-md-4 col">
+				<ul class="list-unstyled">
+					<li><a class="text-muted" href="/zh-cn/docs/guide/index.html">
+						帮助
+					</a></li>
+					<li><a class="text-muted" href="/zh-cn/docs/lemoncase2/index.html">
+						文档
+					</a></li>
+					<li><a class="text-muted" href="https://pan.baidu.com/s/1eRZrtuy">
+						下载
+					</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col">
+				<ul class="list-unstyled">
+					<li><a class="text-muted" href="/zh-cn/">
+						关于
+					</a></li>
+					<li><a class="text-muted" href="/eula.html">
+						用户协议
+					</a></li>
+					<li><a class="text-muted" href="/contact.html">
+						联系我们
+					</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col">
+				<ul class="list-unstyled">
+					<li><a class="text-muted" href="/zh-cn/feature.html">
+						特性
+					</a></li>
+					<li><a class="text-muted" href="/zh-cn/compare.html">
+						对比
+					</a></li>
+					<li><a class="text-muted" href="/news">
+						新闻
+					</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div>
+			<span>
+				博客
+			</span>
+			<a href="/footer/blog/selenium-iframe-element-testing.html" class="blog-item">Lemonce vs Selenium:Iframe Element Testing</a>
+		</div>
+
+		<div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between py-4">
+			<div class="btn-group dropup flex-md-last mb-3 mb-md-0">
+				<button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+					Language
+				</button>
+				<div class="dropdown-menu">
+					<a href="/" class="dropdown-item">English</a>
+					<a href="/zh-cn" class="dropdown-item">Chinese</a>
+				</div>
+			</div>
+			<span class="flex-md-first">
+				&copy;2014-2017
+					or-change, Co., Ltd. All rights reserved.
+				
+					<a class="text-faded-grey small" href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action"> 津ICP备14003159号-2</a>
+				
+			</span>
+		</div>
+	</div>
+</footer>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91537224-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/tether.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/smooth-scroll.min.js"></script>
+	<script src="/js/sublemon.min.js"></script>
+	<script src="/js/common.js"></script>
+</body>
+</html>
