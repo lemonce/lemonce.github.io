@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lemonce.net/docs/setup/index.html</loc>
+    
+    <lastmod>2017-08-01T10:44:44.605Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lemonce.net/footer/blog/automation-testing-tools.html</loc>
     
     <lastmod>2017-07-31T04:47:07.442Z</lastmod>
@@ -292,13 +299,6 @@
     <loc>http://lemonce.net/zh-cn/docs/guide/case.html</loc>
     
     <lastmod>2017-06-15T08:27:19.142Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/setup/index.html</loc>
-    
-    <lastmod>2017-06-15T07:57:11.197Z</lastmod>
     
   </url>
   
