@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lemonce.net/zh-cn/docs/setup/download-install.html</loc>
+    
+    <lastmod>2017-08-02T08:22:53.757Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/setup/download-install.html</loc>
+    
+    <lastmod>2017-08-02T08:21:58.298Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lemonce.net/docs/setup/index.html</loc>
     
-    <lastmod>2017-08-01T10:44:44.605Z</lastmod>
+    <lastmod>2017-08-02T06:12:51.878Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://lemonce.net/footer/blog/automation-testing-tools.html</loc>
     
-    <lastmod>2017-07-31T04:47:07.442Z</lastmod>
+    <lastmod>2017-08-01T11:18:01.284Z</lastmod>
     
   </url>
   
@@ -33,13 +47,6 @@
     <loc>http://lemonce.net/zh-cn/docs/FAQ.html</loc>
     
     <lastmod>2017-07-31T04:09:29.414Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/setup/download-install.html</loc>
-    
-    <lastmod>2017-07-30T07:07:14.947Z</lastmod>
     
   </url>
   
@@ -299,13 +306,6 @@
     <loc>http://lemonce.net/zh-cn/docs/guide/case.html</loc>
     
     <lastmod>2017-06-15T08:27:19.142Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/setup/download-install.html</loc>
-    
-    <lastmod>2017-06-15T07:51:20.959Z</lastmod>
     
   </url>
   
