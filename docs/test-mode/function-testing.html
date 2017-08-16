@@ -2,7 +2,7 @@
 <html lang="en">
 <head prefix="og: http://ogp.me/ns#">
 	<meta charset="utf-8">
-	<title>Example - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
+	<title>Function Testing - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="web ui testing tool, web application testing tool, automated web ui testing tool, automated web application testing tool, automated testing tools for web applications, gui testing tool, web ui testing, free web ui testing tools, free automation testing tools, web automation testing tools, regression testing tools, selenium, free, open source, selenium alternatives,alternative to selenium,automation testing tools, cross browser testing, web application testing, browser testing tools, browser testing, browser automation">
@@ -92,10 +92,10 @@
 	<article class="page clearfix">
 		<div class="page-header bg-teal-gradient py-5">
 			<div class="container">
-				<h1>Example</h1>
+				<h1>Function Testing</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-05-20
+					2017-08-16
 				</time>
 			</div>
 		</div>
@@ -154,71 +154,12 @@
 					<strong class="toc-title">
 						contents
 					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hello-World"><span class="toc-text">Hello World</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#A-Typical-test-case"><span class="toc-text">A Typical test case</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Typical-examples"><span class="toc-text">Typical examples</span></a></li></ol>
+					
 				</div>
 			</aside>
 			<div class="page-inner">
-				<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><hr>
-<p>How to output the most classic phrase.</p>
-<pre class="sublemon">
-process main {
-    log 'hello world';
-}</pre>
+				<p>Coming soon.</p>
 
-<p><br></p>
-<h2 id="A-Typical-test-case"><a href="#A-Typical-test-case" class="headerlink" title="A Typical test case"></a>A Typical test case</h2><hr>
-<p>A test case that runs five times.</p>
-<pre class="sublemon">
-#TIMES 
-
-process main {
-    jumpto '[URL]';
-    wait 2000;
-    ...
-    [statement]
-    ...
-}</pre>
-
-<p><br></p>
-<h2 id="Typical-examples"><a href="#Typical-examples" class="headerlink" title="Typical examples"></a>Typical examples</h2><hr>
-<p>Test a user registration page.</p>
-<pre class="sublemon">
-process main () {
-
-    // Deepin Technology Community
-    jumpto "https://www.deepin.org/en/";
-    wait 2333;
-    // click div|
-    click "#hs-site-navigation > div:nth-child(1)";
-    // click Login
-    click "#menu-main > li:nth-child(11) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1) > span:nth-child(1)";
-    // Navigate to New Page
-    wait 2000;
-    // click deepinID
-    click "#loginform > div:nth-child(3) > a:nth-child(1)";
-    // Navigate to New Page
-    wait 2000;
-    // click a text field
-    click "#content > form:nth-child(2) > input:nth-child(4)";
-    // type in lemonceide
-    input "#content > form:nth-child(2) > input:nth-child(4)" by "lemonceide";
-    // type in caonima438
-    input "#content > form:nth-child(2) > input:nth-child(6)" by "caonima438";
-    // click SIGN IN
-    click "#content > form:nth-child(2) > input:nth-child(9)";
-    // Navigate to New Page
-    wait 2000;
-    // click Deepin ID
-    click "#menu-main > li:nth-child(11) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1) > span:nth-child(1)";
-    // Navigate to New Page
-    wait 2000;
-    // assert element <body> div:nth-child(4) > div:nth-child(1) > div:nth-child(1)> contains [lemonceide]
-    assert <@"body> div:nth-child(4) > div:nth-child(1) > div:nth-child(1)"/> ~~ "lemonceide";
-    // click Home
-    click "#newHeader > div:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1) > span:nth-child(1)";
-    // Navigate to New Page
-    wait 2000;
-}</@"body></body></pre>
 			</div>
 		</div>
 	</article>

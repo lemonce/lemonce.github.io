@@ -2,7 +2,7 @@
 <html lang="en">
 <head prefix="og: http://ogp.me/ns#">
 	<meta charset="utf-8">
-	<title>Example - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
+	<title>Crossbrowser Testing - Lemonce Editor, Open Source &amp; Enterprise Versions Are Available.</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="web ui testing tool, web application testing tool, automated web ui testing tool, automated web application testing tool, automated testing tools for web applications, gui testing tool, web ui testing, free web ui testing tools, free automation testing tools, web automation testing tools, regression testing tools, selenium, free, open source, selenium alternatives,alternative to selenium,automation testing tools, cross browser testing, web application testing, browser testing tools, browser testing, browser automation">
@@ -92,10 +92,10 @@
 	<article class="page clearfix">
 		<div class="page-header bg-teal-gradient py-5">
 			<div class="container">
-				<h1>Example</h1>
+				<h1>Crossbrowser Testing</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-05-20
+					2017-08-16
 				</time>
 			</div>
 		</div>
@@ -154,71 +154,66 @@
 					<strong class="toc-title">
 						contents
 					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hello-World"><span class="toc-text">Hello World</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#A-Typical-test-case"><span class="toc-text">A Typical test case</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Typical-examples"><span class="toc-text">Typical examples</span></a></li></ol>
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Configure-a-Proxy-Server"><span class="toc-text">1 Configure a Proxy Server</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-Win10-amp-Win8"><span class="toc-text">1.1 Win10 & Win8</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-Win7"><span class="toc-text">1.1 Win7</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-Mac"><span class="toc-text">1.3 Mac</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-Firefox"><span class="toc-text">1.4 Firefox</span></a></li></ol></li></ol></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
-				<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><hr>
-<p>How to output the most classic phrase.</p>
-<pre class="sublemon">
-process main {
-    log 'hello world';
-}</pre>
-
+				<p>Now you can start your crossbrowser testing with Firefox,Chrome and Edge on Lemonce Editor,please just follow the steps below.</p>
 <p><br></p>
-<h2 id="A-Typical-test-case"><a href="#A-Typical-test-case" class="headerlink" title="A Typical test case"></a>A Typical test case</h2><hr>
-<p>A test case that runs five times.</p>
-<pre class="sublemon">
-#TIMES 
-
-process main {
-    jumpto '[URL]';
-    wait 2000;
-    ...
-    [statement]
-    ...
-}</pre>
-
+<h2 id="1-Configure-a-Proxy-Server"><a href="#1-Configure-a-Proxy-Server" class="headerlink" title="1 Configure a Proxy Server"></a>1 Configure a Proxy Server</h2><hr>
+<p>Configuring the proxy server is the first step of crossbrowser testing, and you can get your Address and Port in Lemonce Editor.
+【image of Lemonce Editor】</p>
 <p><br></p>
-<h2 id="Typical-examples"><a href="#Typical-examples" class="headerlink" title="Typical examples"></a>Typical examples</h2><hr>
-<p>Test a user registration page.</p>
-<pre class="sublemon">
-process main () {
+<h4 id="1-1-Win10-amp-Win8"><a href="#1-1-Win10-amp-Win8" class="headerlink" title="1.1 Win10 &amp; Win8"></a>1.1 Win10 &amp; Win8</h4><hr width="50%" align="left">
 
-    // Deepin Technology Community
-    jumpto "https://www.deepin.org/en/";
-    wait 2333;
-    // click div|
-    click "#hs-site-navigation > div:nth-child(1)";
-    // click Login
-    click "#menu-main > li:nth-child(11) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1) > span:nth-child(1)";
-    // Navigate to New Page
-    wait 2000;
-    // click deepinID
-    click "#loginform > div:nth-child(3) > a:nth-child(1)";
-    // Navigate to New Page
-    wait 2000;
-    // click a text field
-    click "#content > form:nth-child(2) > input:nth-child(4)";
-    // type in lemonceide
-    input "#content > form:nth-child(2) > input:nth-child(4)" by "lemonceide";
-    // type in caonima438
-    input "#content > form:nth-child(2) > input:nth-child(6)" by "caonima438";
-    // click SIGN IN
-    click "#content > form:nth-child(2) > input:nth-child(9)";
-    // Navigate to New Page
-    wait 2000;
-    // click Deepin ID
-    click "#menu-main > li:nth-child(11) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1) > span:nth-child(1)";
-    // Navigate to New Page
-    wait 2000;
-    // assert element <body> div:nth-child(4) > div:nth-child(1) > div:nth-child(1)> contains [lemonceide]
-    assert <@"body> div:nth-child(4) > div:nth-child(1) > div:nth-child(1)"/> ~~ "lemonceide";
-    // click Home
-    click "#newHeader > div:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1) > span:nth-child(1)";
-    // Navigate to New Page
-    wait 2000;
-}</@"body></body></pre>
+<p>In Win10 or Win8，you should configure a proxy server according to the following steps.</p>
+<ul>
+<li>Setting → Network &amp; Internet → Manual proxy setup</li>
+</ul>
+<p><img class="box-shadow" src="/images/test-mode/win10-1.png"></p>
+<ul>
+<li>In the section Use a proxy server， fill in the Address &amp; Port（<strong>same with the ones in Lemonce Editor</strong>）</li>
+</ul>
+<p><img class="box-shadow" src="/images/test-mode/win10-2.png"></p>
+<p><br></p>
+<h4 id="1-1-Win7"><a href="#1-1-Win7" class="headerlink" title="1.1 Win7"></a>1.1 Win7</h4><hr width="50%" align="left">
+
+<p>In Win7，you should configure a proxy server according to the following steps.</p>
+<ul>
+<li>Control Panel → Net &amp; Internet → Connection</li>
+<li>LAN settings</li>
+</ul>
+<p><img class="box-shadow" src="/images/test-mode/win7-1.png"></p>
+<ul>
+<li>Fill in the Address &amp; Port（<strong>same with the ones in Lemonce Editor</strong>）</li>
+</ul>
+<p><img src="/images/test-mode/win7-2.png"></p>
+<p><br></p>
+<h4 id="1-3-Mac"><a href="#1-3-Mac" class="headerlink" title="1.3 Mac"></a>1.3 Mac</h4><hr width="50%" align="left">
+
+<p>In Mac，you should configure a proxy server according to the following steps,or you can see the <a href="https://www.youtube.com/watch?v=dMLK0cx7V_Y" target="_blank" rel="external">video instruction</a>.</p>
+<ul>
+<li>Open Safari → Safari → Preferences</li>
+<li>Advanced → Proxies → Change Settings</li>
+</ul>
+<p><img class="box-shadow" src="/images/test-mode/mac-1.png"></p>
+<ul>
+<li>Web Proxy（HTTP） → fill in the Address &amp; Port（<strong>same with the ones in Lemonce Editor</strong>）→ OK &amp; Apply</li>
+</ul>
+<p><img class="box-shadow" src="/images/test-mode/mac-2.png"></p>
+<p><br></p>
+<h4 id="1-4-Firefox"><a href="#1-4-Firefox" class="headerlink" title="1.4 Firefox"></a>1.4 Firefox</h4><hr width="50%" align="left">
+
+<p>You can merely configure proxy server in Firefox browser according to the following steps.</p>
+<ul>
+<li>Options → Advanced → Network → Settings</li>
+</ul>
+<p><img class="box-shadow" src="/images/test-mode/firefox-1.png"></p>
+<ul>
+<li>Manual proxy configuration → fill in the Address &amp; Port（<strong>same with the ones in Lemonce Editor</strong>）→ OK</li>
+</ul>
+<p><img class="box-shadow" src="/images/test-mode/firefox-2.png"></p>
+
 			</div>
 		</div>
 	</article>
