@@ -2,16 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lemonce.net/zh-cn/docs/test-mode/function-testing.html</loc>
+    
+    <lastmod>2017-08-17T03:38:42.910Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/test-mode/function-testing.html</loc>
+    
+    <lastmod>2017-08-17T03:37:14.766Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/code-editor/index.html</loc>
+    
+    <lastmod>2017-08-17T03:33:40.630Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/code-editor/index.html</loc>
+    
+    <lastmod>2017-08-17T03:33:16.093Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lemonce.net/docs/test-mode/index.html</loc>
     
-    <lastmod>2017-08-16T13:49:45.053Z</lastmod>
+    <lastmod>2017-08-17T03:31:36.916Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://lemonce.net/zh-cn/docs/test-mode/index.html</loc>
     
-    <lastmod>2017-08-16T13:45:01.912Z</lastmod>
+    <lastmod>2017-08-17T02:27:29.269Z</lastmod>
     
   </url>
   
@@ -19,20 +47,6 @@
     <loc>http://lemonce.net/docs/test-mode/crossbrowser-testing.html</loc>
     
     <lastmod>2017-08-16T13:38:14.679Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/test-mode/function-testing.html</loc>
-    
-    <lastmod>2017-08-16T13:08:37.948Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/test-mode/function-testing.html</loc>
-    
-    <lastmod>2017-08-16T13:04:53.549Z</lastmod>
     
   </url>
   
@@ -193,7 +207,7 @@
   <url>
     <loc>http://lemonce.net/footer/blog/selenium-iframe-element-testing.html</loc>
     
-    <lastmod>2017-07-19T08:54:48.237Z</lastmod>
+    <lastmod>2017-07-19T09:00:33.012Z</lastmod>
     
   </url>
   
@@ -208,6 +222,13 @@
     <loc>http://lemonce.net/zh-cn/docs/setup/interface.html</loc>
     
     <lastmod>2017-07-19T08:50:06.002Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/lemoncase2/magic.html</loc>
+    
+    <lastmod>2017-07-19T07:12:28.775Z</lastmod>
     
   </url>
   
@@ -289,20 +310,6 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/zh-cn/docs/code-editor/webview.html</loc>
-    
-    <lastmod>2017-07-01T03:34:06.295Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/code-editor/webview.html</loc>
-    
-    <lastmod>2017-07-01T03:30:33.468Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lemonce.net/docs/code-editor/suite-editor.html</loc>
     
     <lastmod>2017-07-01T03:30:08.260Z</lastmod>
@@ -313,20 +320,6 @@
     <loc>http://lemonce.net/zh-cn/docs/code-editor/suite-editor.html</loc>
     
     <lastmod>2017-07-01T03:27:27.012Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/code-editor/index.html</loc>
-    
-    <lastmod>2017-07-01T02:18:40.533Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/code-editor/index.html</loc>
-    
-    <lastmod>2017-07-01T02:18:38.423Z</lastmod>
     
   </url>
   
@@ -376,13 +369,6 @@
     <loc>http://lemonce.net/zh-cn/docs/guide/case.html</loc>
     
     <lastmod>2017-06-15T08:27:19.142Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/lemoncase2/magic.html</loc>
-    
-    <lastmod>2017-06-14T05:02:43.034Z</lastmod>
     
   </url>
   

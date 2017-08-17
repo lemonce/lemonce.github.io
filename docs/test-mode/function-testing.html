@@ -95,7 +95,7 @@
 				<h1>Function Testing</h1>
 				<time class="text-white">
 					Last Updated:
-					2017-08-16
+					2017-08-17
 				</time>
 			</div>
 		</div>
@@ -122,7 +122,6 @@
 		<ul>
     		<li><a href="/docs/code-editor/case-editor.html">case-editor</a></li>
     		<li><a href="/docs/code-editor/suite-editor.html">suite-editor</a></li>
-    		<li><a href="/docs/code-editor/webview.html">webview</a></li>
  		</ul>
 	</div>
 
@@ -154,11 +153,37 @@
 					<strong class="toc-title">
 						contents
 					</strong>
-					
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Webview"><span class="toc-text">1 Webview</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-Tool-Bar"><span class="toc-text">1.1 Tool Bar</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-Open-Webview"><span class="toc-text">1.2 Open Webview</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Start-testing"><span class="toc-text">2 Start testing</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
-				<p>Coming soon.</p>
+				<p>After <a href="/docs/guide/case.html">creating test case</a> and <a href="/docs/guide/suite.html">completing a suite</a>, if you have no need on crossbrowser testing when it comes to testing process, you can start your function testing directly in webview.</p>
+<p><br></p>
+<h2 id="1-Webview"><a href="#1-Webview" class="headerlink" title="1 Webview"></a>1 Webview</h2><hr>
+<p>Webview built in Lemonce Editor is essential for function testing.</p>
+<p><br></p>
+<h4 id="1-1-Tool-Bar"><a href="#1-1-Tool-Bar" class="headerlink" title="1.1 Tool Bar"></a>1.1 Tool Bar</h4><hr width="50%" align="left">
+
+<p>The whole toolbar is shown below. The address input box is in the middle, which you can enter URL in and press <button>Enter</button> on your keyboard to jump.</p>
+<p><img class="box-shadow" src="/images/code-editor/webview-toolbar.png"></p>
+<ul>
+<li><i class="fa fa-arrow-left"></i> <strong>Back</strong> / <i class="fa fa-arrow-right"></i> <strong>Next</strong>  Back/Forward to the previous/next page.</li>
+<li><i class="fa fa-home"></i> <strong>Homepage</strong> Back to homepage (The default is <code>about:blank</code>).</li>
+<li><i class="fa fa-refresh"></i> <strong>Refresh</strong> Refresh the current page. </li>
+<li><i class="fa fa-pencil-square-o"></i> <strong>Debugger</strong> Developer tool is a debugger for testers or developers with certain coding ability.</li>
+</ul>
+<p><img class="guide-images" src="/images/code-editor/webview-debugger.png"></p>
+<h4 id="1-2-Open-Webview"><a href="#1-2-Open-Webview" class="headerlink" title="1.2 Open Webview"></a>1.2 Open Webview</h4><hr width="50%" align="left">
+
+<p>Only the webview is opened, can function testing get started. There are two ways to open webview.</p>
+<ul>
+<li><strong>Automatically</strong> No matter in case or suite editor, click <i class="fa fa-play"></i> button, Lemonce Editor will get splited and the webview will be opened automatically at the same time.</li>
+<li><strong>Manually</strong> Click <i class="fa fa-globe fa-2x" style="color:green"></i> button to open webview in the side bar,.</li>
+</ul>
+<p><br></p>
+<h2 id="2-Start-testing"><a href="#2-Start-testing" class="headerlink" title="2 Start testing"></a>2 Start testing</h2><hr>
+<p>Click <i class="fa fa-play"></i> button and Lemonce Editor will default to start your testing in webview.</p>
+<p>You can display different panels below the editor region for output or debug information or errors and warnings. After the test ,you can check your <a href="/docs/guide/reports.html">test report</a>.</p>
 
 			</div>
 		</div>

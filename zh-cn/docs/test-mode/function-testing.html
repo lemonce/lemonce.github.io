@@ -95,7 +95,7 @@
 				<h1>功能测试</h1>
 				<time class="text-white">
 					最后更新：
-					2017-08-16
+					2017-08-17
 				</time>
 			</div>
 		</div>
@@ -122,7 +122,6 @@
 		<ul>
     		<li><a href="/zh-cn/docs/code-editor/case-editor.html">用例编辑器</a></li>
     		<li><a href="/zh-cn/docs/code-editor/suite-editor.html">套件编辑器</a></li>
-    		<li><a href="/zh-cn/docs/code-editor/webview.html">网页视图</a></li>
  		</ul>
 	</div>
 
@@ -154,11 +153,37 @@
 					<strong class="toc-title">
 						页面内容：
 					</strong>
-					
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Webview"><span class="toc-text">1 Webview</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-工具栏"><span class="toc-text">1.1 工具栏</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-打开Webview"><span class="toc-text">1.2 打开Webview</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-执行测试"><span class="toc-text">2 执行测试</span></a></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
-				<p>即将上线。</p>
+				<p>当<a href="/zh-cn/docs/guide/case.html">创建测试用例</a>并<a href="/zh-cn/docs/guide/suite.html">完善测试套件</a>之后，进入到执行环节，如果用户对兼容性没有要求，可以直接在webview中执行功能测试。</p>
+<p><br></p>
+<h2 id="1-Webview"><a href="#1-Webview" class="headerlink" title="1 Webview"></a>1 Webview</h2><hr>
+<p>Webview，即灵萌测内置的 Chromium 浏览器，是执行功能测试的必备工具。</p>
+<p><br></p>
+<h4 id="1-1-工具栏"><a href="#1-1-工具栏" class="headerlink" title="1.1 工具栏"></a>1.1 工具栏</h4><hr width="50%" align="left">
+
+<p>整个工具栏显示如下。地址输入栏位于工具栏中部，输入地址后输入 <button>Enter</button> 去完成跳转。</p>
+<p><img class="box-shadow" src="/images/code-editor/webview-toolbar.png"></p>
+<ul>
+<li><i class="fa fa-arrow-left"></i> <strong>后退</strong> / <i class="fa fa-arrow-right"></i> <strong>前进</strong>  后退到上一个网页或前进到下一个网页。</li>
+<li><i class="fa fa-home"></i> <strong>主页</strong> 跳转到主页，默认为空白页。</li>
+<li><i class="fa fa-refresh"></i> <strong>刷新</strong> 刷新当前的页面。</li>
+<li><i class="fa fa-pencil-square-o"></i> <strong>调试器</strong> 调试器，即开发者工具。为有一定编程能力的测试者和开发者提供。</li>
+</ul>
+<p><img class="guide-images" src="/images/code-editor/webview-debugger.png"></p>
+<h4 id="1-2-打开Webview"><a href="#1-2-打开Webview" class="headerlink" title="1.2 打开Webview"></a>1.2 打开Webview</h4><hr width="50%" align="left">
+
+<p>只有 Webview 启动之后，功能测试才能被顺利执行。有以下两种方式打开 Webview。</p>
+<ul>
+<li><strong>自动开启</strong> 无论是在用例编辑器还是套件编辑器中，点击 <i class="fa fa-play"></i>，客户端会在右边开启分屏并自动启动一个 Webview。</li>
+<li><strong>手动开启</strong> 在功能边栏中，点击 <i class="fa fa-globe fa-2x" style="color:green"></i> 按钮即可开启 Webview。</li>
+</ul>
+<p><br></p>
+<h2 id="2-执行测试"><a href="#2-执行测试" class="headerlink" title="2 执行测试"></a>2 执行测试</h2><hr>
+<p>如果不在左边选择执行测试的浏览器，点击 <i class="fa fa-play"></i>，默认在 Webview 开始执行功能测试。</p>
+<p>在测试中可以通过输出及调试面板查看运行信息、错误和警告，在测试结束之后，用户可以去相应面板<a href="/zh-cn/docs/guide/reports.html">查看测试报告</a>。</p>
 
 			</div>
 		</div>
