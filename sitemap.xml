@@ -2,16 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://lemonce.net/zh-cn/docs/setup/interface.html</loc>
+    <loc>http://lemonce.net/footer/blog/selenium-testing-tool.html</loc>
     
-    <lastmod>2017-08-23T04:25:32.806Z</lastmod>
+    <lastmod>2017-09-14T03:27:25.780Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/test-mode/crossbrowser-testing.html</loc>
+    
+    <lastmod>2017-08-24T09:20:41.866Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/guide/reports.html</loc>
+    
+    <lastmod>2017-08-24T04:27:46.178Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/lemoncase2/subprocess.html</loc>
+    
+    <lastmod>2017-08-24T03:37:50.177Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/lemoncase2/magic.html</loc>
+    
+    <lastmod>2017-08-24T03:37:33.278Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/lemoncase2/instructionkeyword.html</loc>
+    
+    <lastmod>2017-08-24T03:36:55.283Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/lemoncase2/actionkeyword.html</loc>
+    
+    <lastmod>2017-08-24T03:36:40.127Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://lemonce.net/docs/setup/interface.html</loc>
     
-    <lastmod>2017-08-23T04:24:12.596Z</lastmod>
+    <lastmod>2017-08-23T11:04:51.515Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/setup/trial-purchase.html</loc>
+    
+    <lastmod>2017-08-23T10:30:07.329Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/setup/interface.html</loc>
+    
+    <lastmod>2017-08-23T04:25:32.806Z</lastmod>
     
   </url>
   
@@ -100,37 +156,9 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/zh-cn/docs/test-mode/crossbrowser-testing.html</loc>
-    
-    <lastmod>2017-08-16T12:08:01.869Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/lemoncase2/actionkeyword.html</loc>
-    
-    <lastmod>2017-08-15T06:06:17.516Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lemonce.net/docs/lemoncase2/index.html</loc>
     
     <lastmod>2017-08-14T07:14:18.223Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/setup/trial-purchase.html</loc>
-    
-    <lastmod>2017-08-12T09:48:44.194Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/lemoncase2/instructionkeyword.html</loc>
-    
-    <lastmod>2017-08-12T00:49:10.765Z</lastmod>
     
   </url>
   
@@ -145,13 +173,6 @@
     <loc>http://lemonce.net/zh-cn/docs/lemoncase2/index.html</loc>
     
     <lastmod>2017-08-11T07:49:40.953Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/guide/reports.html</loc>
-    
-    <lastmod>2017-08-11T02:44:40.055Z</lastmod>
     
   </url>
   
@@ -250,13 +271,6 @@
     <loc>http://lemonce.net/zh-cn/docs/lemoncase2/subprocess.html</loc>
     
     <lastmod>2017-07-19T07:07:15.961Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/lemoncase2/subprocess.html</loc>
-    
-    <lastmod>2017-07-19T07:02:30.747Z</lastmod>
     
   </url>
   
@@ -373,13 +387,6 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/docs/lemoncase2/magic.html</loc>
-    
-    <lastmod>2017-06-14T05:02:43.019Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lemonce.net/docs/lemoncase2/macro.html</loc>
     
     <lastmod>2017-06-14T05:02:43.019Z</lastmod>
@@ -422,13 +429,6 @@
   </url>
   
   <url>
-    <loc>http://lemonce.net/footer/blog/index.html</loc>
-    
-    <lastmod>2017-03-18T08:52:06.114Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lemonce.net/eula.html</loc>
     
     <lastmod>2017-03-18T04:34:12.398Z</lastmod>
@@ -439,13 +439,6 @@
     <loc>http://lemonce.net/feature/lcdriver.html</loc>
     
     <lastmod>2017-02-25T09:34:49.453Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/lemoncase2/lemoncasepath.html</loc>
-    
-    <lastmod>2017-02-15T02:06:11.600Z</lastmod>
     
   </url>
   

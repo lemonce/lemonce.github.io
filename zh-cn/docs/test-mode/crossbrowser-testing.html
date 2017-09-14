@@ -95,7 +95,7 @@
 				<h1>兼容性测试</h1>
 				<time class="text-white">
 					最后更新：
-					2017-08-16
+					2017-08-24
 				</time>
 			</div>
 		</div>
@@ -153,7 +153,7 @@
 					<strong class="toc-title">
 						页面内容：
 					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-配置代理服务器"><span class="toc-text">1 配置代理服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-Win10-amp-Win8"><span class="toc-text">1.1 Win10 & Win8</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-Win7"><span class="toc-text">1.1 Win7</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-Mac"><span class="toc-text">1.3 Mac</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-Firefox"><span class="toc-text">1.4 Firefox</span></a></li></ol></li></ol></li></ol>
+					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-配置代理服务器"><span class="toc-text">1 配置代理服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-Win10-amp-Win8"><span class="toc-text">1.1 Win10 & Win8</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-Win7"><span class="toc-text">1.1 Win7</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-Mac"><span class="toc-text">1.3 Mac</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-Firefox"><span class="toc-text">1.4 Firefox</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-HTTP-amp-HTTPS"><span class="toc-text">2 HTTP & HTTPS</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-HTTP"><span class="toc-text">2.1 HTTP</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-HTTPS"><span class="toc-text">2.2 HTTPS</span></a></li></ol></li></ol></li></ol>
 				</div>
 			</aside>
 			<div class="page-inner">
@@ -212,6 +212,15 @@
 <li>Manual proxy configuration → 填入 Address 和 Port（<strong>要和客户端中保持一致</strong>）→ 点击 OK</li>
 </ul>
 <p><img class="box-shadow" src="/images/test-mode/firefox-2.png"></p>
+<p><br></p>
+<h2 id="2-HTTP-amp-HTTPS"><a href="#2-HTTP-amp-HTTPS" class="headerlink" title="2 HTTP &amp; HTTPS"></a>2 HTTP &amp; HTTPS</h2><hr>
+<p>在配置完代理服务器之后，需要继续选择网页的待测环境。分为 HTTP 及 HTTPS 两种环境，要想了解这两种网络环境的区别请<a href="https://www.instantssl.com/https-tutorials/what-is-https.html" target="_blank" rel="external">查看这里</a>。</p>
+<h4 id="2-1-HTTP"><a href="#2-1-HTTP" class="headerlink" title="2.1 HTTP"></a>2.1 HTTP</h4><p>如果待测网页本来就属于 HTTP 环境，则不需要多余的配置。</p>
+<h4 id="2-2-HTTPS"><a href="#2-2-HTTPS" class="headerlink" title="2.2 HTTPS"></a>2.2 HTTPS</h4><p>如果待测网页处于 HTTPS 环境，那么用户可以有两种选择。</p>
+<p><strong>① 将待测网页退回到 HTTP 环境。</strong> </p>
+<p><strong>② 继续保持 HTTPS 环境。</strong> </p>
+<p>使用了代理服务器之后，相较于 HTTP 环境，如果还继续采用 HTTPS 环境进行功能测试，会给本地的 CPU 造成极大的负担，代理服务器会占用大部分内存。</p>
+<p>例如，当测试人员中断某个请求 A 之后并向服务器派发新的请求B时，代理服务器仍然与远端继续保持连接并继续派发并接收请求 A，直至。因此测试的过程也会显得非常缓慢，甚至会出现中断的情况。</p>
 
 			</div>
 		</div>
@@ -223,7 +232,7 @@
 		<div class="row">
 			<div class="col-md-4 col">
 				<ul class="list-unstyled">
-					<li><a class="text-muted" href="/zh-cn/docs/guide/index.html">
+					<li><a class="text-muted" href="https://license.lemonce.com:8082/#/help/index">
 						帮助
 					</a></li>
 					<li><a class="text-muted" href="/zh-cn/docs/lemoncase2/index.html">
@@ -239,7 +248,7 @@
 					<li><a class="text-muted" href="/zh-cn/">
 						关于
 					</a></li>
-					<li><a class="text-muted" href="/eula.html">
+					<li><a class="text-muted" href="https://license.lemonce.com:8082/#/help/privacy">
 						用户协议
 					</a></li>
 					<li><a class="text-muted" href="/contact.html">
@@ -255,7 +264,7 @@
 					<li><a class="text-muted" href="/zh-cn/compare.html">
 						对比
 					</a></li>
-					<li><a class="text-muted" href="/news">
+					<li><a class="text-muted" href="/zh-cn/news.html">
 						新闻
 					</a></li>
 				</ul>
@@ -270,6 +279,7 @@
 			<a href="/footer/blog/selenium-iframe-element-testing.html" class="blog-item">Lemonce vs Selenium:Iframe Element Testing</a>
 			<a href="/footer/blog/compare-selenium-selectors.html" class="blog-item">Compare Lemonce and Selenium Selectors</a>
 			<a href="/footer/blog/automation-testing-tools.html" class="blog-item">Automation Testing Tools for Web Applications</a>
+			<a href="/footer/blog/selenium-testing-tool.html" class="blog-item"> Selenium Testing Tool Download</a>
 		</div>
 
 		<div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between py-4">
