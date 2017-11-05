@@ -2,58 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://lemonce.net/zh-cn/docs/setup/index.html</loc>
+    <loc>http://lemonce.net/zh-cn/docs/setup/download-install.html</loc>
     
-    <lastmod>2017-11-04T05:52:03.734Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/setup/index.html</loc>
-    
-    <lastmod>2017-11-04T05:41:00.216Z</lastmod>
+    <lastmod>2017-11-05T07:24:28.160Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://lemonce.net/docs/setup/trial-purchase.html</loc>
     
-    <lastmod>2017-11-04T05:24:53.338Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/setup/trial-purchase.html</loc>
-    
-    <lastmod>2017-11-03T08:58:24.030Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/footer/blog/automation-testing-tools.html</loc>
-    
-    <lastmod>2017-10-19T04:21:36.457Z</lastmod>
+    <lastmod>2017-11-05T07:24:28.144Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://lemonce.net/footer/blog/selenium-testing-tool.html</loc>
     
-    <lastmod>2017-10-19T04:21:36.457Z</lastmod>
+    <lastmod>2017-11-05T07:24:28.136Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://lemonce.net/zh-cn/docs/setup/download-install.html</loc>
+    <loc>http://lemonce.net/footer/blog/automation-testing-tools.html</loc>
     
-    <lastmod>2017-10-19T04:21:36.441Z</lastmod>
+    <lastmod>2017-11-05T07:24:28.130Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://lemonce.net/docs/setup/download-install.html</loc>
     
-    <lastmod>2017-10-19T04:21:36.435Z</lastmod>
+    <lastmod>2017-11-05T07:24:28.127Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/setup/index.html</loc>
+    
+    <lastmod>2017-11-05T07:24:28.123Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/setup/index.html</loc>
+    
+    <lastmod>2017-11-05T07:24:28.004Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/setup/trial-purchase.html</loc>
+    
+    <lastmod>2017-11-05T07:24:28.000Z</lastmod>
     
   </url>
   
