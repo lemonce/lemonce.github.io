@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lemonce.net/news.html</loc>
+    
+    <lastmod>2017-11-13T15:04:03.408Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/news.html</loc>
+    
+    <lastmod>2017-11-13T15:03:02.464Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lemonce.net/zh-cn/docs/setup/download-install.html</loc>
     
     <lastmod>2017-11-05T07:24:28.160Z</lastmod>
@@ -54,13 +68,6 @@
     <loc>http://lemonce.net/zh-cn/docs/setup/trial-purchase.html</loc>
     
     <lastmod>2017-11-05T07:24:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/news.html</loc>
-    
-    <lastmod>2017-10-19T04:14:53.596Z</lastmod>
     
   </url>
   
@@ -215,13 +222,6 @@
     <loc>http://lemonce.net/docs/guide/case.html</loc>
     
     <lastmod>2017-08-10T08:22:48.611Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/news.html</loc>
-    
-    <lastmod>2017-08-09T03:33:54.826Z</lastmod>
     
   </url>
   
