@@ -2,6 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lemonce.net/docs/setup/trial-purchase.html</loc>
+    
+    <lastmod>2017-12-08T03:58:00.648Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/setup/index.html</loc>
+    
+    <lastmod>2017-12-08T03:58:00.643Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/setup/trial-purchase.html</loc>
+    
+    <lastmod>2017-12-08T03:58:00.492Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/setup/index.html</loc>
+    
+    <lastmod>2017-12-08T03:58:00.483Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/zh-cn/docs/setup/download-install.html</loc>
+    
+    <lastmod>2017-12-08T03:58:00.482Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/footer/blog/selenium-testing-tool.html</loc>
+    
+    <lastmod>2017-12-08T03:58:00.457Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/footer/blog/automation-testing-tools.html</loc>
+    
+    <lastmod>2017-12-08T03:58:00.456Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lemonce.net/docs/setup/download-install.html</loc>
+    
+    <lastmod>2017-12-08T03:57:53.241Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lemonce.net/news.html</loc>
     
     <lastmod>2017-11-13T15:04:03.408Z</lastmod>
@@ -12,62 +68,6 @@
     <loc>http://lemonce.net/zh-cn/news.html</loc>
     
     <lastmod>2017-11-13T15:03:02.464Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/setup/download-install.html</loc>
-    
-    <lastmod>2017-11-05T07:24:28.160Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/setup/trial-purchase.html</loc>
-    
-    <lastmod>2017-11-05T07:24:28.144Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/footer/blog/selenium-testing-tool.html</loc>
-    
-    <lastmod>2017-11-05T07:24:28.136Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/footer/blog/automation-testing-tools.html</loc>
-    
-    <lastmod>2017-11-05T07:24:28.130Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/setup/download-install.html</loc>
-    
-    <lastmod>2017-11-05T07:24:28.127Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/docs/setup/index.html</loc>
-    
-    <lastmod>2017-11-05T07:24:28.123Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/setup/index.html</loc>
-    
-    <lastmod>2017-11-05T07:24:28.004Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lemonce.net/zh-cn/docs/setup/trial-purchase.html</loc>
-    
-    <lastmod>2017-11-05T07:24:28.000Z</lastmod>
     
   </url>
   
