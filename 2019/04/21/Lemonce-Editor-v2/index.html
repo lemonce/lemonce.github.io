@@ -2,10 +2,10 @@
 <html lang="en">
 <head prefix="og: http://ogp.me/ns#"><meta name="generator" content="Hexo 3.8.0">
 	<meta charset="utf-8">
-	<title>Crossbrowser Testing - Automated Web UI Testing Tool</title>
+	<title>Lemonce Editor v2.0.0 - Automated Web UI Testing Tool</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="web ui testing tool, web application testing tool, automated web ui testing tool, automated web application testing tool, automated testing tools for web applications, gui testing tool, web ui testing, free web ui testing tools, free automation testing tools, web automation testing tools, regression testing tools, selenium, free, open source, selenium alternatives,alternative to selenium,automation testing tools, cross browser testing, web application testing, browser testing tools, browser testing, browser automation">
+	<meta name="keywords" content="Editor">
 	<meta name="description" content="UI Testing Tool For Web Applications: Lemonce Editor is a professional automation testing tool for web applications. Open Source and Free versions are available.">
 	<!-- Canonical links -->
 	
@@ -86,134 +86,136 @@
 	</div>
 </nav>
 
-	<div id="wrap-page">
-	<article class="page clearfix">
-		<div class="page-header bg-teal-gradient py-5">
-			<div class="container">
-				<h1>Crossbrowser Testing</h1>
-				<time class="text-white">
-					最后更新：
-					2019-04-21
-				</time>
-			</div>
+	<div id="post-wrap">
+  <article class="post">
+	<div class="post-header bg-teal-gradient py-5">
+		<div class="container">
+			<h1 class="article-title">
+				Lemonce Editor v2.0.0
+			</h1>
+			<a href="/2019/04/21/Lemonce-Editor-v2/" class="post-link text-white">
+				2019-04-21
+			</a>
 		</div>
-		<div class="page-content container py-5">
-			<aside id="docs-sidebar" class="float-lg-left">
-	<div><a href="/zh-cn/docs/setup/index.html">设置</a>
- 		<ul>
-    		<li><a href="/zh-cn/docs/setup/download-install.html">下载与安装</a></li>
-			<li><a href="/zh-cn/docs/setup/trial-purchase.html">试用与购买</a></li>
-    		<li><a href="/zh-cn/docs/setup/interface.html">灵萌测界面</a></li>
- 		</ul>
 	</div>
-	
-	<div><a href="/zh-cn/docs/guide/index.html">开始测试</a>
-		<ul>
-    		<li><a href="/zh-cn/docs/guide/case.html">创建测试用例</a></li>
-    		<li><a href="/zh-cn/docs/guide/recorder.html">录制器的使用</a></li>
-    		<li><a href="/zh-cn/docs/guide/suite.html">完善测试套件</a></li>
-			<li><a href="/zh-cn/docs/guide/reports.html">查看测试报告</a></li>
- 		</ul>
+	<div class="post-content container pt-4">
+		<h2 id="Updates-for-version-2-0-6"><a href="#Updates-for-version-2-0-6" class="headerlink" title="Updates for version 2.0.6"></a>Updates for version 2.0.6</h2><hr>
+<p><strong>Bug Fix</strong></p>
+<ul>
+<li>Fixed the issue that sometimes the recorder created additional statements.</li>
+<li>Fixed the issue that the comments didn’t match the language setted.</li>
+</ul>
+<p><strong>Optimized</strong></p>
+<ul>
+<li>When recording the ‘jumpto’ action, the time of created “wait” statements was adjusted to 2 second.</li>
+<li>Optimized the “format” function.</li>
+</ul>
+<p><strong>New Functions</strong></p>
+<ul>
+<li>Added the upload function.</li>
+<li>Added the upload syntax.</li>
+<li>Added a tool for bluk importing the ‘.csv’ file to ‘.lc2’ file.
+<br></li>
+</ul>
+<h2 id="Updates-for-version-2-0-5"><a href="#Updates-for-version-2-0-5" class="headerlink" title="Updates for version 2.0.5"></a>Updates for version 2.0.5</h2><hr>
+<p><strong>Bug Fix</strong></p>
+<ul>
+<li>Fixed the issue that when using the inspect element, the current selection didn’t be replaced.</li>
+<li>Fixed the issue that the suite report displayed incorrectly.</li>
+</ul>
+<p><strong>Optimized</strong></p>
+<ul>
+<li>Optimized the style of the output panel.</li>
+<li>Optimized for displaying the graphical report.</li>
+</ul>
+<p><strong>New Functions</strong></p>
+<ul>
+<li>Added the array syntax.</li>
+<li>Added the object syntax.</li>
+<li>Added the “for in/of” syntax.</li>
+<li>Added the “$BUTTON” syntax to simulate operating the right/middle/left mouse button.</li>
+<li>Added using the up or down arrow key to browse the list of previous commands in the debugger console.
+<br></li>
+</ul>
+<h2 id="Updates-for-version-2-0-4"><a href="#Updates-for-version-2-0-4" class="headerlink" title="Updates for version 2.0.4"></a>Updates for version 2.0.4</h2><hr>
+<p><strong>Bug Fix</strong></p>
+<ul>
+<li>Fixed the issue that sometimes the built-in developer tools in the webview couldn’t be opened.</li>
+<li>Fixed the issue that “dblclick” don’t execute the double-click action.</li>
+<li>Fixed the issue that when the parameter and argument has the same name,the variables confused.</li>
+<li>Fixed the issue that sometimes the case can’t be stop running.</li>
+<li>Fixed issues that a kind of expressions allowed before(“4=3”).</li>
+</ul>
+<p><strong>Optimized</strong></p>
+<ul>
+<li>Optimized the calculation of the highlight displacement,all of the parent-node traversals calculated.</li>
+<li>Optimized the RPC communication model to assure its stability.</li>
+<li>Increased the recording accuracy.</li>
+<li>Canceled the moment model for faster loading.</li>
+</ul>
+<p><strong>New Functions</strong></p>
+<ul>
+<li>Added the option menu to choose the xpath selector as default before recording.</li>
+<li>Added a method “click /option/“ to choose the select drop-down menu.</li>
+<li>Added automatically word wrapped in the editor.
+<br></li>
+</ul>
+<h2 id="Updates-for-version-2-0-3"><a href="#Updates-for-version-2-0-3" class="headerlink" title="Updates for version 2.0.3"></a>Updates for version 2.0.3</h2><hr>
+<p><strong>Bug Fix</strong></p>
+<ul>
+<li>Fixed the issue that the webview not back to its original,pristine state when running another task.</li>
+</ul>
+<p><strong>Optimized</strong></p>
+<ul>
+<li>Optimized the delault case folder of the right-click menu in the case files editing area.</li>
+<li>Optimized the delault suite folder of the right-click menu in the suite files editing area.</li>
+<li>Adjusted the container’s style when the container was selected or not.</li>
+<li>Adjusted the width of the horizontal sroll to be consistent with the vertical one in the case editor.</li>
+<li>Canceled the output panel in the webview, which merged with the debugger. </li>
+</ul>
+<p><strong>New Functions</strong></p>
+<ul>
+<li>Added a right-click memu of the tab window which provided a quick way to close or detach it.</li>
+<li>Added a unique icon in the webview tab to distinguish other tabs.</li>
+<li>Added a right-click menu of the webview tab which provided a quick way to close it.</li>
+<li>Added the debugger’s console panel to debug and analyze statements.</li>
+<li>Added the debugger’s output panel to log the status information.</li>
+<li>Added a paragraph mark in the output panel to assist tracking and locating the errors.
+<br></li>
+</ul>
+<h2 id="Updates-for-version-2-0-1"><a href="#Updates-for-version-2-0-1" class="headerlink" title="Updates for version 2.0.1"></a>Updates for version 2.0.1</h2><hr>
+<p><strong>Bug Fix</strong></p>
+<ul>
+<li>Fixed the issue that the console output misalignment cause of the communication delay.</li>
+<li>Fixed the issue that the magic keyword “$IT” only save the selector once.</li>
+</ul>
+<p><strong>New Functions</strong></p>
+<ul>
+<li>Added a new function to record “move” action (shift+click).</li>
+<li>Added a new function to record “assert” action(Ctrl+click).</li>
+<li>Added action statements using the latest selector as default which with no selector.</li>
+<li>Added action statements using the value of magic keyword “$IT” as selector which with no selector.</li>
+<li>Added a new function to stop suite.</li>
+<li>Added a role to change the icon of the play/stop button when switch to playing/stoping the case.</li>
+<li>Added a role to change the icon of the play/stop button when switch to playing/stoping the suite.</li>
+<li>Added the terminal(the command line window).
+<br></li>
+</ul>
+<h2 id="Version-2-0-0-is-online"><a href="#Version-2-0-0-is-online" class="headerlink" title="Version 2.0.0 is online"></a>Version 2.0.0 is online</h2><h5 id="date-2017-02-15"><a href="#date-2017-02-15" class="headerlink" title="date:2017-02-15"></a>date:2017-02-15</h5><hr>
+<p>Today we are happy to announce that Lemonce Editor releases version 2.0.0.  </p>
+<p>Compared with the previous version 1, version 2 has three major changes below.</p>
+<ul>
+<li>Adopted a new version of the engine.</li>
+<li>Adopted the LemonceDriver which is more sophiscated than WebDriver in many ways. <a href="/feature/lcdriver.html">more details</a></li>
+<li>Changed the internal frame from Augular to Vue.</li>
+</ul>
+<p>The new version is closer to beta right now and we will improve it gradually in the subsequent versions.
+The UI of version 2 which has a big change compared with version 1 will be a whole new experience for you, but it will also help you to start your test more easily, especially for those who are used to Visual Studio Code.
+<br></p>
+
 	</div>
+</article>
 
-	<div><a href="/zh-cn/docs/code-editor/index.html">编辑器</a>
-		<ul>
-    		<li><a href="/zh-cn/docs/code-editor/case-editor.html">用例编辑器</a></li>
-    		<li><a href="/zh-cn/docs/code-editor/suite-editor.html">套件编辑器</a></li>
- 		</ul>
-	</div>
-
-	<div><a href="/zh-cn/docs/test-mode/index.html">测试类型</a>
-		<ul>
-    		<li><a href="/zh-cn/docs/test-mode/function-testing.html">功能测试</a></li>
-    		<li><a href="/zh-cn/docs/test-mode/crossbrowser-testing.html">兼容性测试</a></li>
- 		</ul>
-	</div>
-
-	<div><a href="/zh-cn/docs/lemoncase2/index.html">编程语言</a>
-		<ul>
-    		<li><a href="/zh-cn/docs/lemoncase2/instructionkeyword.html">指令关键字</a></li>
-    		<li><a href="/zh-cn/docs/lemoncase2/actionkeyword.html">动作关键字</a></li>
-    		<li><a href="/zh-cn/docs/lemoncase2/expression.html">表达式</a></li>
-			<li><a href="/zh-cn/docs/lemoncase2/selector.html">选择器</a></li>
-			<li><a href="/zh-cn/docs/lemoncase2/subprocess.html">内置对象</a></li>
-			<li><a href="/zh-cn/docs/lemoncase2/macro.html">宏</a></li>
-			<li><a href="/zh-cn/docs/lemoncase2/magic.html">魔术字</a></li>
-			<li><a href="/zh-cn/docs/lemoncase2/example.html">操作示例</a></li>
- 		</ul>
-	</div>
-
-	<div><a href="/zh-cn/docs/FAQ.html">常见问题</a>
-	</div>
-</aside>
-			<aside id="toc" class="float-lg-right hidden-sm-down" role="navigation">
-				<div id="toc-inner">
-					<strong class="toc-title">
-						页面内容：
-					</strong>
-					<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Configure-a-Proxy-Server"><span class="toc-text">1 Configure a Proxy Server</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-Win10-amp-Win8"><span class="toc-text">1.1 Win10 &amp; Win8</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-Win7"><span class="toc-text">1.1 Win7</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-Mac"><span class="toc-text">1.3 Mac</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-Firefox"><span class="toc-text">1.4 Firefox</span></a></li></ol></li></ol>
-				</div>
-			</aside>
-			<div class="page-inner">
-				<p>Now you can start your crossbrowser testing with Firefox,Chrome and Edge on Lemonce Editor,please just follow the steps below.</p>
-<p><br></p>
-<h2 id="1-Configure-a-Proxy-Server"><a href="#1-Configure-a-Proxy-Server" class="headerlink" title="1 Configure a Proxy Server"></a>1 Configure a Proxy Server</h2><hr>
-<p>Configuring the proxy server is the first step of crossbrowser testing, and you can get your Address and Port in Lemonce Editor.
-【image of Lemonce Editor】</p>
-<p><br></p>
-<h4 id="1-1-Win10-amp-Win8"><a href="#1-1-Win10-amp-Win8" class="headerlink" title="1.1 Win10 &amp; Win8"></a>1.1 Win10 &amp; Win8</h4><hr width="50%" align="left">
-
-<p>In Win10 or Win8，you should configure a proxy server according to the following steps.</p>
-<ul>
-<li>Setting → Network &amp; Internet → Manual proxy setup</li>
-</ul>
-<p><img class="box-shadow" src="/images/test-mode/win10-1.png"></p>
-<ul>
-<li>In the section Use a proxy server， fill in the Address &amp; Port（<strong>same with the ones in Lemonce Editor</strong>）</li>
-</ul>
-<p><img class="box-shadow" src="/images/test-mode/win10-2.png"></p>
-<p><br></p>
-<h4 id="1-1-Win7"><a href="#1-1-Win7" class="headerlink" title="1.1 Win7"></a>1.1 Win7</h4><hr width="50%" align="left">
-
-<p>In Win7，you should configure a proxy server according to the following steps.</p>
-<ul>
-<li>Control Panel → Net &amp; Internet → Connection</li>
-<li>LAN settings</li>
-</ul>
-<p><img class="box-shadow" src="/images/test-mode/win7-1.png"></p>
-<ul>
-<li>Fill in the Address &amp; Port（<strong>same with the ones in Lemonce Editor</strong>）</li>
-</ul>
-<p><img src="/images/test-mode/win7-2.png"></p>
-<p><br></p>
-<h4 id="1-3-Mac"><a href="#1-3-Mac" class="headerlink" title="1.3 Mac"></a>1.3 Mac</h4><hr width="50%" align="left">
-
-<p>In Mac，you should configure a proxy server according to the following steps,or you can see the <a href="https://www.youtube.com/watch?v=dMLK0cx7V_Y" target="_blank" rel="noopener">video instruction</a>.</p>
-<ul>
-<li>Open Safari → Safari → Preferences</li>
-<li>Advanced → Proxies → Change Settings</li>
-</ul>
-<p><img class="box-shadow" src="/images/test-mode/mac-1.png"></p>
-<ul>
-<li>Web Proxy（HTTP） → fill in the Address &amp; Port（<strong>same with the ones in Lemonce Editor</strong>）→ OK &amp; Apply</li>
-</ul>
-<p><img class="box-shadow" src="/images/test-mode/mac-2.png"></p>
-<p><br></p>
-<h4 id="1-4-Firefox"><a href="#1-4-Firefox" class="headerlink" title="1.4 Firefox"></a>1.4 Firefox</h4><hr width="50%" align="left">
-
-<p>You can merely configure proxy server in Firefox browser according to the following steps.</p>
-<ul>
-<li>Options → Advanced → Network → Settings</li>
-</ul>
-<p><img class="box-shadow" src="/images/test-mode/firefox-1.png"></p>
-<ul>
-<li>Manual proxy configuration → fill in the Address &amp; Port（<strong>same with the ones in Lemonce Editor</strong>）→ OK</li>
-</ul>
-<p><img class="box-shadow" src="/images/test-mode/firefox-2.png"></p>
-
-			</div>
-		</div>
-	</article>
 </div>
 
 	<footer>
